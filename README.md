@@ -5,6 +5,12 @@ Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.pdf
 I have been working hard on these proofs for the past 3.5 years and now with the advent of ChatGPT, I have had an explosive amount of research.
 The Special functions software is free and open source. I am also providing my chatgpt prompts so that others can learn from my prompt engineering examples.
 
+If you want to learn more about the Riemann Hypothesis and the Millenium prize probelm you can find those at the following sources:
+Riemann Hypothesis:
+https://mathworld.wolfram.com/RiemannZetaFunction.html
+Clay Maths Institute's Millenium Prize Problems:
+https://en.wikipedia.org/wiki/Millennium_Prize_Problems
+
 # Special-Functions
 A Class for plotting complex functions. This tool provides the plotting functions for 2D and 3D graphics for infinite series such as the Riemann zeta function, 
 the infinite product of the product representation for sin(pi*z/n) as well as any other function that can be formulated in the complex plane.
