@@ -15,7 +15,7 @@ Clay Maths Institute's Millenium Prize Problems:
 
 https://en.wikipedia.org/wiki/Millennium_Prize_Problems
 
-Ultimately I want to use this data to train a language model such as dalai llama, or GPT4 using the methods and information provided in this respoitory such that
+Ultimately I want to use this data to train a language model such as dalai llama, or GPT4 using the methods and information provided in this repository such that
 we can create an AI specialized in mathematical analysis for all fields of mathematics. Currently I have proposed the idea to the singularity group on @AtheneLive
 you can see the most recent vod clip here where lex fridman, carli g, and athene give their responses:
 
