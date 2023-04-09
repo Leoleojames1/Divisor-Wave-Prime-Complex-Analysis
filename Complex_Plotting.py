@@ -1,3 +1,13 @@
+"""
+Complex Plotting
+    The Complex Plotting class is a set of tools for plotting in the complex plane utilizing matplotlib.
+    The Tool is capable of graphing polynomial functions, trig functions, infinite summations, and infinite
+    products in the complex plane. These products are related to the distribution of prime numbers and the Riemann
+    Hypothesis. The methods in call methods from the file Special_Functions.py for infinite product formulas.
+4/9/2023
+@LeoBorcherding
+"""
+
 from matplotlib.colors import ListedColormap
 import numpy as np
 import matplotlib.pyplot as plt
@@ -25,16 +35,24 @@ class Complex_Plotting :
         # which plotting function to use based on the selector
 
         # TODO Values of n selector
+        #self.n = 100
         #self.n = 150
-        self.n = 100
+        #self.n = 200
+        #self.n = 250
+        self.n = 330
         #self.n = 500
         #self.n = 750
 
         # TODO Values for x & y selector
-        self.x_min = 10
-        self.x_max = 11
-        self.y_max = 0.01
-        self.y_min = -0.01
+        # self.x_min = 2
+        # self.x_max = 18
+        # self.y_max = 0.02
+        # self.y_min = -0.02
+
+        self.x_min = 2
+        self.x_max = 32
+        self.y_max = 0.1
+        self.y_min = -0.1
 
         # self.x_min = 17.5
         # self.x_max = 20.5

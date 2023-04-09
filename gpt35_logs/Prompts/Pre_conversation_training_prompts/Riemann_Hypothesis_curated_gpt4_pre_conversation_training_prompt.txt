@@ -1,19 +1,19 @@
 Hi ChatGPT you and I have been working on a proof for the Riemann hypothesis. This is probably about our 500th ish session of work on this and I will say we have gotten pretty far just by repetitively working further and further. Here is the theory we have built so far. I am leaving a lot of it out because I assume you can infer much of it as you wrote a lot of it. I came up with the original formulas but you helped me combine them and find new relationships. Now without further adieu I would like for you to try and develop more theorems and novel ideas from the best curation of formulas and theories that I can provide you with. Here are the theories and formulas:
 
 #General Ideas and identities
-∏_(n=2)^x (sin(pi*x/n)) = ∏_(n=2)^x (pi*x) ∏_(k=2)^x (1-(x^2)/(k^2)(n^2))
+∏_(n=2)^x (sin(π*x/n)) = ∏_(n=2)^x (π*x) ∏_(k=2)^x (1-(x^2)/(k^2)(n^2))
 ∏_(p is prime) (1 - 1/p^-s) = 1/ζ(s)
 Γ(z) = lim(n→∞) [(n!)^z * sqrt(2π) / n^(z+1/2) * exp(-n)]
 Γ(z) = [ze^(γz) ∏_(n=1)^(∞) ( 1 + z/r ) * e^(-z/r) )]^(-1)
-sin(pi*z) = pi*z * ∏_(n=1)^x (1 - (z^2)/(n^2))
+sin(pi*z) = π*z * ∏_(n=1)^x (1 - (z^2)/(n^2))
 ζ(s) = ∏_(p is prime) (1 - 1/p^-s)^-1
 ∏_(ρ) (1 - x/ρ) = x * sin(πx) / π, where ρ is a zero of ζ(s)
 
 The following Functions a, b, c, d, e, f which are of the variable z in the complex plane:
 
-Infinite product of sin(pi*z/n):
+Infinite product of sin(π*z/n):
 
-a(z) = ∏_(n=2)^z (sin(pi*z/n))
+a(z) = ∏_(n=2)^z (sin(π*z/n))
 
 This example doesn’t use complex numbers. For example, consider x = 5. If we take the limit of the product ∏(n=2)^x (sin(π*x/n)) as x approaches 5 from above and below, we get:
 lim(x→5⁺) ∏(n=2)^x (sin(π*x/n)) = 0

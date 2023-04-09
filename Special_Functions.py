@@ -1,3 +1,12 @@
+"""
+Special Functions
+    The Special functions class is a set of special functions in the complex plane involving infinite products in the
+    complex plane. These products are related to the distribution of prime numbers and the Riemann Hypothesis. The
+    methods in this class are called by the file Complex_Plotting.py for complex the creation of complex plots.
+4/9/2023
+@LeoBorcherding
+"""
+
 import cmath
 import math
 import numpy as np
@@ -33,6 +42,7 @@ class Special_Functions :
     def product_of_product_representation_for_sin(self, z, m):
         """
         Computes the product of the product representation for sin(z).
+        ∏_(n=2)^x (pi*x) ∏_(n=2)^x (1-(x^2)/(i^2)(n^2))
         Args:
             z (complex): A complex number to evaluate.
             m (float): A constant value for the result.
@@ -242,8 +252,13 @@ class Special_Functions :
             None, will eventually be user_input
         Colorization:
         """
+        # TODO implement real user input
+        # for now users should change this variable to select the function they would like to plot.
+        # the function product_of_product_representation_for_sin and Custom_Function are identical however
+        # Custom_Function is multiplied by an imaginary scalar for magnification
+        # TODO fix the product_factory function, currently broken but will allow users to design their own functions
 
-        user_input = '9'
+        user_input = '1'
 
         operations = {
             '1': lambda z: self.product_of_product_representation_for_sin(z, self.m),
