@@ -16,12 +16,12 @@ Clay Maths Institute's Millenium Prize Problems:
 https://en.wikipedia.org/wiki/Millennium_Prize_Problems
 
 # Special-Functions
-A Class for plotting complex functions. This tool provides the plotting functions for 2D and 3D graphics for infinite series such as the Riemann zeta function, 
+A program for plotting complex functions. This tool provides the plotting functions for 2D and 3D graphics for infinite series such as the Riemann zeta function, 
 the infinite product of the product representation for sin(pi*z/n) as well as any other function that can be formulated in the complex plane.
 
 # About Me
 My name is Leo Borcherding, I am a Software Developer with experience working on programs for encryption of firmware devices. I have a background in electrical
 engineering and my passion is mathematics as well as art. I am developing this software so that we can further our understanding of mathematics, physics, 
 and the universe. Please contact me at borchborchmail@gmail.com if you have questions or are able to do something interesting with my software or math.
-Ultimately knowledge should be free however it takes a lot of time and work to develop these mathematics proofs and software, I would really appreciate it feel
-inclined to donate to help me keep developing and writing this paper, you can find the donation link in the file called bitcoin_donation_wallet.txt
+Ultimately knowledge should be free however it takes a lot of time and work to develop the mathematics, proofs and software required, I would really appreciate 
+it, if you feel inclined to donate to help me keep developing this software and writing this paper. You can find the donation link in the file called bitcoin_donation_wallet.txt
