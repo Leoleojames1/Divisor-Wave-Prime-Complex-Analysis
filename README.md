@@ -21,6 +21,10 @@ you can see the most recent twitch vod clip here where Lex fridman, Carli g, and
 
 https://www.youtube.com/watch?v=JCCw1qNb3mc
 
+Also you can find Athenes Twitch Here:
+
+https://www.twitch.tv/athenelive
+
 # Special-Functions
 A program for plotting complex functions. This tool provides the plotting functions for 2D and 3D graphics for infinite series such as the Riemann zeta function, 
 the infinite product of the product representation for sin(pi*z/n) as well as any other function that can be formulated in the complex plane.
