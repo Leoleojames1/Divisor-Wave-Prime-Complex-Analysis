@@ -8,9 +8,11 @@ The Special functions software is free and open source. I am also providing my c
 If you want to learn more about the Riemann Hypothesis and the Millenium prize probelm you can find those at the following sources:
 
 Riemann Hypothesis:
+
 https://mathworld.wolfram.com/RiemannZetaFunction.html
 
 Clay Maths Institute's Millenium Prize Problems:
+
 https://en.wikipedia.org/wiki/Millennium_Prize_Problems
 
 # Special-Functions
