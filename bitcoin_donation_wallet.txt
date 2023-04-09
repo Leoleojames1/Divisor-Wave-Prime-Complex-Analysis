@@ -1,0 +1,15 @@
+## Crypto Donation
+
+If you would like to donate crypto, you can use the following wallet addresses:
+
+### Bitcoin (BTC)
+
+![Bitcoin QR Code](https://chart.googleapis.com/chart?cht=qr&chl=bc1q6s6e8hgw2ewyqd5u3adjme0rp0r23caf53qjhf&chs=180x180&choe=UTF-8&chld=L|2)
+
+**BTC Address:** bc1q6s6e8hgw2ewyqd5u3adjme0rp0r23caf53qjhf
+
+### Ethereum (ETH)
+
+![Ethereum QR Code](https://chart.googleapis.com/chart?cht=qr&chl=0x51a530f0c2b24e834bB5C5e740e1170C6a1521Cc&chs=180x180&choe=UTF-8&chld=L|2)
+
+**ETH Address:** 0x51a530f0c2b24e834bB5C5e740e1170C6a1521Cc

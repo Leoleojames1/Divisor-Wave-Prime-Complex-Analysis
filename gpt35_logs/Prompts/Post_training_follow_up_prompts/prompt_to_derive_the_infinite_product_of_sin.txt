@@ -1,0 +1,23 @@
+Using latex code, please derive the identity and show how the functions relate to each other:
+
+Take the function:
+a(x) = ∏_(n=2)^x (sin(π*x/n)) 
+
+And Derive the Function:
+b(x) = ∏_(n=2)^x (π*x) ∏_(n=2)^x (1-(x^2)/(k^2)(n^2))
+
+using the identity produced by Euler for the infinite product representation of sin:
+
+sin(π*x/n) = ∏_(n=2)^x (1-(x^2)/(k^2)(n^2))
+
+by substituting this infinite product
+
+∏_(n=2)^x (1-(x^2)/(k^2)(n^2))
+
+for the trig function
+
+sin(pi*x/n)
+
+in the function:
+
+a(x) = ∏_(n=2)^x (sin(π*x/n))

@@ -1,0 +1,125 @@
+Hi ChatGPT you and I have been working on a proof for the Riemann hypothesis. This is probably about our 500th ish session of work on this and I will say we have gotten pretty far just by repetitively working further and further. Here is the theory we have built so far. I am leaving a lot of it out because I assume you can infer much of it as you wrote a lot of it. I came up with the original formulas but you helped me combine them and find new relationships. Now without further adieu I would like for you to try and develop more theorems and novel ideas from the best curation of formulas and theories that I can provide you with. Here are the theories and formulas:
+
+#General Ideas and identities
+∏_(n=2)^x (sin(pi*x/n)) = ∏_(n=2)^x (pi*x) ∏_(k=2)^x (1-(x^2)/(k^2)(n^2))
+∏_(p is prime) (1 - 1/p^-s) = 1/ζ(s)
+Γ(z) = lim(n→∞) [(n!)^z * sqrt(2π) / n^(z+1/2) * exp(-n)]
+Γ(z) = [ze^(γz) ∏_(n=1)^(∞) ( 1 + z/r ) * e^(-z/r) )]^(-1)
+sin(pi*z) = pi*z * ∏_(n=1)^x (1 - (z^2)/(n^2))
+ζ(s) = ∏_(p is prime) (1 - 1/p^-s)^-1
+∏_(ρ) (1 - x/ρ) = x * sin(πx) / π, where ρ is a zero of ζ(s)
+
+The following Functions a, b, c, d, e, f which are of the variable z in the complex plane:
+
+Infinite product of sin(pi*z/n):
+
+a(z) = ∏_(n=2)^z (sin(pi*z/n))
+
+This example doesn’t use complex numbers. For example, consider x = 5. If we take the limit of the product ∏(n=2)^x (sin(π*x/n)) as x approaches 5 from above and below, we get:
+lim(x→5⁺) ∏(n=2)^x (sin(π*x/n)) = 0
+lim(x→5⁻) ∏(n=2)^x (sin(π*x/n)) ≠ 0
+This means that the product has a cusp at x = 5, and therefore 5 is a prime number. Conversely, if we take x = 6, we get:
+lim(x→6⁺) ∏(n=2)^x (sin(π*x/n)) ≠ 0
+lim(x→6⁻) ∏(n=2)^x (sin(π*x/n)) ≠ 0
+This means that the product has a curve at x = 6, and therefore 6 is a composite number.
+
+Infinite product of the infinite product representation of sin(π*z/n):
+
+B(z) = ∏_(n=2)^z (π*z) ∏(k=2)^z (1-(z^2)/(k^2)(n^2)) 
+
+Now, we can expand the product out to infinity, using the expression we derived earlier:
+
+b(x) = ∏_(n=2)^x [π*x ∏_(k=2)^∞ (1 - x^2 / (k^2 * n^2))]
+
+Expanding out the first few terms of the product, we get:
+
+b(x) = ∏_(n=2)^x π*x ( (1 - (x^2)/((2^2)(n^2))) (1 - (x^2)/((3^2)(n^2))) (1 - (x^2)/((4^2)(n^2))) …)
+
+b(x) = π*x × (1 - (x^2)/((2^2)(2^2))) (1 - (x^2)/((2^2)(3^2))) (1 - (x^2)/((2^2)(4^2))) ...
+   × (1 - (x^2)/((3^2)(2^2))) (1 - (x^2)/((3^2)(3^2))) (1 - (x^2)/((3^2)(4^2))) …
+   × (1 - (x^2)/((4^2)(2^2))) (1 - (x^2)/((4^2)(3^2))) (1 - (x^2)/((4^2)(4^2))) …
+   × ... 
+
+b(4) = π*x × (1 - (4^2)/((2^2)(2^2))) (1 - (4^2)/((2^2)(3^2))) (1 - (4^2)/((2^2)(4^2))) ...
+   × (1 - (4^2)/((3^2)(2^2))) (1 - (4^2)/((3^2)(3^2))) (1 - (4^2)/((3^2)(4^2))) …
+   × (1 - (4^2)/((4^2)(2^2))) (1 - (4^2)/((4^2)(3^2))) (1 - (4^2)/((4^2)(4^2))) …
+   × ... 
+
+b(4) = …(1 - (4^2)/((2^2)(2^2)))... = 0
+
+The zeros of the original function correspond to the values of z where one of the factors in the infinite product is zero. The factor π*z is never zero, so the zeros of the original function occur when:
+
+1 - (z^2)/(k^2)(n^2) = 0
+
+Identities:
+
+1.) ∏(n=2)^x (sin(πx/n)) = ∏_(n=2)^x (πx) ∏(k=2)^x (1-(x^2)/(k^2)(n^2)) 
+
+By means of division and factorialization of the denominator c(z) is a normalized version of b(z):
+
+c(z) = ∏(n=2)^z (π*z) ∏(k=2)^x (1-(z^2)/(k^2)(n^2)) / ∏(n=2)^z (π*z) ∏(k=2)^z (1-(z^2)/(k^2)(n^2)) !
+
+The function d(z) also know as the infinite product for ζ(s) can be defined as:
+d(z) = ζ(s) = 2^(s) * π^(s-1) * sin(πs/2) * Γ(1-s) * ∏_(n=1)^(∞) (1 - 2^(1-s)/(n^(1-s)))
+
+We start with the formula for the Riemann zeta function:
+
+ζ(s) = 2^(s) * π^(s-1) * sin(πs/2) * Γ(1-s) * ∏_(n=1)^(∞) (1 - 2^(1-s)/(n^(1-s)))
+
+Setting s=2 in the above equation, we obtain:
+
+ζ(2) = 2^2 * π^(2-1) * sin(π*2/2) * Γ(1-2) * ∏_(n=1)^(∞) (1 - 2^(1-2)/(n^(1-2)))
+
+Using the formula for the exponential function, we can write:
+
+f(z) = π * z * e^(-γz^2) * ζ(2z)
+
+To further understand the significance of this relationship, let's take a closer look at the formula for b(x):
+
+b(z) = ∏_(n=2)^z [π*z/ n ∏_(k=2)^z (1 - (z^2) / (k^2 * n^2)]
+
+Expanding out the product in ζ(s) = 2^(s) * π^(s-1) * sin(πs/2) * Γ(1-s) * ∏_(n=1)^(∞) (1 - 2^(1-s)/(n^(1-s))):
+
+ζ(s) = 2^(s) * π^(s-1) * sin(πs/2) * Γ(1-s) * [(1 - 2^(1-s)/(2^(1-s))) (1 - 2^(1-s)/(3^(1-s))) (1 - 2^(1-s)/(4^(1-s))) …]
+
+= 2^(s) * π^(s-1) * sin(πs/2) * Γ(1-s) * [(1 - 1) (1 - 2^(-s)/(3^(1-s))) (1 - 2^(-s)/(4^(1-s))) …]
+
+= 2^(s) * π^(s-1) * sin(πs/2) * Γ(1-s) * [(1 - 2^(-s)/(3^(1-s))) (1 - 2^(-s)/(4^(1-s))) …]
+
+= 2^(s) * π^(s-1) * sin(πs/2) * Γ(1-s) * [(1 - 2^(-s)/(2^(-s) * 3^(1-s))) (1 - 2^(-s)/(2^(-s) * 4^(1-s))) …]
+
+= 2^(s) * π^(s-1) * sin(πs/2) * Γ(1-s) * [(1 - 1/3^(1-s)) (1 - 1/2^(1-s)) (1 - 1/5^(1-s)) (1 - 1/4^(1-s)) …]
+
+= 2^(s) * π^(s-1) * sin(πs/2) * Γ(1-s) * ∏_(n=1)^(∞) (1 - 1/(n^(1-s)))
+
+Expanding the first few terms for different values of s, we get:
+
+For s = 2:
+ζ(2) = 2^(2) * π^(2-1) * sin(π2/2) * Γ(1-2) * (1 - 1/2^2) * (1 - 1/3^2) * (1 - 1/4^2) * ...
+= π^2/6
+
+For s = 3:
+ζ(3) = 2^(3) * π^(3-1) * sin(π3/2) * Γ(1-3) * (1 - 1/2^3) * (1 - 1/3^3) * (1 - 1/4^3) * ...
+= 1.2020569031595942853997
+
+For s = 4:
+ζ(4) = 2^(4) * π^(4-1) * sin(π4/2) * Γ(1-4) * (1 - 1/2^4) * (1 - 1/3^4) * (1 - 1/4^4) * ...
+= π^4/90
+
+We can see that each possible finite product of positive integers appears exactly once in this infinite product.
+
+Now, let's rewrite the product over all pairs of positive integers as a product over all positive integers:
+
+∏_(a=1)^(∞) ∏_(b=1)^(∞) ... = ∏_(n=1)^(∞) (1 - 2^(1-s)/(n^(1-s)))
+
+To see why, we can expand the product on the left-hand side of this equation using the definition of the Riemann zeta function:
+
+∏_(a=1)^(∞) ∏_(b=1)^(∞) ... = ∏_(n=1)^(∞) (1 + 2^(1-s)/(n^(1-s)) + 2^(2-2s)/(n^(2-2s)) + ...)^(-1)
+
+and finally we have the piecewise function for finding prime numbers:
+
+b(x) = ∏_(n=2)^x ( (pi*x) ∏_(k=2)^x (1-(x^2)/(k^2)(n^2)) )
+c(x) = {x, b(x) ≠ 0}
+P(x) = { ∏_(n=2)^x (sin(pi*x/c(x))), if b(x) ≠ 0 and x is a positive integer
+        1, otherwise
+      }
