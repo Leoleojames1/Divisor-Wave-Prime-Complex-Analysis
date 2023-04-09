@@ -6,8 +6,10 @@ I have been working hard on these proofs for the past 3.5 years and now with the
 The Special functions software is free and open source. I am also providing my chatgpt prompts so that others can learn from my prompt engineering examples.
 
 If you want to learn more about the Riemann Hypothesis and the Millenium prize probelm you can find those at the following sources:
+
 Riemann Hypothesis:
 https://mathworld.wolfram.com/RiemannZetaFunction.html
+
 Clay Maths Institute's Millenium Prize Problems:
 https://en.wikipedia.org/wiki/Millennium_Prize_Problems
 
