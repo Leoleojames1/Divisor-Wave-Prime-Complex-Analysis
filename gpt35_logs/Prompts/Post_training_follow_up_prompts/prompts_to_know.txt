@@ -1,0 +1,13 @@
+Memorize these prompts, they will help you when debugging code for any chatgpt conversation, 
+when it talks about errors it is assumed you already send chatgpt the code, and that you are
+now sending the error code, or maybe both together:
+
+that produced this error, please send the fixed code in a code box:
+
+please incorporate that into the current program and put the fixed code in a code box:
+
+that produced the same error, please send the fixed code in a code box:
+
+please provide the fixed code in a code box:
+
+please finish and put it in a code box:

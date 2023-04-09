@@ -1,13 +1,13 @@
 import math
+import numpy as np
+from decimal import Decimal, getcontext
 
 def b(x):
-    prod = 1
-    for n in range(2, x+1):
-        term = math.pi * x
-        for k in range(2, x+1):
-            term *= (1 - (x**2) / ((k**2) * (n**2)))
-        prod *= term
-    return prod
+    getcontext().prec = 10 # Set the precision of Decimal to 100 decimal places
+    result = abs(np.prod([Decimal(x) / n * (Decimal(x) * Decimal(math.pi)) * np.prod(
+        [Decimal(1) - Decimal(x) ** Decimal(2) / (Decimal(n) ** 2 * Decimal(k) ** 2) for k in range(2, int(x) + 1)]
+    ) for n in range(2, int(x) + 1)]))
+    return result
 
 def c(x):
     if b(x) != 0:
@@ -15,21 +15,15 @@ def c(x):
     else:
         return None
 
-def P(x):
-    if b(x) != 0 and x > 0:
-        prod = 1
-        for n in range(2, x+1):
-            prod *= math.sin(math.pi * x / c(x))
-        return prod
-    else:
-        return 1
+x_values = []
+y_values = []
 
 x = 2
 while True:
     cx = c(x)
     if cx is not None:
         print("c({}) = {}".format(x, cx))
-        # print("P({}) = {}".format(x, P(x)))
+
     x += 1
-    # if x > 100:
-    #     break
+    # if x > 1000:
+    #      break
