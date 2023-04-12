@@ -9,7 +9,7 @@ The Special functions software is free and open source. I am also providing my c
   src="graphs/3D_Complex_Graphs/ComplexPlot_prodprodforsin_1.png"
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  style="display: inline-block; margin: 0 auto; max-width: 100px">
   
 If you want to learn more about the Riemann Hypothesis and the Millenium prize problems you can find them at the following sources:
 
