@@ -5,8 +5,12 @@ Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.pdf
 I have been working hard on these proofs for the past 3.5 years and now with the advent of ChatGPT, I have had an explosive amount of research.
 The Special functions software is free and open source. I am also providing my chatgpt prompts so that others can learn from my prompt engineering examples.
 
-<img src="graphs/3D_Complex_Graphs/ComplexPlot_prodprodforsin_1.png" alt="Alt text" title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)">
-
+<img
+  src="graphs/3D_Complex_Graphs/ComplexPlot_prodprodforsin_1.png"
+  alt="Alt text"
+  title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  
 If you want to learn more about the Riemann Hypothesis and the Millenium prize problems you can find them at the following sources:
 
 Riemann Hypothesis:
