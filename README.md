@@ -29,7 +29,7 @@ https://www.twitch.tv/athenelive
 A program for plotting complex functions. This tool provides the plotting functions for 2D and 3D graphics for infinite series such as the Riemann zeta function, 
 the infinite product of the product representation for sin(pi*z/n) as well as any other function that can be formulated in the complex plane.
 
-Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n) in the 3-D Complex Plane:
+Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n) in the 2-D Complex Plane:
 
 <img
   src="graphs/2D_Complex_Graphs/Infinite_Product_of_infinite_product_representation_of_sin/Complex_product_11_n[0-84]_Imaginary_scalar.png"
@@ -38,7 +38,7 @@ Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n) in th
   style="display: inline-block; margin: 0 auto; max-width: 100px">
 
 
-Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n) in the 2-D Complex Plane:
+Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n) in the 3-D Complex Plane:
 
 <img
   src="graphs/3D_Complex_Graphs/ComplexPlot_prodprodforsin_8.png"
