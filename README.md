@@ -6,6 +6,7 @@ I have been working hard on these proofs for the past 3.5 years and now with the
 The Special functions software is free and open source. I am also providing my chatgpt prompts so that others can learn from my prompt engineering examples.
 
 Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n) in the Complex Plane:
+
 <img
   src="graphs/3D_Complex_Graphs/ComplexPlot_prodprodforsin_1.png"
   alt="Alt text"
