@@ -1,0 +1,1411 @@
+this opened in pycharm terminal, I want it to open cmd no matter what:
+    # -----------------------------------------------------------------------------------------------------------------
+    def lamda_function_library(self):
+        """
+        Args:
+            None, will eventually be user_input
+        Colorization:
+        """
+        # The function product_of_product_representation_for_sin and Custom_Function are identical however
+        # Custom_Function is multiplied by an imaginary scalar for magnification
+        # TODO fix the product_factory function, currently broken but will allow users to design their own functions
+
+        # lamda library
+        operations = {
+
+            # Library Selection for Complex Analysis of Holomorphic & Meromorphic functions:
+            '1': lambda z: self.product_of_sin(z, 4.577, m=0.086),
+            '2': lambda z: self.normalized_product_of_sin(z, 4.577, m=0.086),
+
+            '3': lambda z: self.product_of_product_representation_for_sin(z, self.m),
+            '4': lambda z: self.normalized_infinite_product_of_product_representation_for_sin(z, self.m),
+            '5': lambda z: self.natural_logarithm_of_infinite_product_of_product_representation_for_sin(z, self.m),
+            '6': lambda z: self.gamma_of_infinite_product_of_product_representation_for_sin(z, self.m),
+
+            '7': lambda z: self.factored_form_for_product_of_product_representation_for_sin(z, self.m),
+
+            '8': lambda z: self.gamma_form_product_of_product_representation_for_sin(z, self.m),
+
+            # Todo Zeta Functions and L functions Section
+            '9': lambda z: self.infinite_product_representation_of_the_zeta_function(z, self.m),
+            '10': lambda z: self.product_of_infinite_product_representation_of_the_zeta_function(z, self.m),
+
+            # Todo User Function Utilities
+            '11': lambda z: self.Custom_Function(z, self.m),
+            '12': lambda z: self.product_factory("∏_(n=2)^z [pi*z ∏_(k=2)^z (1 - z^2 / (k^2 * n^2))]"),
+            '13': lambda z: self.product_combination(z, 0.077, m=0.136),
+
+            # Todo Basic library of functions
+            '14': lambda z: abs(mpmath.loggamma(z)),
+            '15': lambda z: 1/(1+z^2),
+            '16': lambda z: abs(z**z),
+            '17': lambda z: mpmath.gamma(z),
+        }
+
+        # Print the menu to the command prompt
+        for key in operations:
+            os.system(f'cmd /c "echo {key}: {operations[key]}"')
+
+        os.system('cmd /c "echo Enter your choice: && set /p user_input="')
+        user_input = input()
+
+        return operations[f'{user_input}']
+
+To open the command prompt instead of PyCharm terminal, replace os.system(f'cmd /c "echo {key}: {operations[key]}"') with os.system(f'echo {key}: {operations[key]}'), and replace os.system('cmd /c "echo Enter your choice: && set /p user_input="') with os.system('echo Enter your choice: && set /p user_input=').
+
+This will print the menu and prompt the user for input in the command prompt instead of PyCharm terminal.
+
+Here is the updated code:
+
+python
+Copy code
+# -----------------------------------------------------------------------------------------------------------------
+def lamda_function_library(self):
+    """
+    Args:
+        None, will eventually be user_input
+    Colorization:
+    """
+    # The function product_of_product_representation_for_sin and Custom_Function are identical however
+    # Custom_Function is multiplied by an imaginary scalar for magnification
+    # TODO fix the product_factory function, currently broken but will allow users to design their own functions
+
+    # lambda library
+    operations = {
+
+        # Library Selection for Complex Analysis of Holomorphic & Meromorphic functions:
+        '1': lambda z: self.product_of_sin(z, 4.577, m=0.086),
+        '2': lambda z: self.normalized_product_of_sin(z, 4.577, m=0.086),
+
+        '3': lambda z: self.product_of_product_representation_for_sin(z, self.m),
+        '4': lambda z: self.normalized_infinite_product_of_product_representation_for_sin(z, self.m),
+        '5': lambda z: self.natural_logarithm_of_infinite_product_of_product_representation_for_sin(z, self.m),
+        '6': lambda z: self.gamma_of_infinite_product_of_product_representation_for_sin(z, self.m),
+
+        '7': lambda z: self.factored_form_for_product_of_product_representation_for_sin(z, self.m),
+
+        '8': lambda z: self.gamma_form_product_of_product_representation_for_sin(z, self.m),
+
+        # Todo Zeta Functions and L functions Section
+        '9': lambda z: self.infinite_product_representation_of_the_zeta_function(z, self.m),
+        '10': lambda z: self.product_of_infinite_product_representation_of_the_zeta_function(z, self.m),
+
+        # Todo User Function Utilities
+        '11': lambda z: self.Custom_Function(z, self.m),
+        '12': lambda z: self.product_factory("∏_(n=2)^z [pi*z ∏_(k=2)^z (1 - z^2 / (k^2 * n^2))]"),
+        '13': lambda z: self.product_combination(z, 0.077, m=0.136),
+
+        # Todo Basic library of functions
+        '14': lambda z: abs(mpmath.loggamma(z)),
+        '15': lambda z: 1/(1+z^2),
+        '16': lambda z: abs(z**z),
+        '17': lambda z: mpmath.gamma(z),
+    }
+
+    # Print the menu to the command prompt
+    for key in operations:
+        os.system(f'echo {key}: {operations[key]}')
+
+    os.system('echo Enter your choice: && set /p user_input=')
+    user_input = input()
+
+    return operations[f'{user_input}']
+Note that this will work on Windows operating system. If you are on a different operating system, you may need to adjust the commands accordingly.
+
+
+
+
+Straw Kazoo
+i also need that to work with the if name main here its in the pycharm terminal not in a command prompt
+
+To make this code work with the if __name__ == '__main__' block and run in a Windows command prompt, you can modify the code as follows:
+
+arduino
+Copy code
+import os
+
+
+
+Straw Kazoo
+i also need that to work with the if name main here its in the pycharm terminal not in a command prompt
+if __name__ == "__main__":
+    """
+    If name main, main function for the SpecialFunctions and ComplexPlotting Classes
+    Initializes SpecialFunctions() object, and ComplexPlotting() object
+    the SpecialFunctions() object is plotted on the ComplexPlotting() object
+    with the create_2D_plot() or create_3D_plot() method
+    """
+
+    # instantiate the objects
+    special_functions_object = Special_Functions()
+    complex_plotting_object = Complex_Plotting()
+
+    # get user input for plot type
+    plot_type = input("Enter '2D' for 2D plot or '3D' for 3D plot: ")
+
+    # create complex plot from special functions object
+    if plot_type == "2D":
+        complex_plotting_object.create_2D_plot(special_functions_object)
+    elif plot_type == "3D":
+        complex_plotting_object.create_3D_plot(special_functions_object)
+
+    # keep program open and allow user to adjust settings and generate new plot
+    while True:
+        # get user input for plot settings
+        settings = input(
+            "Enter 'r' to adjust resolution, 'a' to adjust axis range, 'c' to adjust color map, or 'q' to quit: ")
+        if settings == 'r':
+            resolution = int(input("Select resolution (1-10): "))
+        elif settings == 'a':
+            axis_range = float(input("Select axis range (1-10): "))
+        elif settings == 'c':
+            color_map = input("Select color map (default or custom): ")
+        elif settings == 'q':
+            break
+
+        # update plot based on new settings
+        if plot_type == "2D":
+            complex_plotting_object.create_2D_plot(special_functions_object, color_map=color_map, resolution=resolution,
+                                                   axis_range=axis_range)
+        elif plot_type == "3D":
+            complex_plotting_object.create_3D_plot(special_functions_object, resolution=resolution,
+                                                   axis_range=axis_range)
+
+To modify the code to work with the if __name__ == '__main__' block and open a Windows command prompt, you can replace the input() function calls with the os.system() function calls and modify the code as follows:
+
+python
+Copy code
+import os
+import sys
+
+class MyClass:
+
+    def lamda_function_library(self):
+        """
+        Args:
+            None, will eventually be user_input
+        Colorization:
+        """
+        # The function product_of_product_representation_for_sin and Custom_Function are identical however
+        # Custom_Function is multiplied by an imaginary scalar for magnification
+        # TODO fix the product_factory function, currently broken but will allow users to design their own functions
+
+        # lamda library
+        operations = {
+
+            # Library Selection for Complex Analysis of Holomorphic & Meromorphic functions:
+            '1': lambda z: self.product_of_sin(z, 4.577, m=0.086),
+            '2': lambda z: self.normalized_product_of_sin(z, 4.577, m=0.086),
+
+            '3': lambda z: self.product_of_product_representation_for_sin(z, self.m),
+            '4': lambda z: self.normalized_infinite_product_of_product_representation_for_sin(z, self.m),
+            '5': lambda z: self.natural_logarithm_of_infinite_product_of_product_representation_for_sin(z, self.m),
+            '6': lambda z: self.gamma_of_infinite_product_of_product_representation_for_sin(z, self.m),
+
+            '7': lambda z: self.factored_form_for_product_of_product_representation_for_sin(z, self.m),
+
+            '8': lambda z: self.gamma_form_product_of_product_representation_for_sin(z, self.m),
+
+            # Todo Zeta Functions and L functions Section
+            '9': lambda z: self.infinite_product_representation_of_the_zeta_function(z, self.m),
+            '10': lambda z: self.product_of_infinite_product_representation_of_the_zeta_function(z, self.m),
+
+            # Todo User Function Utilities
+            '11': lambda z: self.Custom_Function(z, self.m),
+            '12': lambda z: self.product_factory("∏_(n=2)^z [pi*z ∏_(k=2)^z (1 - z^2 / (k^2 * n^2))]"),
+            '13': lambda z: self.product_combination(z, 0.077, m=0.136),
+
+            # Todo Basic library of functions
+            '14': lambda z: abs(mpmath.loggamma(z)),
+            '15': lambda z: 1/(1+z^2),
+            '16': lambda z: abs(z**z),
+            '17': lambda z: mpmath.gamma(z),
+        }
+
+        # Print the menu to the command prompt
+        for key in operations:
+            os.system(f'cmd /c "echo {key}: {operations[key]}"')
+
+        os.system('cmd /c "echo Enter your choice: && set /p user_input="')
+        user_input = input()
+
+        return operations[f'{user_input}']
+
+if __name__ == "__main__":
+    """
+    If name main, main function for the SpecialFunctions and ComplexPlotting Classes
+    Initializes SpecialFunctions() object, and ComplexPlotting() object
+    the SpecialFunctions() object is plotted on the ComplexPlotting() object
+    with the create_2D_plot() or create_3D_plot() method
+    """
+
+    # instantiate the objects
+    special_functions_object = Special_Functions()
+    complex_plotting_object = Complex_Plotting()
+
+    # get user input for plot type
+    os.system('cmd /c "echo Enter \'2D\' for 2D
+
+
+
+Straw Kazoo
+please finish:
+
+
+    # instantiate the objects
+    special_functions_object = Special_Functions()
+    complex_plotting_object = Complex_Plotting()
+
+    # get user input for plot type
+    os.system('cmd /c "echo Enter \'2D\' for 2D
+
+Here's the updated code that should open the command prompt and allow the user to input their choice for the Special Functions menu:
+
+python
+Copy code
+import os
+
+if __name__ == "__main__":
+    """
+    If name main, main function for the SpecialFunctions and ComplexPlotting Classes
+    Initializes SpecialFunctions() object, and ComplexPlotting() object
+    the SpecialFunctions() object is plotted on the ComplexPlotting() object
+    with the create_2D_plot() or create_3D_plot() method
+    """
+
+    # instantiate the objects
+    special_functions_object = Special_Functions()
+    complex_plotting_object = Complex_Plotting()
+
+    # get user input for plot type
+    plot_type = input("Enter '2D' for 2D plot or '3D' for 3D plot: ")
+
+    # create complex plot from special functions object
+    if plot_type == "2D":
+        complex_plotting_object.create_2D_plot(special_functions_object)
+    elif plot_type == "3D":
+        complex_plotting_object.create_3D_plot(special_functions_object)
+
+    # keep program open and allow user to adjust settings and generate new plot
+    while True:
+        # get user input for plot settings
+        settings = input(
+            "Enter 'r' to adjust resolution, 'a' to adjust axis range, 'c' to adjust color map, or 'q' to quit: ")
+        if settings == 'r':
+            resolution = int(input("Select resolution (1-10): "))
+        elif settings == 'a':
+            axis_range = float(input("Select axis range (1-10): "))
+        elif settings == 'c':
+            color_map = input("Select color map (default or custom): ")
+        elif settings == 'q':
+            break
+
+        # update plot based on new settings
+        if plot_type == "2D":
+            complex_plotting_object.create_2D_plot(special_functions_object, color_map=color_map, resolution=resolution,
+                                                   axis_range=axis_range)
+        elif plot_type == "3D":
+            complex_plotting_object.create_3D_plot(special_functions_object, resolution=resolution,
+                                                   axis_range=axis_range)
+
+    # Special Functions Menu
+    while True:
+        # print the menu to the command prompt
+        os.system('cmd /c "cls"')
+        print("Special Functions Menu:")
+        print("----------------------")
+        print("1: Product of sin")
+        print("2: Normalized product of sin")
+        print("3: Product of product representation for sin")
+        print("4: Normalized infinite product of product representation for sin")
+        print("5: Natural logarithm of infinite product of product representation for sin")
+        print("6: Gamma of infinite product of product representation for sin")
+        print("7: Factored form for product of product representation for sin")
+        print("8: Gamma form product of product representation for sin")
+        print("9: Infinite product representation of the zeta function")
+        print("10: Product of infinite product representation of the zeta function")
+        print("11: Custom function")
+        print("12: Product factory")
+        print("13: Product combination")
+        print("14: Absolute value of the logarithm of the gamma function")
+        print("15: Function 1/(1+z^2)")
+        print("16: Absolute value of z^z")
+        print("17: Gamma function")
+
+        # get user input for function selection
+        user_input = input("Enter your choice: ")
+
+        # call the selected function with a user-defined argument
+        selected_function = special_functions_object.lamda_function_library()[user_input]
+        argument = complex(input("Enter
+
+
+
+Straw Kazoo
+the if name main and the lambda functions are in different countries
+
+I'm not sure what you mean by "the if name main and the lambda functions are in different countries". Could you please clarify?
+
+
+
+
+Straw Kazoo
+
+if __name__ == "__main__":
+    """
+    If name main, main function for the SpecialFunctions and ComplexPlotting Classes
+    Initializes SpecialFunctions() object, and ComplexPlotting() object
+    the SpecialFunctions() object is plotted on the ComplexPlotting() object
+    with the create_2D_plot() or create_3D_plot() method
+    """
+
+    # instantiate the objects
+    special_functions_object = Special_Functions()
+    complex_plotting_object = Complex_Plotting()
+
+    # get user input for plot type
+    plot_type = input("Enter '2D' for 2D plot or '3D' for 3D plot: ")
+
+    # create complex plot from special functions object
+    if plot_type == "2D":
+        complex_plotting_object.create_2D_plot(special_functions_object)
+    elif plot_type == "3D":
+        complex_plotting_object.create_3D_plot(special_functions_object)
+
+    # keep program open and allow user to adjust settings and generate new plot
+    while True:
+        # get user input for plot settings
+        settings = input(
+            "Enter 'r' to adjust resolution, 'a' to adjust axis range, 'c' to adjust color map, or 'q' to quit: ")
+        if settings == 'r':
+            resolution = int(input("Select resolution (1-10): "))
+        elif settings == 'a':
+            axis_range = float(input("Select axis range (1-10): "))
+        elif settings == 'c':
+            color_map = input("Select color map (default or custom): ")
+        elif settings == 'q':
+            break
+
+        # update plot based on new settings
+        if plot_type == "2D":
+            complex_plotting_object.create_2D_plot(special_functions_object, color_map=color_map, resolution=resolution,
+                                                   axis_range=axis_range)
+        elif plot_type == "3D":
+            complex_plotting_object.create_3D_plot(special_functions_object, resolution=resolution,
+                                                   axis_range=axis_range)
+
+THESE ARE IN DIFFERENT FILES IN DIFFERENT CLASSES:
+
+    # -----------------------------------------------------------------------------------------------------------------
+    def lamda_function_library(self):
+        """
+        Args:
+            None, will eventually be user_input
+        Colorization:
+        """
+        # The function product_of_product_representation_for_sin and Custom_Function are identical however
+        # Custom_Function is multiplied by an imaginary scalar for magnification
+        # TODO fix the product_factory function, currently broken but will allow users to design their own functions
+
+        # lamda library
+        operations = {
+
+            # Library Selection for Complex Analysis of Holomorphic & Meromorphic functions:
+            '1': lambda z: self.product_of_sin(z, 4.577, m=0.086),
+            '2': lambda z: self.normalized_product_of_sin(z, 4.577, m=0.086),
+
+            '3': lambda z: self.product_of_product_representation_for_sin(z, self.m),
+            '4': lambda z: self.normalized_infinite_product_of_product_representation_for_sin(z, self.m),
+            '5': lambda z: self.natural_logarithm_of_infinite_product_of_product_representation_for_sin(z, self.m),
+            '6': lambda z: self.gamma_of_infinite_product_of_product_representation_for_sin(z, self.m),
+
+            '7': lambda z: self.factored_form_for_product_of_product_representation_for_sin(z, self.m),
+
+            '8': lambda z: self.gamma_form_product_of_product_representation_for_sin(z, self.m),
+
+            # Todo Zeta Functions and L functions Section
+            '9': lambda z: self.infinite_product_representation_of_the_zeta_function(z, self.m),
+            '10': lambda z: self.product_of_infinite_product_representation_of_the_zeta_function(z, self.m),
+
+            # Todo User Function Utilities
+            '11': lambda z: self.Custom_Function(z, self.m),
+            '12': lambda z: self.product_factory("∏_(n=2)^z [pi*z ∏_(k=2)^z (1 - z^2 / (k^2 * n^2))]"),
+            '13': lambda z: self.product_combination(z, 0.077, m=0.136),
+
+            # Todo Basic library of functions
+            '14': lambda z: abs(mpmath.loggamma(z)),
+            '15': lambda z: 1/(1+z^2),
+            '16': lambda z: abs(z**z),
+            '17': lambda z: mpmath.gamma(z),
+        }
+
+        # Print the menu to the command prompt
+        for key in operations:
+            os.system(f'cmd /c "echo {key}: {operations[key]}"')
+
+        os.system('cmd /c "echo Enter your choice: && set /p user_input="')
+        user_input = input()
+
+        return operations[f'{user_input}']
+
+The lambda_function_library method appears to be a method of a class, and is defined separately from the if __name__ == "__main__" block. It contains a dictionary of lambda functions, each of which represents a different mathematical function. The lamda_function_library method is likely used to allow the user to select which mathematical function they want to plot on the complex plane using the Special_Functions() and Complex_Plotting() classes instantiated in the if __name__ == "__main__" block.
+
+
+
+
+Straw Kazoo
+please make this open in the cmd it currently opens in the pycharm terminal:
+
+if __name__ == "__main__":
+    """
+    If name main, main function for the SpecialFunctions and ComplexPlotting Classes
+    Initializes SpecialFunctions() object, and ComplexPlotting() object
+    the SpecialFunctions() object is plotted on the ComplexPlotting() object
+    with the create_2D_plot() or create_3D_plot() method
+    """
+
+    # instantiate the objects
+    special_functions_object = Special_Functions()
+    complex_plotting_object = Complex_Plotting()
+
+    # get user input for plot type
+    plot_type = input("Enter '2D' for 2D plot or '3D' for 3D plot: ")
+
+    # create complex plot from special functions object
+    if plot_type == "2D":
+        complex_plotting_object.create_2D_plot(special_functions_object)
+    elif plot_type == "3D":
+        complex_plotting_object.create_3D_plot(special_functions_object)
+
+    # keep program open and allow user to adjust settings and generate new plot
+    while True:
+        # get user input for plot settings
+        settings = input(
+            "Enter 'r' to adjust resolution, 'a' to adjust axis range, 'c' to adjust color map, or 'q' to quit: ")
+        if settings == 'r':
+            resolution = int(input("Select resolution (1-10): "))
+        elif settings == 'a':
+            axis_range = float(input("Select axis range (1-10): "))
+        elif settings == 'c':
+            color_map = input("Select color map (default or custom): ")
+        elif settings == 'q':
+            break
+
+        # update plot based on new settings
+        if plot_type == "2D":
+            complex_plotting_object.create_2D_plot(special_functions_object, color_map=color_map, resolution=resolution,
+                                                   axis_range=axis_range)
+        elif plot_type == "3D":
+            complex_plotting_object.create_3D_plot(special_functions_object, resolution=resolution,
+                                                   axis_range=axis_range)
+
+To make this open in the cmd, save the code as a Python file (e.g. my_program.py) and navigate to the directory where the file is located in the command prompt. Then you can run the program by typing python my_program.py in the command prompt. Here's the modified code:
+
+python
+Copy code
+if __name__ == "__main__":
+    """
+    If name main, main function for the SpecialFunctions and ComplexPlotting Classes
+    Initializes SpecialFunctions() object, and ComplexPlotting() object
+    the SpecialFunctions() object is plotted on the ComplexPlotting() object
+    with the create_2D_plot() or create_3D_plot() method
+    """
+
+    # instantiate the objects
+    special_functions_object = Special_Functions()
+    complex_plotting_object = Complex_Plotting()
+
+    # get user input for plot type
+    plot_type = input("Enter '2D' for 2D plot or '3D' for 3D plot: ")
+
+    # create complex plot from special functions object
+    if plot_type == "2D":
+        complex_plotting_object.create_2D_plot(special_functions_object)
+    elif plot_type == "3D":
+        complex_plotting_object.create_3D_plot(special_functions_object)
+
+    # keep program open and allow user to adjust settings and generate new plot
+    while True:
+        # get user input for plot settings
+        settings = input(
+            "Enter 'r' to adjust resolution, 'a' to adjust axis range, 'c' to adjust color map, or 'q' to quit: ")
+        if settings == 'r':
+            resolution = int(input("Select resolution (1-10): "))
+        elif settings == 'a':
+            axis_range = float(input("Select axis range (1-10): "))
+        elif settings == 'c':
+            color_map = input("Select color map (default or custom): ")
+        elif settings == 'q':
+            break
+
+        # update plot based on new settings
+        if plot_type == "2D":
+            complex_plotting_object.create_2D_plot(special_functions_object, color_map=color_map, resolution=resolution,
+                                                   axis_range=axis_range)
+        elif plot_type == "3D":
+            complex_plotting_object.create_3D_plot(special_functions_object, resolution=resolution,
+                                                   axis_range=axis_range)
+Note that the modified code is the same as the original code, with no changes made to the code itself. The difference is in how the code is executed.
+
+
+
+
+Straw Kazoo
+place them with this cmd:
+
+
+        # Print the menu to the command prompt
+        for key in operations:
+            os.system(f'cmd /c "echo {key}: {operations[key]}"')
+
+        os.system('cmd /c "echo Enter your choice: && set /p user_input="')
+        user_input = input()
+
+        return operations[f'{user_input}']
+
+Here's the updated code:
+
+python
+Copy code
+import os
+
+def display_menu_and_get_choice():
+    """
+    Displays the menu of operations to the user and returns the selected operation
+    """
+    operations = {
+        "1": "Operation 1",
+        "2": "Operation 2",
+        "3": "Operation 3",
+        "4": "Exit"
+    }
+
+    # Print the menu to the command prompt
+    for key in operations:
+        os.system(f'cmd /c "echo {key}: {operations[key]}"')
+
+    os.system('cmd /c "echo Enter your choice: && set /p user_input="')
+    user_input = input()
+
+    return operations[f'{user_input}']
+
+
+
+Straw Kazoo
+make it so that the dictionary is printed in the cmd not the pycharm commadn terminal and us it to loop through the keys the options and let them have a user input to say the resolution colormap and axis range in the command prompt
+
+Sure, here's the updated code that prints the dictionary in the command prompt and prompts the user to select an option, and then allows the user to enter values for resolution, colormap, and axis range.
+
+python
+Copy code
+import os
+from typing import Dict
+
+if __name__ == "__main__":
+    """
+    If name main, main function for the SpecialFunctions and ComplexPlotting Classes
+    Initializes SpecialFunctions() object, and ComplexPlotting() object
+    the SpecialFunctions() object is plotted on the ComplexPlotting() object
+    with the create_2D_plot() or create_3D_plot() method
+    """
+
+    # define operations dictionary
+    operations: Dict[str, str] = {
+        "2D": "Create 2D plot",
+        "3D": "Create 3D plot",
+        "q": "Quit"
+    }
+
+    # instantiate the objects
+    special_functions_object = Special_Functions()
+    complex_plotting_object = Complex_Plotting()
+
+    while True:
+        # Print the menu to the command prompt
+        for key in operations:
+            os.system(f'cmd /c "echo {key}: {operations[key]}"')
+
+        # Prompt the user to select an option
+        os.system('cmd /c "echo Enter your choice: && set /p user_input="')
+        user_input = input()
+
+        if user_input == "q":
+            # quit the program
+            break
+        elif user_input == "2D":
+            # create 2D complex plot from special functions object
+            complex_plotting_object.create_2D_plot(special_functions_object)
+        elif user_input == "3D":
+            # create 3D complex plot from special functions object
+            complex_plotting_object.create_3D_plot(special_functions_object)
+
+        # Prompt the user to enter values for resolution, colormap, and axis range
+        resolution = int(input("Enter resolution (1-10): "))
+        colormap = input("Enter colormap (default or custom): ")
+        axis_range = float(input("Enter axis range (1-10): "))
+
+        # update plot based on new settings
+        if user_input == "2D":
+            complex_plotting_object.create_2D_plot(special_functions_object, colormap=colormap, resolution=resolution, axis_range=axis_range)
+        elif user_input == "3D":
+            complex_plotting_object.create_3D_plot(special_functions_object, resolution=resolution, axis_range=axis_range)
+Note that you may need to adjust the formatting of the os.system calls based on your operating system.
+
+
+
+
+Straw Kazoo
+i want it to use os.system:
+
+        for key in operations:
+            os.system(f'cmd /c "echo {key}: {operations[key]}"')
+
+        os.system('cmd /c "echo Enter your choice: && set /p user_input="')
+        user_input = input()
+
+Here is the updated code that prints the dictionary in the command prompt using os.system() and allows the user to input the resolution, color map, and axis range through the command prompt:
+
+python
+Copy code
+if __name__ == "__main__":
+    """
+    If name main, main function for the SpecialFunctions and ComplexPlotting Classes
+    Initializes SpecialFunctions() object, and ComplexPlotting() object
+    the SpecialFunctions() object is plotted on the ComplexPlotting() object
+    with the create_2D_plot() or create_3D_plot() method
+    """
+
+    # instantiate the objects
+    special_functions_object = Special_Functions()
+    complex_plotting_object = Complex_Plotting()
+
+    # create dictionary of operations
+    operations = {
+        '1': 'Adjust resolution',
+        '2': 'Adjust axis range',
+        '3': 'Adjust color map',
+        '4': 'Quit'
+    }
+
+    # get user input for plot type
+    plot_type = input("Enter '2D' for 2D plot or '3D' for 3D plot: ")
+
+    # create complex plot from special functions object
+    if plot_type == "2D":
+        complex_plotting_object.create_2D_plot(special_functions_object)
+    elif plot_type == "3D":
+        complex_plotting_object.create_3D_plot(special_functions_object)
+
+    # keep program open and allow user to adjust settings and generate new plot
+    while True:
+        # print the menu to the command prompt
+        for key in operations:
+            os.system(f'cmd /c "echo {key}: {operations[key]}"')
+
+        # get user input for operation
+        os.system('cmd /c "echo Enter your choice: && set /p user_input="')
+        user_input = input()
+
+        if user_input == '1':
+            resolution = int(input("Select resolution (1-10): "))
+            # update plot based on new resolution setting
+            if plot_type == "2D":
+                complex_plotting_object.create_2D_plot(special_functions_object, resolution=resolution)
+            elif plot_type == "3D":
+                complex_plotting_object.create_3D_plot(special_functions_object, resolution=resolution)
+
+        elif user_input == '2':
+            axis_range = float(input("Select axis range (1-10): "))
+            # update plot based on new axis range setting
+            if plot_type == "2D":
+                complex_plotting_object.create_2D_plot(special_functions_object, axis_range=axis_range)
+            elif plot_type == "3D":
+                complex_plotting_object.create_3D_plot(special_functions_object, axis_range=axis_range)
+
+        elif user_input == '3':
+            color_map = input("Select color map (default or custom): ")
+            # update plot based on new color map setting
+            if plot_type == "2D":
+                complex_plotting_object.create_2D_plot(special_functions_object, color_map=color_map)
+            elif plot_type == "3D":
+                complex_plotting_object.create_3D_plot(special_functions_object, color_map=color_map)
+
+        elif user_input == '4':
+            break
+
+
+
+Straw Kazoo
+please finish:
+
+       elif user_input == '3':
+            color_map = input("Select color map (default or custom): ")
+            # update plot based on new color map setting
+            if plot_type == "2D":
+                complex_plotting_object.create_2D_plot(special_functions_object, color_map=color_map)
+            elif plot_type == "3D":
+                complex_plotting_object.create_3D_plot(special_functions_object, color_map=color_map)
+
+        elif user_input == '4':
+            break
+
+Sure, here is the complete code:
+
+python
+Copy code
+import os
+
+if __name__ == "__main__":
+    """
+    If name main, main function for the SpecialFunctions and ComplexPlotting Classes
+    Initializes SpecialFunctions() object, and ComplexPlotting() object
+    the SpecialFunctions() object is plotted on the ComplexPlotting() object
+    with the create_2D_plot() or create_3D_plot() method
+    """
+
+    # instantiate the objects
+    special_functions_object = Special_Functions()
+    complex_plotting_object = Complex_Plotting()
+
+    # get user input for plot type
+    plot_type = input("Enter '2D' for 2D plot or '3D' for 3D plot: ")
+
+    # create complex plot from special functions object
+    if plot_type == "2D":
+        complex_plotting_object.create_2D_plot(special_functions_object)
+    elif plot_type == "3D":
+        complex_plotting_object.create_3D_plot(special_functions_object)
+
+    # create dictionary for menu options
+    operations = {'1': 'Adjust resolution', '2': 'Adjust axis range', '3': 'Adjust color map', '4': 'Quit'}
+
+    while True:
+        # Print the menu to the command prompt
+        for key in operations:
+            os.system(f'cmd /c "echo {key}: {operations[key]}"')
+
+        os.system('cmd /c "echo Enter your choice: && set /p user_input="')
+        user_input = input()
+
+        if user_input == '1':
+            resolution = int(input("Select resolution (1-10): "))
+            # update plot based on new resolution setting
+            if plot_type == "2D":
+                complex_plotting_object.create_2D_plot(special_functions_object, resolution=resolution)
+            elif plot_type == "3D":
+                complex_plotting_object.create_3D_plot(special_functions_object, resolution=resolution)
+
+        elif user_input == '2':
+            axis_range = float(input("Select axis range (1-10): "))
+            # update plot based on new axis range setting
+            if plot_type == "2D":
+                complex_plotting_object.create_2D_plot(special_functions_object, axis_range=axis_range)
+            elif plot_type == "3D":
+                complex_plotting_object.create_3D_plot(special_functions_object, axis_range=axis_range)
+
+        elif user_input == '3':
+            color_map = input("Select color map (default or custom): ")
+            # update plot based on new color map setting
+            if plot_type == "2D":
+                complex_plotting_object.create_2D_plot(special_functions_object, color_map=color_map)
+            elif plot_type == "3D":
+                complex_plotting_object.create_3D_plot(special_functions_object, color_map=color_map)
+
+        elif user_input == '4':
+            break
+In this code, the os.system() function is used to print the menu and take user input from the command prompt. The menu options are stored in a dictionary called operations, which is printed using a for loop that iterates through the keys of the dictionary. The os.system() function is used to print the menu options to the command prompt.
+
+Once the user enters their choice, the corresponding action is taken. If the user selects option 1, they are prompted to select a resolution and the plot is updated based on the new resolution setting. If the user selects option 2, they are prompted to select an axis range and the plot is updated based on the new axis range setting. If the user selects option 3, they are prompted to select a color map and the plot is updated
+
+
+
+
+Straw Kazoo
+here is my current code, please tell me how to improve:
+
+"""
+Complex Plotting
+    The Complex Plotting class is a set of tools for plotting in the complex plane utilizing matplotlib.
+    The Tool is capable of graphing polynomial functions, trig functions, infinite summations, and infinite
+    products in the complex plane. These products are related to the distribution of prime numbers and the Riemann
+    Hypothesis. The methods in call methods from the file Special_Functions.py for infinite product formulas.
+4/9/2023
+@LeoBorcherding
+"""
+
+from matplotlib.colors import ListedColormap
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import ticker
+from Special_Functions import Special_Functions
+from matplotlib.colors import LightSource
+from matplotlib.colors import PowerNorm
+#TODO import cmd for user input functions
+
+plt.style.use('dark_background')
+
+# -----------------------------------------------------------------------------------------------------------------
+class Complex_Plotting :
+    """
+    A Class for plotting complex functions. This tool provides the plotting functions for 2D and 3D graphics for
+    infinite series such as the riemann zeta function, the infinite product of the product representation for
+    sin(pi*z/n) as well as any other function that can be formulated in the complex plane.
+    """
+    # -----------------------------------------------------------------------------------------------------------------
+    def __init__(self):
+        """
+        Initialization the Special_Functions Object
+        """
+
+        #TODO Implement Default Values & preselected data ranges for "nice" areas. (pretty areas?)
+
+        self.n = 150
+        self.beta = 150
+        #TODO Add variable for 2D vs 3D plot, take the plotting code from Infinite_Prod_of_Prod_Representation_Of_Sin_Complex_Plot.py
+        # and incorporate that code into Product_Fractal.py by adding a second create_plot function where it decides
+        # which plotting function to use based on the selector
+
+        # TODO Values of n selector
+        #self.n = 100
+        self.n = 150
+        #self.n = 200
+        #self.n = 250
+        #self.n = 330
+        #self.n = 500
+        #self.n = 750
+
+        # TODO Values for x & y selector
+        # self.x_min = 2
+        # self.x_max = 18
+        # self.y_max = 0.02
+        # self.y_min = -0.02
+
+        self.x_min = 2
+        self.x_max = 11
+        self.y_max = 0.5
+        self.y_min = -0.5
+
+        # self.x_min = 17.5
+        # self.x_max = 20.5
+        # self.y_max = 0.01
+        # self.y_min = -0.01
+
+        # self.x_min = 15
+        # self.x_max = 21
+        # self.y_max = 0.1366
+        # self.y_min = -0.1366
+
+        # self.x_min = 35
+        # self.x_max = 49
+        # self.y_max = 0.1366
+        # self.y_min = -0.1366
+
+        return
+
+    # -----------------------------------------------------------------------------------------------------------------
+    def colorization(self, color_selection, Z):
+        """
+        Args:
+            color_selection (str): the name of the color map to use
+            Z (numpy.ndarray): the array to apply colorization to
+        Returns:
+        """
+        # TODO create better Selector for colorization Methods and Ultimately implement a color slider
+        if color_selection == "viridis":
+            # Base viridis color map
+            cmap = plt.get_cmap('viridis')
+        elif color_selection == "plasma":
+            # Base plasma color map
+            cmap = plt.get_cmap('plasma')
+        elif color_selection == "magma":
+            # Base magma color map
+            cmap = plt.get_cmap('magma')
+        elif color_selection == "colors1":
+            # Default Colorization, it is based upon the angle change around the point of f(z)
+            colors = np.zeros((self.n, self.n, 3))
+            colors[:, :, 0] = np.sin(2 * np.pi * np.real(Z) / 8.0)
+            colors[:, :, 1] = np.sin(2 * np.pi * np.real(Z) / 9.0)
+            colors[:, :, 2] = np.sin(2 * np.pi * np.real(Z) / 10.0)
+            return colors
+        elif color_selection == "colors2":
+            # Alternate Colorization, it is based upon the angle change around the point of f(z)
+            colors = np.zeros((self.n, self.n, 3))
+            colors[:, :, 0] = np.sin(2 * np.pi * np.real(Z) / 12)
+            colors[:, :, 1] = np.sin(2 * np.pi * np.real(Z) / 14)
+            colors[:, :, 2] = np.sin(2 * np.pi * np.real(Z) / 16)
+            return colors
+        elif color_selection == "colors3":
+            # Attempt at mandelbrot level detail with color gradient selector
+            colors = np.zeros((self.n, self.n, 3))
+            for i in range(self.n):
+                for j in range(self.n):
+                    colors[i, j, :] = [(i * j) % 256 / 255, (i + j) % 256 / 255, (i * j + i + j) % 256 / 255]
+            return colors
+        else:
+            # apply color selection to the grid map
+            cmap = ListedColormap(color_selection)
+
+        # store the colorized grid map and return
+        colors = cmap(Z / np.max(Z))
+
+        # TODO Implement On off for lightshading and improve its colorization
+        # # Apply shading to the colorized image
+        # light = LightSource(azdeg=315, altdeg=10)
+        # shaded_colors = light.shade(colors, cmap=plt.cm.hot, vert_exag=1.0,
+        #                             norm=PowerNorm(0.3), blend_mode='hsv')
+        return colors
+
+    # -----------------------------------------------------------------------------------------------------------------
+    def create_plot_2D(self):
+        """
+        Args:
+            None
+        Returns:
+            Matlab plot
+        """
+        #Initialize plot axis and grid point mesh
+        X = np.linspace(self.x_min, self.x_max, self.n)
+        Y = np.linspace(self.y_min, self.y_max, self.n)
+        X, Y = np.meshgrid(X, Y)
+
+        # changed dtype to float
+        Z = np.zeros_like(X, dtype=np.float64)
+
+        # calculate special functions object f(z)
+        f = special_functions_object.calculate()
+
+        # for loop which plots the point of the selected function f(z)
+        for i in range(self.n):
+            for j in range(self.n):
+                z = complex(X[i, j], Y[i, j])
+                Z[i, j] = abs(f(z))
+
+        # TODO Implement nice selector for colorization methods
+        shaded_colors = self.colorization("colors1", Z)
+        # colors = self.colorization("colors2", Z)
+        # colors = self.colorization("colors3", Z)
+
+        # TODO Other coloring algorithms
+        # colors = self.colorization("viridis", Z)
+        # colors = self.colorization("plasma", Z)
+        # colors = self.colorization("magma", Z)
+
+        fig, ax1 = plt.subplots(figsize=(8, 8))
+
+        # TODO IMPLEMENT 2nd Subplot where 2D fractal is on 1 side, and 3D Fractal is on the other, have this be
+        #  optional through user input
+
+        #TODO Selector for OG colorization vs light source ==============================
+        #ax1.imshow(colors, extent=(self.x_min, self.x_max, self.y_min, self.y_max), origin='lower', aspect='auto')
+        # ax1.imshow(np.log(Z), extent=(x_min, x_max, y_min, y_max), origin='lower')
+
+        # Plot the shaded image
+        ax1.imshow(shaded_colors, extent=(self.x_min, self.x_max, self.y_min, self.y_max), origin='lower',
+                   aspect='auto')
+        #TODO ===========================================================================
+
+        # Add Title To Plot
+        ax1.set_title('colorization 1')
+
+        # Set tick locators and formatters for the x and y axes
+        ax1.xaxis.set_major_locator(ticker.MultipleLocator(1))  # show tick marks every 2 units
+        ax1.xaxis.set_major_formatter(ticker.FormatStrFormatter('%d'))  # format tick labels as integers
+        # ax1.yaxis.set_major_locator(ticker.MultipleLocator(2))  # show tick marks every 2 units
+        # ax1.yaxis.set_major_formatter(ticker.FormatStrFormatter('%d'))  # format tick labels as integers
+
+        plt.tight_layout()
+        plt.show()
+
+        return
+
+    # -----------------------------------------------------------------------------------------------------------------
+    def create_plot_3D(self, m):
+        """
+        Plotting function.
+        The functions for f are commented out for selection.
+        Args:
+            m - index value used for function when updating and creating plot
+        Returns:
+            NA
+        """
+
+        # calculate special functions object f(z)
+        f = special_functions_object.calculate()
+
+        #Real, Imaginary Exis, and resolution n
+        R = 0.0901
+        #R = 0.175
+        X = np.arange(1, 10, R)
+        Y = np.arange(-4, 4, R)
+
+        X, Y = np.meshgrid(X, Y)
+        xn, yn = X.shape
+        W = X * 0
+
+        for xk in range(xn):
+            for yk in range(yn):
+                try:
+                    z = complex(X[xk, yk], Y[xk, yk])
+                    w = float(f(z))
+
+                    if w != w:
+                        raise ValueError
+                    W[xk, yk] = w
+
+                except (ValueError, TypeError, ZeroDivisionError):
+                    # can handle special values here
+                    pass
+
+        fig = go.Figure(data=[go.Surface(x=X, y=Y, z=W, colorscale='jet')])
+        fig.update_layout(title=f"Product of Sin(x) via Sin(x) product Representation with m={m:.2f}",
+                          scene=dict(xaxis_title='Real Axis',
+                                     yaxis_title='Imaginary Axis',
+                                     zaxis_title='Value'),
+                          margin=dict(l=0, r=0, b=0, t=30))
+        fig.show()
+        return
+
+# # -----------------------------------------------------------------------------------------------------------------
+if __name__ == "__main__":
+    """
+    If name main, main function for the SpecialFunctions and ComplexPlotting Classes
+    Initializes SpecialFunctions() object, and ComplexPlotting() object
+    the SpecialFunctions() object is plotted on the ComplexPlotting() object
+    with the create_2D_plot() or create_3D_plot() method
+    """
+
+    # instantiate the objects
+    special_functions_object = Special_Functions()
+    complex_plotting_object = Complex_Plotting()
+
+    # get user input for plot type
+    plot_type = input("Enter '2D' for 2D plot or '3D' for 3D plot: ")
+
+    # create complex plot from special functions object
+    if plot_type == "2D":
+        complex_plotting_object.create_2D_plot(special_functions_object)
+    elif plot_type == "3D":
+        complex_plotting_object.create_3D_plot(special_functions_object)
+
+    # create dictionary for menu options
+    operations = {'1': 'Adjust resolution', '2': 'Adjust axis range', '3': 'Adjust color map', '4': 'Quit'}
+
+    while True:
+        # Print the menu to the command prompt
+        for key in operations:
+            os.system(f'cmd /c "echo {key}: {operations[key]}"')
+
+        os.system('cmd /c "echo Enter your choice: && set /p user_input="')
+        user_input = input()
+
+        if user_input == '1':
+            resolution = int(input("Select resolution (1-10): "))
+            # update plot based on new resolution setting
+            if plot_type == "2D":
+                complex_plotting_object.create_2D_plot(special_functions_object, resolution=resolution)
+            elif plot_type == "3D":
+                complex_plotting_object.create_3D_plot(special_functions_object, resolution=resolution)
+
+        elif user_input == '2':
+            axis_range = float(input("Select axis range (1-10): "))
+            # update plot based on new axis range setting
+            if plot_type == "2D":
+                complex_plotting_object.create_2D_plot(special_functions_object, axis_range=axis_range)
+            elif plot_type == "3D":
+                complex_plotting_object.create_3D_plot(special_functions_object, axis_range=axis_range)
+
+        elif user_input == '3':
+            color_map = input("Select color map (default or custom): ")
+            # update plot based on new color map setting
+            if plot_type == "2D":
+                complex_plotting_object.create_2D_plot(special_functions_object, color_map=color_map)
+            elif plot_type == "3D":
+                complex_plotting_object.create_3D_plot(special_functions_object, color_map=color_map)
+
+        elif user_input == '4':
+            break
+
+Your code seems to be a work in progress, and there are several TODO comments in the code. It is difficult to determine what exactly needs to be improved without knowing what the intended functionality is, but here are some suggestions:
+
+Implement the TODO items - You have several TODO comments in your code, which suggest that there are some features you still need to implement. Try to finish those before moving on.
+
+Refactor code - Refactor the code so that it is easier to read and maintain. For instance, you could break down some of the long lines of code into smaller ones or group related functionality into separate functions.
+
+Add more comments - Some of your functions could benefit from more comments that explain what the code is doing. It is also a good practice to add docstrings to your classes and methods.
+
+Use descriptive variable names - Some of your variable names, like "n" and "beta," are not very descriptive. Consider using more descriptive names that make it easier for others to understand what the code does.
+
+Use argparse for command-line input - You mentioned that you would like to implement command-line input. Consider using the argparse module to parse command-line arguments. It will make it easier for users to provide input and will also make the code more maintainable.
+
+Use virtual environments - It is a good practice to use virtual environments when working with Python. It allows you to create a separate environment with its own set of dependencies, which makes it easier to manage different projects and their dependencies.
+
+Add unit tests - Consider adding unit tests to your code to ensure that it works as intended. This will help you catch bugs early and make it easier to maintain the code in the future.
+
+
+
+
+Straw Kazoo
+i want all of this cmd stuff to be in one promtp:
+# # -----------------------------------------------------------------------------------------------------------------
+if __name__ == "__main__":
+    """
+    If name main, main function for the SpecialFunctions and ComplexPlotting Classes
+    Initializes SpecialFunctions() object, and ComplexPlotting() object
+    the SpecialFunctions() object is plotted on the ComplexPlotting() object
+    with the create_2D_plot() or create_3D_plot() method
+    """
+
+    # instantiate the objects
+    special_functions_object = Special_Functions()
+    complex_plotting_object = Complex_Plotting()
+
+    # get user input for plot type
+    plot_type = os.system("cmd /c Enter '2D' for 2D plot or '3D' for 3D plot: ")
+
+    # create complex plot from special functions object
+    if plot_type == "2D":
+        complex_plotting_object.create_plot_2D()
+    elif plot_type == "3D":
+        complex_plotting_object.create_plot_3D(special_functions_object)
+
+    # create dictionary for menu options
+    operations = {'1': 'Adjust resolution', '2': 'Adjust axis range', '3': 'Adjust color map', '4': 'Quit'}
+
+    while True:
+        # Print the menu to the command prompt
+        for key in operations:
+            os.system(f'cmd /c "echo {key}: {operations[key]}"')
+
+        os.system('cmd /c "echo Enter your choice: && set /p user_input="')
+        user_input = input()
+
+        if user_input == '1':
+            resolution = int(input("Select resolution (1-10): "))
+            # update plot based on new resolution setting
+            if plot_type == "2D":
+                complex_plotting_object.create_plot_2D()
+                #complex_plotting_object.create_plot_2D(special_functions_object, resolution=resolution)
+            elif plot_type == "3D":
+                complex_plotting_object.create_plot_3D()
+                #complex_plotting_object.create_plot_3D(special_functions_object, resolution=resolution)
+
+        elif user_input == '2':
+            axis_range = float(input("Select axis range (1-10): "))
+            # update plot based on new axis range setting
+            if plot_type == "2D":
+                complex_plotting_object.create_plot_2D()
+                #complex_plotting_object.create_plot_2D(special_functions_object, axis_range=axis_range)
+            elif plot_type == "3D":
+                complex_plotting_object.create_plot_3D()
+                #complex_plotting_object.create_plot_3D(special_functions_object, axis_range=axis_range)
+
+        elif user_input == '3':
+            color_map = input("Select color map (default or custom): ")
+            # update plot based on new color map setting
+            if plot_type == "2D":
+                complex_plotting_object.create_plot_2D()
+                #complex_plotting_object.create_plot_2D(special_functions_object, color_map=color_map)
+            elif plot_type == "3D":
+                complex_plotting_object.create_plot_3D()
+                #complex_plotting_object.create_plot_3D(special_functions_object, color_map=color_map)
+
+        elif user_input == '4':
+            break
+
+Sure, here's the code with everything in one prompt:
+
+python
+Copy code
+if __name__ == "__main__":
+    """
+    If name main, main function for the SpecialFunctions and ComplexPlotting Classes
+    Initializes SpecialFunctions() object, and ComplexPlotting() object
+    the SpecialFunctions() object is plotted on the ComplexPlotting() object
+    with the create_2D_plot() or create_3D_plot() method
+    """
+
+    # instantiate the objects
+    special_functions_object = Special_Functions()
+    complex_plotting_object = Complex_Plotting()
+
+    # get user input for plot type
+    while True:
+        plot_type = input("Enter '2D' for 2D plot or '3D' for 3D plot: ")
+        if plot_type in ['2D', '3D']:
+            break
+        else:
+            print("Invalid input. Please try again.")
+
+    # create complex plot from special functions object
+    if plot_type == "2D":
+        complex_plotting_object.create_plot_2D()
+
+
+Straw Kazoo
+no i want you to use os.system
+
+Sure, here is the code using os.system for all the prompts:
+
+python
+Copy code
+import os
+from special_functions import Special_Functions
+from complex_plotting import Complex_Plotting
+
+if __name__ == "__main__":
+    """
+    If name main, main function for the SpecialFunctions and ComplexPlotting Classes
+    Initializes SpecialFunctions() object, and ComplexPlotting() object
+    the SpecialFunctions() object is plotted on the ComplexPlotting() object
+    with the create_2D_plot() or create_3D_plot() method
+    """
+
+    # instantiate the objects
+    special_functions_object = Special_Functions()
+    complex_plotting_object = Complex_Plotting()
+
+    # get user input for plot type
+    os.system('cmd /c "Enter \'2D\' for 2D plot or \'3D\' for 3D plot: "')
+    plot_type = input()
+
+    # create complex plot from special functions object
+    if plot_type == "2D":
+        complex_plotting_object.create_plot_2D()
+    elif plot_type == "3D":
+        complex_plotting_object.create_plot_3D(special_functions_object)
+
+    # create dictionary for menu options
+    operations = {'1': 'Adjust resolution', '2': 'Adjust axis range', '3': 'Adjust color map', '4': 'Quit'}
+
+    while True:
+        # Print the menu to the command prompt
+        for key in operations:
+            os.system(f'cmd /c "echo {key}: {operations[key]}"')
+
+        os.system('cmd /c "echo Enter your choice: && set /p user_input="')
+        user_input = input()
+
+        if user_input == '1':
+            os.system('cmd /c "Select resolution (1-10): "')
+            resolution = input()
+            # update plot based on new resolution setting
+            if plot_type == "2D":
+                complex_plotting_object.create_plot_2D()
+                #complex_plotting_object.create_plot_2D(special_functions_object, resolution=resolution)
+            elif plot_type == "3D":
+                complex_plotting_object.create_plot_3D()
+                #complex_plotting_object.create_plot_3D(special_functions_object, resolution=resolution)
+
+        elif user_input == '2':
+            os.system('cmd /c "Select axis range (1-10): "')
+            axis_range = input()
+            # update plot based on new axis range setting
+            if plot_type == "2D":
+                complex_plotting_object.create_plot_2D()
+                #complex_plotting_object.create_plot_2D(special_functions_object, axis_range=axis_range)
+            elif plot_type == "3D":
+                complex_plotting_object.create_plot_3D()
+                #complex_plotting_object.create_plot_3D(special_functions_object, axis_range=axis_range)
+
+        elif user_input == '3':
+            os.system('cmd /c "Select color map (default or custom): "')
+            color_map = input()
+            # update plot based on new color map setting
+            if plot_type == "2D":
+                complex_plotting_object.create_plot_2D()
+                #complex_plotting_object.create_plot_2D(special_functions_object, color_map=color_map)
+            elif plot_type == "3D":
+                complex_plotting_object.create_plot_3D()
+                #complex_plotting_object.create_plot_3D(special_functions_object, color_map=color_map)
+
+        elif user_input == '4':
+            break
+Note that for plot_type input, we use the input() function instead of os.system() because we need to capture the user input, which `os
+
+Straw Kazoo
+that gave this error please send the fixed code in a code box:
+
+C:\Users\Leo\AppData\Local\Microsoft\WindowsApps\python3.8.exe C:/Users/Leo/Desktop/Riemann_Zeta/gitprime/Complex_Plotting.py
+'Enter' is not recognized as an internal or external command,
+operable program or batch file.
+Traceback (most recent call last):
+  File "C:/Users/Leo/Desktop/Riemann_Zeta/gitprime/Complex_Plotting.py", line 259, in <module>
+    plot_type = input()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.8_3.8.2800.0_x64__qbz5n2kfra8p0\lib\codecs.py", line 319, in decode
+    def decode(self, input, final=False):
+KeyboardInterrupt
+
+Process finished with exit code -1073741510 (0xC000013A: interrupted by Ctrl+C)
+
+Here is the updated code using os.system() for user input:
+
+python
+Copy code
+import os
+
+if __name__ == "__main__":
+    """
+    If name main, main function for the SpecialFunctions and ComplexPlotting Classes
+    Initializes SpecialFunctions() object, and ComplexPlotting() object
+    the SpecialFunctions() object is plotted on the ComplexPlotting() object
+    with the create_2D_plot() or create_3D_plot() method
+    """
+
+    # instantiate the objects
+    special_functions_object = Special_Functions()
+    complex_plotting_object = Complex_Plotting()
+
+    # get user input for plot type
+    os.system("cmd /c Enter '2D' for 2D plot or '3D' for 3D plot: ")
+    plot_type = input()
+
+    # create complex plot from special functions object
+    if plot_type == "2D":
+        complex_plotting_object.create_plot_2D()
+    elif plot_type == "3D":
+        complex_plotting_object.create_plot_3D(special_functions_object)
+
+    # create dictionary for menu options
+    operations = {'1': 'Adjust resolution', '2': 'Adjust axis range', '3': 'Adjust color map', '4': 'Quit'}
+
+    while True:
+        # Print the menu to the command prompt
+        for key in operations:
+            os.system(f'cmd /c "echo {key}: {operations[key]}"')
+
+        os.system('cmd /c "echo Enter your choice: && set /p user_input="')
+        user_input = input()
+
+        if user_input == '1':
+            resolution = int(input("Select resolution (1-10): "))
+            # update plot based on new resolution setting
+            if plot_type == "2D":
+                complex_plotting_object.create_plot_2D()
+                #complex_plotting_object.create_plot_2D(special_functions_object, resolution=resolution)
+            elif plot_type == "3D":
+                complex_plotting_object.create_plot_3D()
+                #complex_plotting_object.create_plot_3D(special_functions_object, resolution=resolution)
+
+        elif user_input == '2':
+            axis_range = float(input("Select axis range (1-10): "))
+            # update plot based on new axis range setting
+            if plot_type == "2D":
+                complex_plotting_object.create_plot_2D()
+                #complex_plotting_object.create_plot_2D(special_functions_object, axis_range=axis_range)
+            elif plot_type == "3D":
+                complex_plotting_object.create_plot_3D()
+                #complex_plotting_object.create_plot_3D(special_functions_object, axis_range=axis_range)
+
+        elif user_input == '3':
+            color_map = input("Select color map (default or custom): ")
+            # update plot based on new color map setting
+            if plot_type == "2D":
+                complex_plotting_object.create_plot_2D()
+                #complex_plotting_object.create_plot_2D(special_functions_object, color_map=color_map)
+            elif plot_type == "3D":
+                complex_plotting_object.create_plot_3D()
+                #complex_plotting_object.create_plot_3D(special_functions_object, color_map=color_map)
+
+        elif user_input == '4':
+            break
+Note: It's important to provide a string as an argument to the os.system() function.
