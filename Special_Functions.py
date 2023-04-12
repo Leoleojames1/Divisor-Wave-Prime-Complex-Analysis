@@ -32,7 +32,7 @@ class Special_Functions :
         Initialization the Special_Functions Object, defines self arg m = desired magnification exponent
         """
 
-        normalized = True
+        normalized = False
 
         # if user selected 2D plot, graph the plot with the given values
         if plot_type == "2D":

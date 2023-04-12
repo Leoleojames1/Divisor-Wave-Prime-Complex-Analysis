@@ -59,7 +59,7 @@ class Complex_Plotting :
             # Default Values, Copy these if you are going to change them
             self.resolution_3D = 0.0899
             self.x_min_3D = 1
-            self.x_max_3D = 32
+            self.x_max_3D = 20
             self.y_min_3D = -3
             self.y_max_3D = 3
 
@@ -253,14 +253,14 @@ class Complex_Plotting :
             W = W
             #TODO IMPLEMENT COLOR MAP SELECTION
             #TODO IMPLEMENT MANDELBROT 3D Fractal Mapping
-            ax.plot_surface(X, Y, W, rstride=1, cstride=1, cmap=cm.plasma)
+            ax.plot_surface(X, Y, W, rstride=1, cstride=1, cmap=cm.jet)
             # ax.plot_wireframe(X, Y, W, rstride=5, cstride=5)
 
         else:
             # Update the existing plot
             W = W
             ax.clear()
-            ax.plot_surface(X, Y, W, rstride=1, cstride=1, cmap=cm.plasma)
+            ax.plot_surface(X, Y, W, rstride=1, cstride=1, cmap=cm.jet)
             # ax.plot_wireframe(X, Y, W, rstride=5, cstride=5)
 
         ax.set_xlabel('Real Axis')
