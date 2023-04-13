@@ -37,21 +37,30 @@ Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n) in th
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
 
-Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n) in the 3-D Complex Plane:
+Plot Of the Infinite Product of Sin(pi*x/n) in the 3-D Complex Plane:
 
 <img
   src="graphs/3D_Complex_Graphs/product of product representation of sin/non_normalized_4.png"
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
-Plot Of the Infinite Product of the Product Representation for Normalized Sin(pi*x/n) in the 3-D Complex Plane:
+  
+Plot Of the Normalized Infinite Product of the Product Representation for Sin(pi*x/n) in the 3-D Complex Plane:
 
 <img
   src="graphs/3D_Complex_Graphs/product of product representation of sin/ComplexPlot_prodprodforsin_15.png"
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
-  
+
+Plot Of the Normalized Infinite Product of Sin(pi*x/n) in the 3-D Complex Plane:
+
+<img
+  src="graphs/3D_Complex_Graphs/product of sin/Complex_3D_normalized_product_of_sin_7.png"
+  alt="Alt text"
+  title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
+  style="display: inline-block; margin: 0 auto; max-width: 100px">
+
 # About Me
 My name is Leo Borcherding, I am a Software Developer with experience working on programs for encryption of firmware devices. I have a background in electrical
 engineering and my passion is mathematics as well as art. I am developing this software so that we can further our understanding of mathematics, physics, 
