@@ -40,7 +40,7 @@ Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n) in th
 Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n) in the 3-D Complex Plane:
 
 <img
-  src="graphs/3D_Complex_Graphs/product of product representation of sin/ComplexPlot_prodprodforsin_15.png"
+  src="graphs/3D_Complex_Graphs/product of product representation of sin/non_normalized_4.png"
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
@@ -55,6 +55,9 @@ Plot Of the Infinite Product of the Product Representation for Normalized Sin(pi
 # About Me
 My name is Leo Borcherding, I am a Software Developer with experience working on programs for encryption of firmware devices. I have a background in electrical
 engineering and my passion is mathematics as well as art. I am developing this software so that we can further our understanding of mathematics, physics, 
-and the universe. Please contact me at borchborchmail@gmail.com if you have questions or are able to do something interesting with my software or math.
+and the universe. Please contact me at borchborchmail@gmail.com if you have questions or are able to do something interesting with my software or math. You can also leave feedback on the software in this submission form:
+
+https://docs.google.com/forms/d/e/1FAIpQLSedobin-e8XqIv2AgMWhIrcNq-Pm7fsD63rhjuEiksWMAe9Og/viewform?usp=sf_link
+
 Ultimately knowledge should be free however it takes a lot of time and work to develop the mathematics, proofs and software required, I would really appreciate 
 it, if you feel inclined to donate to help me keep developing this software and writing this paper. You can find the donation link in the file called bitcoin_donation_wallet.txt
