@@ -8,6 +8,8 @@ Complex Plotting
 @LeoBorcherding
 """
 import os
+import pprint
+
 import numpy as np
 
 import matplotlib.pyplot as plt
@@ -47,19 +49,20 @@ class Complex_Plotting :
         if plot_type == "2D":
 
             # Default Values, Copy these if you are going to change them
-            self.resolution_2D = 300
-            self.x_min_2D = 0
-            self.x_max_2D = 14
-            self.y_min_2D = -0.8
-            self.y_max_2D = 0.8
+            self.resolution_2D = 400
+            self.x_min_2D = 2
+            self.x_max_2D = 16
+            self.y_min_2D = -0.1
+            self.y_max_2D = 0.1
 
         # if user selected 2D plot, graph the plot with the given values
         if plot_type == "3D":
 
             # Default Values, Copy these if you are going to change them
             self.resolution_3D = 0.0899
+            # self.resolution_3D = 0.0599
             self.x_min_3D = 1
-            self.x_max_3D = 20
+            self.x_max_3D = 18
             self.y_min_3D = -3
             self.y_max_3D = 3
 
@@ -75,6 +78,8 @@ class Complex_Plotting :
         Returns:
         """
 
+        #pprint.pprint(Z)
+
         # TODO create better Selector for colorization Methods and Ultimately implement a color slider
         if color_selection == "viridis":
             # Base viridis color map
@@ -82,24 +87,27 @@ class Complex_Plotting :
         elif color_selection == "plasma":
             # Base plasma color map
             cmap = plt.get_cmap('plasma')
+        elif color_selection == "prism":
+            # Base plasma color map
+            cmap = plt.get_cmap('prism')
         elif color_selection == "magma":
             # Base magma color map
             cmap = plt.get_cmap('magma')
-        elif color_selection == "colors1":
+        elif color_selection == "custom_colors1":
             # Default Colorization, it is based upon the angle change around the point of f(z)
             colors = np.zeros((self.resolution_2D, self.resolution_2D, 3))
             colors[:, :, 0] = np.sin(2 * np.pi * np.real(Z) / 8.0)
             colors[:, :, 1] = np.sin(2 * np.pi * np.real(Z) / 9.0)
             colors[:, :, 2] = np.sin(2 * np.pi * np.real(Z) / 10.0)
             return colors
-        elif color_selection == "colors2":
+        elif color_selection == "custom_colors1":
             # Alternate Colorization, it is based upon the angle change around the point of f(z)
             colors = np.zeros((self.resolution_2D, self.resolution_2D, 3))
             colors[:, :, 0] = np.sin(2 * np.pi * np.real(Z) / 12)
             colors[:, :, 1] = np.sin(2 * np.pi * np.real(Z) / 14)
             colors[:, :, 2] = np.sin(2 * np.pi * np.real(Z) / 16)
             return colors
-        elif color_selection == "colors3":
+        elif color_selection == "custom_colors1":
             # Attempt at mandelbrot level detail with color gradient selector
             colors = np.zeros((self.resolution_2D, self.resolution_2D, 3))
             for i in range(self.resolution_2D):
@@ -122,7 +130,7 @@ class Complex_Plotting :
         return colors
 
     # -----------------------------------------------------------------------------------------------------------------
-    def create_plot_2D(self):
+    def create_plot_2D(self, color_map_2D):
         """
         Args:
             resolution_2D:
@@ -136,11 +144,13 @@ class Complex_Plotting :
         """
         #Initialize plot axis and grid point mesh
         X = np.linspace(self.x_min_2D, self.x_max_2D, self.resolution_2D)
-        Y = np.linspace(self.y_min_2D, self.y_min_2D, self.resolution_2D)
+        Y = np.linspace(self.y_min_2D, self.y_max_2D, self.resolution_2D)
         X, Y = np.meshgrid(X, Y)
 
         # changed dtype to float
         Z = np.zeros_like(X, dtype=np.float64)
+
+
 
         # calculate special functions object f(z)
         f = special_functions_object.lamda_function_library()
@@ -156,18 +166,20 @@ class Complex_Plotting :
         # colors[:, :, 1] = np.sin(2 * np.pi * np.real(Z) / 9.0)
         # colors[:, :, 2] = np.sin(2 * np.pi * np.real(Z) / 10.0)
 
-        # if color_map_2D == "1":
-        #colors = self.colorization("colors1", Z)
-        # elif color_map_2D == "2":
-        #     colors = self.colorization("colors2", Z, resolution_2D)
-        # elif color_map_2D == "3":
-        #     colors = self.colorization("colors3", Z, resolution_2D)
-        # elif color_map_2D == "4":
-        #colors = self.colorization("viridis", Z)
-        # elif color_map_2D == "5":
-        colors = self.colorization("plasma", Z)
-        # elif color_map_2D == "6":
-        #     colors = self.colorization("magma", Z, resolution_2D)
+        if color_map_2D == "1":
+            colors = self.colorization("custom_colors1", Z)
+        elif color_map_2D == "2":
+            colors = self.colorization("custom_colors2", Z)
+        elif color_map_2D == "3":
+            colors = self.colorization("custom_colors3", Z)
+        elif color_map_2D == "4":
+            colors = self.colorization("viridis", Z)
+        elif color_map_2D == "5":
+            colors = self.colorization("colors1", Z)
+        elif color_map_2D == "6":
+            colors = self.colorization("magma", Z)
+        elif color_map_2D == "7":
+            colors = self.colorization("prism", Z)
 
         fig, ax1 = plt.subplots(figsize=(8, 8))
 
@@ -175,7 +187,7 @@ class Complex_Plotting :
         #  optional through user input
 
         #TODO Selector for OG colorization vs light source ==============================
-        ax1.imshow(colors, extent=(self.x_min_2D, self.x_max_2D, self.y_min_2D, self.y_max_2D), interpolation='bicubic', origin='lower', aspect='auto')
+        ax1.imshow(colors, extent=(self.x_min_2D, self.x_max_2D, self.y_min_2D, self.y_max_2D), origin='lower', aspect='auto')
         # ax1.imshow(np.log(Z), extent=(x_min_2D, x_max_2D, y_min_2D, y_max_2D), origin='lower')
 
         # shaded_colors = colors
@@ -253,14 +265,18 @@ class Complex_Plotting :
             W = W
             #TODO IMPLEMENT COLOR MAP SELECTION
             #TODO IMPLEMENT MANDELBROT 3D Fractal Mapping
-            ax.plot_surface(X, Y, W, rstride=1, cstride=1, cmap=cm.jet)
+            #LIST:
+            # prism - fractal color gradient
+            # viridis - simple color gradient
+            # plasma - simple color gradient
+            ax.plot_surface(X, Y, W, rstride=1, cstride=1, cmap=cm.prism)
             # ax.plot_wireframe(X, Y, W, rstride=5, cstride=5)
 
         else:
             # Update the existing plot
             W = W
             ax.clear()
-            ax.plot_surface(X, Y, W, rstride=1, cstride=1, cmap=cm.jet)
+            ax.plot_surface(X, Y, W, rstride=1, cstride=1, cmap=cm.prism)
             # ax.plot_wireframe(X, Y, W, rstride=5, cstride=5)
 
         ax.set_xlabel('Real Axis')
@@ -289,278 +305,31 @@ if __name__ == "__main__":
     special_functions_object = Special_Functions(plot_type)
     complex_plotting_object = Complex_Plotting(plot_type)
 
+    if plot_type == "2D":
+        # ------------------------------------------------------------------------------------------------------------
+        # Print Suggested Color Map Values
+        color_map_dict = \
+            {
+             "1": "custom_colors1",
+             "2": "custom_colors2_exp",
+             "3": "custom_colors3_exp",
+             "4": "viridis",
+             "5": "plasma",
+             "6": "magma",
+             "7": "prism",
+            }
+        print("Here are the color map functions, please enter the number on the left")
+        print("to choose that color for the render.")
+
+        for key in color_map_dict:
+            print(f'"{key}" : "{color_map_dict[key]}"')
+        # Get x-axis min range from user input
+        color_map_2D = input('Select color map python default or custom: \n')
+
     # if user selected 2D plot, graph the plot with the given values
     if plot_type == "2D":
-        complex_plotting_object.create_plot_2D()
+        complex_plotting_object.create_plot_2D(color_map_2D)
 
     # if user selected 2D plot, graph the plot with the given values
     if plot_type == "3D":
         complex_plotting_object.create_plot_3D()
-
-    # # 2D Complex Plot User Dimension Selections
-    # if plot_type == "2D":
-    #     # ------------------------------------------------------------------------------------------------------------
-    #     # Print Suggested Values
-    #     resolution_2D_dict = \
-    #         {
-    #          "1": 100,
-    #          "2": 150,
-    #          "3": 200,
-    #          "4": 250,
-    #          "5": 330,
-    #          "6": 500,
-    #          "7": 750,
-    #         }
-    #
-    #     print("Here are some suggested resolutions, please enter any value "
-    #           "from 1 to infinity, larger numbers will cause longer run time:")
-    #     # print suggested values from dictionary
-    #     for key in resolution_2D_dict:
-    #         print(f'"{key}" : "{resolution_2D_dict[key]}"')
-    #
-    #     # Get resolution value from user input
-    #     resolution_2D = int(input('Select resolution_2D: \n'))
-    #
-    #     # ------------------------------------------------------------------------------------------------------------
-    #     # Print Suggested x_min_2D Values
-    #     x_min_2D_dict = \
-    #         {
-    #          "1": 0,
-    #          "2": 2,
-    #          "3": 4,
-    #          "4": 10,
-    #          "5": 16,
-    #          "6": 32,
-    #          "7": 108,
-    #         }
-    #
-    #     print("Here are some suggested x_min_2D values, please enter any value "
-    #           "from 1 to infinity, larger numbers will cause longer run time:")
-    #     for key in x_min_2D_dict:
-    #         print(f'"{key}" : "{x_min_2D_dict[key]}"')
-    #     # Get x-axis min range from user input
-    #     x_min_2D = float(input('Select x_min_2D axis range value: \n'))
-    #
-    #     # ------------------------------------------------------------------------------------------------------------
-    #     # Print Suggested x_max_2D Values
-    #     x_max_2D_dict = \
-    #         {
-    #          "1": 5,
-    #          "2": 8,
-    #          "3": 14,
-    #          "4": 18,
-    #          "5": 28,
-    #          "6": 36,
-    #          "7": 48,
-    #          "8": 57,
-    #          "9": 68,
-    #          "10": 79,
-    #          "11": 84,
-    #         }
-    #     print("Here are some suggested x_max_2D values, please enter any value "
-    #           "from 1 to infinity, larger numbers will cause longer run time:")
-    #     for key in x_max_2D_dict:
-    #         print(f'"{key}" : "{x_max_2D_dict[key]}"')
-    #     # Get x-axis min range from user input
-    #     x_max_2D = float(input('Select x_max_2D axis range value: \n'))
-    #
-    #     # ------------------------------------------------------------------------------------------------------------
-    #     # Print Suggested y_min_2D Values
-    #     y_min_2D_dict = \
-    #         {
-    #          "1": -0.5,
-    #          "2": -0.1366,
-    #          "3": -0.7766,
-    #          "4": -0.01,
-    #         }
-    #     print("Here are some suggested y_min_2D values, please enter any value "
-    #           "from 1 to infinity, larger numbers will cause longer run time:")
-    #     for key in y_min_2D_dict:
-    #         print(f'"{key}" : "{y_min_2D_dict[key]}"')
-    #     # Get x-axis min range from user input
-    #     y_min_2D = float(input('Select y_min_2D axis range value: \n'))
-    #
-    #     # ------------------------------------------------------------------------------------------------------------
-    #     # Print Suggested y_max_2D Values
-    #     y_max_2D_dict = \
-    #         {
-    #          "1": 0.5,
-    #          "2": 0.1366,
-    #          "3": 0.7766,
-    #          "4": 0.01,
-    #         }
-    #     print("Here are some suggested y_max_2D values, please enter any value")
-    #     print("from 1 to infinity, larger numbers will cause longer run time")
-    #
-    #     for key in y_max_2D_dict:
-    #         print(f'"{key}" : "{y_max_2D_dict[key]}"')
-    #     # Get x-axis min range from user input
-    #     y_max_2D = float(input('Select y_max_2D axis range value: \n'))
-    #
-    #     # ------------------------------------------------------------------------------------------------------------
-    #     # Print Suggested Color Map Values
-    #     color_map_dict = \
-    #         {
-    #          "1": "colors1",
-    #          "2": "colors2_exp",
-    #          "3": "colors3_exp",
-    #          "4": "viridis",
-    #          "5": "plasma",
-    #          "6": "magma",
-    #         }
-    #     print("Here are the color map functions, please enter the number on the left")
-    #     print("to choose that color for the render.")
-    #
-    #     for key in color_map_dict:
-    #         print(f'"{key}" : "{color_map_dict[key]}"')
-    #     # Get x-axis min range from user input
-    #     color_map_2D = input('Select color map (default or custom): \n')
-    #
-    # # if user selected 2D plot, graph the plot with the given values
-    # if plot_type == "2D":
-    #     complex_plotting_object.create_plot_2D(
-    #         resolution_2D=resolution_2D, x_min_2D=x_min_2D,
-    #         x_max_2D=x_max_2D, y_min_2D=y_min_2D, y_max_2D=y_max_2D, color_map_2D=color_map_2D
-    #     )
-
-
-        # y_min_3D = -4
-        # y_max_3D = 4
-
-    # # 3D Complex Plot User Dimension Selections
-    # if plot_type == "3D":
-    #     # ------------------------------------------------------------------------------------------------------------
-    #     # Print Suggested Values
-    #     resolution_3D_dict = \
-    #         {
-    #          "1": 0.0901,
-    #          "2": 0.175,
-    #         }
-    #
-    #     print("Here are some suggested resolutions, please enter any value "
-    #           "from 1 to infinity, larger numbers will cause longer run time:")
-    #     # print suggested values from dictionary
-    #     for key in resolution_3D_dict:
-    #         print(f'"{key}" : "{resolution_3D_dict[key]}"')
-    #
-    #     # Get resolution value from user input
-    #     resolution_3D = input('Select resolution_3D: \n')
-    #
-    #     # ------------------------------------------------------------------------------------------------------------
-    #     # Print Suggested x_min_3D Values
-    #     x_min_3D_dict = \
-    #         {
-    #          "1": 0,
-    #          "2": 1,
-    #          "3": 2,
-    #         }
-    #
-    #     print("Here are some suggested x_min_3D values, please enter any value "
-    #           "from 1 to infinity, larger numbers will cause longer run time:")
-    #     for key in x_min_3D_dict:
-    #         print(f'"{key}" : "{x_min_3D_dict[key]}"')
-    #     # Get x-axis min range from user input
-    #     x_min_3D = int(input('Select x_min_3D axis range value: \n'))
-    #
-    #     # ------------------------------------------------------------------------------------------------------------
-    #     # Print Suggested x_max_3D Values
-    #     x_max_3D_dict = \
-    #         {
-    #          "1": 5,
-    #          "2": 8,
-    #          "3": 14,
-    #          "4": 18,
-    #          "5": 28,
-    #          "6": 36,
-    #          "7": 48,
-    #          "8": 57,
-    #          "9": 68,
-    #          "10": 79,
-    #          "11": 84,
-    #         }
-    #     print("Here are some suggested x_max_3D values, please enter any value "
-    #           "from 1 to infinity, larger numbers will cause longer run time:")
-    #     for key in x_max_3D_dict:
-    #         print(f'"{key}" : "{x_max_3D_dict[key]}"')
-    #     # Get x-axis min range from user input
-    #     x_max_3D = int(input('Select x_max_3D axis range value: \n'))
-    #
-    #     # ------------------------------------------------------------------------------------------------------------
-    #     # Print Suggested y_min_3D Values
-    #     y_min_3D_dict = \
-    #         {
-    #          "1": -8,
-    #          "2": -4,
-    #          "3": -2,
-    #         }
-    #     print("Here are some suggested y_min_3D values, please enter any value "
-    #           "from 1 to infinity, larger numbers will cause longer run time:")
-    #     for key in y_min_3D_dict:
-    #         print(f'"{key}" : "{y_min_3D_dict[key]}"')
-    #     # Get x-axis min range from user input
-    #     y_min_3D = int(input('Select y_min_3D axis range value: \n'))
-    #
-    #     # ------------------------------------------------------------------------------------------------------------
-    #     # Print Suggested y_max_3D Values
-    #     y_max_3D_dict = \
-    #         {
-    #          "1": 2,
-    #          "2": 4,
-    #          "3": 8,
-    #         }
-    #     print("Here are some suggested y_max_3D values, please enter any value")
-    #     print("from 1 to infinity, larger numbers will cause longer run time")
-    #
-    #     for key in y_max_3D_dict:
-    #         print(f'"{key}" : "{y_max_3D_dict[key]}"')
-    #     # Get x-axis min range from user input
-    #     y_max_3D = int(input('Select y_max_3D axis range value: \n'))
-    #
-    #     # ------------------------------------------------------------------------------------------------------------
-    #     # Print Suggested m coefficient Values
-    #     m_dict = \
-    #         {
-    #          "1": 0.086,
-    #          "2": 0.136,
-    #          "3": 0.246,
-    #          "4": 0.356,
-    #          "5": 0.467,
-    #          "6": 0.578,
-    #          "7": 0.688,
-    #          "8": 0.788,
-    #          "9": 0.824,
-    #          "10": 0.964,
-    #          "11": 1,
-    #         }
-    #     print("Here are the m magnification coefficients suggestion, "
-    #           "please enter a value for m, negative values are accepted: ")
-    #
-    #     for key in m_dict:
-    #         print(f'"{key}" : "{m_dict[key]}"')
-    #     # Get x-axis min range from user input
-    #     m_3D = float(input('Select m magnification coefficient: \n'))
-    #
-    #     # ------------------------------------------------------------------------------------------------------------
-    #     # Print Suggested m coefficient Values
-    #     beta_dict = \
-    #         {
-    #          "1": 0.086,
-    #          "2": 0.246,
-    #          "3": 0.467,
-    #          "4": 0.688,
-    #          "5": 0.824,
-    #          "6": 1,
-    #          "7": 1.086,
-    #          "8": 1.246,
-    #          "9": 1.467,
-    #          "10": 1.688,
-    #          "11": 1.824,
-    #          "12": 2,
-    #         }
-    #     print("Here are the beta magnification coefficients suggestion, "
-    #           "please enter a value for m, negative values are accepted: ")
-    #
-    #     for key in beta_dict:
-    #         print(f'"{key}" : "{beta_dict[key]}"')
-    #     # Get x-axis min range from user input
-    #     beta_3D = float(input('Select beta magnification coefficient: \n'))

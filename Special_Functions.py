@@ -10,6 +10,7 @@ Special Functions
 import cmath
 import math
 import os
+import pprint
 
 import mpmath
 import numpy as np
@@ -32,7 +33,7 @@ class Special_Functions :
         Initialization the Special_Functions Object, defines self arg m = desired magnification exponent
         """
 
-        normalized = False
+        normalized = True
 
         # if user selected 2D plot, graph the plot with the given values
         if plot_type == "2D":
@@ -63,7 +64,12 @@ class Special_Functions :
     # Product of Sin(x) via Sin(x) product Representation.
     def product_of_sin(self, z):
         """
-        ∏_(n=2)^x { abs ( sin(pi*x/n) ) ] ) }
+        Computes the infinite product of sin(pi*z/n)
+        f(x) = ∏_(n=2)^x { abs ( sin(pi*x/n) ) ] ) }
+        Args:
+            z (complex): A complex number to evaluate.
+        Returns:
+            (float): The product of sin(pi*z/n).
         """
         z_real = np.real(z)
         z_imag = np.imag(z)
@@ -75,7 +81,12 @@ class Special_Functions :
     # Normalized Product of Sin(x) via Sin(x) product Representation, normalized through fraction on gamma function.
     def normalized_product_of_sin(self, z):
         """
-        ∏_(n=2)^x { abs ( sin(pi*x/n) ) ] ) }/∏_(n=2)^x { abs ( sin(pi*x/n) ) ] ) }!
+        Computes the normalized infinite product of sin(pi*z/n)
+        f(x) = ∏_(n=2)^x { abs ( sin(pi*x/n) ) ] ) } / ∏_(n=2)^x { abs ( sin(pi*x/n) ) ] ) }!
+        Args:
+            z (complex): A complex number to evaluate.
+        Returns:
+            (float): The normalized product of sin(pi*z/n).
         """
         z_real = np.real(z)
         z_imag = np.imag(z)
@@ -91,31 +102,48 @@ class Special_Functions :
     # -----------------------------------------------------------------------------------------------------------------
     def product_of_product_representation_for_sin(self, z):
         """
-        Computes the product of the product representation for sin(z).
-        ∏_(n=2)^x (pi*x) ∏_(n=2)^x (1-(x^2)/(i^2)(n^2))
+        Computes the product of the product representation for sin(pi*z/n).
+        f(x) = ∏_(n=2)^x (pi*x) ∏_(n=2)^x (1-(x^2)/(i^2)(n^2))
         Args:
             z (complex): A complex number to evaluate.
-            m (float): A constant value for the result.
-            beta
         Returns:
-            (float): The product of the product representation for sin(z).
+            (float): The product of the product representation for sin(pi*z/n).
         """
+
+        #pprint.pprint(z)
+
+        #TODO no magnification for bug testing
+        self.beta = 1
         z_real = np.real(z)
         z_imag = np.imag(z)
+
+        # pprint.pprint(z_real)
+        # pprint.pprint(z_imag)
+
+        # double infinite product for loop
         result = abs(np.prod(
-            [self.beta * (z_imag * z_real / n) * ((z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
-                [1 - ((z_real + 1j * z_imag) ** 2) / (n ** 2 * k ** 2)
-                 for k in range(2, int(z_real) + 1)])) for n in range(2, int(z_real) + 1)])) ** (-self.m)
+            [(z_imag * z_real / n) * ((z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
+                [1 - ((z) ** 2) / (n ** 2 * k ** 2)
+                 for k in range(2, int(z_real) + 1)])) for n in range(2, int(z_real) + 1)])) ** (-(self.m))
+
+        # TODO print function values for bug testing
+        if (z_real % 1 == 0) and (z_imag % 1 == 0):
+            print(z, ": ", result)
+
         return result
 
     # -----------------------------------------------------------------------------------------------------------------------
     # Normalized Product of Sin(x) via Sin(x) product Representation, normalized through fraction on gamma function.
     def normalized_product_of_product_representation_for_sin(self, z):
         """
-        ∏_(n=2)^x beta*pi*n*(∏_(k=2)^x(1-x^2/(k^2*n^2)))/(∏_(n=2)^x(pi*n*(∏_(k=2)^x(1-x^2/(k^2*n^2))))!
+        f(x) = ∏_(n=2)^x beta*pi*n*(∏_(k=2)^x(1-x^2/(k^2*n^2))) / (∏_(n=2)^x(pi*n*(∏_(k=2)^x(1-x^2/(k^2*n^2)))) !
         """
+        #TODO no magnification for bug testing
+        self.beta = 1
         z_real = np.real(z)
         z_imag = np.imag(z)
+
+        # normalized double infinite product for loop
         numerator = abs(np.prod([self.beta * (z_real / n) * (
                 (z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
             [1 - ((z_real + 1j * z_imag) ** 2) / (n ** 2 * k ** 2) for k in range(2, int(z_real) + 1)])) for n in
@@ -125,14 +153,18 @@ class Special_Functions :
             [1 - ((z_real + 1j * z_imag) ** 2) / (n ** 2 * k ** 2) for k in range(2, int(z_real) + 1)])) for n in
                                    range(2, int(z_real) + 1)]))
         normalized_fraction = (numerator ** (-self.m) / scipy.special.gamma(denominator ** (-self.m)))
-        # if (z_real % 1 == 0) and (z_imag % 1 == 0):
-        #     print(z, ": ", normalized_fraction)
+
+        # TODO print function values for bug testing
+        if (z_real % 1 == 0) and (z_imag % 1 == 0):
+            print(z, ": ", normalized_fraction)
+
         return normalized_fraction
 
     # -----------------------------------------------------------------------------------------------------------------
     def natural_logarithm_of_product_of_product_representation_for_sin(self, z):
         """
         Computes the natural logarithm of the normalized infinite product of product representation of sin(z).
+        f(x) = ln ( ∏_(n=2)^x (pi*x) ∏_(n=2)^x (1-(x^2)/(i^2)(n^2)) )
         Args:
             z (complex): A complex number to evaluate.
             m (float): A constant value for the result.
