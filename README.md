@@ -17,16 +17,6 @@ Clay Maths Institute's Millenium Prize Problems:
 
 https://en.wikipedia.org/wiki/Millennium_Prize_Problems
 
-Ultimately I want to use this data to train a language model plugin using GPT4 and the methods and information provided in this repository such that
-we can create an AI specialized in mathematical analysis for all fields of mathematics. Currently I have proposed the idea to the singularity group on @AtheneLive
-you can see the most recent twitch vod clip here where Lex fridman, Carli g, and Athene give their responses:
-
-Also you can find Athenes Twitch Here:
-
-https://www.twitch.tv/athenelive
-
-https://www.youtube.com/watch?v=JCCw1qNb3mc
-
 # Special-Functions
 A program for plotting complex functions. This tool provides the plotting functions for 2D and 3D graphics for infinite series such as the Riemann zeta function, 
 the infinite product of the product representation for sin(pi*z/n) as well as any other function that can be formulated in the complex plane.
@@ -69,6 +59,15 @@ engineering and my passion is mathematics as well as art. I am developing this s
 and the universe. Please contact me at borchborchmail@gmail.com if you have questions or are able to do something interesting with my software or math. You can also leave feedback on the software in this submission form:
 
 https://docs.google.com/forms/d/e/1FAIpQLSedobin-e8XqIv2AgMWhIrcNq-Pm7fsD63rhjuEiksWMAe9Og/viewform?usp=sf_link
+
+
+My End goal for this project is to use this data to train a language model plugin using GPT4, (Currently Im implementing a free gpt3.5 from this github repo: https://github.com/ayaka14732/ChatGPTAPIFree ) and the methods and information provided in this repository such that we can create an AI specialized in mathematical analysis for all fields of mathematics. Currently I have proposed the idea to the singularity group on @AtheneLive you can see the most recent twitch vod clip here where Lex fridman, Carli g, and Athene give their responses:
+
+Also you can find Athenes Twitch Here:
+
+https://www.twitch.tv/athenelive
+
+https://www.youtube.com/watch?v=JCCw1qNb3mc
 
 Ultimately knowledge should be free however it takes a lot of time and work to develop the mathematics, proofs and software required, I would really appreciate 
 it, if you feel inclined to donate to help me keep developing this software and writing this paper. You can find the donation link in the file called bitcoin_donation_wallet.txt
