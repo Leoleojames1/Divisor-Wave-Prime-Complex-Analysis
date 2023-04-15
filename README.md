@@ -63,11 +63,11 @@ https://docs.google.com/forms/d/e/1FAIpQLSedobin-e8XqIv2AgMWhIrcNq-Pm7fsD63rhjuE
 
 My End goal for this project is to use this data to train a language model plugin using GPT4, (Currently Im implementing a free gpt3.5 API from this github repo, because GPT4 is expensive to run for a long time, if I can find funding for this I would be able to do so much more: https://github.com/ayaka14732/ChatGPTAPIFree ) and the methods and information provided in this repository such that we can create an AI specialized in mathematical analysis for all fields of mathematics. Currently I have proposed the idea to the singularity group on @AtheneLive you can see the most recent twitch vod clip here where Lex fridman, Carli g, and Athene give their responses:
 
+https://www.youtube.com/watch?v=JCCw1qNb3mc
+
 Also you can find Athenes Twitch Here:
 
 https://www.twitch.tv/athenelive
-
-https://www.youtube.com/watch?v=JCCw1qNb3mc
 
 Ultimately knowledge should be free however it takes a lot of time and work to develop the mathematics, proofs and software required, I would really appreciate 
 it, if you feel inclined to donate to help me keep developing this software and writing this paper. You can find the donation link in the file called bitcoin_donation_wallet.txt
