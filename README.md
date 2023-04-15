@@ -22,6 +22,7 @@ we can create an AI specialized in mathematical analysis for all fields of mathe
 you can see the most recent twitch vod clip here where Lex fridman, Carli g, and Athene give their responses:
 
 Also you can find Athenes Twitch Here:
+
 https://www.twitch.tv/athenelive
 
 https://www.youtube.com/watch?v=JCCw1qNb3mc
