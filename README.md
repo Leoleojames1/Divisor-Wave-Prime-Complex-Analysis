@@ -23,6 +23,7 @@ you can see the most recent twitch vod clip here where Lex fridman, Carli g, and
 
 Also you can find Athenes Twitch Here:
 https://www.twitch.tv/athenelive
+
 https://www.youtube.com/watch?v=JCCw1qNb3mc
 
 # Special-Functions
