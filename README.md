@@ -29,7 +29,7 @@ the infinite product of the product representation for sin(pi*z/n) as well as an
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
 
-### Plot Of the Infinite Product of the Infinite Product Representation of Sin(pi*x/n) in the 3-D Complex Plane:
+### Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n) in the 3-D Complex Plane:
 
 <img
   src="graphs/3D_Complex_Graphs/product of product representation of sin/non_normalized_4.png"
