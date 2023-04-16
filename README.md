@@ -71,7 +71,7 @@ https://www.twitch.tv/athenelive
 Currently I am writing a second paper on prompt engineering which showcases many examples of times where I utilized latex, python, and ascii prompts to formulate mathematical expressions with GPT3.5, ultimately this processes is dependent on the training or context referencing of the problem, and creating better systems for long term memory within a GPT4 agent will allow us to train a model such as "Euler Ai" which can process complex infinite series that it is trained on, and then in addition will be able to process new mathmatical functions that is was never presented if the user gives Euler enough context and formula evaluation techniques to fill in the blanks. Here is an example of the current capabilities of GPT3.5:
 
 <img
-  src="graphs/2D_Complex_Graphs/Infinite_Product_of_infinite_product_representation_of_sin/Complex_product_11_n[0-84]_Imaginary_scalar.png"
+  src="gpt35_logs/Conversations/compositenumbers_latex_1.png"
   alt="Alt text"
   title="Latex Prompt Engineering"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
