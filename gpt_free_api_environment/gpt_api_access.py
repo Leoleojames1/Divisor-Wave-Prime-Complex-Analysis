@@ -12,7 +12,7 @@ import json
 
 # Set up headers with your API key
 headers = {
-    'Authorization': 'Bearer pk-cXkxkJMZvxteQWZSryGkIKyfNWJNwsMdgBfWQwYsVTbGOviZ',
+    'Authorization': 'Bearer $YOURAPIKEY$',
     'Content-Type': 'application/json'
 }
 
