@@ -60,7 +60,6 @@ and the universe. Please contact me at borchborchmail@gmail.com if you have ques
 
 https://docs.google.com/forms/d/e/1FAIpQLSedobin-e8XqIv2AgMWhIrcNq-Pm7fsD63rhjuEiksWMAe9Og/viewform?usp=sf_link
 
-
 My End goal for this project is to use this data to train a language model plugin using GPT4, (Currently Im implementing a free gpt3.5 API from this github repo, because GPT4 is expensive to run for a long time, if I can find funding for this I would be able to do so much more: https://github.com/ayaka14732/ChatGPTAPIFree ) and the methods and information provided in this repository such that we can create an AI specialized in mathematical analysis for all fields of mathematics. Currently I have proposed the idea to the singularity group on @AtheneLive you can see the most recent twitch vod clip here where Lex fridman, Carli g, and Athene give their responses:
 
 https://www.youtube.com/watch?v=JCCw1qNb3mc
@@ -68,6 +67,14 @@ https://www.youtube.com/watch?v=JCCw1qNb3mc
 Also you can find Athenes Twitch Here:
 
 https://www.twitch.tv/athenelive
+
+Currently I am writing a second paper on prompt engineering which showcases many examples of times where I utilized latex, python, and ascii prompts to formulate mathematical expressions with GPT3.5, ultimately this processes is dependent on the training or context referencing of the problem, and creating better systems for long term memory within a GPT4 agent will allow us to train a model such as "Euler Ai" which can process complex infinite series that it is trained on, and then in addition will be able to process new mathmatical functions that is was never presented if the user gives Euler enough context and formula evaluation techniques to fill in the blanks. Here is an example of the current capabilities of GPT3.5:
+
+<img
+  src="graphs/2D_Complex_Graphs/Infinite_Product_of_infinite_product_representation_of_sin/Complex_product_11_n[0-84]_Imaginary_scalar.png"
+  alt="Alt text"
+  title="Latex Prompt Engineering"
+  style="display: inline-block; margin: 0 auto; max-width: 100px">
 
 Ultimately knowledge should be free however it takes a lot of time and work to develop the mathematics, proofs and software required, I would really appreciate 
 it, if you feel inclined to donate to help me keep developing this software and writing this paper. You can find the donation link in the file called bitcoin_donation_wallet.txt
