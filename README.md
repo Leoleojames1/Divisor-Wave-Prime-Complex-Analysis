@@ -1,3 +1,4 @@
+#ffffff
 # Getting Started
 If you have not already, please download the PDF called:
 Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.pdf
