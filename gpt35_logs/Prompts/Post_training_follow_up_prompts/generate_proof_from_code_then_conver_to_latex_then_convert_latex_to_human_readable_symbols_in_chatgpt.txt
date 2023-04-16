@@ -1,0 +1,38 @@
+
+please convert this latex:
+
+\begin{equation*}
+B(z) = \prod_{n=2}^x \left[\frac{\pi x}{n} \prod_{k=2}^{\infty} \left(1-\frac{x^2}{k^2 n^2}\right)\right]
+\end{equation*}
+
+Expanding out the first few terms of the product, we get:
+
+\begin{equation*}
+B(x) = \prod_{n=2}^x \frac{\pi x}{n} \left(1 - \frac{x^2}{(2^2)(n^2)}\right)\left(1 - \frac{x^2}{(3^2)(n^2)}\right) \left(1 - \frac{x^2}{(4^2)(n^2)}\right) \dots
+\end{equation*}
+
+\begin{equation*}
+\qquad\qquad\qquad = \prod_{m=2}^x\left[\prod_{n=2}^x \left(1-\frac{x^2}{(n^2)(m^2)}\right)\right]
+\end{equation*}
+
+\begin{equation*}
+\qquad\qquad\qquad = \prod_{m=2}^x\left[\prod_{n=2}^x \left(\frac{(n^2)(m^2)-x^2}{(n^2)(m^2)}\right)\right]
+\end{equation*}
+
+\begin{equation*}
+\qquad\qquad\qquad = \prod_{m=2}^x\left[\prod_{n=2}^x \left(\frac{(mn)^2-x^2}{(n^2)(m^2)}\right)\right]
+\end{equation*}
+
+\begin{equation*}
+\qquad\qquad\qquad = \prod_{m=2}^x\left[\prod_{n=2}^x \frac{(mn+x)(mn-x)}{(n^2)(m^2)}\right]
+\end{equation*}
+
+\begin{equation*}
+\qquad\qquad\qquad = \prod_{m=2}^x\left[\frac{\prod_{n=2}^x (mn+x)\prod_{n=2}^x(mn-x)}{m^{2x-4}}\right]
+\end{equation*}
+
+\begin{equation*}
+\qquad\qquad\qquad = \prod_{m=2}^x\left[\frac{(mx)!}{m^{2x-4}x!^2}\right]
+\end{equation*}
+
+Therefore, if $B(x)=0$, then at least one of the terms in the product must be zero, which means that $(mx)!$ is divisible by $m^{2x-4}x!^2$. Hence, $c(x)$ checks if $B(x) \neq 0$, and returns $x$ if it is not equal to zero, otherwise returns None.

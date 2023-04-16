@@ -1,0 +1,49 @@
+\begin{equation*}
+B(z) = \prod_{n=2}^x \left[\frac{\pi x}{n} \prod_{k=2}^{\infty} \left(1-\frac{x^2}{k^2 n^2}\right)\right]
+\end{equation*}
+
+Expanding out the first few terms of the product, we get:
+
+\begin{equation*}
+B(x) = \prod_{n=2}^x \frac{\pi x}{n} \left(1 - \frac{x^2}{(2^2)(n^2)}\right)\left(1 - \frac{x^2}{(3^2)(n^2)}\right) \left(1 - \frac{x^2}{(4^2)(n^2)}\right) \dots
+\end{equation*}
+
+\begin{equation*}
+\qquad\qquad\qquad = \prod_{m=2}^x\left[\prod_{n=2}^x \left(1-\frac{x^2}{(n^2)(m^2)}\right)\right]
+\end{equation*}
+
+\begin{equation*}
+\qquad\qquad\qquad = \prod_{m=2}^x\left[\prod_{n=2}^x \left(\frac{(n^2)(m^2)-x^2}{(n^2)(m^2)}\right)\right]
+\end{equation*}
+
+\begin{equation*}
+\qquad\qquad\qquad = \prod_{m=2}^x\left[\prod_{n=2}^x \left(\frac{(mn)^2-x^2}{(n^2)(m^2)}\right)\right]
+\end{equation*}
+
+\begin{equation*}
+\qquad\qquad\qquad = \prod_{m=2}^x\left[\prod_{n=2}^x \frac{(mn+x)(mn-x)}{(n^2)(m^2)}\right]
+\end{equation*}
+
+\begin{equation*}
+\qquad\qquad\qquad = \prod_{m=2}^x\left[\frac{\prod_{n=2}^x (mn+x)\prod_{n=2}^x(mn-x)}{m^{2x-4}}\right]
+\end{equation*}
+
+\begin{equation*}
+\qquad\qquad\qquad = \prod_{m=2}^x\left[\frac{(mx)!}{m^{2x-4}x!^2}\right]
+\end{equation*}
+
+This equation defines a function $B(z)$ in terms of a product over $n$ and $k$. The product over $k$ is infinite, but the product over $n$ is from $2$ to $x$. The product over $k$ involves a term of the form $\left(1-\frac{x^2}{k^2 n^2}\right)$.
+
+This step simply substitutes $z=x$ into the original equation and expands the product over $n$ by writing out the first few terms.
+
+We can then manipulate this product to obtain the following form:
+
+This equation rearranges the terms in the product over $n$ so that they are written in terms of $(m^2)$ instead of $(n^2)$. We can do this by factoring out $(m^2)$ from the denominator of each term in the product over $n$, and then using the identity $(a-b)(a+b)=a^2-b^2)$ to simplify the resulting expression.
+
+Next, we rewrite the product as follows:
+
+This equation uses the identity $(mn)^2 - x^2 = (mn+x)(mn-x)$ to further simplify the expression. We can then combine the products over $n$ and $m$ into a single product:
+
+This equation combines the product over $n$ and the product over $m$ into a single product, and then simplifies the resulting expression by factoring out $m^{2x-4}$ from the numerator. Finally, we can rewrite the product in terms of factorials:
+
+This equation uses the definition of factorial to express each product over $n$ as a factorial, and simplifies the resulting expression by dividing by $x!^2$. This is the final form of the equation.

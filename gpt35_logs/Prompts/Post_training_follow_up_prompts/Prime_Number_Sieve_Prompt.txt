@@ -1,0 +1,35 @@
+we can evaluate the product for values of x like so so
+
+B(z) = ∏_(n=2)^x [pi*x/ n ∏_(k=2)^∞ (1 - x^2 / (k^2 * n^2))]
+
+Expanding out the first few terms of the product, we get:
+
+B(x) = ∏_(n=2)^x pi*x/n ( (1 - (x^2)/((2^2)(n^2))) (1 - (x^2)/((3^2)(n^2))) (1 - (x^2)/((4^2)(n^2))) …)
+
+= × (1 - (x^2)/((2^2)(2^2))) (1 - (x^2)/((2^2)(3^2))) (1 - (x^2)/((2^2)(4^2))) ...
+   × (1 - (x^2)/((3^2)(2^2))) (1 - (x^2)/((3^2)(3^2))) (1 - (x^2)/((3^2)(4^2))) …
+   × (1 - (x^2)/((4^2)(2^2))) (1 - (x^2)/((4^2)(3^2))) (1 - (x^2)/((4^2)(4^2))) …
+   × ... 
+
+B(4) = × (1 - (4^2)/((2^2)(2^2))) (1 - (4^2)/((2^2)(3^2))) (1 - (4^2)/((2^2)(4^2))) ...
+   × (1 - (4^2)/((3^2)(2^2))) (1 - (4^2)/((3^2)(3^2))) (1 - (4^2)/((3^2)(4^2))) …
+   × (1 - (4^2)/((4^2)(2^2))) (1 - (4^2)/((4^2)(3^2))) (1 - (4^2)/((4^2)(4^2))) …
+   × ... 
+B(4) = …(1 - (4^2)/((2^2)(2^2)))... = 0
+
+thats why c(x) is not looking for zeros with:
+
+def c(x):
+    """
+    Returns x if b(x) is not equal to 0, else returns None
+    Args:
+        x (Real): A real, whole number to evaluate.
+    Returns:
+        prime number values of x
+    """
+    if b(x) != 0:
+        return x
+    else:
+        return None
+
+please represent this  in latex

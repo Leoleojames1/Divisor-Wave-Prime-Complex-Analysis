@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <title>GPT3 API Interface</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #333333, #ff9933);
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type=text] {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>GPT API Access</h1>
+    <form method="POST" action="/">
+      <p>Response: {{ text }}</p>
+      <p>Prompt:</p>
+      <input type="text" name="prompt" style="width: 100%;"></p>
+      <br>
+      <input type="submit" value="Send">
+    </form>
+  </body>
+</html>
