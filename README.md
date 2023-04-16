@@ -74,7 +74,7 @@ Currently I am writing a second paper on prompt engineering which showcases many
   src="gpt35_logs/Conversations/compositenumbers_latex_1.png"
   alt="Alt text"
   title="Latex Prompt Engineering"
-  style="display: inline-block; margin: 0 auto; max-width: 100px">
+  style="display: inline-block; margin: 10 auto; max-width: 140px">
 
 Ultimately knowledge should be free however it takes a lot of time and work to develop the mathematics, proofs and software required, I would really appreciate 
 it, if you feel inclined to donate to help me keep developing this software and writing this paper. You can find the donation link in the file called bitcoin_donation_wallet.txt
