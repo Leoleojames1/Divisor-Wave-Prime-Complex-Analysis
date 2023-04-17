@@ -10,9 +10,15 @@ gpt_api_access.py
 import requests
 import json
 
+#Todo read GPT3_API_key_ignored.txt and store API key as string in GPT3_API_key_ignored so that it is hidden
+
+# Read API key from file
+with open("GPT3_API_key_ignored.txt", "r") as f:
+    GPT3_API_key_ignored = f.read().strip()
+
 # Set up headers with your API key
 headers = {
-    'Authorization': 'Bearer pk-cXkxkJMZvxteQWZSryGkIKyfNWJNwsMdgBfWQwYsVTbGOviZ',
+    'Authorization': f'Bearer {GPT3_API_key_ignored}',
     'Content-Type': 'application/json'
 }
 
