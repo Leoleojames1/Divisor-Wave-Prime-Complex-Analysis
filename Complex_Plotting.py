@@ -7,8 +7,10 @@ Complex_Plotting.py
 4/9/2023
 @LeoBorcherding
 """
+import http
 import os
 import pprint
+import socketserver
 import subprocess
 import sys
 
@@ -20,11 +22,15 @@ from matplotlib import ticker
 from matplotlib import cm
 from matplotlib.colors import LightSource
 from matplotlib.colors import PowerNorm
-# from cplusplus_extensions import graphics
+
+# # Import bindings and graphics modules
+# import cplusplus_extensions
+# from cplusplus_extensions import bindings
+# print(cplusplus_extensions.__file__)
 
 from Special_Functions import Special_Functions
 
-sys.path
+print(sys.path)
 plt.style.use('dark_background')
 
 # -----------------------------------------------------------------------------------------------------------------
@@ -63,8 +69,8 @@ class Complex_Plotting :
         if plot_type == "3D":
 
             # Default Values, Copy these if you are going to change them
-            self.resolution_3D = 0.0899
-            # self.resolution_3D = 0.0599
+            #self.resolution_3D = 0.0899
+            self.resolution_3D = 0.0199
             self.x_min_3D = 1
             self.x_max_3D = 18
             self.y_min_3D = -3
@@ -429,17 +435,24 @@ if __name__ == "__main__":
 
     # ------------------------------------------------------------------------------------------------------------
     # C++ Plotting Menu
-    # if plot_type == "C++":
-    #
-    #     # Set the path to the bindings.cpp file and the directory to place the compiled shared library
-    #     cpp_file = "cplusplus_extensions/bindings.cpp"
-    #     output_dir = "gitprime/cplusplus_extensions"
-    #
-    #     # Compile the C++ code
-    #     cmd = f"g++ -O3 -Wall -shared -std=c++11 -undefined dynamic_lookup
-    #     `python3 -m pybind11 --includes` {cpp_file} -o {output_dir}/graphics.so"
-    #     subprocess.run(cmd, shell=True, check=True)
+    if plot_type == "C++":
 
-        # graphics.create_plot_2D()
+        # Set the path to the bindings.cpp file and the directory to place the compiled shared library
+        cpp_file = "cplusplus_extensions/bindings.cpp"
+        output_dir = "gitprime/cplusplus_extensions"
 
+        # Compile the C++ code
+        cmd = f"g++ -O3 -Wall -shared -std=c++11 -undefined dynamic_lookup `python3 -m pybind11 --includes` {cpp_file} -o {output_dir}/graphics.so"
+        subprocess.run(cmd, shell=True, check=True)
+
+        graphics.create_plot_2D()
         #TODO implement plotting from https://github.com/alordash/newton-fractal
+
+    # # serve the plot in a local host
+    # PORT = 8000
+    #
+    # Handler = http.server.SimpleHTTPRequestHandler
+    # httpd = socketserver.TCPServer(("", PORT), Handler)
+    #
+    # print(f"Serving at http://localhost:{PORT}")
+    # httpd.serve_forever()
