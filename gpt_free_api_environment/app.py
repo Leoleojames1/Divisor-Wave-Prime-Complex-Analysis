@@ -4,9 +4,13 @@ import json
 
 app = Flask(__name__)
 
+# Read API key from file
+with open("GPT3_API_key_ignored.txt", "r") as f:
+    GPT3_API_key_ignored = f.read().strip()
+
 # Set up headers with your API key
 headers = {
-    'Authorization': 'Bearer pk-cXkxkJMZvxteQWZSryGkIKyfNWJNwsMdgBfWQwYsVTbGOviZ',
+    'Authorization': f'Bearer {GPT3_API_key_ignored}',
     'Content-Type': 'application/json'
 }
 
