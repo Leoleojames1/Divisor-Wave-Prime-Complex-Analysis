@@ -53,6 +53,14 @@ the infinite product of the product representation for sin(pi*z/n) as well as an
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
 
+### Plot Of the Cos of the Infinite Product of the product representation of Sin(pi*x/n) in the 3-D Complex Plane:
+
+<img
+  src="graphs/3D_Complex_Graphs/cos of prod of prod representation of sin/cosprodprodreprsin_6.png"
+  alt="Alt text"
+  title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
+  style="display: inline-block; margin: 0 auto; max-width: 100px">
+  
 # About Me
 My name is Leo Borcherding, I am a Software Developer with experience working on programs for encryption of firmware devices. I have a background in electrical
 engineering and my passion is mathematics as well as art. I am developing this software so that we can further our understanding of mathematics, physics, 
