@@ -100,3 +100,13 @@ Here is an example of the current capabilities of GPT3.5:
 
 Ultimately knowledge should be free however it takes a lot of time and work to develop the mathematics, proofs and software required, I would really appreciate 
 it, if you feel inclined to donate to help me keep developing this software and writing this paper. You can find the donation link in the file called bitcoin_donation_wallet.txt
+
+also if you want read my original paper I wrote in 2021 which initially started my journey on the Riemann Hypothesis here:
+
+https://docs.google.com/document/d/1EqDpk-XiKePku2qzsUmaPO4Ejpdq4HKg/edit
+
+and want to see my previous work on tetrahedral famalies from 2017 you can find that here:
+
+https://oeis.org/A287324
+
+https://oeis.org/A287324/a287324_2.pdf
