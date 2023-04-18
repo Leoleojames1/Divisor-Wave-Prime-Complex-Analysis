@@ -33,7 +33,8 @@ class Special_Functions :
         Initialization the Special_Functions Object, defines self arg m = desired magnification exponent
         """
 
-        normalized = False
+        normalized = True
+        self.im_mag = False
 
         # if user selected 2D plot, graph the plot with the given values
         if plot_type == "2D":
@@ -87,10 +88,21 @@ class Special_Functions :
         Returns:
             (float): The product of sin(pi*z/n).
         """
+        # initialize complex components
         z_real = np.real(z)
         z_imag = np.imag(z)
-        result = abs(np.prod([self.beta * (z_real / n) * np.sin(math.pi * (z_real + 1j * z_imag) / n)
-                              for n in range(2, int(z_real) + 1)])) ** (-self.m)
+
+        # check for imaginary magnification
+        if self.im_mag is True:
+            imaginary_magnification = z_imag
+        else:
+            imaginary_magnification = 1
+
+        # calculate infinite product
+        result = abs(np.prod(
+            [self.beta * (z_real * imaginary_magnification / n) * np.sin(math.pi * (z_real + 1j * z_imag) / n)
+                for n in range(2, int(z_real) + 1)])) ** (-self.m)
+
         return result
 
     # -----------------------------------------------------------------------------------------------------------------------
@@ -104,13 +116,27 @@ class Special_Functions :
         Returns:
             (float): The normalized product of sin(pi*z/n).
         """
+        # initialize complex components
         z_real = np.real(z)
         z_imag = np.imag(z)
-        numerator = abs(np.prod([self.beta * (z_real / n) * np.sin(math.pi * (z_real + 1j * z_imag) / n)
-                                 for n in range(2, int(z_real) + 1)])) ** (-self.m)
-        denominator = abs(np.prod([self.beta * (z_real / n) * np.sin(math.pi * (z_real + 1j * z_imag) / n)
-                                   for n in range(2, int(z_real) + 1)])) ** (-self.m)
 
+        # check for imaginary magnification
+        if self.im_mag is True:
+            imaginary_magnification = z_imag
+        else:
+            imaginary_magnification = 1
+
+        # calculate numerator of normalized fraction
+        numerator = abs(np.prod(
+            [self.beta * (z_real * imaginary_magnification / n) * np.sin(math.pi * (z_real + 1j * z_imag) / n)
+                for n in range(2, int(z_real) + 1)])) ** (-self.m)
+
+        # calculate numerator of normalized fraction
+        denominator = abs(np.prod(
+            [self.beta * (z_real / n) * np.sin(math.pi * (z_real + 1j * z_imag) / n)
+                for n in range(2, int(z_real) + 1)])) ** (-self.m)
+
+        # calculate normalized fraction
         normalized_fraction = (numerator ** (-self.m) / scipy.special.gamma(denominator ** (-self.m)))
 
         return normalized_fraction
@@ -135,15 +161,21 @@ class Special_Functions :
         # pprint.pprint(z_real)
         # pprint.pprint(z_imag)
 
-        # double infinite product for loop
-        result = abs(np.prod(
-            [self.beta * (z_imag * z_real / n) * ((z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
-                [1 - ((z) ** 2) / (n ** 2 * k ** 2)
-                 for k in range(2, int(z_real) + 1)])) for n in range(2, int(z_real) + 1)])) ** (-(self.m))
+        # check for imaginary magnification
+        if self.im_mag is True:
+            imaginary_magnification = z_imag
+        else:
+            imaginary_magnification = 1
 
-        # TODO print function values for bug testing
-        if (z_real % 1 == 0) and (z_imag % 1 == 0):
-            print(z, ": ", result)
+        # calculate the double infinite product via the double for loop
+        result = abs(np.prod(
+            [self.beta * (imaginary_magnification * z_real / n) * ((z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
+                [1 - ((z) ** 2) / (n ** 2 * k ** 2)
+                 for k in range(2, int(z_real) + 1)])) for n in range(2, int(z_real) + 1)])) ** (-self.m)
+
+        # # print function values for bug testing
+        # if (z_real % 1 == 0) and (z_imag % 1 == 0):
+        #     print(z, ": ", result)
 
         return result
 
@@ -153,25 +185,34 @@ class Special_Functions :
         """
         f(x) = ∏_(n=2)^x beta*pi*n*(∏_(k=2)^x(1-x^2/(k^2*n^2))) / (∏_(n=2)^x(pi*n*(∏_(k=2)^x(1-x^2/(k^2*n^2)))) !
         """
-        #TODO no magnification for bug testing
-        self.beta = 1
         z_real = np.real(z)
         z_imag = np.imag(z)
 
-        # normalized double infinite product for loop
-        numerator = abs(np.prod([self.beta * (z_real / n) * (
-                (z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
-            [1 - ((z_real + 1j * z_imag) ** 2) / (n ** 2 * k ** 2) for k in range(2, int(z_real) + 1)])) for n in
-                                 range(2, int(z_real) + 1)]))
-        denominator = abs(np.prod([self.beta * (z_real / n) * (
-                (z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
-            [1 - ((z_real + 1j * z_imag) ** 2) / (n ** 2 * k ** 2) for k in range(2, int(z_real) + 1)])) for n in
-                                   range(2, int(z_real) + 1)]))
+        # check for imaginary magnification
+        if self.im_mag is True:
+            imaginary_magnification = z_imag
+        else:
+            imaginary_magnification = 1
+
+        # calculate numerator of normalized fraction
+        numerator = abs(np.prod(
+            [self.beta * (z_real * imaginary_magnification / n) * ((z_real * math.pi + 1j * z_imag * math.pi) *
+                        np.prod(
+                [1 - ((z_real + 1j * z_imag) ** 2) / (n ** 2 * k ** 2)
+                    for k in range(2, int(z_real) + 1)])) for n in range(2, int(z_real) + 1)]))
+
+        # calculate denominator of normalized fraction
+        denominator = abs(np.prod(
+            [self.beta * (z_real * imaginary_magnification / n) * ((z_real * math.pi + 1j * z_imag * math.pi) *
+                        np.prod(
+                [1 - ((z_real + 1j * z_imag) ** 2) / (n ** 2 * k ** 2)
+                    for k in range(2, int(z_real) + 1)])) for n in range(2, int(z_real) + 1)]))
+
         normalized_fraction = (numerator ** (-self.m) / scipy.special.gamma(denominator ** (-self.m)))
 
-        # TODO print function values for bug testing
-        if (z_real % 1 == 0) and (z_imag % 1 == 0):
-            print(z, ": ", normalized_fraction)
+        # # TODO print function values for bug testing
+        # if (z_real % 1 == 0) and (z_imag % 1 == 0):
+        #     print(z, ": ", normalized_fraction)
 
         return normalized_fraction
 
@@ -188,11 +229,22 @@ class Special_Functions :
         """
         z_real = np.real(z)
         z_imag = np.imag(z)
+
+        # check for imaginary magnification
+        if self.im_mag is True:
+            imaginary_magnification = z_imag
+        else:
+            imaginary_magnification = 1
+
+        # calculate the infinite product
         result = abs(np.prod(
-            [self.beta * (z_imag * z_real / n) * ((z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
+            [self.beta * (z_real * imaginary_magnification / n) * ((z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
                 [1 - ((z_real + 1j * z_imag) ** 2) / (n ** 2 * k ** 2)
                  for k in range(2, int(z_real) + 1)])) for n in range(2, int(z_real) + 1)])) ** (-self.m)
+
+        # take the logarithm
         log_result = cmath.log(result)
+
         #log_result=cmath.log(result) # scipy.special.gamma(
         #return result / np.log(z)
         return log_result
@@ -205,8 +257,15 @@ class Special_Functions :
         """
         z_real = np.real(z)
         z_imag = np.imag(z)
+
+        # check for imaginary magnification
+        if self.im_mag is True:
+            imaginary_magnification = z_imag
+        else:
+            imaginary_magnification = 1
+
         result = abs(np.prod(
-            [self.beta * (z_imag * z_real / n) * ((z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
+            [self.beta * (z_real * imaginary_magnification / n) * ((z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
                 [1 - ((z_real + 1j * z_imag) ** 2) / (n ** 2 * k ** 2)
                  for k in range(2, int(z_real) + 1)])) for n in range(2, int(z_real) + 1)])) ** (-self.m)
         #TODO FUNCTION TRANSFORMATION SELECTOR

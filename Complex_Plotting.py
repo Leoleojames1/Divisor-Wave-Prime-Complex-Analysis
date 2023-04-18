@@ -30,7 +30,7 @@ from matplotlib.colors import PowerNorm
 
 from Special_Functions import Special_Functions
 
-print(sys.path)
+# print(sys.path)
 plt.style.use('dark_background')
 
 # -----------------------------------------------------------------------------------------------------------------
@@ -69,10 +69,11 @@ class Complex_Plotting :
         if plot_type == "3D":
 
             # Default Values, Copy these if you are going to change them
-            #self.resolution_3D = 0.0899
-            self.resolution_3D = 0.0199
+            self.resolution_3D = 0.0899
+            #self.resolution_3D = 0.0599
+            #self.resolution_3D = 0.0199
             self.x_min_3D = 1
-            self.x_max_3D = 18
+            self.x_max_3D = 11
             self.y_min_3D = -3
             self.y_max_3D = 3
 
