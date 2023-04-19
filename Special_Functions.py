@@ -52,7 +52,8 @@ class Special_Functions :
             # Default Values, Copy these if you are going to change them
             # self.m = 0.158
             #Default for function 3
-            self.m = 0.0708
+            self.m = 0.118
+            # self.m = 0.0708
             # self.m = 0.0008
             if normalized == True:
                 #default for function 3
@@ -151,7 +152,7 @@ class Special_Functions :
     def product_of_product_representation_for_sin(self, z):
         """
         Computes the product of the product representation for sin(pi*z/n).
-        f(x) = ∏_(n=2)^x (pi*x) ∏_(n=2)^x (1-(x^27)/(i^27)(n^27))
+        f(x) = ∏_(n=2)^x (pi*x) ∏_(n=2)^x (1-(x^2)/(i^2)(n^2))
         Args:
             z (complex): A complex number to evaluate.
         Returns:

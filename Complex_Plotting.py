@@ -66,8 +66,8 @@ class Complex_Plotting :
             # self.y_max_2D = 3
 
             # Default Values, Copy these if you are going to change them
-            #self.resolution_2D = 750
-            self.resolution_2D = 250
+            self.resolution_2D = 500
+            # self.resolution_2D = 250
             self.x_min_2D = 1
             self.x_max_2D = 42
             self.y_min_2D = -4
@@ -78,9 +78,9 @@ class Complex_Plotting :
 
             # Default Values, Copy these if you are going to change them
             #self.resolution_3D = 0.1899
-            self.resolution_3D = 0.0899
+            #self.resolution_3D = 0.0899
             #self.resolution_3D = 0.0599
-            # self.resolution_3D = 0.0349
+            self.resolution_3D = 0.0349
             #self.resolution_3D = 0.0199
             #self.resolution_3D = 0.0099
             #self.resolution_3D = 0.0010
