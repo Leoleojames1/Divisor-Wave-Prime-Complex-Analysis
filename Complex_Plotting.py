@@ -69,15 +69,17 @@ class Complex_Plotting :
         if plot_type == "3D":
 
             # Default Values, Copy these if you are going to change them
-            #self.resolution_3D = 0.0899
+            # self.resolution_3D = 0.1899
+            # self.resolution_3D = 0.0899
             #self.resolution_3D = 0.0599
-            #self.resolution_3D = 0.0199
-            self.resolution_3D = 0.0099
+            self.resolution_3D = 0.0199
+            #self.resolution_3D = 0.0099
+            #self.resolution_3D = 0.0010
 
-            self.x_min_3D = 1
-            self.x_max_3D = 4
-            self.y_min_3D = -6
-            self.y_max_3D = 6
+            self.x_min_3D = 2
+            self.x_max_3D = 19
+            self.y_min_3D = -7
+            self.y_max_3D = 7
 
         return
 
@@ -267,12 +269,12 @@ class Complex_Plotting :
 
         # -----------------------------------------------------------------------------------------------------------------------
         # Set up the plot
-        fig = plt.figure(figsize=(12, 10))
+        fig = plt.figure(figsize=(12, 20))
         # create 3d subplot
         ax = fig.add_subplot(111, projection='3d')
         # Set initial plot angles
-        # ax.view_init(elev=30, azim=-45)
-        ax.view_init(elev=90, azim=0)
+        ax.view_init(elev=30, azim=-45)
+        # ax.view_init(elev=90, azim=0)
         ax.dist = 10
         ax.set_box_aspect((5, 5, 1))
         ax.auto_scale_xyz([-1, 1], [-1, 1], [-1, 1])

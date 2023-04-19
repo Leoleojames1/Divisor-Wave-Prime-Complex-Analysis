@@ -33,7 +33,7 @@ class Special_Functions :
         Initialization the Special_Functions Object, defines self arg m = desired magnification exponent
         """
 
-        normalized = False
+        normalized = True
         self.im_mag = False
 
         # if user selected 2D plot, graph the plot with the given values
@@ -41,14 +41,16 @@ class Special_Functions :
             # Default Values, Copy these if you are going to change them
             self.m = 0.096
             if normalized == True:
-                self.beta = 0.017
+                self.beta = 0.077
             else:
                 self.beta = 4.577
 
         # if user selected 3D plot, graph the plot with the given values
         if plot_type == "3D":
             # Default Values, Copy these if you are going to change them
-            self.m = 0.158
+            # self.m = 0.158
+            self.m = 0.0708
+            # self.m = 0.0008
             if normalized == True:
                 self.beta = 0.077
             else:
@@ -167,10 +169,12 @@ class Special_Functions :
         else:
             imaginary_magnification = 1
 
+        power_integer = 2
+
         # calculate the double infinite product via the double for loop
         result = abs(np.prod(
             [self.beta * (imaginary_magnification * z_real / n) * ((z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
-                [1 - ((z) ** 2) / (n ** 2 * k ** 2)
+                [1 - ((z) ** power_integer) / (n ** power_integer * k ** power_integer)
                  for k in range(2, int(z_real) + 1)])) for n in range(2, int(z_real) + 1)])) ** (-self.m)
 
         # # print function values for bug testing

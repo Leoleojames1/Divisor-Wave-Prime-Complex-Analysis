@@ -8,6 +8,8 @@ Prime_Finder_Product_Script:
 
 import math
 import numpy as np
+import scipy
+from scipy import special
 
 def b(x):
     """
@@ -20,7 +22,7 @@ def b(x):
         (int): The product of the product representation for sin(z).
     """
     result = abs(np.prod([x / n * (x * math.pi) * np.prod(
-        [1 - x ** 2 / (n ** 2 * k ** 2) for k in range(2, int(x) + 1)]
+        [1 - x ** math.pi / (n ** math.pi * k ** math.pi) for k in range(2, int(x) + 1)]
     ) for n in range(2, int(x) + 1)]))
     return result
 
@@ -48,8 +50,11 @@ if __name__ == '__main__':
     # loop through values of x and form list
     for x in range(start, end):
         cx = c(x)
-        if cx is not None:
-            results.append("c({}) = {}\n".format(x, cx))
-    # write list to file
-    with open("prime_list_output.txt", "w") as f:
-        f.writelines(results)
+        bx = b(x)
+        #if cx is not None:
+            #print("c({}) = {}".format(x, cx))
+        print("b({}) = {}".format(x, bx))
+    #         results.append("c({}) = {}\n".format(x, cx))
+    # # write list to file
+    # with open("prime_list_output.txt", "w") as f:
+    #     f.writelines(results)
