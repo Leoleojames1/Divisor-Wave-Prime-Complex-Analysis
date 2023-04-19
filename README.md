@@ -67,7 +67,7 @@ src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_norma
   style="display: inline-block; margin: 0 auto; max-width: 100px">
 
 <img
-  src="graphs/3D_Complex_Graphs/product of sin/Complex_3D_normalized_product_of_sin_7.png"
+  src="graphs/3D_Complex_Graphs/product of sin/Complex_3D_normalized_product_of_sin_11.png"
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
