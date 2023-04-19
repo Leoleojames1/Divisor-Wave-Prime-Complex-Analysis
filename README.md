@@ -45,7 +45,7 @@ src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_norma
   
 
 <img
-src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_normalized_goodm_prism_2.png"
+src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/Poster_formula_leoborch_special_functions_2.png"
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
