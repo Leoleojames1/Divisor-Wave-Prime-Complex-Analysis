@@ -69,9 +69,9 @@ class Complex_Plotting :
             self.resolution_2D = 500
             # self.resolution_2D = 250
             self.x_min_2D = 1
-            self.x_max_2D = 42
-            self.y_min_2D = -4
-            self.y_max_2D = 4
+            self.x_max_2D = 122
+            self.y_min_2D = -2
+            self.y_max_2D = 2
 
         # if user selected 2D plot, graph the plot with the given values
         if plot_type == "3D":
