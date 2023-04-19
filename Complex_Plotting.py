@@ -69,8 +69,8 @@ class Complex_Plotting :
         if plot_type == "3D":
 
             # Default Values, Copy these if you are going to change them
-            # self.resolution_3D = 0.1899
-            # self.resolution_3D = 0.0899
+            #self.resolution_3D = 0.1899
+            #self.resolution_3D = 0.0899
             #self.resolution_3D = 0.0599
             self.resolution_3D = 0.0199
             #self.resolution_3D = 0.0099
@@ -269,7 +269,7 @@ class Complex_Plotting :
 
         # -----------------------------------------------------------------------------------------------------------------------
         # Set up the plot
-        fig = plt.figure(figsize=(12, 20))
+        fig = plt.figure(figsize=(12, 10))
         # create 3d subplot
         ax = fig.add_subplot(111, projection='3d')
         # Set initial plot angles
