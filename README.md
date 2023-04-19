@@ -28,6 +28,12 @@ src="graphs/2D_Complex_Graphs/Infinite_Product_of_infinite_product_representatio
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
+  
+<img
+src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_normalized_goodm_prism_8.png"
+  alt="Alt text"
+  title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
+  style="display: inline-block; margin: 0 auto; max-width: 100px">
 
 ### Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n) in the 3-D Complex Plane:
 
