@@ -39,7 +39,9 @@ class Special_Functions :
         # if user selected 2D plot, graph the plot with the given values
         if plot_type == "2D":
             # Default Values, Copy these if you are going to change them
-            self.m = 0.096
+            #self.m = 0.096
+            #Default for function 3
+            self.m = 0.0708
             if normalized == True:
                 self.beta = 0.077
             else:
@@ -49,9 +51,11 @@ class Special_Functions :
         if plot_type == "3D":
             # Default Values, Copy these if you are going to change them
             # self.m = 0.158
+            #Default for function 3
             self.m = 0.0708
             # self.m = 0.0008
             if normalized == True:
+                #default for function 3
                 self.beta = 0.077
             else:
                 self.beta = 4.577
@@ -147,7 +151,7 @@ class Special_Functions :
     def product_of_product_representation_for_sin(self, z):
         """
         Computes the product of the product representation for sin(pi*z/n).
-        f(x) = ∏_(n=2)^x (pi*x) ∏_(n=2)^x (1-(x^2)/(i^2)(n^2))
+        f(x) = ∏_(n=2)^x (pi*x) ∏_(n=2)^x (1-(x^27)/(i^27)(n^27))
         Args:
             z (complex): A complex number to evaluate.
         Returns:

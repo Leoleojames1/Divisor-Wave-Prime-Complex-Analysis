@@ -59,20 +59,29 @@ class Complex_Plotting :
         if plot_type == "2D":
 
             # Default Values, Copy these if you are going to change them
-            self.resolution_2D = 500
+            # self.resolution_2D = 500
+            # self.x_min_2D = 1
+            # self.x_max_2D = 22
+            # self.y_min_2D = -3
+            # self.y_max_2D = 3
+
+            # Default Values, Copy these if you are going to change them
+            #self.resolution_2D = 750
+            self.resolution_2D = 250
             self.x_min_2D = 1
-            self.x_max_2D = 22
-            self.y_min_2D = -3
-            self.y_max_2D = 3
+            self.x_max_2D = 42
+            self.y_min_2D = -4
+            self.y_max_2D = 4
 
         # if user selected 2D plot, graph the plot with the given values
         if plot_type == "3D":
 
             # Default Values, Copy these if you are going to change them
             #self.resolution_3D = 0.1899
-            #self.resolution_3D = 0.0899
+            self.resolution_3D = 0.0899
             #self.resolution_3D = 0.0599
-            self.resolution_3D = 0.0199
+            # self.resolution_3D = 0.0349
+            #self.resolution_3D = 0.0199
             #self.resolution_3D = 0.0099
             #self.resolution_3D = 0.0010
 
@@ -80,6 +89,12 @@ class Complex_Plotting :
             self.x_max_3D = 19
             self.y_min_3D = -7
             self.y_max_3D = 7
+
+            # Default for function 3
+            # self.x_min_3D = 2
+            # self.x_max_3D = 19
+            # self.y_min_3D = -7
+            # self.y_max_3D = 7
 
         return
 
@@ -269,7 +284,7 @@ class Complex_Plotting :
 
         # -----------------------------------------------------------------------------------------------------------------------
         # Set up the plot
-        fig = plt.figure(figsize=(12, 10))
+        fig = plt.figure(figsize=(18, 10))
         # create 3d subplot
         ax = fig.add_subplot(111, projection='3d')
         # Set initial plot angles
@@ -393,11 +408,11 @@ if __name__ == "__main__":
              "1": "custom_colors1",
              "2": "custom_colors2_exp",
              "3": "custom_colors3_exp",
-             "4": "viridis",
-             "5": "plasma",
-             "6": "magma",
-             "7": "prism",
-             "8": "jet",
+             "4": "prism",
+             "5": "jet",
+             "6": "plasma",
+             "7": "viridis",
+             "8": "magma",
             }
         print("Here are the color map functions, please enter the number on the left")
         print("to choose that color for the render.")
