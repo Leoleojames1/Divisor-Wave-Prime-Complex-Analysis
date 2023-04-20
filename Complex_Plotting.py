@@ -66,12 +66,12 @@ class Complex_Plotting :
             # self.y_max_2D = 3
 
             # Default Values, Copy these if you are going to change them
-            self.resolution_2D = 500
+            self.resolution_2D = 1000
             # self.resolution_2D = 250
             self.x_min_2D = 1
-            self.x_max_2D = 122
-            self.y_min_2D = -2
-            self.y_max_2D = 2
+            self.x_max_2D = 37
+            self.y_min_2D = -1
+            self.y_max_2D = 1
 
         # if user selected 2D plot, graph the plot with the given values
         if plot_type == "3D":
@@ -289,6 +289,7 @@ class Complex_Plotting :
         ax = fig.add_subplot(111, projection='3d')
         # Set initial plot angles
         ax.view_init(elev=30, azim=-45)
+        # ax.view_init(elev=210, azim=-45)
         # ax.view_init(elev=90, azim=0)
         ax.dist = 10
         ax.set_box_aspect((5, 5, 1))

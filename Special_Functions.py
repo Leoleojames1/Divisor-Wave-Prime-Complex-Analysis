@@ -33,7 +33,7 @@ class Special_Functions :
         Initialization the Special_Functions Object, defines self arg m = desired magnification exponent
         """
 
-        normalized = True
+        normalized = False
         self.im_mag = False
 
         # if user selected 2D plot, graph the plot with the given values
@@ -52,7 +52,8 @@ class Special_Functions :
             # Default Values, Copy these if you are going to change them
             # self.m = 0.158
             #Default for function 3
-            self.m = 0.118
+            # self.m = 0.118
+            self.m = 0.0208
             # self.m = 0.0708
             # self.m = 0.0008
             if normalized == True:
