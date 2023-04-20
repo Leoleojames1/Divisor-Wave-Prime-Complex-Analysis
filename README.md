@@ -38,14 +38,13 @@ src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_norma
 ### Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n) in the 3-D Complex Plane:
 
 <img
-src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_normalized_4.png"
+src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/Poster_formula_leoborch_special_functions_2.png"
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
   
-
 <img
-src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/Poster_formula_leoborch_special_functions_2.png"
+src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_normalized_goodm_prism_9.png"
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
