@@ -33,7 +33,7 @@ class Special_Functions :
         Initialization the Special_Functions Object, defines self arg m = desired magnification exponent
         """
 
-        normalized = False
+        normalized = True
         self.im_mag = False
 
         # if user selected 2D plot, graph the plot with the given values
@@ -53,8 +53,8 @@ class Special_Functions :
             # self.m = 0.158
             #Default for function 3
             # self.m = 0.118
-            self.m = 0.0208
-            # self.m = 0.0708
+            # self.m = 0.0208
+            self.m = 0.0708
             # self.m = 0.0008
             if normalized == True:
                 #default for function 3
@@ -175,12 +175,15 @@ class Special_Functions :
         else:
             imaginary_magnification = 1
 
+        #27 is a fun exponent to try
         power_integer = 2
+        self.m = 0.0708
+        self.beta = 0.077
 
         # calculate the double infinite product via the double for loop
         result = abs(np.prod(
             [self.beta * (imaginary_magnification * z_real / n) * ((z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
-                [1 - ((z) ** power_integer) / (n ** power_integer * k ** power_integer)
+                [1 - ( (z_real + 1j * z_imag) ** power_integer) / (n ** power_integer * k ** power_integer)
                  for k in range(2, int(z_real) + 1)])) for n in range(2, int(z_real) + 1)])) ** (-self.m)
 
         # # print function values for bug testing
@@ -422,14 +425,19 @@ class Special_Functions :
         #     self.product_of_product_representation_for_sin(z) \
         #     * self.normalized_product_of_product_representation_for_sin(z)
 
-        z_real = np.real(z)
-        z_imag = np.imag(z)
+        # combination = \
+        #     self.product_of_product_representation_for_sin(z) \
+        #     * math.e ** (z)
 
-        # normalized double infinite product for loop
-        combination = np.cos(abs(np.prod([self.beta * (z_real / n) * (
-                (z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
-            [1 - ((z_real + 1j * z_imag) ** 2) / (n ** 2 * k ** 2) for k in range(2, int(z_real) + 1)])) for n in
-                                 range(2, int(z_real) + 1)])))
+        # z_real = np.real(z)
+        # z_imag = np.imag(z)
+        #
+        # # normalized double infinite product for loop
+        # combination = np.cos(abs(np.prod([self.beta * (z_real / n) * (
+        #         (z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
+        #     [1 - ((z_real + 1j * z_imag) ** 2) / (n ** 2 * k ** 2) for k in range(2, int(z_real) + 1)])) for n in
+        #                          range(2, int(z_real) + 1)])))
+
         # denominator = abs(np.prod([self.beta * (z_real / n) * (
         #         (z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
         #     [1 - ((z_real + 1j * z_imag) ** 2) / (n ** 2 * k ** 2) for k in range(2, int(z_real) + 1)])) for n in
