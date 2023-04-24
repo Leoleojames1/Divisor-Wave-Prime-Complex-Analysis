@@ -23,6 +23,8 @@ http://www-elsa.physik.uni-bonn.de/~dieckman/InfProd/InfProd.html
 
 https://ocw.mit.edu/courses/18-104-seminar-in-analysis-applications-to-number-theory-fall-2006/58778de0faae6448c3b0bfb1a1ec4f7a_chan.pdf
 
+https://www.jstor.org/stable/3615085
+
 # Special-Functions
 A program for plotting complex functions. This tool provides the plotting functions for 2D and 3D graphics for infinite series such as the Riemann zeta function, 
 the infinite product of the product representation for sin(pi*z/n) as well as any other function that can be formulated in the complex plane.
