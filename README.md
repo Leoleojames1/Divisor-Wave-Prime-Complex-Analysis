@@ -27,6 +27,10 @@ https://www.jstor.org/stable/3615085
 
 https://osf.io/4afqj/download
 
+https://www.parabola.unsw.edu.au/files/articles/2020-2029/volume-57-2021/issue-2/vol57_no2_3.pdf
+
+https://www.maa.org/sites/default/files/pdf/pubs/monthly_augsep12_page645.pdf
+
 # Special-Functions
 A program for plotting complex functions. This tool provides the plotting functions for 2D and 3D graphics for infinite series such as the Riemann zeta function, 
 the infinite product of the product representation for sin(pi*z/n) as well as any other function that can be formulated in the complex plane.
