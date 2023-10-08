@@ -17,6 +17,11 @@ import sys
 import numpy as np
 import pyqtgraph as pg
 import matplotlib.pyplot as plt
+
+import vispy.app
+from vispy.scene import SceneCanvas
+from vispy import visuals, scene
+
 from matplotlib.colors import ListedColormap
 from matplotlib import ticker
 from matplotlib import cm
@@ -66,29 +71,65 @@ class Complex_Plotting :
             # self.y_max_2D = 3
 
             # Default Values, Copy these if you are going to change them
-            self.resolution_2D = 1000
-            # self.resolution_2D = 250
+            self.resolution_2D = 500
+            # self.resolution_2D = 750
+            # self.resolution_2D = 500
             self.x_min_2D = 1
-            self.x_max_2D = 37
-            self.y_min_2D = -1
-            self.y_max_2D = 1
+            self.x_max_2D = 18
+            self.y_min_2D = -4
+            self.y_max_2D = 4
 
         # if user selected 2D plot, graph the plot with the given values
         if plot_type == "3D":
 
             # Default Values, Copy these if you are going to change them
-            #self.resolution_3D = 0.1899
-            #self.resolution_3D = 0.0899
-            #self.resolution_3D = 0.0599
-            self.resolution_3D = 0.0349
-            #self.resolution_3D = 0.0199
-            #self.resolution_3D = 0.0099
-            #self.resolution_3D = 0.0010
+            # self.resolution_3D = 0.1899
+            # self.resolution_3D = 0.1199
+            # self.resolution_3D = 0.0949
+            # self.resolution_3D = 0.0899
+            # self.resolution_3D = 0.0599
 
-            self.x_min_3D = 2
-            self.x_max_3D = 19
-            self.y_min_3D = -7
-            self.y_max_3D = 7
+            #TODO Real Fast
+            # self.resolution_3D = 0.0449
+            #TODO good fast
+            self.resolution_3D = 0.0349
+
+            #TODO medium HD
+            # self.resolution_3D = 0.0249
+
+            #TODO better slow
+            # self.resolution_3D = 0.0199
+            #TODO very slow
+            # self.resolution_3D = 0.0149
+
+            # self.resolution_3D = 0.0099
+
+            # self.resolution_3D = 0.0060
+            # self.resolution_3D = 0.0010
+            # self.resolution_3D = 0.0001
+
+            self.x_min_3D = 1
+            self.x_max_3D = 18
+            self.y_min_3D = -3
+            self.y_max_3D = 3
+
+            # self.x_min_3D = 5.5
+            # self.x_max_3D = 12.5
+
+            # self.x_min_3D = 5.5
+            # self.x_max_3D = 8.5
+
+            # self.x_min_3D = 9.5
+            # self.x_max_3D = 14.5
+
+            # self.y_min_3D = -.314
+            # self.y_max_3D = .314
+
+
+            # self.x_min_3D = -5.5
+            # self.x_max_3D = 6
+            # self.y_min_3D = 0
+            # self.y_max_3D = 12
 
             # Default for function 3
             # self.x_min_3D = 2
@@ -163,7 +204,7 @@ class Complex_Plotting :
         return colors
 
     # -----------------------------------------------------------------------------------------------------------------
-    def create_plot_2D(self, color_map_2D):
+    def create_plot_2D(self, color_map_2D, Normalize_type):
         """
         Args:
             resolution_2D:
@@ -186,7 +227,7 @@ class Complex_Plotting :
 
 
         # calculate special functions object f(z)
-        lamda_function_array = special_functions_object.lamda_function_library()
+        lamda_function_array = special_functions_object.lamda_function_library(Normalize_type)
 
         # for loop which plots the point of the selected function f(z)
         for i in range(self.resolution_2D):
@@ -247,7 +288,7 @@ class Complex_Plotting :
         return
 
     # -----------------------------------------------------------------------------------------------------------------
-    def create_plot_3D(self, color_map_3D):
+    def create_plot_3D(self, color_map_3D, Normalize_type):
         """
         Plotting function.
 
@@ -258,7 +299,7 @@ class Complex_Plotting :
         """
 
         # calculate special functions object f(z)
-        lamda_function_array = special_functions_object.lamda_function_library()
+        lamda_function_array = special_functions_object.lamda_function_library(Normalize_type)
 
         R = self.resolution_3D
         X = np.arange(self.x_min_3D, self.x_max_3D, R)
@@ -284,18 +325,28 @@ class Complex_Plotting :
 
         # -----------------------------------------------------------------------------------------------------------------------
         # Set up the plot
-        fig = plt.figure(figsize=(18, 10))
+        fig = plt.figure(figsize=(19, 11))
+
         # create 3d subplot
         ax = fig.add_subplot(111, projection='3d')
+
         # Set initial plot angles
-        ax.view_init(elev=30, azim=-45)
+        # ax.view_init(elev=30, azim=-70)
+        ax.view_init(elev=210, azim=-70)
+
+        # ax.view_init(elev=30, azim=-110)
         # ax.view_init(elev=210, azim=-45)
         # ax.view_init(elev=90, azim=0)
+
         ax.dist = 10
         ax.set_box_aspect((5, 5, 1))
         ax.auto_scale_xyz([-1, 1], [-1, 1], [-1, 1])
+
         # Set the aspect ratio to be 1:1:0.5 # Was originally that ratio
         ax.set_box_aspect((5, 5, 1))
+        # ax.set_box_aspect((8, 4, 1))
+        # ax.set_box_aspect((4, 4, 7))
+
 
         # prism - fractal color gradient
         # viridis - simple color gradient
@@ -315,7 +366,13 @@ class Complex_Plotting :
 
         # ax.plot_surface(X, Y, W, rstride=1, cstride=1, cmap=cm.prism)
         # ax.plot_wireframe(X, Y, W, rstride=5, cstride=5)
+        #
+        # ax.set_xlim(0, 18)  # Adjust the limits as needed
+        # ax.set_ylim(-4, 4)  # Adjust the limits as needed
+        # ax.set_zlim(0, 2)  # Adjust the limits as needed
 
+        # Adjust grid line size
+        # ax.tick_params(axis='both', which='major', pad=10, width=2)  # You can adjust pad and width as needed
 
         ax.set_xlabel('Real Axis')
         ax.set_ylabel('Imaginary Axis')
@@ -323,64 +380,6 @@ class Complex_Plotting :
         ax.set_title(f"Product of Sin(x) via Sin(x) product Representation")
         plt.draw()
         plt.show()
-
-        return
-
-    def create_plot_pyqtgraph(self):
-        """
-        Plotting function.
-        Args:
-            func (function): A function to evaluate at each point in the complex plane.
-        Returns:
-            None.
-        """
-        # Create a 2D plot widget
-        plot_widget = pg.plot(title="Product of Product Representation for Sin",
-                              labels={'left': 'Imaginary', 'bottom': 'Real'})
-
-        # Set up a grid of points in the complex plane to evaluate the function at
-        x_vals = np.linspace(-5, 5, 100)
-        y_vals = np.linspace(-5, 5, 100)
-        xx, yy = np.meshgrid(x_vals, y_vals)
-        z = xx + 1j * yy
-
-        # return special functions object f(z)
-        lamda_function = special_functions_object.lamda_function_library()
-
-        # Evaluate the function at each point in the grid
-        lamda_function_array = np.zeros((len(x_vals), len(y_vals)))
-        for i, x in enumerate(x_vals):
-            for j, y in enumerate(y_vals):
-                z_ij = complex(x, y)
-                lamda_function_array[j, i] = lamda_function(z_ij)
-
-        # Create an image item from the function values and add it to the plot
-        img_item = pg.ImageItem()
-        img_item.setImage(lamda_function_array.real)
-        img_item.setLevels([lamda_function_array.real.min(), lamda_function_array.real.max()])
-        plot_widget.addItem(img_item)
-
-        # Set the x and y ranges of the plot to match the grid
-        plot_widget.setXRange(x_vals[0], x_vals[-1], padding=0)
-        plot_widget.setYRange(y_vals[0], y_vals[-1], padding=0)
-
-        # Add a color map to the image item for better visualization
-        color_map = pg.ColorMap([lamda_function_array.real.min(), 0, lamda_function_array.real.max()],
-                                [(0, 0, 255), (255, 255, 255), (255, 0, 0)])
-        lut = color_map.getLookupTable(lamda_function_array.real.min(), lamda_function_array.real.max(), 256)
-        img_item.setLookupTable(lut)
-
-        # Add a color bar to the plot to show the color map scale
-        color_bar = pg.GradientWidget(orientation='right')
-        color_bar.setColorMap(color_map)
-        color_bar_item = pg.GraphicsWidget()
-        color_bar_item.addItem(color_bar)
-        plot_widget.addItem(color_bar_item, row=0, col=1)
-        print("color_bar added")
-
-        # Show the plot
-        plot_widget.show()
-        print("plot shown")
 
         return
 
@@ -423,9 +422,13 @@ if __name__ == "__main__":
         # Get x-axis min range from user input
         color_map_2D = input('Select color map python default or custom: \n')
 
+        # get user input for plot type
+        print("Utilize exponential product normalization (Y/N)?")
+        Normalize_type = input()
+
     # if user selected 2D plot, graph the plot with the given values
     if plot_type == "2D":
-        complex_plotting_object.create_plot_2D(color_map_2D)
+        complex_plotting_object.create_plot_2D(color_map_2D, Normalize_type)
 
     # ------------------------------------------------------------------------------------------------------------
     # 3D Plotting Menu
@@ -446,14 +449,17 @@ if __name__ == "__main__":
         # Get x-axis min range from user input
         color_map_3D = input('Select color map python default or custom: \n')
 
+        # get user input for plot type
+        print("Utilize exponential product normalization (Y/N)?")
+        Normalize_type = input()
+
     # if user selected 2D plot, graph the plot with the given values
     if plot_type == "3D":
-        complex_plotting_object.create_plot_3D(color_map_3D)
+        complex_plotting_object.create_plot_3D(color_map_3D, Normalize_type)
 
-    # ------------------------------------------------------------------------------------------------------------
-    # PyQt Plotting Menu
-    if plot_type == "PyQt":
-        complex_plotting_object.create_plot_pyqtgraph()
+    # # if user selected 3D plot with accelerated GPU processing, graph the plot with the given values
+    # if plot_type == "3D":
+    #     complex_plotting_object.create_plot_3D_GPU(color_map_3D)
 
     # ------------------------------------------------------------------------------------------------------------
     # C++ Plotting Menu
