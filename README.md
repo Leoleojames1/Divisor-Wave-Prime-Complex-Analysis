@@ -35,6 +35,8 @@ https://mathworld.wolfram.com/DedekindEtaFunction.html
 
 https://mathworld.wolfram.com/InfiniteProduct.html
 
+https://mathworld.wolfram.com/PolygonCircumscribing.html
+
 # Special-Functions
 A program for plotting complex functions. This tool provides the plotting functions for 2D and 3D graphics for infinite series such as the Riemann zeta function, 
 the infinite product of the product representation for sin(pi*z/n) as well as any other function that can be formulated in the complex plane.
