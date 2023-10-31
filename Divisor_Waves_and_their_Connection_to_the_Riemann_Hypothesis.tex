@@ -2,6 +2,9 @@
 \usepackage[left=2cm, right=2cm, top=2cm, bottom=3cm]{geometry}
 \usepackage{amsmath} % provides many mathematical environments & tools
 
+% Define new command for side indices
+\newcommand{\sidesum}[2]{\displaystyle\sum\nolimits_{\scriptstyle #1}^{\scriptstyle #2}}
+
 \setlength{\parindent}{0mm}
 
 \usepackage{graphicx}
@@ -278,14 +281,6 @@ The 2D plot of B(z) in the complex plane provides a map of the prime and composi
 \hspace{8mm}\caption{Figure 19: 3D Graph of $B(x+iy)$ showcasing the zeros of the composite numbers} \\
 
 \newpage
-\subsection*{Initial Description of Function g(z)}
-The function $g(z)$ is defined as the infinite product of  of $1 + \sin(piz/n)$ and is a type of Riesz Product:
-
-\begin{align*}
-	g(z) = |\prod_{n=2}^z \left(1 + |\sin\left(\pi z n\right)|\right)|
-\end{align*}
-
-\newpage
 \subsection*{Initial Description of Function G(z)}
 We define the Normalized g(z), function $G(z)$ as follows:
 
@@ -304,14 +299,6 @@ This function's waveform has peaks at each whole number value and smaller peaks 
 \end{align*}
 
 This is the normalized complex plot for Riesz' infinite product of sine. The plot is fascinating as it displays poles around specific values of x, similar to Riesz cosine product, and tangent product.
-
-\newpage
-\subsection*{Initial Description of Function h(z)}
-The function $h(z)$ is defined as the infinite product of  of $1 + \cos(piz/n)$ and is a type of Riesz Product:
-
-\begin{align*}
-	h(z) = |\prod_{n=2}^z \left(1 + |\cos\left(\pi z n\right)|\right)|
-\end{align*}
 
 \newpage
 \subsection*{Initial Description of Function H(z)}
@@ -336,14 +323,6 @@ This function's waveform has troughs at each whole number value and smaller trou
 \end{align*}
 
 This is the normalized complex plot for Riesz' infinite product of cosine. The plot is fascinating as it displays poles around specific values of x, similar to Riesz sine product, and tangent product.
-
-\newpage
-\subsection*{Initial Description of Function i(z)}
-The function $i(z)$ is defined as the infinite product of  of $1 + \tan(piz/n)$ and is a type of Riesz Product:
-
-\begin{align*}
-	i(z) = |\prod_{n=2}^z \left(1 + |\tan\left(\pi z n\right)|\right)|
-\end{align*}
 
 \newpage
 \subsection*{Initial Description of Function I(z)}
@@ -374,16 +353,6 @@ This is the normalized complex plot for Riesz' infinite product of tangent. The 
 \end{align*}
 
 \newpage
-\subsection*{Initial Description of Function j(z)}
-The function $j(z)$ is defined as the Reisz Product g(z) multiplied by the prime indicating product b(z):
-
-\begin{align*}
-	j(z) = \left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left(1 + |\sin\left(\pi z n\right)|\right)\right]|\right)*\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|\right)
-\end{align*} 
-
-The function j(z) allows us to compress g(z) down to the x axis using b(z). The zeros of b(z) are the composite numbers and the non-zero values of b(z) for whole number values of z are prime. this waveform can be combined with the normalized Riesz products to create a new complex wave that is capable of evaluating both the whole numbers and the rational fractions defined by the Riesz products.
-
-\newpage
 \subsection*{Initial Description of Function J(z)}
 We define the Normalized j(z), function $J(z)$ as follows:
 
@@ -400,16 +369,6 @@ Taken together, the product and sum combine to create a highly complex function 
 \end{align*}
 
 \newpage
-\subsection*{Initial Description of Function k(z)}
-The function $k(z)$ is defined as the Reisz Product k(z) multiplied by the prime indicating product b(z):
-
-\begin{align*}
-	k(z) = \left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left(1 + |\cos\left(\pi z n\right)|\right)\right]|\right)*\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|\right)
-\end{align*} 
-
-The function k(z) allows us to compress k(z) down to the x axis using b(z). The zeros of b(z) are the composite numbers and the non-zero values of b(z) for whole number values of z are prime. this waveform can be combined with the normalized Riesz products to create a new complex wave that is capable of evaluating both the whole numbers and the rational fractions defined by the Riesz products.
-
-\newpage
 \subsection*{Initial Description of Function K(z)}
 We define the Normalized k(z), function $K(z)$ as follows:
 
@@ -422,16 +381,6 @@ We define the Normalized k(z), function $K(z)$ as follows:
 \end{align*}
 
 \newpage
-\subsection*{Initial Description of Function l(z)}
-The function $l(z)$ is defined as the Reisz Product i(z) multiplied by the prime indicating product b(z):
-
-\begin{align*}
-	l(z) = \left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left(1 + |\tan\left(\pi z n\right)|\right)\right]|\right)*\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|\right)
-\end{align*} 
-
-The function l(z) allows us to compress i(z) down to the x axis using b(z). The zeros of b(z) are the composite numbers and the non-zero values of b(z) for whole number values of z are prime. this waveform can be combined with the normalized Riesz products to create a new complex wave that is capable of evaluating both the whole numbers and the rational fractions defined by the Riesz products.
-
-\newpage
 \subsection*{Initial Description of Function L(z)}
 We define the Normalized l(z), function $L(z)$ as follows:
 \begin{align*}
@@ -442,7 +391,7 @@ We define the Normalized l(z), function $L(z)$ as follows:
 \includegraphics[scale=0.30]{graphs/2D_Real_Graphs/1+tan_prod_xprimefunc}
 \end{align*}
 
-When n=3, we have: \\ LEO WAS HERE
+When n=3, we have: \\
 
 \begin{align*}
 (pi*x) * (1 - x^2 / (2^2 * 3^2)) * (1 - x^2 / (3^2 * 3^2)) * ... * (1 - x^2 / (3^2 * x^2))
@@ -452,18 +401,76 @@ And so on, up to $n=x$. The idea is that for each value of n, the product of ter
 
 So, the overall effect of f(x) is a combination of these two factors, which involve trigonometric functions and inverse square terms. The exact behavior of the function for different values of x will depend on the interplay of these factors, but it is clear that the product formula involves some intricate and interesting mathematics. \\
 
+The function j(z) allows us to compress g(z) down to the x axis using b(z). The zeros of b(z) are the composite numbers and the non-zero values of b(z) for whole number values of z are prime. this waveform can be combined with the normalized Riesz products to create a new complex wave that is capable of evaluating both the whole numbers and the rational fractions defined by the Riesz products.
+
 \newpage
-\subsection*{Initial Description of Function m(z)}
-Next, we define the functions $m(z)$:
+\subsection*{The Symmetry of Nested Roots: Deriving the First Fundamental Theorem of Analysis through Isomorphisms}
+
+This chapter provides an in-depth examination of the symmetrical isomorphisms inherent in the Nested Roots family. These isomorphisms, characterized by their symmetry and elegance, serve as a derivation of the First Fundamental Theorem of Analysis, thereby offering a novel perspective on these foundational mathematical principle.
 
 \begin{align*}
-m(z) &= \prod_{n=2}^\infty \left(1 + \frac{z}{n^2}\right)^{-1} \\
+f(z) = \sqrt{z + \sqrt{z + \sqrt{z + \ldots}}} = z^{1/2} + z^{1/4} + z^{1/8} + \ldots
 \end{align*}
 
-The given expression m(z) is an infinite product that can be written in terms of the Riemann zeta function. Specifically, we have:
+\begin{align*}
+f(z) = \left(z + \left(z + \left(z + \ldots\right)^{1/2}\right)^{1/2}\right)^{1/2} = \ln(\frac{x}{2}\frac{x}{4}\frac{x}{8}\ldots)
+\end{align*}
 
 \begin{align*}
-f(x) = \frac{\zeta\left(2\right)^{-1}}{\zeta\left(2-x\right)} \\
+f(z) = \sum_{n=1}^{\infty} \left[x^{2^{-n}}\right] = \ln\left(\prod_{n=1}^{\infty} \left[x^{2^{-n}}\right]\right)
+\end{align*}
+
+\begin{align*}
+g(z) = \sqrt{z \cdot \sqrt{z \cdot \sqrt{z \cdot \ldots}}} = x = z^{1/2} * z^{1/4} * z^{1/8} * \ldots
+\end{align*}
+
+\begin{align*}
+g(z) = \left(z \cdot \left(z \cdot \left(z \cdot \ldots\right)^{1/2}\right)^{1/2}\right)^{1/2} = z^{\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \ldots}
+\end{align*}
+
+\begin{align*}
+g(z) = \prod_{n=1}^{\infty} \left[z^{2^{-n}}\right] = (z)^{\sidesum{n=1}{\infty}(2^{-n})}
+\end{align*}
+
+\begin{align*}
+\includegraphics[scale=0.4]{graphs/Fundamental_Theorem_1}
+\end{align*}
+
+\newpage
+\subsection*{Gamma and Sin Product Identities}
+\tabThe following section, will give an insight into the intertwined nature of the sin function and the gamma function, by reducing these special functions, down to there core infinite series formulas.
+To seed these relationships, we will start with the very well known identity from, (Erica Chang Citation) which goes as follows:
+
+\begin{align*}
+sin(\pi z) &= \frac{\pi}{\Gamma\left(z\right) * \Gamma\left(1 - z\right)} \\
+\end{align*}
+
+\begin{align*}
+\prod_{n=2}^z\left[sin(\frac{\pi * z}{n})\right] &= \prod_{n=2}^z\left[\frac{\pi}{\Gamma\left(\frac{z}{n}\right) * \Gamma\left(1 - \frac{z}{n}\right)}\right] \\
+\end{align*}
+
+\begin{align*}
+sin(\pi z) &= z\pi * \prod_{k=2}^z\left[1 - \frac{z^2}{k^2}\right] \\
+\end{align*}
+
+\begin{align*}
+\frac{\pi}{\Gamma\left(z\right) * \Gamma\left(1 - z\right)} &= z\pi * \prod_{k=2}^z\left[1 - \frac{z^2}{k^2}\right] \\
+\end{align*}
+
+\begin{align*}
+\frac{1}{\Gamma\left(z\right)} &= ze^z^\gamma \prod_{n=2}^z\left[\left(1 + \frac{z^2}{k^2}\right)e^\left(\frac{-z}{n}\right)\right] \\
+\end{align*}
+
+\begin{align*}
+csc(\pi z) &= \frac{\Gamma\left(z\right) * \Gamma\left(1 - z\right)}{\pi} \\
+\end{align*}
+
+\begin{align*}
+sin(\pi z) &= \frac{1}{\Gamma\left(z\right)} * \frac{1}{\Gamma\left(- z\right)} * \frac{\pi}{-z} \\
+\end{align*}
+
+\begin{align*}
+sin(\pi z) &= \frac{\pi}{z} \left(\left[ze^z^\gamma \prod_{n=2}^z \left[\left(1 + \frac{z}{n}\right)e^\frac{-z}{n}\right]\right]\right) * \frac{\pi}{-z} \left(\left[ze^\frac{-z\gamma}{1} \prod_{n=2}^z \left[\left(1 + \frac{-z}{n}\right)e^\frac{z}{n}\right]\right]\right)
 \end{align*}
 
 \newpage
@@ -659,7 +666,7 @@ where $p$ is a prime number.
 
 This is the famous Euler product formula for the Riemann zeta function, which is valid for $\Re(s) > 1$. The formula shows the zeta function as an infinite product over primes, where each term corresponds to the contribution of each prime to the sum over all natural numbers.
 
-The factor $\Gamma(1-s)$ in the formula corresponds to the reflection formula for the gamma function, which allows the formula to be extended to the entire complex plane except for a simple pole at $s=1$. The factor $(1 - \frac{1}{2^{s-1}}) \cdot (1 - \frac{1}{3^{s-1}}) \cdot (1 - \frac{1}{p^{s-1}}) \cdot \cdots$ is known as the Euler factor and it encodes the distribution of prime numbers in the sum over all natural numbers. The zeta function plays a fundamental role in number theory and has connections to many other areas of mathematics, including geometry, analysis, and probability theory.
+The factor $\Gamma(1-s)$ in the formula corresponds to the reflection formula for the gamma function, which allows the formula to be extended to the entire complex plane except for a simple pole at $s=1$. The factor $(1 - \frac{1}{2^{s-1}}) \cdot (1 - \frac{1}{3^{s-1}}) \cdot (1 - \frac{1}{p^{s-1}}) \cdot \cdots$ is known as the Euler factor and it encodes the distribution of prime numbers in the sum over all natural numbers.
 
 \begin{align*}
 \text{For } s = 2: \quad \zeta(2) &= 2^{2} \cdot \pi^{2-1} \cdot \sin(\frac{\pi}{2}) \cdot \Gamma(1-2) \cdot (1 - \frac{1}{2^2}) \cdot (1 - \frac{1}{3^2}) \cdot (1 - \frac{1}{4^2}) \cdots \\
@@ -1114,9 +1121,6 @@ Further investigation and analysis of these equations and their relationships co
 \\
 \\
 \\
-\begin{align*}
-\includegraphics[scale=0.45]{graphs/Fundamental_Theorem_1}
-\end{align*}
 
 References:
 
