@@ -1,6 +1,23 @@
 \documentclass{article}
 \usepackage[left=2cm, right=2cm, top=2cm, bottom=3cm]{geometry}
 \usepackage{amsmath} % provides many mathematical environments & tools
+\usepackage{graphicx} % provides tools for super imposed sum & product integrals
+
+\DeclareMathOperator*{\SumInt}{%
+\mathchoice%
+  {\ooalign{$\displaystyle\sum$\cr\hidewidth$\displaystyle\int$\hidewidth\cr}}
+  {\ooalign{\raisebox{.14\height}{\scalebox{.7}{$\textstyle\sum$}}\cr\hidewidth$\textstyle\int$\hidewidth\cr}}
+  {\ooalign{\raisebox{.2\height}{\scalebox{.6}{$\scriptstyle\sum$}}\cr$\scriptstyle\int$\cr}}
+  {\ooalign{\raisebox{.2\height}{\scalebox{.6}{$\scriptstyle\sum$}}\cr$\scriptstyle\int$\cr}}
+}
+
+\DeclareMathOperator*{\ProdInt}{%
+\mathchoice%
+  {\ooalign{$\displaystyle\prod$\cr\hidewidth$\displaystyle\int$\hidewidth\cr}}
+  {\ooalign{\raisebox{.14\height}{\scalebox{.7}{$\textstyle\prod$}}\cr\hidewidth$\textstyle\int$\hidewidth\cr}}
+  {\ooalign{\raisebox{.2\height}{\scalebox{.6}{$\scriptstyle\prod$}}\cr$\scriptstyle\int$\cr}}
+  {\ooalign{\raisebox{.2\height}{\scalebox{.6}{$\scriptstyle\prod$}}\cr$\scriptstyle\int$\cr}}
+}
 
 % Define new command for side indices
 \newcommand{\sidesum}[2]{\displaystyle\sum\nolimits_{\scriptstyle #1}^{\scriptstyle #2}}
@@ -179,19 +196,15 @@ The above graph is the 3D plot for $b(x+iy)$ where the 3rd dimension is height. 
 The above fractal is the graph of b(x+iy) * iy this multiplies the function by the imaginary component which allows the values to stetch away from the $x-axis$ providing a beautiful fractal for the prime and composite numbers. The spikes are locations with many factors, the factors cause the function to go to infinity in the complex dimension. The prime numbers can be seen as curves between the cusps. These curves are the result of having less component waves that go to zero. \\
 
 \newpage
-Derivation of b(z) by substituting the infinite product representation of $sin(\pi*z/n)$ into the infinite product of $\sin(\pi*z/n)$: \\
+\subsection*{V. Derivation of a(z) and b(z) from the Weierstrass product formula for sin}
+Derivation of a(z) and b(z) by substituting the infinite product representation of $sin(\pi*z/n)$ into the infinite product of $\sin(\pi*z/n)$: \\
 
-Starting with function a(z): \\
-\begin{align*}
-	a(z) = |\prod_{k=2}^z \alpha\frac{z}{k}\sin\left(\frac{\pi z}{k}\right)| \\
-\end{align*}
-
-We use the Weierstrass Product Formula for sin to form the relationship where k is a constant: \\
+We use the Weierstrass Product Formula for sin to form the relationship where k is a constant, this differs from the original Weierstrass product formula which does not contain this constant: \\
 \begin{align*}
 	\sin\left(\frac{\pi z}{k}\right) = \pi z\prod_{n=2}^z \left(1-\frac{z^2}{n^2k^2}\right) \\
 \end{align*}
 
-Taking the product of both sides we have the functional equation of a(z) known as b(z): \\
+Taking the product of both sides provides function a(z) as well as the functional equation of a(z) known as b(z): \\
 \begin{align*}
 	\prod_{k=2}^z\sin\left(\frac{\pi z}{k}\right) = \prod_{k=2}^z \pi z\prod_{n=2}^z \left(1-\frac{z^2}{n^2k^2}\right) \\
 \end{align*}
@@ -230,7 +243,7 @@ f(4) = \\
 = \left( 1 - \frac{4^2}{(4)(4)}\right) = 0 \\
 \end{align*}
 
-For completeness we will also evaluate the prime number $x = 3$ and we can see that for the factors of 3 none of the terms go to zero. \\
+For completeness we will also evaluate the prime number $x = 3$ and we can see that when checking the factors of 3 none of the terms go to zero. \\
 
 \begin{flushleft*}
 f(3) = \\
@@ -247,7 +260,7 @@ f(3) = \\
 \end{align*}
 
 \newpage
-\subsection*{V. Initial Description of Function B(z)}
+\subsection*{VI. Initial Description of Function B(z)}
 We define the Normalized b(z), function $B(z)$ as follows:
 
 \begin{align*}
@@ -281,18 +294,18 @@ The 2D plot of B(z) in the complex plane provides a map of the prime and composi
 \hspace{8mm}\caption{Figure 19: 3D Graph of $B(x+iy)$ showcasing the zeros of the composite numbers} \\
 
 \newpage
-\subsection*{Initial Description of Function G(z)}
-We define the Normalized g(z), function $G(z)$ as follows:
+\subsection*{VII. Exploration of a Complex Riesz Product of sin denoted as C(z)}
+Due to difficulties in programming, the only complex plots presented for Riesz products will undergo Gamma function normalization as presented in Section III. We define the Normalized Complex Riesz Product of sin c(z), function $C(z)$ as follows:
 
 \begin{align*}
-	G(z) = \frac{|\prod_{n=2}^z \left(1 + |\sin\left(\pi z n\right)|\right)|^{-m}}{|\prod_{n=2}^z \left(1 + |\sin\left(\pi z n\right)|\right)|^{-m}!}
+	C(z) = \frac{|\prod_{n=2}^z \left(1 + |\sin\left(\pi z n\right)|\right)|^{-m}}{|\prod_{n=2}^z \left(1 + |\sin\left(\pi z n\right)|\right)|^{-m}!}
 \end{align*} 
 
 \begin{align*}
 \includegraphics[scale=0.30]{graphs/2D_Real_Graphs/1+sin_prod}
 \end{align*}
 
-This function's waveform has peaks at each whole number value and smaller peaks between. This equation will be combined with b(z) later to create a waveform which is an indicator for prime and composite numbers while also dividing the space between whole numbers into finitely many sections as x goes to infinity.
+This function's waveform has peaks at each whole number value and smaller peaks between. The number of divisions for each whole number on the real number plot in Desmos, shows a doubling of slices for each increase in index value of the product. This equation will be combined with b(z) later to create a waveform which is an indicator for prime and composite numbers while also dividing the space between whole numbers into finitely many sections as x goes to infinity.
 
 \begin{align*}
 \includegraphics[scale=0.45]{graphs/3D_Complex_Graphs/riesz_sin/Ries_sin_norm_1}
@@ -301,7 +314,7 @@ This function's waveform has peaks at each whole number value and smaller peaks 
 This is the normalized complex plot for Riesz' infinite product of sine. The plot is fascinating as it displays poles around specific values of x, similar to Riesz cosine product, and tangent product.
 
 \newpage
-\subsection*{Initial Description of Function H(z)}
+\subsection*{VIII. Initial Description of Function H(z)}
 We define the Normalized h(z), function $H(z)$ as follows:
 
 \begin{align*}
@@ -325,7 +338,7 @@ This function's waveform has troughs at each whole number value and smaller trou
 This is the normalized complex plot for Riesz' infinite product of cosine. The plot is fascinating as it displays poles around specific values of x, similar to Riesz sine product, and tangent product.
 
 \newpage
-\subsection*{Initial Description of Function I(z)}
+\subsection*{IX. Initial Description of Function I(z)}
 We define the Normalized i(z), function $I(z)$ as follows:
 
 \begin{align*}
@@ -353,7 +366,7 @@ This is the normalized complex plot for Riesz' infinite product of tangent. The 
 \end{align*}
 
 \newpage
-\subsection*{Initial Description of Function J(z)}
+\subsection*{X. Initial Description of Function J(z)}
 We define the Normalized j(z), function $J(z)$ as follows:
 
 \begin{align*}
@@ -369,7 +382,7 @@ Taken together, the product and sum combine to create a highly complex function 
 \end{align*}
 
 \newpage
-\subsection*{Initial Description of Function K(z)}
+\subsection*{XI. Initial Description of Function K(z)}
 We define the Normalized k(z), function $K(z)$ as follows:
 
 \begin{align*}
@@ -381,7 +394,7 @@ We define the Normalized k(z), function $K(z)$ as follows:
 \end{align*}
 
 \newpage
-\subsection*{Initial Description of Function L(z)}
+\subsection*{XII. Initial Description of Function L(z)}
 We define the Normalized l(z), function $L(z)$ as follows:
 \begin{align*}
 	L(z) = \frac{\left[\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left(1 + |\tan\left(\pi z n\right)|\right)\right]|\right)*\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|\right)\right]^{-m}}{\left[\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left(1 + |\tan\left(\pi z n\right)|\right)\right]|\right)*\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|\right)\right]^{-m}!}
@@ -401,10 +414,10 @@ And so on, up to $n=x$. The idea is that for each value of n, the product of ter
 
 So, the overall effect of f(x) is a combination of these two factors, which involve trigonometric functions and inverse square terms. The exact behavior of the function for different values of x will depend on the interplay of these factors, but it is clear that the product formula involves some intricate and interesting mathematics. \\
 
-The function j(z) allows us to compress g(z) down to the x axis using b(z). The zeros of b(z) are the composite numbers and the non-zero values of b(z) for whole number values of z are prime. this waveform can be combined with the normalized Riesz products to create a new complex wave that is capable of evaluating both the whole numbers and the rational fractions defined by the Riesz products.
+The function b(z) allows us to compress l(z) down to the x axis using b(z). The zeros of b(z) are the composite numbers and the non-zero values of b(z) for whole number values of z are prime. this waveform can be combined with the normalized Riesz products to create a new complex wave that is capable of evaluating both the whole numbers and the rational fractions defined by the Riesz products.
 
 \newpage
-\subsection*{The Symmetry of Nested Roots: Deriving the First Fundamental Theorem of Analysis through Isomorphisms}
+\subsection*{XIII. The Symmetry of Nested Roots: Deriving the First Fundamental Theorem of Analysis through Isomorphisms}
 
 This chapter provides an in-depth examination of the symmetrical isomorphisms inherent in the Nested Roots family. These isomorphisms, characterized by their symmetry and elegance, serve as a derivation of the First Fundamental Theorem of Analysis, thereby offering a novel perspective on these foundational mathematical principle.
 
@@ -413,15 +426,15 @@ f(z) = \sqrt{z + \sqrt{z + \sqrt{z + \ldots}}} = z^{1/2} + z^{1/4} + z^{1/8} + \
 \end{align*}
 
 \begin{align*}
-f(z) = \left(z + \left(z + \left(z + \ldots\right)^{1/2}\right)^{1/2}\right)^{1/2} = \ln(\frac{x}{2}\frac{x}{4}\frac{x}{8}\ldots)
+f(z) = \left(z + \left(z + \left(z + \ldots\right)^{1/2}\right)^{1/2}\right)^{1/2} = \ln(\frac{z}{2}\frac{z}{4}\frac{z}{8}\ldots)
 \end{align*}
 
 \begin{align*}
-f(z) = \sum_{n=1}^{\infty} \left[x^{2^{-n}}\right] = \ln\left(\prod_{n=1}^{\infty} \left[x^{2^{-n}}\right]\right)
+f(z) = \sum_{n=1}^{\infty} \left[z^{2^{-n}}\right] = \ln\left(\prod_{n=1}^{\infty} \left[z^{2^{-n}}\right]\right)
 \end{align*}
 
 \begin{align*}
-g(z) = \sqrt{z \cdot \sqrt{z \cdot \sqrt{z \cdot \ldots}}} = x = z^{1/2} * z^{1/4} * z^{1/8} * \ldots
+g(z) = \sqrt{z \cdot \sqrt{z \cdot \sqrt{z \cdot \ldots}}} = z = z^{1/2} * z^{1/4} * z^{1/8} * \ldots
 \end{align*}
 
 \begin{align*}
@@ -429,16 +442,43 @@ g(z) = \left(z \cdot \left(z \cdot \left(z \cdot \ldots\right)^{1/2}\right)^{1/2
 \end{align*}
 
 \begin{align*}
-g(z) = \prod_{n=1}^{\infty} \left[z^{2^{-n}}\right] = (z)^{\sidesum{n=1}{\infty}(2^{-n})}
+g(z) = \prod_{n=1}^{\infty} \left[z^{2^{-n}}\right] = z^{(\sidesum{n=1}{\infty}[2^{-n}])}
+\end{align*}
+
+The First fundamental theorem of Analysis, which was just derived through the exploration of the Nested Roots family, is an extension of the fundamental theorem of calculus. These laws underpin the entirety of mathematics, and in many cases the 3 identities beyond the first are rarely taught or learned even by math professionals.
+\begin{align*}
+\SumInt_{a}^{b} f(x) dx = \lim_{n \to \infty}{(\sum_{k=1}^{n} \left[f(x)_{k}\Delta x_{k} \right])}
 \end{align*}
 
 \begin{align*}
-\includegraphics[scale=0.4]{graphs/Fundamental_Theorem_1}
+\ProdInt_{a}^{b} [ f(x) ]^{dx} = \lim_{n \to \infty}{(\prod_{k=1}^{n} \left[(f(x)_{k})^{\Delta x_{k}} \right])}
 \end{align*}
 
+\begin{align*}
+\ProdInt_{a}^{b} [ f(x) ]^{dx} = e^{\SumInt_{a}^{b} f(x) dx}
+\end{align*}
+
+\begin{align*}
+\ln(\prod_{x=a}^{b} [f(x)])= \sum_{x=a}^{b} [\ln(f(x))]
+\end{align*}
+
+Once the revelation becomes clear, it is becomes easier to broaden your perspective on mathematics, and comprehend the duality of infinite summations and infinite products. Ultimately their connection through logarithm rules is beautiful and ironically sensible for exponentiation, and logarithms are two sides of the same coin.
+
 \newpage
-\subsection*{Gamma and Sin Product Identities}
-\tabThe following section, will give an insight into the intertwined nature of the sin function and the gamma function, by reducing these special functions, down to there core infinite series formulas.
+\subsection*{XIV. Complex Viete Products, Viete's Paradox, and the Nested Roots Solution}
+Chapter XIV will build off of many of the previous ideas presented in this paper. The exploration starts with rendering Viete's Products of sin in the complex plane. Ultimately this is an extension of Viete's original formula which did not account for a changing variable x.
+
+Viete's original identity is the following:
+\begin{align*}
+\frac{2}{\pi} = \prod_{n=1}^{\infty} \cos\left(\frac{\pi}{2^{n+1}}\right)
+\end{align*}
+Viete formed this relationship from the following infinite series for polygonal circumscribing:
+\begin{align*}
+\frac{2}{\pi} = \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{2+\sqrt{2}}}{2} \cdot \frac{\sqrt{2+\sqrt{2+\sqrt{2}}}}{2} \cdot \ldots
+\end{align*}
+\newpage
+\subsection*{XV. Gamma and Sin Product Identities}
+The following section, will give an insight into the intertwined nature of the sin function and the gamma function, by reducing these special functions, down to there core infinite series formulas.
 To seed these relationships, we will start with the very well known identity from, (Erica Chang Citation) which goes as follows:
 
 \begin{align*}
@@ -474,7 +514,7 @@ sin(\pi z) &= \frac{\pi}{z} \left(\left[ze^z^\gamma \prod_{n=2}^z \left[\left(1 
 \end{align*}
 
 \newpage
-\subsection*{Initial Description of Function n(z)}
+\subsection*{XVI. Initial Description of Function n(z)}
 Next, we define the functions $n(z)$:
 
 \begin{align*}
@@ -509,7 +549,7 @@ Which holds for all complex numbers s with real part greater than 0. The Dirichl
 
 Which holds for all complex numbers s with real part greater than 1. Using this equation, one can express the Riemann zeta function as an infinite product of terms involving only prime numbers. \\
 
-\subsection*{Initial Description of Function \zeta(z)} \\
+\subsection*{XVII. Initial Description of Function \zeta(z)} \\
 Here we will derive a new infinite product for the zeta function from the previous equations. To derive the formula for $\zeta(s)$, we will start with the expression for f(z) obtained using the infinite product representation of the gamma function: \\
 
 \begin{align*}
@@ -792,8 +832,8 @@ Recall that $\zeta(z) \neq 1$ for all nontrivial zeros $z$ of the zeta function.
 This completes the proof of the inequality. \\
 
 \newpage
-\subsection*{Complex definition for \zeta(s)}
-We define the infinite product in the complex planee for $\zeta(x+iy)$, where $s = x + iy$ as the following:
+\subsection*{XVIII. Complex definition for \zeta(s)}
+We define the infinite product in the complex plane for $\zeta(x+iy)$, where $s = x + iy$ as the following:
 
 \begin{align*}
 \zeta(s) &= 2^s\pi^{s-1}\sin(\pi s/2)\Gamma(1-s)\prod_{n=1}^{\infty}\left(1-\frac{2^{1-s}}{n^{1-s}}\right)
