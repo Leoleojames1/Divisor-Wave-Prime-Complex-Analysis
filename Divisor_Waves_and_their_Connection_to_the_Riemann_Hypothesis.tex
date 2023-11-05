@@ -191,9 +191,9 @@ The above graph is the 3D plot for $b(x+iy)$ where the 3rd dimension is height. 
 \begin{align*}
 \includegraphics[scale=0.28]{graphs/2D_Complex_Graphs/Infinite_Product_of_infinite_product_representation_of_sin/Complex_product_17_n_2-28__imaginary_scalar_logarithm}
 \end{align*}
-\hspace{8mm}\caption{Figure 15: 2D Fractal $#2$ Graph of $b(x+iy)$ showcasing the zeros of the composite numbers by Multipling $b(x+iy) * iy$} \\
+\hspace{8mm}\caption{Figure 15: 2D Fractal Colorization complex plot of $b(x+iy)$ showcasing the zeros of the composite numbers by Multipling $b(x+iy) * iy$} \\
 
-The above fractal is the graph of b(x+iy) * iy this multiplies the function by the imaginary component which allows the values to stetch away from the $x-axis$ providing a beautiful fractal for the prime and composite numbers. The spikes are locations with many factors, the factors cause the function to go to infinity in the complex dimension. The prime numbers can be seen as curves between the cusps. These curves are the result of having less component waves that go to zero. \\
+The above fractal is the graph of b(x+iy) * iy this multiplies the function by the imaginary component, and utilized a different colorization algorithm which allows the values to stretch away from the $x-axis$ providing a beautiful fractal for the prime and composite numbers. The spikes are locations with many factors, the factors cause the function to go to infinity in the complex dimension. The prime numbers can be seen as curves between the cusps. These curves are the result of having less component waves that go to zero. \\
 
 \newpage
 \subsection*{V. Derivation of a(z) and b(z) from the Weierstrass product formula for sin}
@@ -305,20 +305,23 @@ Due to difficulties in programming, the only complex plots presented for Riesz p
 \includegraphics[scale=0.30]{graphs/2D_Real_Graphs/1+sin_prod}
 \end{align*}
 
+Figure 20: 2D Plot of C(z) overlaping with B(z) to showcase the peaks at all whole numbers for C(z).
+
 This function's waveform has peaks at each whole number value and smaller peaks between. The number of divisions for each whole number on the real number plot in Desmos, shows a doubling of slices for each increase in index value of the product. This equation will be combined with b(z) later to create a waveform which is an indicator for prime and composite numbers while also dividing the space between whole numbers into finitely many sections as x goes to infinity.
 
 \begin{align*}
 \includegraphics[scale=0.45]{graphs/3D_Complex_Graphs/riesz_sin/Ries_sin_norm_1}
 \end{align*}
 
-This is the normalized complex plot for Riesz' infinite product of sine. The plot is fascinating as it displays poles around specific values of x, similar to Riesz cosine product, and tangent product.
+Figure 21: 3D Plot of C(z) in the complex plane to showcase the growing complexity and chaotic structure of C(z) as x increases.
+
+This is the normalized complex plot for Riesz' infinite product of sine. The plot is fascinating as it displays poles around specific values of x, similar to Riesz cosine product, and tangent product. These poles have growing complexity in their designated regions.
 
 \newpage
-\subsection*{VIII. Initial Description of Function H(z)}
-We define the Normalized h(z), function $H(z)$ as follows:
-
+\subsection*{VIII. Initial Description of Function D(z)}
+Due to difficulties in programming, the only complex plots presented for Riesz products will undergo Gamma function normalization as presented in Section III. We define the Normalized Complex Riesz Product of cos d(z), function $D(z)$ as follows:
 \begin{align*}
-	H(z) = \frac{|\prod_{n=2}^z \left(1 + |\cos\left(\pi z n\right)|\right)|^{-m}}{|\prod_{n=2}^z \left(1 + |\cos\left(\pi z n\right)|\right)|^{-m}!}
+	D(z) = \frac{|\prod_{n=2}^z \left(1 + |\cos\left(\pi z n\right)|\right)|^{-m}}{|\prod_{n=2}^z \left(1 + |\cos\left(\pi z n\right)|\right)|^{-m}!}
 \end{align*} 
 
 The second factor involves an infinite product of $(1 + cos(pixn))$ over all positive integers n between 2 and x. This is a way of constructing a product of terms that oscillate between positive and negative values, with the amplitude of the oscillation increasing as n increases. The factor of pi in the cosine function reflects the periodicity of the cosine wave.
@@ -328,18 +331,20 @@ Taken together, the two products combine to create a highly complex function tha
 \begin{align*}
 \includegraphics[scale=0.30]{graphs/2D_Real_Graphs/1+cos_prod}
 \end{align*}
+Figure 22: 2D Plot of D(z) overlaping with B(z) to showcase the troughs at all whole numbers for D(z).
 
-This function's waveform has troughs at each whole number value and smaller troughs between. This equation will be combined with b(z) later to create a waveform which is an indicator for prime and composite numbers while also dividing the space between whole numbers into finitely many sections as x goes to infinity.
+This function's waveform has troughs at each whole number value and smaller troughs between. This equation will be combined with B(z) later to create a waveform which is an indicator for prime and composite numbers while also dividing the space between whole numbers into finitely many sections as x goes to infinity.
 
 \begin{align*}
 \includegraphics[scale=0.45]{graphs/3D_Complex_Graphs/riesz_cos/Ries_cos_norm_1}
 \end{align*}
+Figure 23: 3D Plot of D(z) in the complex plane to showcase the growing complexity and chaotic structure of D(z) as x increases.
 
 This is the normalized complex plot for Riesz' infinite product of cosine. The plot is fascinating as it displays poles around specific values of x, similar to Riesz sine product, and tangent product.
 
 \newpage
-\subsection*{IX. Initial Description of Function I(z)}
-We define the Normalized i(z), function $I(z)$ as follows:
+\subsection*{IX. Initial Description of Function E(z)}
+We define the Normalized e(z), function $E(z)$ as follows:
 
 \begin{align*}
 	I(z) = \frac{|\prod_{n=2}^z \left(1 + |\tan\left(\pi z n\right)|\right)|^{-m}}{|\prod_{n=2}^z \left(1 + |\tan\left(\pi z n\right)|\right)|^{-m}!}
@@ -348,29 +353,33 @@ We define the Normalized i(z), function $I(z)$ as follows:
 \begin{align*}
 \includegraphics[scale=0.30]{graphs/2D_Real_Graphs/prod_1+tan}
 \end{align*}
+Figure 24: 2D Plot of E(z) overlaping with B(z) to showcase the peaks at all whole numbers for E(z).
 
-This function's waveform has peaks at each whole number value and bumpy patches between. These sections show nicely the divisions that are taking place accross the number line that section these areas into finitely many sections which increase as x goes to infinity. This equation will be combined with b(z) later to create a waveform which is an indicator for prime and composite numbers while also dividing the space between whole numbers into finitely many sections as x goes to infinity. \\
+This function's waveform has peaks at each whole number value and bumpy patches between. These sections show nicely the divisions that are taking place across the number line that section these areas into finitely many sections which increase as x goes to infinity. This equation will be combined with b(z) later to create a waveform which is an indicator for prime and composite numbers while also dividing the space between whole numbers into finitely many sections as x goes to infinity. \\
 
 \begin{align*}
 \includegraphics[scale=0.55]{graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_1}
 \end{align*}
+Figure 25: 3D Plot of E(z) in the complex plane to showcase the growing complexity and chaotic structure of E(z) as x increases.
 
-This is the normalized complex plot for Riesz' infinite product of tangent. The plot is fascinating as it displays poles around specific values of x, similar to Riesz sine product, and sine product.
+This is the normalized complex plot for Riesz' infinite product of tangent. The plot is fascinating as it displays poles around specific values of x, similar to Riesz sine product, and cos product.
 
 \begin{align*}
 \includegraphics[scale=0.28]{graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_2}
 \end{align*}
+Figure 26: 2D Plot of E(z) in the complex plane to showcase the many zeros of E(z) each defined in their own regions with growing compplexity as x increases.
 
 \begin{align*}
 \includegraphics[scale=0.55]{graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_3}
 \end{align*}
+Figure 27: 3D plot Of E(z) in the complex plane to showcase another angle of E(z) from a closer view.
 
 \newpage
-\subsection*{X. Initial Description of Function J(z)}
-We define the Normalized j(z), function $J(z)$ as follows:
+\subsection*{X. Initial Description of Function F(z)}
+We define the Normalized f(z), function $F(z)$ as follows:
 
 \begin{align*}
-	J(z) = \frac{\left[\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left(1 + |\sin\left(\pi z n\right)|\right)\right]|\right)*\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|\right)\right]^{-m}}{\left[\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left(1 + |\sin\left(\pi z n\right)|\right)\right]|\right)*\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|\right)\right]^{-m}!}
+	F(z) = \frac{\left[\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left(1 + |\sin\left(\pi z n\right)|\right)\right]|\right)*\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|\right)\right]^{-m}}{\left[\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left(1 + |\sin\left(\pi z n\right)|\right)\right]|\right)*\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|\right)\right]^{-m}!}
 \end{align*}
 
 The second factor involves an infinite product of $(1 + sin(pixn))$ over all positive integers n between 2 and x. This is a way of constructing a product of terms that oscillate between positive and negative values, with the amplitude of the oscillation increasing as n increases. The factor of pi in the sine function reflects the periodicity of the sine wave. \\
@@ -382,11 +391,11 @@ Taken together, the product and sum combine to create a highly complex function 
 \end{align*}
 
 \newpage
-\subsection*{XI. Initial Description of Function K(z)}
-We define the Normalized k(z), function $K(z)$ as follows:
+\subsection*{XI. Initial Description of Function G(z)}
+We define the Normalized g(z), function $G(z)$ as follows:
 
 \begin{align*}
-	K(z) = \frac{\left[\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left(1 + |\cos\left(\pi z n\right)|\right)\right]|\right)*\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|\right)\right]^{-m}}{\left[\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left(1 + |\cos\left(\pi z n\right)|\right)\right]|\right)*\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|\right)\right]^{-m}!}
+	H(z) = \frac{\left[\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left(1 + |\cos\left(\pi z n\right)|\right)\right]|\right)*\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|\right)\right]^{-m}}{\left[\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left(1 + |\cos\left(\pi z n\right)|\right)\right]|\right)*\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|\right)\right]^{-m}!}
 \end{align*}
 
 \begin{align*}
@@ -394,10 +403,10 @@ We define the Normalized k(z), function $K(z)$ as follows:
 \end{align*}
 
 \newpage
-\subsection*{XII. Initial Description of Function L(z)}
-We define the Normalized l(z), function $L(z)$ as follows:
+\subsection*{XII. Initial Description of Function H(z)}
+We define the Normalized h(z), function $H(z)$ as follows:
 \begin{align*}
-	L(z) = \frac{\left[\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left(1 + |\tan\left(\pi z n\right)|\right)\right]|\right)*\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|\right)\right]^{-m}}{\left[\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left(1 + |\tan\left(\pi z n\right)|\right)\right]|\right)*\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|\right)\right]^{-m}!}
+	I(z) = \frac{\left[\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left(1 + |\tan\left(\pi z n\right)|\right)\right]|\right)*\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|\right)\right]^{-m}}{\left[\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left(1 + |\tan\left(\pi z n\right)|\right)\right]|\right)*\left(|\prod_{n=2}^z\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|\right)\right]^{-m}!}
 \end{align*}
 
 \begin{align*}
@@ -419,63 +428,88 @@ The function b(z) allows us to compress l(z) down to the x axis using b(z). The 
 \newpage
 \subsection*{XIII. The Symmetry of Nested Roots: Deriving the First Fundamental Theorem of Analysis through Isomorphisms}
 
-This chapter provides an in-depth examination of the symmetrical isomorphisms inherent in the Nested Roots family. These isomorphisms, characterized by their symmetry and elegance, serve as a derivation of the First Fundamental Theorem of Analysis, thereby offering a novel perspective on these foundational mathematical principle.
+This chapter provides an in-depth examination of the symmetrical isomorphisms inherent in the Nested Roots family. These isomorphisms, characterized by their symmetry and elegance, serve as a derivation of the First Fundamental Theorem of Analysis, thereby offering a novel perspective on these foundational mathematical principles.
 
+Starting with Function j(z) we define the infinite square root series, and its equivalent exponent form:
 \begin{align*}
-f(z) = \sqrt{z + \sqrt{z + \sqrt{z + \ldots}}} = z^{1/2} + z^{1/4} + z^{1/8} + \ldots
+j(z) = \sqrt{z + \sqrt{z + \sqrt{z + \ldots}}} = z^{1/2} + z^{1/4} + z^{1/8} + \ldots
 \end{align*}
 
+Then by converting the square root series to a factored form we can also formulate the identity:
 \begin{align*}
-f(z) = \left(z + \left(z + \left(z + \ldots\right)^{1/2}\right)^{1/2}\right)^{1/2} = \ln(\frac{z}{2}\frac{z}{4}\frac{z}{8}\ldots)
+j(z) = \left(z + \left(z + \left(z + \ldots\right)^{1/2}\right)^{1/2}\right)^{1/2} = \ln(\frac{z}{2}\frac{z}{4}\frac{z}{8}\ldots)
 \end{align*}
 
+Ultimately leading to the original infinite summation series definition and its equivalent product formula:
 \begin{align*}
-f(z) = \sum_{n=1}^{\infty} \left[z^{2^{-n}}\right] = \ln\left(\prod_{n=1}^{\infty} \left[z^{2^{-n}}\right]\right)
+j(z) = \sum_{n=1}^{\infty} \left[z^{2^{-n}}\right] = \ln\left(\prod_{n=1}^{\infty} \left[z^{2^{-n}}\right]\right)
 \end{align*}
 
+Now introducing the next function k(z) as another half of the family will show the similarities and differences between j(z) and k(z) and ultimately revealing the First fundamental theorem of Analysis.
 \begin{align*}
-g(z) = \sqrt{z \cdot \sqrt{z \cdot \sqrt{z \cdot \ldots}}} = z = z^{1/2} * z^{1/4} * z^{1/8} * \ldots
+k(z) = \sqrt{z \cdot \sqrt{z \cdot \sqrt{z \cdot \ldots}}} = z = z^{1/2} * z^{1/4} * z^{1/8} * \ldots
+\end{align*}
+again, converting the square root chain to a factored form, and forming the exponent of z summation identity:
+\begin{align*}
+k(z) = \left(z \cdot \left(z \cdot \left(z \cdot \ldots\right)^{1/2}\right)^{1/2}\right)^{1/2} = z^{\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \ldots}
+\end{align*}
+Which leads to the original infinite product series definition and its equivalent summation series formula:
+\begin{align*}
+k(z) = \prod_{n=1}^{\infty} \left[z^{2^{-n}}\right] = z^{(\sidesum{n=1}{\infty}[2^{-n}])}
 \end{align*}
 
-\begin{align*}
-g(z) = \left(z \cdot \left(z \cdot \left(z \cdot \ldots\right)^{1/2}\right)^{1/2}\right)^{1/2} = z^{\frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \ldots}
-\end{align*}
-
-\begin{align*}
-g(z) = \prod_{n=1}^{\infty} \left[z^{2^{-n}}\right] = z^{(\sidesum{n=1}{\infty}[2^{-n}])}
-\end{align*}
-
+From this, the underlying foundation starts to fizzle through, presenting the 4 laws of the First Fundamental theory of Analysis.
 The First fundamental theorem of Analysis, which was just derived through the exploration of the Nested Roots family, is an extension of the fundamental theorem of calculus. These laws underpin the entirety of mathematics, and in many cases the 3 identities beyond the first are rarely taught or learned even by math professionals.
 \begin{align*}
 \SumInt_{a}^{b} f(x) dx = \lim_{n \to \infty}{(\sum_{k=1}^{n} \left[f(x)_{k}\Delta x_{k} \right])}
 \end{align*}
+The limit definition of the integral above utilizes the same definition we currently use today, however it does introduce a new notation which allows for differentiation from the product integral which currently is defined with poor notation in most texts.
 
 \begin{align*}
 \ProdInt_{a}^{b} [ f(x) ]^{dx} = \lim_{n \to \infty}{(\prod_{k=1}^{n} \left[(f(x)_{k})^{\Delta x_{k}} \right])}
 \end{align*}
-
+Next is the limit definition of the product integral which follows the same rules as the summation integral however it contains an exponential infinitesimal rather than a coefficient infinitesimal.
 \begin{align*}
 \ProdInt_{a}^{b} [ f(x) ]^{dx} = e^{\SumInt_{a}^{b} f(x) dx}
 \end{align*}
+This Formulation provides the 1st way to convert between a product integral and a summation integral.
 
 \begin{align*}
 \ln(\prod_{x=a}^{b} [f(x)])= \sum_{x=a}^{b} [\ln(f(x))]
 \end{align*}
+Finally, this identity allows for the conversion between infinite product series and infinite summation series, note the lack of integration.
 
 Once the revelation becomes clear, it is becomes easier to broaden your perspective on mathematics, and comprehend the duality of infinite summations and infinite products. Ultimately their connection through logarithm rules is beautiful and ironically sensible for exponentiation, and logarithms are two sides of the same coin.
 
 \newpage
 \subsection*{XIV. Complex Viete Products, Viete's Paradox, and the Nested Roots Solution}
-Chapter XIV will build off of many of the previous ideas presented in this paper. The exploration starts with rendering Viete's Products of sin in the complex plane. Ultimately this is an extension of Viete's original formula which did not account for a changing variable x.
+Chapter XIV will build off of many of the previous ideas presented in this paper. The exploration starts with extending Viete's Products of sin & cos to the complex plane through repeatedly applying the double-angle formula.
 
 Viete's original identity is the following:
 \begin{align*}
 \frac{2}{\pi} = \prod_{n=1}^{\infty} \cos\left(\frac{\pi}{2^{n+1}}\right)
 \end{align*}
-Viete formed this relationship from the following infinite series for polygonal circumscribing:
+Viete formed this relationship from the following infinite series for polygonal circumscribing by comparing the areas of regular polygons with $2^{n}$ and $2^{n+1}$ sides inscribed in a circle.
 \begin{align*}
 \frac{2}{\pi} = \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{2+\sqrt{2}}}{2} \cdot \frac{\sqrt{2+\sqrt{2+\sqrt{2}}}}{2} \cdot \ldots
 \end{align*}
+This formula can then be generalized by repeatedly applying the double-angle formula
+\begin{align*}
+\sin(x) = 2\sin(\frac{x}{2})\cos(\frac{x}{2})
+\end{align*}
+which leads to a proof by mathematical induction that, for all positive integers n,
+\begin{align*}
+\sin(x) = 2^{n}\sin(\frac{x}{2^{n}})(\prod_{k=1}^{n} [\cos(\frac{x}{2^{k}})]
+\end{align*}
+From the previous chapter XIII we can utilize the relationship:
+\begin{align*}
+\sum_{n=1}^{\infty} 2^{2^{-n}} = \sqrt{2 + \sqrt{2 + \sqrt{\ldots}}}
+\end{align*}
+and ultimately we can form the relationship:
+\begin{align*}
+\prod_{k=1}^{\infty} (\frac{\sum_{n=1}^{k} (2^{2^{-n}})}{2}) = \frac{2}{\pi}
+\end{align*}
+
 \newpage
 \subsection*{XV. Gamma and Sin Product Identities}
 The following section, will give an insight into the intertwined nature of the sin function and the gamma function, by reducing these special functions, down to there core infinite series formulas.
@@ -513,655 +547,9 @@ sin(\pi z) &= \frac{1}{\Gamma\left(z\right)} * \frac{1}{\Gamma\left(- z\right)} 
 sin(\pi z) &= \frac{\pi}{z} \left(\left[ze^z^\gamma \prod_{n=2}^z \left[\left(1 + \frac{z}{n}\right)e^\frac{-z}{n}\right]\right]\right) * \frac{\pi}{-z} \left(\left[ze^\frac{-z\gamma}{1} \prod_{n=2}^z \left[\left(1 + \frac{-z}{n}\right)e^\frac{z}{n}\right]\right]\right)
 \end{align*}
 
-\newpage
-\subsection*{XVI. Initial Description of Function n(z)}
-Next, we define the functions $n(z)$:
 
-\begin{align*}
-n(z) &= \prod_{n=1}^\infty \left(1 - \frac{z^2}{n^2}\right)^{-1} \\
-\end{align*}
-
-The infinite product m(z) is a functional equation for the Euler product formula for the Riemann zeta function. The Riemann zeta function is defined for any complex number s with real part greater than 1 by the series \\
-
-\begin{align*}
-\zeta(s) = \sum_{n=1}^\infty n^{-s}.
-\end{align*}
-
-Using analytic continuation techniques, this definition can be extended to a meromorphic function in the entire complex plane, except for a simple pole at $s=1$. The Euler product formula for $\zeta\left(s\right)$ where p is prime, states that \\
-
-\begin{align*}
-\zeta(s) = \prod_{p} \left(1 - p^-s\right)^\left(-1\right),
-\end{align*}
-
-where the product is taken over all prime numbers p. This means that the Riemann zeta function can be expressed as an infinite product of terms involving only prime numbers. \\
-
-To obtain the Euler product formula for $\zeta\left(s\right)$, one can start with the product formula for the Dirichlet eta function \\
-
-\begin{align*}
-\eta(s) = \prod_{n=1}^\infty \left(1 - n^-s\right), \\
-\end{align*}
-
-Which holds for all complex numbers s with real part greater than 0. The Dirichlet eta function is related to the Riemann zeta function by the equation \\
-
-\begin{align*}
-\zeta(s) = \left(1 - 2^{1-s}\right) \eta\left(s\right), \\
-\end{align*}
-
-Which holds for all complex numbers s with real part greater than 1. Using this equation, one can express the Riemann zeta function as an infinite product of terms involving only prime numbers. \\
-
-\subsection*{XVII. Initial Description of Function \zeta(z)} \\
-Here we will derive a new infinite product for the zeta function from the previous equations. To derive the formula for $\zeta(s)$, we will start with the expression for f(z) obtained using the infinite product representation of the gamma function: \\
-
-\begin{align*}
-f(z) &= \frac{z}{\Gamma(z)\Gamma(1-z)}e^{-\gamma z^2} \prod_{n=2}^{\infty} e^{\frac{z^2}{n^2}} \
-\end{align*}
-
-Then, we can write $\zeta(s)$ as:
-
-\begin{align*}
-\zeta(s) &= \sum_{n\geq 1} \frac{1}{n^s} \
-\end{align*}
-
-Using the Euler product formula for $\zeta(s)$, we have:
-
-\begin{align*}
-\zeta(s) &= \prod_{p \text{ prime}} \left(1 - p^{-s}\right)^{-1} \\
-\end{align*}
-
-\begin{align*}
-\ln \zeta(s) &= -\sum_{p \text{ prime}} \ln(1-p^{-s}) \\
-\end{align*}
-
-Expanding the logarithm
-
-\begin{align*}
-\ln \zeta(s) &= \sum_{p \text{ prime}} \sum_{k \geq 1} \frac{p^{-ks}}{k} \\
-\end{align*}
-
-Changing the order of the sums:
-
-\begin{align*}
-\ln \zeta(s) &= \sum_{k \geq 1} \frac{1}{k} \sum_{p \text{ prime}} p^{-ks} \\
-\end{align*}
-
-Using the formula for geometric series:
-
-\begin{align*}
-\ln \zeta(s) &= \sum_{k \geq 1} \frac{1}{k} \prod_{p \text{ prime}} (1-p^{-ks})^{-1} \\
-\end{align*}
-
-Simplifying with the Euler product formula:
-
-\begin{align*}
-\ln \zeta(s) &= \sum_{k \geq 1} \frac{1}{k} \zeta(ks)^{-1} \\
-\end{align*}
-
-\begin{align*}
-\text{Substituting } z = \frac{\sqrt{s}}{2\pi} \text{ in the expression for } f(z), \text{ we have:} \\
-\end{align*}
-
-\begin{align*}
-f(z) &= \frac{\pi z}{\sin(\pi z)} \prod_{n=1}^{\infty} \left(1 - \frac{z^2}{n^2}\right) \\
-\end{align*}
-
-Using this expression and the relation between z and s, we can write: \\
-
-\begin{align*}
-f(z) &= \frac{\pi^{s/2} \Gamma(s/2)}{2^{s-1}\Gamma(s)} \sin(\frac{\pi s}{2}) \prod_{n=1}^{\infty} \left(1 - \frac{2^{-s}}{n^{s}}\right) \\
-\end{align*}
-
-Taking the logarithm of both sides, we obtain: \\
-
-\begin{align*}
-\ln f(z) &= \ln(\pi^{s/2}) + \ln(\Gamma(s/2)) - \ln(2^{s-1}) - \ln(\Gamma(s)) + \ln(\sin(\pi s/2)) - \sum_{n\geq 1}\ln\left(1-\frac{2^{-s}}{n^s}\right) \\
-\end{align*}
-
-Substituting this expression for $ln f(z)$ into the formula for $ln\zeta(s)$, we get: \\
-
-\begin{align*}
-\ln \zeta(s) &= \ln(\pi^{s/2}) + \ln(\Gamma(s/2)) - \ln(2^{s-1}) - \ln(\Gamma(s)) + \ln(\sin(\pi s/2)) - \sum_{n \geq 1} \ln(1 - 2^{-s}/n^{s}) \\
-\end{align*}
-
-Simplifying and rearranging terms, we obtain: \\
-
-\begin{align*}
-\ln \zeta(s) &= s \ln(2) + (s-1) \ln(\pi) + \ln(\sin(\pi s/2)) - \ln(\Gamma(s/2)) - \sum_{n \geq 1} \ln(1 - 2^{-s}/n^{s}) \\
-\end{align*}
-
-Using the relation between $\ln \zeta(s)$ and $\ln(\zeta(2z))$, we have: \\
-
-\begin{align*}
-\ln(\zeta(2z)) &= 2z \ln(2) + (2z-1) \ln(\pi) + \ln(\sin(\pi(2z)/2)) - \ln(\Gamma(2z/2)) - \sum_{n \geq 1} \ln(1 - 2^{-2z}/n^{2z}) \\
-\end{align*}
-
-Simplifying some terms, we get: \\
-
-\begin{align*}
-\ln(\zeta(2z)) &= 2z \ln(2) + (2z-1) \ln(\pi) + \ln(\sin(\pi z)) - \ln(\Gamma(z)) - 2 \sum_{n \geq 1} \ln(1 - 2^{-2z}/(4n^2)) \\
-\end{align*}
-
-Now, we can use the formula for $\ln f(z)$ derived earlier: \\
-
-\begin{align*}
-\ln f(z) &= -\ln(\zeta(2)) - z^2/(2\zeta(2)) - \sum_{n \geq 2} \ln(1 - z^2/n^2) \\
-\end{align*}
-
-Substituting $z = i\sqrt{\frac{s}{2\pi}}$, we get: \\
-
-\begin{align*}
-\ln f(i\sqrt{s/2\pi}) &= -\ln(\zeta(s)) + \frac{s}{2} - \sum_{n\geq1}\ln(1-2^{-s}/n^s) \\
-\end{align*}
-
-Multiplying both sides by $-1$ and rearranging, we obtain: \\
-
-\begin{align*}
-\ln(\zeta(s)) &= \frac{s}{2}\ln(2\pi) - \ln f(i\sqrt{s/2\pi}) - \frac{s}{2}\ln(\sin(\pi s/2)) - \ln(\Gamma(1-s)) \\
-&\qquad - \sum_{n\geq1}\ln\left[(1-2^{-s}/n^s)\cdot \left|\frac{n+2^{-s/2}}{n}\cdot \frac{n-2^{-s/2}}{n}\right|\right] \\
-\end{align*}
-
-Now, we can substitute the formula for $\ln f(z)$ and simplify some terms: \\
-
-\begin{align*}
-\ln(\zeta(s)) &= \frac{s}{2}\ln(2\pi) + s\ln(\Gamma(s/2)) - \ln(\pi^{s-1}\sin(\pi s/2)) \\
-&\qquad - \sum_{n\geq1}\ln\left[(1-2^{-s}/n^s)\cdot \left|\frac{n+2^{-s/2}}{n}\cdot \frac{n-2^{-s/2}}{n}\right|\right] \\
-\end{align*}
-
-We can further simplify by using the identity: \\
-
-\begin{align*}
-\left|1-\frac{x^2}{y^2}\right| &= \frac{(y+x)(y-x)}{|y|} \\
-\end{align*}
-
-Setting $x &= 2^{-s/2}$ and $y = n$, we get: \\
-
-\begin{align*}
-\left|1-\frac{2^{-s}}{n^s}\right| &= \frac{(n+2^{-s/2})(n-2^{-s/2})}{n^2} \\
-\end{align*}
-
-Substituting this in the previous equation, we obtain the desired formula: \\
-
-\begin{align*}
-\zeta(s) &= 2^s\pi^{s-1}\sin(\pi s/2)\Gamma(1-s)\prod_{n=1}^{\infty}\left(1-\frac{2^{1-s}}{n^{1-s}}\right)
-\end{align*}
-
-This derivation shows us the connections between a(z), b(z), the infinite product representation of the gamma function and $\zeta(z)$. This ultimately results in a new functional equation for $\zeta(z)$ that was derived from the euler product through its connections to a(z) and b(z).
-
-\begin{align*}
-\zeta(s) &= 2^s \cdot \pi^{s-1} \cdot \sin(\frac{\pi s}{2}) \cdot \Gamma(1-s) \cdot \prod_{n=1}^\infty (1 - \frac{2^{1-s}}{n^{1-s}}) \\
-&= 2^s \cdot \pi^{s-1} \cdot \sin(\frac{\pi s}{2}) \cdot \Gamma(1-s) \cdot \left[(1 - \frac{2^{1-s}}{2^{1-s}}) (1 - \frac{2^{1-s}}{3^{1-s}}) (1 - \frac{2^{1-s}}{4^{1-s}}) \cdots \right] \\
-&= 2^s \cdot \pi^{s-1} \cdot \sin(\frac{\pi s}{2}) \cdot \Gamma(1-s) \cdot \left[(1 - 1) (1 - \frac{2^{-s}}{3^{1-s}}) (1 - \frac{2^{-s}}{4^{1-s}}) \cdots \right] \\
-&= 2^s \cdot \pi^{s-1} \cdot \sin(\frac{\pi s}{2}) \cdot \Gamma(1-s) \cdot \left[(1 - \frac{2^{-s}}{3^{1-s}}) (1 - \frac{2^{-s}}{4^{1-s}}) \cdots \right] \\
-&= 2^s \cdot \pi^{s-1} \cdot \sin(\frac{\pi s}{2}) \cdot \Gamma(1-s) \cdot \left[(1 - \frac{2^{-s}}{2^{-s} \cdot 3^{1-s}}) (1 - \frac{2^{-s}}{2^{-s} \cdot 4^{1-s}}) \cdots \right] \\
-&= 2^s \cdot \pi^{s-1} \cdot \sin(\frac{\pi s}{2}) \cdot \Gamma(1-s) \cdot \prod_{n=1}^\infty (1 - \frac{1}{n^{1-s}}) \\
-\end{align*}
-
-Expanding the product in $\zeta(s) = 2^s \cdot \pi^{s-1} \cdot \sin(\frac{\pi s}{2}) \cdot \Gamma(1-s) \cdot \prod_{n=1}^\infty (1 - \frac{2^{1-s}}{n^{1-s}})$, we get:
-
-\begin{align*}
-\zeta(s) &= 2^s \cdot \pi^{s-1} \cdot \sin(\frac{\pi s}{2}) \cdot \Gamma(1-s) \cdot (1 - \frac{2^{1-s}}{2^{1-s}}) \cdot (1 - \frac{2^{1-s}}{3^{1-s}}) \cdot (1 - \frac{2^{1-s}}{4^{1-s}}) \cdots \\
-&= 2^s \cdot \pi^{s-1} \cdot \sin(\frac{\pi s}{2}) \cdot \Gamma(1-s) \cdot (1 - \frac{1}{2^{s-1}}) \cdot (1 - \frac{1}{3^{s-1}}) \cdot (1 - \frac{1}{p^{s-1}}) \cdot \cdots
-\end{align*}
-
-where $p$ is a prime number.
-
-This is the famous Euler product formula for the Riemann zeta function, which is valid for $\Re(s) > 1$. The formula shows the zeta function as an infinite product over primes, where each term corresponds to the contribution of each prime to the sum over all natural numbers.
-
-The factor $\Gamma(1-s)$ in the formula corresponds to the reflection formula for the gamma function, which allows the formula to be extended to the entire complex plane except for a simple pole at $s=1$. The factor $(1 - \frac{1}{2^{s-1}}) \cdot (1 - \frac{1}{3^{s-1}}) \cdot (1 - \frac{1}{p^{s-1}}) \cdot \cdots$ is known as the Euler factor and it encodes the distribution of prime numbers in the sum over all natural numbers.
-
-\begin{align*}
-\text{For } s = 2: \quad \zeta(2) &= 2^{2} \cdot \pi^{2-1} \cdot \sin(\frac{\pi}{2}) \cdot \Gamma(1-2) \cdot (1 - \frac{1}{2^2}) \cdot (1 - \frac{1}{3^2}) \cdot (1 - \frac{1}{4^2}) \cdots \\
-&= \frac{\pi^2}{6} \\
-\text{For } s = 3: \quad \zeta(3) &= 2^{3} \cdot \pi^{3-1} \cdot \sin(\frac{3\pi}{2}) \cdot \Gamma(1-3) \cdot (1 - \frac{1}{2^3}) \cdot (1 - \frac{1}{3^3}) \cdot (1 - \frac{1}{4^3}) \cdots \\
-&= 1.2020569031595942853997 \\
-\text{For } s = 4: \quad \zeta(4) &= 2^{4} \cdot \pi^{4-1} \cdot \sin(\frac{2\pi}{2}) \cdot \Gamma(1-4) \cdot (1 - \frac{1}{2^4}) \cdot (1 - \frac{1}{3^4}) \cdot (1 - \frac{1}{4^4}) \cdots \\
-&= \frac{\pi^4}{90}
-\end{align*}
-
-As we can see, the infinite product representation of the Riemann zeta function can provide us with an alternative way to calculate its values for different values of s.
-
-We can use the equation 
-
-\begin{align*}
-\Gamma\left(\frac{1-s}{2}\right)\xi(s) = \pi^{-s/2} \prod_{n=1}^{\infty} \left(1 - \frac{2^{1-s}}{n^{1-s}}\right)^{-1} \\
-\end{align*}
-
-to find the nontrivial zeros of the zeta function and prove the Riemann hypothesis.
-
-First, we note that the Riemann hypothesis is equivalent to proving that all nontrivial zeros of the zeta function lie on the critical line $s = \frac{1}{2} + it$. We can rewrite the equation as:
-
-\begin{align*}
-\Gamma\left(\frac{1-s}{2}\right)\xi(s)\pi^{s/2} = \prod_{n=1}^{\infty} \left(1 - \frac{2^{1-s}}{n^{1-s}}\right) \\
-\end{align*}
-
-Taking the absolute value of both sides, we have:
-
-\begin{align*}
-|\Gamma\left(\frac{1-s}{2}\right)\xi(s)\pi^{s/2}| = \prod_{n=1}^{\infty} \left|1 - \frac{2^{1-s}}{n^{1-s}}\right| \\
-\end{align*}
-
-Using the fact that $|ab| = |a||b|$ and $|a/b| = |a|/|b|$, we can simplify this to:
-
-\begin{align*}
-|\xi(s)| = \pi^{-s/2} \prod_{n=1}^{\infty} \left|1 - \frac{2^{1-s}}{n^{1-s}}\right| \\
-\end{align*}
-
-Now, if we can show that $|\xi(s)|$ is non-zero and finite for all nontrivial zeros of the zeta function, then we have proven the Riemann hypothesis.
-
-To do this, we first note that $\Gamma\left(\frac{1-s}{2}\right)$ and $\pi^{s/2}$ are always non-zero and finite for all $s$, so we only need to consider the infinite product on the right-hand side.
-
-Let $z$ be a nontrivial zero of the zeta function, so that $\zeta(z) = 0$. Then, we have:
-
-\begin{align*}
-\xi(z) = 2 \pi^{(1-z)/2} \prod_{n=1}^{\infty} \left(1 - \frac{2^{1-z}}{n^{1-z}}\right)^{-1} / \Gamma\left(\frac{1-z}{2}\right) \\
-\end{align*}
-
-Taking the absolute value of both sides, we have:
-
-\begin{align*}
-|\xi(z)| = 2 \pi^{-z/2} \prod_{n=1}^{\infty} \left|1 - \frac{2^{1-z}}{n^{1-z}}\right|^{-1} / |\Gamma\left(\frac{1-z}{2}\right)| \\
-\end{align*}
-
-We know that $|\Gamma\left(\frac{1-z}{2}\right)|$ is finite and non-zero for all nontrivial zeros of the zeta function, so we only need to consider the infinite product on the right-hand side.
-
-Since $z$ is a nontrivial zero of the zeta function, we know that $1 - \zeta(z)/2$ is non-zero. Thus, we can write:
-
-\begin{align*}
-1 - \frac{2^{1-z}}{n^{1-z}} = \left(1 - \frac{\zeta(z)}{2}\right) \frac{\left(1\frac{2^{1-z}}{n^{1-z}}\right)}{\left(1 - \frac{\zeta(z)}{2n^{z}}\right)} \\
-\end{align*}
-
-Taking the absolute value of both sides and using the triangle inequality, we have:
-
-\begin{align*}
-\left|1 - \frac{2^{1-z}}{n^{1-z}}\right| \leq \left|\left(1 - \frac{\zeta(z)}{2}\right)\right| \cdot \frac{\left|\left(1 - \frac{2^{1-z}}{n^{1-z}}\right)\right|}{\left|\left(1 - \frac{\zeta(z)}{2n^{z}}\right)\right|} \\
-\end{align*}
-
-Since $|1 - \zeta(z)/2|$ is non-zero and finite, we can take its reciprocal and multiply both sides by it, to get:
-
-\begin{align*}
-\frac{1}{\left|1 - \frac{\zeta(z)}{2}\right|} \cdot \left|1 - \frac{2^{1-z}}{n^{1-z}}\right| \leq \frac{\left|1 - \frac{2^{1-z}}{n^{1-z}}\right|}{\left|1 - \frac{\zeta(z)}{2n^{z}}\right|} \\
-\end{align*}
-
-Now, taking the limit as $n$ goes to infinity on both sides, we have:
-
-\begin{align*}
-\lim_{n \to \infty} \frac{1}{\left|1 - \frac{\zeta(z)}{2}\right|} \cdot \left|1 - \frac{2^{1-z}}{n^{1-z}}\right| \leq \lim_{n \to \infty} \frac{\left|1 - \frac{2^{1-z}}{n^{1-z}}\right|}{\left|1 - \frac{\zeta(z)}{2n^{z}}\right|} \\
-\end{align*}
-
-The left-hand side simplifies to $\frac{1}{|1 - \zeta(z)/2|}$, while the right-hand side can be simplified using L'Hopital's rule, since both the numerator and denominator tend to zero as $n$ goes to infinity. After applying L'Hopital's rule, we get:
-
-\begin{align*}
-\lim_{n \to \infty} \frac{\left|1 - \frac{2^{1-z}}{n^{1-z}}\right|}{\left|1 - \frac{\zeta(z)}{2n^{z}}\right|} = \lim_{n \to \infty} \frac{\left|\frac{2^{1-z}\log 2}{n^{2-z}}\right|}{\left|\frac{-\zeta'(z)}{2n^{z+1}}\right|} = \frac{2^{1-z}|\log 2|}{|\zeta'(z)|} \\
-\end{align*}
-
-Therefore, we have:
-
-\begin{align*}
-\frac{1}{|1 - \zeta(z)/2|} \leq \frac{2^{1-z}|\log 2|}{|\zeta'(z)|} \\
-\end{align*}
-
-Multiplying both sides by $|\zeta'(z)|$ and using the triangle inequality, we get:
-
-\begin{align*}
-\frac{|\zeta'(z)|}{|1 - \zeta(z)/2|} \leq 2^{1-z}|\log 2|. \\
-\end{align*}
-
-Since $|\zeta'(z)|$ is finite and non-zero for all nontrivial zeros of the zeta function, wecan divide both sides by $|\zeta'(z)|$ to obtain:
-
-\begin{align*}
-\frac{1}{|1 - \zeta(z)/2|} \cdot \frac{1}{|\zeta'(z)|} \leq 2^{1-z}|\log 2| \cdot \frac{1}{|\zeta'(z)|}. \\
-\end{align*}
-
-Now, recall the definition of the absolute value of a complex number: $|z| = \sqrt{z \overline{z}}$, where $\overline{z}$ is the complex conjugate of $z$. Applying this definition to the denominator of the left-hand side, we get:
-
-\begin{align*}
-|1 - \zeta(z)/2| = \sqrt{\left(1 - \frac{\zeta(z)}{2}\right)\left(1 - \frac{\overline{\zeta}(z)}{2}\right)} = \sqrt{\left|\left(1 - \frac{\zeta(z)}{2}\right)\right|^2}, \\
-\end{align*}
-
-where $\overline{\zeta}(z)$ is the complex conjugate of $\zeta(z)$. Since $|\zeta(z)| \geq 2$ for all nontrivial zeros $z$ of the zeta function, we have $|1-\zeta(z)/2| \geq 1/2$. Therefore, we can further simplify the inequality:
-
-\begin{align*}
-\frac{1}{|\zeta'(z)|} \leq 2^{1-z}|\log 2| \cdot \frac{2}{|\left(1 - \frac{\zeta(z)}{2}\right)\right|}. \\
-\end{align*}
-
-Recall that $\zeta(z) \neq 1$ for all nontrivial zeros $z$ of the zeta function. Therefore, $|1-\zeta(z)/2| > 1/2$, and we can further simplify the inequality:
-
-\begin{align*}
-\frac{1}{|\zeta'(z)|} \leq 4^{1-z}|\log 2| \cdot \frac{1}{|\zeta(z)-2|}. \\
-\end{align*}
-
-This completes the proof of the inequality. \\
 
 \newpage
-\subsection*{XVIII. Complex definition for \zeta(s)}
-We define the infinite product in the complex plane for $\zeta(x+iy)$, where $s = x + iy$ as the following:
-
-\begin{align*}
-\zeta(s) &= 2^s\pi^{s-1}\sin(\pi s/2)\Gamma(1-s)\prod_{n=1}^{\infty}\left(1-\frac{2^{1-s}}{n^{1-s}}\right)
-\end{align*}
-
-2D Fractal $#5$ Graph of $\zeta(x+iy)$ showcasing the zeros of the composite numbers by Multipling $b(x+iy) * iy$: \\
-
-\begin{align*}
-\includegraphics[scale=0.3]{graphs/2D_Complex_Graphs/Reimann_Zeta_function/Complex_product_1_n_2-14_factored_form}
-\end{align*}
-
-\text{Using the formula we derived earlier, we can write: } \\
-
-\begin{align*}
-\zeta\left(\frac{1}{2}+iy\right) = (-2^{1-iy}) \cdot \pi^{-\frac{1}{2}-iy}\cdot \Gamma\left(\frac{1}{2}-iy\right) \cdot \sin\left(\frac{\pi y}{2}\right) \cdot \prod_{n=1}^{\infty}\left(1-\frac{2^{1-iy}}{n^{1-iy}}\right)\\
-\end{align*}
-
-\text{Setting this expression equal to zero, we get:} \\
-
-\begin{align*}
--2^{1-iy}\cdot \pi^{-\frac{1}{2}-iy}\cdot \Gamma\left(\frac{1}{2}-iy\right) \cdot \sin\left(\frac{\pi y}{2}\right) \cdot \prod_{n=1}^{\infty}\left(1-\frac{2^{1-iy}}{n^{1-iy}}\right) = 0\\
-\end{align*}
-
-Since $2^{1-iy}$ and $\pi^{-\frac{1}{2}-iy}$ are both non-zero for all y, we can divide both sides by  $-2^{1-iy}\cdot \pi^{-\frac{1}{2}-iy}\cdot \Gamma\left(\frac{1}{2}-iy\right) \cdot \sin\left(\frac{\pi y}{2}\right)$ to get: \\
-
-\begin{align*}
-n(z)=\prod_{n=1}^{\infty}\left(1-\frac{2^{1-iy}}{n^{1-iy}}\right) = 0 \\
-\end{align*}
-
-This product is zero if and only if one of its factors is zero. Therefore, we can find the nontrivial zeros of the zeta function by solving the equation: $1-\frac{2^{1-iy}}{n^{1-iy}} = 0$ Solving for y, we get:
-
-\begin{align*}
-y = \frac{1}{\log(2)} * \log\left(\frac{n}{2}\right) \\
-\end{align*}
-
-Where n is a positive integer. These values of y represent the imaginary parts of the nontrivial zeros of the zeta function. \\
-
-We start with the formula for the Riemann zeta function, we are going to prove a new identity:
-
-\begin{align*}
-\zeta(s) &= 2^{s}\cdot\pi^{s-1}\cdot\sin(\frac{\pi s}{2})\cdot\Gamma(1-s)\cdot\prod_{n=1}^{\infty}(1-\frac{2^{1-s}}{n^{1-s}}) \\
-\end{align*}
-
-Setting $s=2$ in the above equation, we obtain:
-
-\begin{align*}
-\zeta(2) &= 2^{2}\cdot\pi^{2-1}\cdot\sin(\frac{\pi\cdot2}{2})\cdot\Gamma(1-2)\cdot\prod_{n=1}^{\infty}(1-\frac{2^{1-2}}{n^{1-2}}) \\
-\end{align*}
-
-\begin{align*}
-\frac{\pi^2}{6} &= \frac{\pi^2}{2}\cdot\Gamma(-1)\cdot\prod_{n=1}^{\infty}(1-\frac{2^{-1}}{n^2}) \\
-\end{align*}
-
-\begin{align*}
-\frac{\pi^2}{6} &= -\frac{\pi^2}{2}\cdot\frac{1}{\Gamma(2)}\cdot\prod_{n=1}^{\infty}(1-\frac{2^{-1}}{n^2}) \\
-\end{align*}
-
-\begin{align*}
-\frac{\pi^2}{6} &= -\frac{\pi^2}{2}\cdot\prod_{n=1}^{\infty}(\frac{n^2-2^{-1}}{n^2}) \\
-\end{align*}
-
-\begin{align*}
-\frac{\pi^2}{6} &= -\frac{\pi^2}{2}\cdot\prod_{n=1}^{\infty}(\frac{2n-1}{2n}\cdot\frac{2n+1}{2n}) \\
-\end{align*}
-
-\begin{align*}
-\frac{\pi^2}{6} &= -\frac{\pi^2}{2}\cdot\frac{1}{2}\cdot\prod_{n=1}^{\infty}(\frac{2n+1}{2n}) \\
-\end{align*}
-
-\begin{align*}
-\frac{\pi^2}{6} &= -\frac{\pi^2}{4}\cdot\prod_{n=1}^{\infty}(\frac{2n+1}{2n}) \\
-\end{align*}
-
-Now, we use the Wallis product to simplify the infinite product on the right-hand side: \\
-
-\begin{align*}
-\prod_{n=1}^{\infty}(\frac{2n+1}{2n}) &= \lim_{N\to\infty}\left[\frac{2}{1}\cdot\frac{2}{3}\cdot\frac{4}{3}\cdot\frac{4}{5}\cdots\frac{2N}{2N-1}\cdot\frac{2N}{2N+1}\right] \\
-\end{align*}
-
-\begin{align*}
-&=\lim_{N\to\infty}\left[\left(\frac{(2N/(2N+1))(2/1)\cdot(2N/(2N-1))(2/3)\cdots(4/3)(4/5)\cdot(2/1)(2/3)}\right)\right] \\
-\end{align*}
-
-\begin{align*}
-&=\lim_{N\to\infty}\left[(2\pi)^2\cdot e^{-\gamma}/(2N+1)\right] \\
-\end{align*}
-
-Substituting this back into the previous equation we obtain:
-
-\begin{align*}
-\frac{\left(\pi^{2}\right)}{6} = \frac{-\pi^{2}}{4}*\left(2\pi\right)^{2}\right)*\frac{e^{-\gamma}}{2} \\
-\end{align*}
-
-Simplifying we get:
-
-\begin{align*}
-\frac{(2\pi)^2\cdot e^{-\gamma}}{2} &= \prod_{n=1}^{\infty}(1+\frac{1}{n})^2 \\
-\end{align*}
-
-Now we take:
-
-\begin{align*}
-\zeta(s) &= \sum_{n=1}^{\infty}n^{-s} = \prod_{p\text{ prime}}(1-p^{-s})^{-1} \\
-\end{align*}
-
-where the product is taken over all prime numbers. \\
-
-Substituting  $s = -1$, we get: \\
-
-\begin{align*}
-\zeta(-1) &= \sum_{n=1}^{\infty} n = 1 + 2 + 3 + \cdots \\
-\end{align*}
-
-Now, we know that: \\
-
-\begin{align*}
-1 + 2 + 3 + \cdots &= -\frac{1}{12} \\
-\end{align*}
-
-This result can be obtained using various techniques, including analytic continuation of the Riemann zeta function and regularization techniques in physics. So, we have: \\
-
-\begin{align*}
-\zeta(-1) &= -\frac{1}{12} = \prod_{n=1}^{\infty} (1 - p_n) \\
-\end{align*}
-
-Using the prime number theorem, we know that the nth prime number is approximately equal to  n $\log$ n. So, we can write: \\
-
-\begin{align*}
-\prod_{n=1}^{\infty} (1 - p_n) &\approx \prod_{n=1}^{\infty} \left(1 - \frac{1}{n \log n}\right) \\
-\end{align*}
-
-Now, using the fact that: \\
-
-\begin{align*}
-\prod_{n=1}^{\infty} \left(1 + \frac{x}{n}\right) &= e^x \prod_{n=1}^{\infty} \left(1 + \frac{x}{n}\right)^{-1} \\
-\end{align*}
-
-\text{we can write:} \\
-
-\begin{align*}
-\prod_{n=1}^{\infty} \left(1 - \frac{1}{n \log n}\right) &= e^{-\gamma} \\
-\end{align*}
-
-where $\gamma$ is the Euler-Mascheroni constant. \\
-
-Substituting this back into the previous equation, we get: \\
-
-\begin{align*}
--\frac{1}{12} &= e^{-\gamma} \\
-\end{align*}
-
-Multiplying both sides by $-12$, we get: \\
-
-\begin{align*}
-1 &= 12e^{-\gamma} \\
-\end{align*}
-
-Using the fact that: \\
-
-\begin{align*}
-\frac{\pi^2}{6} &= \zeta(2) = \prod_{p \text{ prime}} (1 - p^{-2})^{-1} \\
-\end{align*}
-
-and \\
-
-\begin{align*}
-\frac{(2\pi)^2 e^{-\gamma}}{2} &= \prod_{n=1}^{\infty} \left(1 + \frac{1}{n}\right)^2 \\
-\end{align*}
-
-we can derive the equation: \\
-
-\begin{align*}
-\frac{\pi^2}{6} &= \frac{(2\pi)^2 e^{-\gamma}}{2} \\
-\end{align*}
-
-Which is what we set out to prove. \\
-
-Now we will provide an intersting hypothesis for L-Functions as a whole, as this relationship proves to have wild implications. \\
-
-Let's start with the infinite product: \\
-
-\begin{align*}
-f(x) = \prod_{k=2}^x \left(1 - x/ \left(k^2\right)\right)^{-1} \\
-\end{align*}
-
-We can write this as:
-
-\begin{align*}
-f(x) = {\zeta\left(2\right)^{-1}}{\zeta\left(2-x\right)} \\
-\end{align*}
-
-where $\zeta(s)$ is the Riemann zeta function: \\
-
-\begin{align*}
-\zeta(s) = \sum_{n=1}^\infty n^\left(-s\right) \\
-\end{align*}
-
-Now, let's look at the infinite product of infinite products: \\
-
-\begin{align*}
-\prod_{a=1}^\infty \prod_{b=1}^\infty ... \\
-\end{align*}
-
-This product is taken over all possible pairs of positive integers a, b, and so on. We can think of this as taking all possible finite products of positive integers, where we include each possible finite product exactly once. This gives us all positive integers, including 1, exactly once. \\
-
-To see this, let's write out the first few terms of the product: \\
-
-product over a = 1 
-\begin{align*}
-(1) * (2) * (3) * \cdots \\
-\end{align*}
-
-product over a = 2
-\begin{align*}
-(1) * (2) * (3) * \cdots \\
-\end{align*}
-
-product over a = 3 
-\begin{align*}
-(1) * (2) * (3) * \cdots \\
-...
-\end{align*}
-
-product over a = 1, b = 1
-\begin{align*}
-(1) * (2) * (3) * \cdots \\
-\end{align*}
-
-product over a = 1, b = 2 \\
-\begin{align*}
-(1) * (2) * (3) * \cdots \\
-\end{align*}
-
-product over a = 1, b = 3 
-\begin{align*}
-(1) * (2) * (3) * \cdots \\
-...
-\end{align*}
-
-product over a = 2, b = 1 
-\begin{align*}
-(1) * (2) * (3) * \cdots \\
-\end{align*}
-
-product over a = 2, b = 2
-\begin{align*}
-(1) * (2) * (3) * \cdots \\
-\end{align*}
-
-product over a = 2, b = 3 
-\begin{align*}
-(1) * (2) * (3) * \cdots \\
-\times \cdots \\
-\end{align*}
-
-We can see that each possible finite product of positive integers appears exactly once in this infinite product. \\
-
-Now, let's rewrite the product over all pairs of positive integers as a product over all positive integers: \\
-
-\begin{align*}
-\prod_{a=1}^\infty \prod_{b=1}^\infty ... = \prod_{n=1}^\infty \left(1 - \frac{2^{1-s}}{\left(n^\left(1-s\right)\right)}\right) \\
-\end{align*}
-
-To see why this is true, note that the product over all pairs of positive integers can be written as: \\
-
-\begin{align*}
-\prod_{a=1}^\infty \prod_{b=1}^\infty ... = \prod_{n=1}^\infty \prod_{k=1}^\infty \left(1 - \frac{2^{\left(1-s\right)}}{\left(n^{1-s}\right)\left(k^{1-s}\right)\right)} \\
-\end{align*}
-
-Where the inner product is taken over all positive integers k. We can write this as: \\
-
-\begin{align*}
-\prod_{a=1}^\infty \prod_{b=1}^\infty ... = \prod_{n=1}^\infty \left(1 - \frac{2^{1-s}}{\left(n^{1-s}\right)\right)^{-1}} * \prod_{k=1}^\infty \left(1 - \frac{2^{1-s}}{\left(k^{1-s}\right)\right)}^{-1} \\
-\end{align*}
-
-Where we have used the fact that the product of inverse values is the inverse of the product. Now, we can simplify the second product using the definition of the Riemann zeta function: \\
-
-\begin{align*}
-\prod_{k=1}^\infty \left(1 - \frac{2^{1-s}}{\left(k^{1-s}\right)\right)^{-1}} = \zeta\left(s\right) \\
-\end{align*}
-
-Substituting this result into the previous expression, we get: \\
-
-\begin{align*}
-\prod_{a=1}^\infty \prod_{b=1}^\infty ... = \prod_{n=1}^\infty \left(1 - \frac{2^{1-s}}{\left(n^{1-s}\right)}\right)^{\left(-1\right)} * \zeta\left(s\right) \\
-\end{align*}
-
-This expression is equivalent to the following infinite product of infinite products: \\
-
-\begin{align*}
-\prod_{a=1}^\infty \prod_{b=1}^\infty ... \prod_{n=1}^\infty \left(1 - \frac{2^{1-s}}{\left(n^{1-s}\right)}\right)^{-1} \\
-\end{align*}
-
-To see why, we can expand the product on the left-hand side of this equation using the definition of the Riemann zeta function: \\
-
-\begin{align*}
-\prod_{a=1}^\infty \prod_{b=1}^\infty ... = \prod_{n=1}^\infty \frac{\left(1 + 2^{1-s}\right)}{\frac{\left(n^{1-s}) + 2^{2-2s}}{\left(n^{2-2s}\right) + ...\right)}}^{-1} \\
-\end{align*}
-
-Using the formula for a geometric series, we can simplify this expression to: \\
-
-\begin{align*}
-\prod_{a=1}^\infty \prod_{b=1}^\infty ... = \prod_{n=1}^\infty \left(1 - \frac{2^{1-s}}{\left(n^{1-s}\right)}\right)^{-1} \\
-\end{align*}
-
-Therefore, all the expressions we have considered are equivalent to each other and can be derived from the basic identity: \\
-
-\begin{align*}
-\prod_{n=1}^\infty \left(1 + x^{n}\right) = 1 + x + x^{2} + x^{3} + ... = 1/\left(1 - x\right) \\
-\end{align*}
-
-Ultimately this allows us to form the relationship:
-
-\begin{align*}
-\zeta(s) = \prod_{a=1}^\infty \prod_{b=1}^\infty ... = \prod_{n=1}^\infty \left(1 - \frac{2^{1-s}}{\left(n^{1-s}\right)}\right) * \zeta(s)
-\end{align*}
-
-This expression can be thought of as a generalization of Euler's product formula for the zeta function, in which the product is taken over all positive integers rather than just prime numbers. However, unlike the zeta function, this infinite product does not converge for any value of s, as the factors in the product do not tend to zero as n goes to infinity. Instead, this expression is an example of a divergent product, meaning that it does not have a well-defined value in the usual sense. \\
-
-Nonetheless, this product does have some interesting properties, such as its connection to the Riemann hypothesis and the distribution of primes. It also highlights the fascinating and sometimes counterintuitive nature of infinite products in mathematics. \\
-
-Based on the infinite products presented, there appear to be some interesting connections between various mathematical functions and concepts. For example, the appearance of the Riemann zeta function in several of the equations suggests a fundamental link between the distribution of prime numbers and the behavior of complex numbers. Additionally, the infinite products in several of the equations suggest that there may be a deeper relationship between the convergence/divergence of infinite series and the properties of the numbers involved. \\
-
-Further investigation and analysis of these equations and their relationships could potentially lead to new insights and discoveries in the fields of number theory, complex analysis, and other related areas of mathematics. \\
-\\
-\\
-\\
-
 References:
 
 Chan, Erica. "The Sine Product Formula and the Gamma Function." MIT OpenCourseWare, Massachusetts Institute of Technology, 2006, https://ocw.mit.edu/courses/18-104-seminar-in-analysis-applications-to-number-theory-fall-2006/58778de0faae6448c3b0bfb1a1ec4f7a_chan.pdf.
