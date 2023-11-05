@@ -2,6 +2,8 @@
 \usepackage[left=2cm, right=2cm, top=2cm, bottom=3cm]{geometry}
 \usepackage{amsmath} % provides many mathematical environments & tools
 \usepackage{graphicx} % provides tools for super imposed sum & product integrals
+\usepackage{biblatex} %Imports biblatex package
+\addbibresource{references.bib} %Import the bibliography file
 
 \DeclareMathOperator*{\SumInt}{%
 \mathchoice%
@@ -429,8 +431,8 @@ The function b(z) allows us to compress l(z) down to the x axis using b(z). The 
 \subsection*{XIII. The Symmetry of Nested Roots: Deriving the First Fundamental Theorem of Analysis through Isomorphisms}
 
 This chapter provides an in-depth examination of the symmetrical isomorphisms inherent in the Nested Roots family. These isomorphisms, characterized by their symmetry and elegance, serve as a derivation of the First Fundamental Theorem of Analysis, thereby offering a novel perspective on these foundational mathematical principles.
-
-Starting with Function j(z) we define the infinite square root series, and its equivalent exponent form:
+\\
+Starting with Function j(z) we define the infinite square summation root series, and its equivalent exponent form:
 \begin{align*}
 j(z) = \sqrt{z + \sqrt{z + \sqrt{z + \ldots}}} = z^{1/2} + z^{1/4} + z^{1/8} + \ldots
 \end{align*}
@@ -459,6 +461,8 @@ k(z) = \prod_{n=1}^{\infty} \left[z^{2^{-n}}\right] = z^{(\sidesum{n=1}{\infty}[
 \end{align*}
 
 From this, the underlying foundation starts to fizzle through, presenting the 4 laws of the First Fundamental theory of Analysis.
+
+\newpage
 The First fundamental theorem of Analysis, which was just derived through the exploration of the Nested Roots family, is an extension of the fundamental theorem of calculus. These laws underpin the entirety of mathematics, and in many cases the 3 identities beyond the first are rarely taught or learned even by math professionals.
 \begin{align*}
 \SumInt_{a}^{b} f(x) dx = \lim_{n \to \infty}{(\sum_{k=1}^{n} \left[f(x)_{k}\Delta x_{k} \right])}
@@ -547,11 +551,7 @@ sin(\pi z) &= \frac{1}{\Gamma\left(z\right)} * \frac{1}{\Gamma\left(- z\right)} 
 sin(\pi z) &= \frac{\pi}{z} \left(\left[ze^z^\gamma \prod_{n=2}^z \left[\left(1 + \frac{z}{n}\right)e^\frac{-z}{n}\right]\right]\right) * \frac{\pi}{-z} \left(\left[ze^\frac{-z\gamma}{1} \prod_{n=2}^z \left[\left(1 + \frac{-z}{n}\right)e^\frac{z}{n}\right]\right]\right)
 \end{align*}
 
-
-
 \newpage
-References:
-
-Chan, Erica. "The Sine Product Formula and the Gamma Function." MIT OpenCourseWare, Massachusetts Institute of Technology, 2006, https://ocw.mit.edu/courses/18-104-seminar-in-analysis-applications-to-number-theory-fall-2006/58778de0faae6448c3b0bfb1a1ec4f7a_chan.pdf.
-
+\nocite{*}
+\printbibliography
 \end{document}

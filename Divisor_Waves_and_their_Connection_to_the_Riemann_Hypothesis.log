@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.29)  4 NOV 2023 19:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.29)  4 NOV 2023 21:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -136,29 +136,296 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen158
 \Gin@req@width=\dimen159
+) (C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
+Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
+
+(C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.s
+ty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
+
+(C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count274
+)
+(C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)) (C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count275
+
+(C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count276
+\c@listtotal=\count277
+\c@listcount=\count278
+\c@liststart=\count279
+\c@liststop=\count280
+\c@citecount=\count281
+\c@citetotal=\count282
+\c@multicitecount=\count283
+\c@multicitetotal=\count284
+\c@instcount=\count285
+\c@maxnames=\count286
+\c@minnames=\count287
+\c@maxitems=\count288
+\c@minitems=\count289
+\c@citecounter=\count290
+\c@maxcitecounter=\count291
+\c@savedcitecounter=\count292
+\c@uniquelist=\count293
+\c@uniquename=\count294
+\c@refsection=\count295
+\c@refsegment=\count296
+\c@maxextratitle=\count297
+\c@maxextratitleyear=\count298
+\c@maxextraname=\count299
+\c@maxextradate=\count300
+\c@maxextraalpha=\count301
+\c@abbrvpenalty=\count302
+\c@highnamepenalty=\count303
+\c@lownamepenalty=\count304
+\c@maxparens=\count305
+\c@parenlevel=\count306
+\blx@tempcnta=\count307
+\blx@tempcntb=\count308
+\blx@tempcntc=\count309
+\c@blx@maxsection=\count310
+\blx@maxsegment@0=\count311
+\blx@notetype=\count312
+\blx@parenlevel@text=\count313
+\blx@parenlevel@foot=\count314
+\blx@sectionciteorder@0=\count315
+\blx@sectionciteorderinternal@0=\count316
+\blx@entrysetcounter=\count317
+\blx@biblioinstance=\count318
+\labelnumberwidth=\skip53
+\labelalphawidth=\skip54
+\biblabelsep=\skip55
+\bibitemsep=\skip56
+\bibnamesep=\skip57
+\bibinitsep=\skip58
+\bibparsep=\skip59
+\bibhang=\skip60
+\blx@bcfin=\read2
+\blx@bcfout=\write3
+\blx@langwohyphens=\language79
+\c@mincomprange=\count319
+\c@maxcomprange=\count320
+\c@mincompwidth=\count321
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
+File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count322
+\c@savedafterword=\count323
+\c@annotator=\count324
+\c@savedannotator=\count325
+\c@author=\count326
+\c@savedauthor=\count327
+\c@bookauthor=\count328
+\c@savedbookauthor=\count329
+\c@commentator=\count330
+\c@savedcommentator=\count331
+\c@editor=\count332
+\c@savededitor=\count333
+\c@editora=\count334
+\c@savededitora=\count335
+\c@editorb=\count336
+\c@savededitorb=\count337
+\c@editorc=\count338
+\c@savededitorc=\count339
+\c@foreword=\count340
+\c@savedforeword=\count341
+\c@holder=\count342
+\c@savedholder=\count343
+\c@introduction=\count344
+\c@savedintroduction=\count345
+\c@namea=\count346
+\c@savednamea=\count347
+\c@nameb=\count348
+\c@savednameb=\count349
+\c@namec=\count350
+\c@savednamec=\count351
+\c@translator=\count352
+\c@savedtranslator=\count353
+\c@shortauthor=\count354
+\c@savedshortauthor=\count355
+\c@shorteditor=\count356
+\c@savedshorteditor=\count357
+\c@labelname=\count358
+\c@savedlabelname=\count359
+\c@institution=\count360
+\c@savedinstitution=\count361
+\c@lista=\count362
+\c@savedlista=\count363
+\c@listb=\count364
+\c@savedlistb=\count365
+\c@listc=\count366
+\c@savedlistc=\count367
+\c@listd=\count368
+\c@savedlistd=\count369
+\c@liste=\count370
+\c@savedliste=\count371
+\c@listf=\count372
+\c@savedlistf=\count373
+\c@location=\count374
+\c@savedlocation=\count375
+\c@organization=\count376
+\c@savedorganization=\count377
+\c@origlocation=\count378
+\c@savedoriglocation=\count379
+\c@origpublisher=\count380
+\c@savedorigpublisher=\count381
+\c@publisher=\count382
+\c@savedpublisher=\count383
+\c@language=\count384
+\c@savedlanguage=\count385
+\c@origlanguage=\count386
+\c@savedoriglanguage=\count387
+\c@pageref=\count388
+\c@savedpageref=\count389
+\shorthandwidth=\skip61
+\shortjournalwidth=\skip62
+\shortserieswidth=\skip63
+\shorttitlewidth=\skip64
+\shortauthorwidth=\skip65
+\shorteditorwidth=\skip66
+\locallabelnumberwidth=\skip67
+\locallabelalphawidth=\skip68
+\localshorthandwidth=\skip69
+\localshortjournalwidth=\skip70
+\localshortserieswidth=\skip71
+\localshorttitlewidth=\skip72
+\localshortauthorwidth=\skip73
+\localshorteditorwidth=\skip74
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.def
+File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
+File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+\c@textcitecount=\count390
+\c@textcitetotal=\count391
+\c@textcitemaxnames=\count392
+\c@biburlbigbreakpenalty=\count393
+\c@biburlbreakpenalty=\count394
+\c@biburlnumpenalty=\count395
+\c@biburlucpenalty=\count396
+\c@biburllcpenalty=\count397
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count398
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.bbx
+File: numeric.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
+File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count399
+\c@bbx:relatedtotal=\count400
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric.cbx
+File: numeric.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+(C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+
+(C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2023-08-29 L3 programming layer (loader) 
+
 (C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdfte
 x.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count274
+\l__color_backend_stack_int=\count401
 \l__pdf_internal_box=\box53
-) (Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.aux)
+))
+Package biblatex Info: ... and expl3
+(biblatex)             2023-08-29 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl3.s
+ty
+(C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.
+sty
+Package: xparse 2023-08-29 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
+))
+\@quotelevel=\count402
+\@quotereset=\count403
+ (Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.aux)
 \openout1 = `Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -197,16 +464,16 @@ LaTeX Font Info:    ... okay on input line 30.
 
 (C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count275
+\scratchcounter=\count404
 \scratchdimen=\dimen160
 \scratchbox=\box54
-\nofMPsegments=\count276
-\nofMParguments=\count277
+\nofMPsegments=\count405
+\nofMParguments=\count406
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count278
+\MPscratchCnt=\count407
 \MPscratchDim=\dimen161
-\MPnumerator=\count279
-\makeMPintoPDFobject=\count280
+\MPnumerator=\count408
+\makeMPintoPDFobject=\count409
 \everyMPtoPDFconversion=\toks25
 )
 (C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-bas
@@ -218,15 +485,32 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(C:\Users\ADA\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.lbx
+File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout3 = `Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'Divisor_Waves_and_their_Connection_to_the_Riem
+ann_Hypothesis.bbl' found.
+(Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.bbl)
+Package biblatex Info: Reference section=0 on input line 32.
+Package biblatex Info: Reference segment=0 on input line 32.
 <graphs/2D_Real_New/FigureA.png, id=1, 1244.39906pt x 297.36093pt>
 File: graphs/2D_Real_New/FigureA.png Graphic file (type png)
 <use graphs/2D_Real_New/FigureA.png>
-Package pdftex.def Info: graphs/2D_Real_New/FigureA.png  used on input line 52.
+Package pdftex.def Info: graphs/2D_Real_New/FigureA.png  used on input line 54.
 
 (pdftex.def)             Requested size: 379.53168pt x 90.69267pt.
 File: graphs/2D_Real_New/FigureA.png Graphic file (type png)
 <use graphs/2D_Real_New/FigureA.png>
-Package pdftex.def Info: graphs/2D_Real_New/FigureA.png  used on input line 52.
+Package pdftex.def Info: graphs/2D_Real_New/FigureA.png  used on input line 54.
 
 (pdftex.def)             Requested size: 379.53168pt x 90.69267pt.
 
@@ -237,7 +521,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.53 \hspace{21mm}\caption
+l.55 \hspace{21mm}\caption
                           {Figure 1: Plot of $f_2(x)$ without scaling coeffi...
 
 ? 
@@ -245,12 +529,12 @@ l.53 \hspace{21mm}\caption
 File: graphs/2D_Real_New/Figure1_2.png Graphic file (type png)
 <use graphs/2D_Real_New/Figure1_2.png>
 Package pdftex.def Info: graphs/2D_Real_New/Figure1_2.png  used on input line 5
-7.
+9.
 (pdftex.def)             Requested size: 380.89041pt x 182.75151pt.
 File: graphs/2D_Real_New/Figure1_2.png Graphic file (type png)
 <use graphs/2D_Real_New/Figure1_2.png>
 Package pdftex.def Info: graphs/2D_Real_New/Figure1_2.png  used on input line 5
-7.
+9.
 (pdftex.def)             Requested size: 380.89041pt x 182.75151pt.
 
 ! LaTeX Error: \caption outside float.
@@ -259,7 +543,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.58 \hspace{21mm}\caption
+l.60 \hspace{21mm}\caption
                           {Figure 2: Plot of $f_2(x)$ with scaling coefficie...
 
 ? 
@@ -271,12 +555,12 @@ al_New/FigureA.png> <./graphs/2D_Real_New/Figure1_2.png>]
 File: graphs/2D_Real_New/FigureB_redone.png Graphic file (type png)
 <use graphs/2D_Real_New/FigureB_redone.png>
 Package pdftex.def Info: graphs/2D_Real_New/FigureB_redone.png  used on input l
-ine 76.
+ine 78.
 (pdftex.def)             Requested size: 433.83383pt x 80.51245pt.
 File: graphs/2D_Real_New/FigureB_redone.png Graphic file (type png)
 <use graphs/2D_Real_New/FigureB_redone.png>
 Package pdftex.def Info: graphs/2D_Real_New/FigureB_redone.png  used on input l
-ine 76.
+ine 78.
 (pdftex.def)             Requested size: 433.83383pt x 80.51245pt.
 
 
@@ -286,7 +570,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.77 \hspace{15mm}\caption
+l.79 \hspace{15mm}\caption
                           {Figure 3: Graph of the Sieve of Eratosthenes, wit...
 
 ? 
@@ -294,12 +578,12 @@ l.77 \hspace{15mm}\caption
 File: graphs/2D_Real_New/Figure4_redone.png Graphic file (type png)
 <use graphs/2D_Real_New/Figure4_redone.png>
 Package pdftex.def Info: graphs/2D_Real_New/Figure4_redone.png  used on input l
-ine 81.
+ine 83.
 (pdftex.def)             Requested size: 438.477pt x 206.19598pt.
 File: graphs/2D_Real_New/Figure4_redone.png Graphic file (type png)
 <use graphs/2D_Real_New/Figure4_redone.png>
 Package pdftex.def Info: graphs/2D_Real_New/Figure4_redone.png  used on input l
-ine 81.
+ine 83.
 (pdftex.def)             Requested size: 438.477pt x 206.19598pt.
 
 ! LaTeX Error: \caption outside float.
@@ -308,36 +592,36 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 \hspace{15mm}\caption
+l.84 \hspace{15mm}\caption
                           {Figure 4: Graph of the Sieve of Eratosthenes, wit...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--83
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
  []
 
 ! Double subscript.
-l.84 ...2(x)$, $a_3(x)$, $a_5(x)$, $a_7(x)$, $a_1_
+l.86 ...2(x)$, $a_3(x)$, $a_5(x)$, $a_7(x)$, $a_1_
                                                   1(x)$, $a_1_3(x)$, etc. \\
 ? 
 ! Double subscript.
-l.84 ...x)$, $a_5(x)$, $a_7(x)$, $a_1_1(x)$, $a_1_
+l.86 ...x)$, $a_5(x)$, $a_7(x)$, $a_1_1(x)$, $a_1_
                                                   3(x)$, etc. \\
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--87
+Underfull \hbox (badness 10000) in paragraph at lines 86--89
 
  []
 
 [2 <./graphs/2D_Real_New/FigureB_redone.png> <./graphs/2D_Real_New/Figure4_redo
 ne.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--100
+Underfull \hbox (badness 10000) in paragraph at lines 99--102
 
  []
 
@@ -345,12 +629,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--100
 File: graphs/2D_Real_Graphs/cuspcurve.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/cuspcurve.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/cuspcurve.png  used on input lin
-e 102.
+e 104.
 (pdftex.def)             Requested size: 443.02908pt x 112.54518pt.
 File: graphs/2D_Real_Graphs/cuspcurve.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/cuspcurve.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/cuspcurve.png  used on input lin
-e 102.
+e 104.
 (pdftex.def)             Requested size: 443.02908pt x 112.54518pt.
 
 ! LaTeX Error: \caption outside float.
@@ -359,22 +643,22 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 \hspace{8mm}\caption
+l.105 \hspace{8mm}\caption
                           {Figure 5: Real plot for a(x), on the interval $0 ...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--104
+Underfull \hbox (badness 10000) in paragraph at lines 104--106
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--110
+Underfull \hbox (badness 10000) in paragraph at lines 107--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--110
+Underfull \hbox (badness 10000) in paragraph at lines 107--112
 
  []
 
@@ -384,13 +668,13 @@ File: graphs/3D_Complex_Graphs/product_of_sin/Complex_3D_product_of_sin_11.png
 Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_sin/Complex_3D_product_of_sin_11.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_sin/Complex_3D_pro
-duct_of_sin_11.png  used on input line 113.
+duct_of_sin_11.png  used on input line 115.
 (pdftex.def)             Requested size: 395.07057pt x 240.4571pt.
 File: graphs/3D_Complex_Graphs/product_of_sin/Complex_3D_product_of_sin_11.png 
 Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_sin/Complex_3D_product_of_sin_11.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_sin/Complex_3D_pro
-duct_of_sin_11.png  used on input line 113.
+duct_of_sin_11.png  used on input line 115.
 (pdftex.def)             Requested size: 395.07057pt x 240.4571pt.
 [3 <./graphs/2D_Real_Graphs/cuspcurve.png>]
 
@@ -400,12 +684,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.114 \hspace{15mm}\caption
+l.116 \hspace{15mm}\caption
                            {Figure 6: 3D Graph of $a(x+iy)$ showcasing the z...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--115
+Underfull \hbox (badness 10000) in paragraph at lines 115--117
 
  []
 
@@ -415,13 +699,13 @@ File: graphs/3D_Complex_Graphs/product_of_sin/Complex_3D_product_of_sin_10.png
 Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_sin/Complex_3D_product_of_sin_10.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_sin/Complex_3D_pro
-duct_of_sin_10.png  used on input line 119.
+duct_of_sin_10.png  used on input line 121.
 (pdftex.def)             Requested size: 388.90028pt x 204.2517pt.
 File: graphs/3D_Complex_Graphs/product_of_sin/Complex_3D_product_of_sin_10.png 
 Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_sin/Complex_3D_product_of_sin_10.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_sin/Complex_3D_pro
-duct_of_sin_10.png  used on input line 119.
+duct_of_sin_10.png  used on input line 121.
 (pdftex.def)             Requested size: 388.90028pt x 204.2517pt.
 
 ! LaTeX Error: \caption outside float.
@@ -430,12 +714,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.120 \hspace{8mm}\caption
+l.122 \hspace{8mm}\caption
                           {Figure 7: 2D Graph of $a(x+iy)$ showcasing the ze...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--121
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
 
  []
 
@@ -445,12 +729,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--121
 File: graphs/2D_Real_Graphs/norm_cuspcurve.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/norm_cuspcurve.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/norm_cuspcurve.png  used on inpu
-t line 130.
+t line 132.
 (pdftex.def)             Requested size: 451.72653pt x 91.50462pt.
 File: graphs/2D_Real_Graphs/norm_cuspcurve.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/norm_cuspcurve.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/norm_cuspcurve.png  used on inpu
-t line 130.
+t line 132.
 (pdftex.def)             Requested size: 451.72653pt x 91.50462pt.
 
 
@@ -460,12 +744,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.131 \hspace{8mm}\caption
+l.133 \hspace{8mm}\caption
                           {Figure 8: 2D Graph of $A(x)$ showcasing the zeros...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--132
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
 
  []
 
@@ -476,14 +760,14 @@ sin_HDSET_5.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_sin/normalized_Complex_3D_product_of_s
 in_HDSET_5.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_sin/normalized_Com
-plex_3D_product_of_sin_HDSET_5.png  used on input line 145.
+plex_3D_product_of_sin_HDSET_5.png  used on input line 147.
 (pdftex.def)             Requested size: 367.894pt x 236.9969pt.
 File: graphs/3D_Complex_Graphs/product_of_sin/normalized_Complex_3D_product_of_
 sin_HDSET_5.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_sin/normalized_Complex_3D_product_of_s
 in_HDSET_5.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_sin/normalized_Com
-plex_3D_product_of_sin_HDSET_5.png  used on input line 145.
+plex_3D_product_of_sin_HDSET_5.png  used on input line 147.
 (pdftex.def)             Requested size: 367.894pt x 236.9969pt.
 
 ! LaTeX Error: \caption outside float.
@@ -492,12 +776,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.146 \hspace{8mm}\caption
+l.148 \hspace{8mm}\caption
                           {Figure 9: 3D Graph of $A(x+iy)$ showcasing the no...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--147
+Underfull \hbox (badness 10000) in paragraph at lines 147--149
 
  []
 
@@ -508,14 +792,14 @@ sin_HDSET_4.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_sin/normalized_Complex_3D_product_of_s
 in_HDSET_4.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_sin/normalized_Com
-plex_3D_product_of_sin_HDSET_4.png  used on input line 152.
+plex_3D_product_of_sin_HDSET_4.png  used on input line 154.
 (pdftex.def)             Requested size: 363.01584pt x 215.85823pt.
 File: graphs/3D_Complex_Graphs/product_of_sin/normalized_Complex_3D_product_of_
 sin_HDSET_4.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_sin/normalized_Complex_3D_product_of_s
 in_HDSET_4.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_sin/normalized_Com
-plex_3D_product_of_sin_HDSET_4.png  used on input line 152.
+plex_3D_product_of_sin_HDSET_4.png  used on input line 154.
 (pdftex.def)             Requested size: 363.01584pt x 215.85823pt.
 [5 <./graphs/2D_Real_Graphs/norm_cuspcurve.png> <./graphs/3D_Complex_Graphs/pro
 duct_of_sin/normalized_Complex_3D_product_of_sin_HDSET_5.png>]
@@ -526,12 +810,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.153 \hspace{8mm}\caption
+l.155 \hspace{8mm}\caption
                           {Figure 10: 3D Graph of $A(x+iy)$ showcasing the n...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--154
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
 
  []
 
@@ -542,14 +826,14 @@ sin_HDSET_8.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_sin/normalized_Complex_3D_product_of_s
 in_HDSET_8.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_sin/normalized_Com
-plex_3D_product_of_sin_HDSET_8.png  used on input line 159.
+plex_3D_product_of_sin_HDSET_8.png  used on input line 161.
 (pdftex.def)             Requested size: 392.27286pt x 204.2517pt.
 File: graphs/3D_Complex_Graphs/product_of_sin/normalized_Complex_3D_product_of_
 sin_HDSET_8.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_sin/normalized_Complex_3D_product_of_s
 in_HDSET_8.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_sin/normalized_Com
-plex_3D_product_of_sin_HDSET_8.png  used on input line 159.
+plex_3D_product_of_sin_HDSET_8.png  used on input line 161.
 (pdftex.def)             Requested size: 392.27286pt x 204.2517pt.
 
 ! LaTeX Error: \caption outside float.
@@ -558,12 +842,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.160 \hspace{8mm}\caption
+l.162 \hspace{8mm}\caption
                           {Figure 11: 2D Graph of $A(x+iy)$ showcasing the n...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--161
+Underfull \hbox (badness 10000) in paragraph at lines 161--163
 
  []
 
@@ -576,13 +860,13 @@ File: graphs/2D_Real_Graphs/prime_indicator_og_redone.png Graphic file (type pn
 g)
 <use graphs/2D_Real_Graphs/prime_indicator_og_redone.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/prime_indicator_og_redone.png  u
-sed on input line 170.
+sed on input line 172.
 (pdftex.def)             Requested size: 488.15675pt x 59.96095pt.
 File: graphs/2D_Real_Graphs/prime_indicator_og_redone.png Graphic file (type pn
 g)
 <use graphs/2D_Real_Graphs/prime_indicator_og_redone.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/prime_indicator_og_redone.png  u
-sed on input line 170.
+sed on input line 172.
 (pdftex.def)             Requested size: 488.15675pt x 59.96095pt.
 
 
@@ -592,22 +876,22 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.171 \hspace{8mm}\caption
+l.173 \hspace{8mm}\caption
                           {Figure 12: 2D Graph of $b(x)$ showcasing the zero...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--172
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--178
+Underfull \hbox (badness 10000) in paragraph at lines 175--180
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--178
+Underfull \hbox (badness 10000) in paragraph at lines 175--180
 
  []
 
@@ -618,14 +902,14 @@ malized_goodm_prism_1.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_norm
 alized_goodm_prism_1.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
-tion_of_sin/non_normalized_goodm_prism_1.png  used on input line 180.
+tion_of_sin/non_normalized_goodm_prism_1.png  used on input line 182.
 (pdftex.def)             Requested size: 343.84393pt x 203.59625pt.
 File: graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_nor
 malized_goodm_prism_1.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_norm
 alized_goodm_prism_1.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
-tion_of_sin/non_normalized_goodm_prism_1.png  used on input line 180.
+tion_of_sin/non_normalized_goodm_prism_1.png  used on input line 182.
 (pdftex.def)             Requested size: 343.84393pt x 203.59625pt.
 
 ! LaTeX Error: \caption outside float.
@@ -634,17 +918,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.181 \hspace{8mm}\caption
+l.183 \hspace{8mm}\caption
                           {Figure 13: 2D Graph of $b(x+iy)$ showcasing the z...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--182
+Underfull \hbox (badness 10000) in paragraph at lines 182--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
@@ -655,14 +939,14 @@ malized_goodm_prism_8.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_norm
 alized_goodm_prism_8.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
-tion_of_sin/non_normalized_goodm_prism_8.png  used on input line 186.
+tion_of_sin/non_normalized_goodm_prism_8.png  used on input line 188.
 (pdftex.def)             Requested size: 393.95915pt x 203.83012pt.
 File: graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_nor
 malized_goodm_prism_8.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_norm
 alized_goodm_prism_8.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
-tion_of_sin/non_normalized_goodm_prism_8.png  used on input line 186.
+tion_of_sin/non_normalized_goodm_prism_8.png  used on input line 188.
 (pdftex.def)             Requested size: 393.95915pt x 203.83012pt.
 [7 <./graphs/2D_Real_Graphs/prime_indicator_og_redone.png> <./graphs/3D_Complex
 _Graphs/product_of_product_representation_of_sin/non_normalized_goodm_prism_1.p
@@ -674,17 +958,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.187 \hspace{8mm}\caption
+l.189 \hspace{8mm}\caption
                           {Figure 14: 3D Graph of $b(x+iy)$ showcasing the z...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--188
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
  []
 
@@ -698,7 +982,7 @@ le (type png)
 on_of_sin/Complex_product_17_n_2-28__imaginary_scalar_logarithm.png>
 Package pdftex.def Info: graphs/2D_Complex_Graphs/Infinite_Product_of_infinite_
 product_representation_of_sin/Complex_product_17_n_2-28__imaginary_scalar_logar
-ithm.png  used on input line 193.
+ithm.png  used on input line 195.
 (pdftex.def)             Requested size: 379.20413pt x 201.72226pt.
 File: graphs/2D_Complex_Graphs/Infinite_Product_of_infinite_product_representat
 ion_of_sin/Complex_product_17_n_2-28__imaginary_scalar_logarithm.png Graphic fi
@@ -707,7 +991,7 @@ le (type png)
 on_of_sin/Complex_product_17_n_2-28__imaginary_scalar_logarithm.png>
 Package pdftex.def Info: graphs/2D_Complex_Graphs/Infinite_Product_of_infinite_
 product_representation_of_sin/Complex_product_17_n_2-28__imaginary_scalar_logar
-ithm.png  used on input line 193.
+ithm.png  used on input line 195.
 (pdftex.def)             Requested size: 379.20413pt x 201.72226pt.
 
 ! LaTeX Error: \caption outside float.
@@ -716,17 +1000,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.194 \hspace{8mm}\caption
+l.196 \hspace{8mm}\caption
                           {Figure 15: 2D Fractal Colorization complex plot o...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--195
+Underfull \hbox (badness 10000) in paragraph at lines 195--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
@@ -734,27 +1018,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--197
 malized_goodm_prism_8.png> <./graphs/2D_Complex_Graphs/Infinite_Product_of_infi
 nite_product_representation_of_sin/Complex_product_17_n_2-28__imaginary_scalar_
 logarithm.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
@@ -765,7 +1049,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.231 \begin{flushleft*}
+l.233 \begin{flushleft*}
                         
 ? 
 
@@ -775,112 +1059,112 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.233 \end{flushleft*}
+l.235 \end{flushleft*}
                       
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--234
+Underfull \hbox (badness 10000) in paragraph at lines 234--236
 
  []
 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.244 \end{align*}
+l.246 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.244 \end{align*}
+l.246 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.244 \end{align*}
+l.246 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.244 \end{align*}
+l.246 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.244 \end{align*}
+l.246 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.244 \end{align*}
+l.246 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.244 \end{align*}
+l.246 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.244 \end{align*}
+l.246 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.244 \end{align*}
+l.246 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.244 \end{align*}
+l.246 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.244 \end{align*}
+l.246 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.244 \end{align*}
+l.246 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.244 \end{align*}
+l.246 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.244 \end{align*}
+l.246 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.244 \end{align*}
+l.246 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.244 \end{align*}
+l.246 \end{align*}
                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
 
  []
 
@@ -891,7 +1175,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.248 \begin{flushleft*}
+l.250 \begin{flushleft*}
                         
 ? 
 
@@ -901,204 +1185,204 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.250 \end{flushleft*}
+l.252 \end{flushleft*}
                       
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--251
+Underfull \hbox (badness 10000) in paragraph at lines 251--253
 
  []
 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.260 \end{align*}
+l.262 \end{align*}
                   
 ? 
 [10]
@@ -1107,12 +1391,12 @@ pt>
 File: graphs/2D_Real_Graphs/prime_indicator_norm.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/prime_indicator_norm.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/prime_indicator_norm.png  used o
-n input line 272.
+n input line 274.
 (pdftex.def)             Requested size: 472.43457pt x 67.18951pt.
 File: graphs/2D_Real_Graphs/prime_indicator_norm.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/prime_indicator_norm.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/prime_indicator_norm.png  used o
-n input line 272.
+n input line 274.
 (pdftex.def)             Requested size: 472.43457pt x 67.18951pt.
 
 
@@ -1122,22 +1406,22 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.273 \hspace{8mm}\caption
+l.275 \hspace{8mm}\caption
                           {Figure 16: 2D Graph of $B(x)$ showcasing the zero...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--274
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 275--276
+Underfull \hbox (badness 10000) in paragraph at lines 274--276
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 277--278
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
@@ -1150,7 +1434,7 @@ xPlot_prodprodforsin_4_Prism_Colorization_New.png Graphic file (type png)
 Plot_prodprodforsin_4_Prism_Colorization_New.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
 tion_of_sin//ComplexPlot_prodprodforsin_4_Prism_Colorization_New.png  used on i
-nput line 281.
+nput line 283.
 (pdftex.def)             Requested size: 389.32187pt x 202.56541pt.
 File: graphs/3D_Complex_Graphs/product_of_product_representation_of_sin//Comple
 xPlot_prodprodforsin_4_Prism_Colorization_New.png Graphic file (type png)
@@ -1158,7 +1442,7 @@ xPlot_prodprodforsin_4_Prism_Colorization_New.png Graphic file (type png)
 Plot_prodprodforsin_4_Prism_Colorization_New.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
 tion_of_sin//ComplexPlot_prodprodforsin_4_Prism_Colorization_New.png  used on i
-nput line 281.
+nput line 283.
 (pdftex.def)             Requested size: 389.32187pt x 202.56541pt.
 
 ! LaTeX Error: \caption outside float.
@@ -1167,12 +1451,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.282 \hspace{8mm}\caption
+l.284 \hspace{8mm}\caption
                           {Figure 17: 2D Graph of $B(x+iy)$ showcasing the z...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--283
+Underfull \hbox (badness 10000) in paragraph at lines 283--285
 
  []
 
@@ -1183,14 +1467,14 @@ Plot_prodprodforsin_8.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/ComplexP
 lot_prodprodforsin_8.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
-tion_of_sin/ComplexPlot_prodprodforsin_8.png  used on input line 288.
+tion_of_sin/ComplexPlot_prodprodforsin_8.png  used on input line 290.
 (pdftex.def)             Requested size: 356.03938pt x 263.89597pt.
 File: graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/Complex
 Plot_prodprodforsin_8.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/ComplexP
 lot_prodprodforsin_8.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
-tion_of_sin/ComplexPlot_prodprodforsin_8.png  used on input line 288.
+tion_of_sin/ComplexPlot_prodprodforsin_8.png  used on input line 290.
 (pdftex.def)             Requested size: 356.03938pt x 263.89597pt.
 [11 <./graphs/2D_Real_Graphs/prime_indicator_norm.png> <./graphs/3D_Complex_Gra
 phs/product_of_product_representation_of_sin//ComplexPlot_prodprodforsin_4_Pris
@@ -1202,12 +1486,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.289 \hspace{8mm}\caption
+l.291 \hspace{8mm}\caption
                           {Figure 18: 3D Graph of $B(x+iy)$ showcasing the z...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--290
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
 
  []
 
@@ -1218,7 +1502,7 @@ Plot_norm_prodprodforsin_prism_3.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/ComplexP
 lot_norm_prodprodforsin_prism_3.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
-tion_of_sin/ComplexPlot_norm_prodprodforsin_prism_3.png  used on input line 293
+tion_of_sin/ComplexPlot_norm_prodprodforsin_prism_3.png  used on input line 295
 .
 (pdftex.def)             Requested size: 420.40425pt x 290.99698pt.
 File: graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/Complex
@@ -1226,7 +1510,7 @@ Plot_norm_prodprodforsin_prism_3.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/ComplexP
 lot_norm_prodprodforsin_prism_3.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
-tion_of_sin/ComplexPlot_norm_prodprodforsin_prism_3.png  used on input line 293
+tion_of_sin/ComplexPlot_norm_prodprodforsin_prism_3.png  used on input line 295
 .
 (pdftex.def)             Requested size: 420.40425pt x 290.99698pt.
 
@@ -1236,12 +1520,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.294 \hspace{8mm}\caption
+l.296 \hspace{8mm}\caption
                           {Figure 19: 3D Graph of $B(x+iy)$ showcasing the z...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--295
+Underfull \hbox (badness 10000) in paragraph at lines 295--297
 
  []
 
@@ -1252,12 +1536,12 @@ esentation_of_sin/ComplexPlot_norm_prodprodforsin_prism_3.png>]
 File: graphs/2D_Real_Graphs/1+sin_prod.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/1+sin_prod.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/1+sin_prod.png  used on input li
-ne 306.
+ne 308.
 (pdftex.def)             Requested size: 429.33229pt x 72.94809pt.
 File: graphs/2D_Real_Graphs/1+sin_prod.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/1+sin_prod.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/1+sin_prod.png  used on input li
-ne 306.
+ne 308.
 (pdftex.def)             Requested size: 429.33229pt x 72.94809pt.
 <graphs/3D_Complex_Graphs/riesz_sin/Ries_sin_norm_1.png, id=75, 761.09344pt x 5
 27.72156pt>
@@ -1265,17 +1549,17 @@ File: graphs/3D_Complex_Graphs/riesz_sin/Ries_sin_norm_1.png Graphic file (type
  png)
 <use graphs/3D_Complex_Graphs/riesz_sin/Ries_sin_norm_1.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_sin/Ries_sin_norm_1.png
-  used on input line 314.
+  used on input line 316.
 (pdftex.def)             Requested size: 342.48889pt x 237.4725pt.
 File: graphs/3D_Complex_Graphs/riesz_sin/Ries_sin_norm_1.png Graphic file (type
  png)
 <use graphs/3D_Complex_Graphs/riesz_sin/Ries_sin_norm_1.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_sin/Ries_sin_norm_1.png
-  used on input line 314.
+  used on input line 316.
 (pdftex.def)             Requested size: 342.48889pt x 237.4725pt.
  [13 <./graphs/2D_Real_Graphs/1+sin_prod.png> <./graphs/3D_Complex_Graphs/riesz
 _sin/Ries_sin_norm_1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
+Underfull \hbox (badness 10000) in paragraph at lines 331--332
 
  []
 
@@ -1283,12 +1567,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 329--330
 File: graphs/2D_Real_Graphs/1+cos_prod.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/1+cos_prod.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/1+cos_prod.png  used on input li
-ne 333.
+ne 335.
 (pdftex.def)             Requested size: 426.17044pt x 65.26933pt.
 File: graphs/2D_Real_Graphs/1+cos_prod.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/1+cos_prod.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/1+cos_prod.png  used on input li
-ne 333.
+ne 335.
 (pdftex.def)             Requested size: 426.17044pt x 65.26933pt.
 <graphs/3D_Complex_Graphs/riesz_cos/Ries_cos_norm_1.png, id=81, 804.75656pt x 5
 62.35094pt>
@@ -1296,13 +1580,13 @@ File: graphs/3D_Complex_Graphs/riesz_cos/Ries_cos_norm_1.png Graphic file (type
  png)
 <use graphs/3D_Complex_Graphs/riesz_cos/Ries_cos_norm_1.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_cos/Ries_cos_norm_1.png
-  used on input line 340.
+  used on input line 342.
 (pdftex.def)             Requested size: 362.1371pt x 253.05557pt.
 File: graphs/3D_Complex_Graphs/riesz_cos/Ries_cos_norm_1.png Graphic file (type
  png)
 <use graphs/3D_Complex_Graphs/riesz_cos/Ries_cos_norm_1.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_cos/Ries_cos_norm_1.png
-  used on input line 340.
+  used on input line 342.
 (pdftex.def)             Requested size: 362.1371pt x 253.05557pt.
 [14 <./graphs/2D_Real_Graphs/1+cos_prod.png> <./graphs/3D_Complex_Graphs/riesz_
 cos/Ries_cos_norm_1.png>]
@@ -1310,15 +1594,15 @@ cos/Ries_cos_norm_1.png>]
 File: graphs/2D_Real_Graphs/prod_1+tan.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/prod_1+tan.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/prod_1+tan.png  used on input li
-ne 355.
+ne 357.
 (pdftex.def)             Requested size: 427.52551pt x 79.72345pt.
 File: graphs/2D_Real_Graphs/prod_1+tan.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/prod_1+tan.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/prod_1+tan.png  used on input li
-ne 355.
+ne 357.
 (pdftex.def)             Requested size: 427.52551pt x 79.72345pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--359
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
 
  []
 
@@ -1328,13 +1612,13 @@ File: graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_1.png Graphic file (type
  png)
 <use graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_1.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_1.png
-  used on input line 362.
+  used on input line 364.
 (pdftex.def)             Requested size: 407.83743pt x 301.013pt.
 File: graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_1.png Graphic file (type
  png)
 <use graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_1.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_1.png
-  used on input line 362.
+  used on input line 364.
 (pdftex.def)             Requested size: 407.83743pt x 301.013pt.
 <graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_2.png, id=87, 1378.39969pt x 
 717.43031pt>
@@ -1342,13 +1626,13 @@ File: graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_2.png Graphic file (type
  png)
 <use graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_2.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_2.png
-  used on input line 369.
+  used on input line 371.
 (pdftex.def)             Requested size: 385.94928pt x 200.87912pt.
 File: graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_2.png Graphic file (type
  png)
 <use graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_2.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_2.png
-  used on input line 369.
+  used on input line 371.
 (pdftex.def)             Requested size: 385.94928pt x 200.87912pt.
 [15 <./graphs/2D_Real_Graphs/prod_1+tan.png> <./graphs/3D_Complex_Graphs/riesz_
 tan/Ries_tan_norm_1.png>]
@@ -1358,22 +1642,22 @@ File: graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_3.png Graphic file (type
  png)
 <use graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_3.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_3.png
-  used on input line 374.
+  used on input line 376.
 (pdftex.def)             Requested size: 402.04076pt x 224.82814pt.
 File: graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_3.png Graphic file (type
  png)
 <use graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_3.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_3.png
-  used on input line 374.
+  used on input line 376.
 (pdftex.def)             Requested size: 402.04076pt x 224.82814pt.
  [16 <./graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_2.png> <./graphs/3D_Co
 mplex_Graphs/riesz_tan/Ries_tan_norm_3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 385--386
+Underfull \hbox (badness 10000) in paragraph at lines 387--388
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--388
+Underfull \hbox (badness 10000) in paragraph at lines 389--390
 
  []
 
@@ -1382,12 +1666,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 387--388
 File: graphs/2D_Real_Graphs/1+sin_prod_xprimefunc.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/1+sin_prod_xprimefunc.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/1+sin_prod_xprimefunc.png  used 
-on input line 391.
+on input line 393.
 (pdftex.def)             Requested size: 428.8806pt x 65.72102pt.
 File: graphs/2D_Real_Graphs/1+sin_prod_xprimefunc.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/1+sin_prod_xprimefunc.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/1+sin_prod_xprimefunc.png  used 
-on input line 391.
+on input line 393.
 (pdftex.def)             Requested size: 428.8806pt x 65.72102pt.
 [17 <./graphs/2D_Real_Graphs/1+sin_prod_xprimefunc.png>]
 <graphs/2D_Real_Graphs/1+cos_prod_xprimefunc.png, id=99, 1422.0628pt x 223.5853
@@ -1395,12 +1679,12 @@ on input line 391.
 File: graphs/2D_Real_Graphs/1+cos_prod_xprimefunc.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/1+cos_prod_xprimefunc.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/1+cos_prod_xprimefunc.png  used 
-on input line 403.
+on input line 405.
 (pdftex.def)             Requested size: 426.62213pt x 67.0761pt.
 File: graphs/2D_Real_Graphs/1+cos_prod_xprimefunc.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/1+cos_prod_xprimefunc.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/1+cos_prod_xprimefunc.png  used 
-on input line 403.
+on input line 405.
 (pdftex.def)             Requested size: 426.62213pt x 67.0761pt.
  [18 <./graphs/2D_Real_Graphs/1+cos_prod_xprimefunc.png>]
 <graphs/2D_Real_Graphs/1+tan_prod_xprimefunc.png, id=103, 1429.59094pt x 213.04
@@ -1408,20 +1692,15 @@ on input line 403.
 File: graphs/2D_Real_Graphs/1+tan_prod_xprimefunc.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/1+tan_prod_xprimefunc.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/1+tan_prod_xprimefunc.png  used 
-on input line 414.
+on input line 416.
 (pdftex.def)             Requested size: 428.8806pt x 63.91426pt.
 File: graphs/2D_Real_Graphs/1+tan_prod_xprimefunc.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/1+tan_prod_xprimefunc.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/1+tan_prod_xprimefunc.png  used 
-on input line 414.
+on input line 416.
 (pdftex.def)             Requested size: 428.8806pt x 63.91426pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 422--423
+Underfull \hbox (badness 10000) in paragraph at lines 418--419
 
  []
 
@@ -1430,9 +1709,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 424--425
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--427
+
+ []
+
 [19 <./graphs/2D_Real_Graphs/1+tan_prod_xprimefunc.png>] [20] [21]
 ! Misplaced alignment tab character &.
-l.486 ... with extending Viete's Products of sin &
+l.490 ... with extending Viete's Products of sin &
                                                    cos to the complex plane ...
 
 ? 
@@ -1440,100 +1724,102 @@ l.486 ... with extending Viete's Products of sin &
 ! Double superscript.
 <argument> ...1}{\Gamma \left (z\right )} &= ze^z^
                                                   \gamma \prod _{n=2}^z\left...
-l.536 \end{align*}
+l.540 \end{align*}
                   
 ? 
 ! Missing { inserted.
 <to be read again> 
                    \left 
-l.536 \end{align*}
+l.540 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.536 \end{align*}
+l.540 \end{align*}
                   
 ? 
 ! Double superscript.
 <argument> ...1}{\Gamma \left (z\right )} &= ze^z^
                                                   \gamma \prod _{n=2}^z\left...
-l.536 \end{align*}
+l.540 \end{align*}
                   
 ? 
 ! Missing { inserted.
 <to be read again> 
                    \left 
-l.536 \end{align*}
+l.540 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.536 \end{align*}
+l.540 \end{align*}
                   
 ? 
 ! Double superscript.
 <argument> ... \frac {\pi }{z} \left (\left [ze^z^
                                                   \gamma \prod _{n=2}^z \lef...
-l.548 \end{align*}
+l.552 \end{align*}
                   
 ? 
 ! Double superscript.
 <argument> ... \frac {\pi }{z} \left (\left [ze^z^
                                                   \gamma \prod _{n=2}^z \lef...
-l.548 \end{align*}
+l.552 \end{align*}
                   
 ? 
 [23]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.555 ...ll-2006/58778de0faae6448c3b0bfb1a1ec4f7a_
-                                                  chan.pdf.
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.556 
-      
-? 
+Overfull \hbox (92.06665pt too wide) in paragraph at lines 557--557
+\OT1/cmtt/m/n/10 courses / 18 -[] 104 -[] seminar -[] in -[] analysis -[] appli
+cations -[] to -[] number -[] theory -[] fall -[] 2006 / 58778de0faae6448c3b0bf
+b1a1ec4f7a _
+ []
+
 [24] (Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
+Package logreq Info: Writing requests to 'Divisor_Waves_and_their_Connection_to
+_the_Riemann_Hypothesis.run.xml'.
+\openout1 = `Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.run.x
+ml'.
+
  ) 
 Here is how much of TeX's memory you used:
- 2897 strings out of 475248
- 63063 string characters out of 5758756
- 1937785 words of memory out of 5000000
- 24428 multiletter control sequences out of 15000+600000
- 562539 words of font info for 52 fonts, out of 8000000 for 9000
+ 10913 strings out of 475248
+ 222306 string characters out of 5758756
+ 1938785 words of memory out of 5000000
+ 32358 multiletter control sequences out of 15000+600000
+ 563959 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,17n,65p,685b,248s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 66i,17n,81p,735b,1269s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
 bx12.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
-s/cm/cmex10.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cmextra/cmex7.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ADA/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/ADA/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/ADA/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/ADA/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/ADA/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/User
-s/ADA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C
-:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.p
-fb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mr7.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmsy5.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmsy7.pfb>
+s/cm/cmcsc10.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmex10.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cmextra/cmex7.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ADA/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/ADA/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/ADA/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/ADA/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/AD
+A/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Us
+ers/ADA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+<C:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
+7.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmr5.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmsy5.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ADA/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 Output written on Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.
-pdf (24 pages, 9830674 bytes).
+pdf (24 pages, 9875788 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
+ 207 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  151 words of extra memory for PDF output out of 10000 (max. 10000000)
 
