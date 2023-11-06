@@ -2,9 +2,7 @@
 If you have not already, please download the PDF called:
 Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.pdf
 
-https://drive.google.com/file/d/1YE2m8ZGhZ3fEVt8lzXobwmzg8F1c8xo4/view?usp=drivesdk
-
-I have been working hard on these proofs for the past 3.5 years and now with the advent of ChatGPT, I have had an explosive amount of research.
+I have been working hard on these proofs for the past 4 years and now with the advent of ChatGPT, I have had an explosive amount of research.
 The Special functions software is free and open source. I am also providing my chatgpt prompts so that others can learn from my prompt engineering examples.
   
 If you want to learn more about the Riemann Hypothesis and the Millenium prize problems you can find them at the following sources:
@@ -17,31 +15,9 @@ Clay Maths Institute's Millenium Prize Problems:
 
 https://en.wikipedia.org/wiki/Millennium_Prize_Problems
 
-Also Here are some relevant sources for the project:
-
-http://www-elsa.physik.uni-bonn.de/~dieckman/InfProd/InfProd.html
-
-https://ocw.mit.edu/courses/18-104-seminar-in-analysis-applications-to-number-theory-fall-2006/58778de0faae6448c3b0bfb1a1ec4f7a_chan.pdf
-
-https://www.jstor.org/stable/3615085
-
-https://osf.io/4afqj/download
-
-https://www.parabola.unsw.edu.au/files/articles/2020-2029/volume-57-2021/issue-2/vol57_no2_3.pdf
-
-https://www.maa.org/sites/default/files/pdf/pubs/monthly_augsep12_page645.pdf
-
-https://mathworld.wolfram.com/DedekindEtaFunction.html
-
-https://mathworld.wolfram.com/InfiniteProduct.html
-
-https://mathworld.wolfram.com/PolygonCircumscribing.html
-
-https://math.stackexchange.com/questions/186292/derivatives-of-the-riemann-zeta-function-at-s-0
-
 # Special-Functions
 A program for plotting complex functions. This tool provides the plotting functions for 2D and 3D graphics for infinite series such as the Riemann zeta function, 
-the infinite product of the product representation for sin(pi*z/n) as well as any other function that can be formulated in the complex plane.
+the infinite product of the product representation for sin(pi*z/n) as well as any other function that can be formulated in the complex plane. The Infinite product plotted throughout the paper known as b(z) acts as an indicator for prime and composite numbers. ultimately we can describe a complex product waveform which contasins the attributes of the factorization for any composite number utilizing multivariable factorization.
 
 ### Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n) in the 2-D Complex Plane:
 
@@ -106,15 +82,37 @@ src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_norma
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
-   
+
+Also Here are some relevant sources for the project:
+
+http://www-elsa.physik.uni-bonn.de/~dieckman/InfProd/InfProd.html
+
+https://ocw.mit.edu/courses/18-104-seminar-in-analysis-applications-to-number-theory-fall-2006/58778de0faae6448c3b0bfb1a1ec4f7a_chan.pdf
+
+https://www.jstor.org/stable/3615085
+
+https://osf.io/4afqj/download
+
+https://www.parabola.unsw.edu.au/files/articles/2020-2029/volume-57-2021/issue-2/vol57_no2_3.pdf
+
+https://www.maa.org/sites/default/files/pdf/pubs/monthly_augsep12_page645.pdf
+
+https://mathworld.wolfram.com/DedekindEtaFunction.html
+
+https://mathworld.wolfram.com/InfiniteProduct.html
+
+https://mathworld.wolfram.com/PolygonCircumscribing.html
+
+https://math.stackexchange.com/questions/186292/derivatives-of-the-riemann-zeta-function-at-s-0
+
+https://www.youtube.com/watch?v=BuKgxeer9j8
+
 # About Me
 My name is Leo Borcherding, I am a Software Developer with experience working on programs for encryption of firmware devices. I have a background in electrical
 engineering and my passion is mathematics as well as art. I am developing this software so that we can further our understanding of mathematics, physics, 
 and the universe. Please contact me at borchborchmail@gmail.com if you have questions or are able to do something interesting with my software or math. You can also leave feedback on the software in this submission form:
 
 https://docs.google.com/forms/d/e/1FAIpQLSedobin-e8XqIv2AgMWhIrcNq-Pm7fsD63rhjuEiksWMAe9Og/viewform?usp=sf_link
-
-Currently I am writing a second paper on prompt engineering which showcases many examples of times where I utilized latex, python, and ascii prompts to formulate mathematical expressions with GPT3.5, ultimately this processes is dependent on the training or context referencing of the problem, and creating better systems for long term memory within a GPT4 agent will allow us to train a model such as "Euler Ai" which can process complex infinite series that it is trained on, and then in addition will be able to process new mathmatical functions that is was never presented if the user gives Euler enough context and formula evaluation techniques to fill in the blanks. 
 
 Here is an example of the current capabilities of GPT3.5:
 
