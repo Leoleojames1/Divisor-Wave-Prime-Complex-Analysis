@@ -2,8 +2,6 @@
 If you have not already, please download the PDF called:
 Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.pdf
 
-https://drive.google.com/file/d/1YE2m8ZGhZ3fEVt8lzXobwmzg8F1c8xo4/view?usp=drivesdk
-
 I have been working hard on these proofs for the past 3.5 years and now with the advent of ChatGPT, I have had an explosive amount of research.
 The Special functions software is free and open source. I am also providing my chatgpt prompts so that others can learn from my prompt engineering examples.
   
