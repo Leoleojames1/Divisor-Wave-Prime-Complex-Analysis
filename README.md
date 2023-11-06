@@ -17,7 +17,7 @@ https://en.wikipedia.org/wiki/Millennium_Prize_Problems
 
 # Special-Functions
 A program for plotting complex functions. This tool provides the plotting functions for 2D and 3D graphics for infinite series such as the Riemann zeta function, 
-the infinite product of the product representation for sin(pi*z/n) as well as any other function that can be formulated in the complex plane.
+the infinite product of the product representation for sin(pi*z/n) as well as any other function that can be formulated in the complex plane. The Infinite product plotted through the paper known as b(z) acts as an indicator for prime and composite numbers. ultimately we can describe a complex product waveform which contasins the attributes of the factorization for any composite number utilizing multivariable factorization.
 
 ### Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n) in the 2-D Complex Plane:
 
@@ -32,8 +32,6 @@ src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_norma
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
-
-The Infinite product plotted through the paper known as b(z) acts as an indicator for prime and composite numbers. ultimately we can describe a complex product waveform which contasins the attributes of the factorization for any composite number utilizing multivariable factorization.
 
 ### Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n) in the 3-D Complex Plane:
 
