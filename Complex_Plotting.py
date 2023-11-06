@@ -15,7 +15,7 @@ import subprocess
 import sys
 
 import numpy as np
-import pyqtgraph as pg
+#import pyqtgraph as pg
 import matplotlib.pyplot as plt
 
 import vispy.app
@@ -71,13 +71,13 @@ class Complex_Plotting :
             # self.y_max_2D = 3
 
             # Default Values, Copy these if you are going to change them
-            self.resolution_2D = 500
+            self.resolution_2D = 750
             # self.resolution_2D = 750
             # self.resolution_2D = 500
-            self.x_min_2D = 1
-            self.x_max_2D = 18
-            self.y_min_2D = -4
-            self.y_max_2D = 4
+            self.x_min_2D = 2
+            self.x_max_2D = 12.5
+            self.y_min_2D = -2.5
+            self.y_max_2D = 2.5
 
         # if user selected 2D plot, graph the plot with the given values
         if plot_type == "3D":
@@ -89,17 +89,19 @@ class Complex_Plotting :
             # self.resolution_3D = 0.0899
             # self.resolution_3D = 0.0599
 
-            #TODO Real Fast
+            #TODO Real Fast !!!!!!!!!!!!!
             # self.resolution_3D = 0.0449
-            #TODO good fast
-            self.resolution_3D = 0.0349
 
-            #TODO medium HD
+            #TODO good fast
+            # self.resolution_3D = 0.0349
+
+            #TODO medium HD !?!?!?!?!?!?!
             # self.resolution_3D = 0.0249
 
             #TODO better slow
-            # self.resolution_3D = 0.0199
-            #TODO very slow
+            self.resolution_3D = 0.0199
+
+            #TODO very slow !!!!!!!!!!!!!
             # self.resolution_3D = 0.0149
 
             # self.resolution_3D = 0.0099
@@ -108,10 +110,20 @@ class Complex_Plotting :
             # self.resolution_3D = 0.0010
             # self.resolution_3D = 0.0001
 
-            self.x_min_3D = 1
-            self.x_max_3D = 18
-            self.y_min_3D = -3
-            self.y_max_3D = 3
+            self.x_min_3D = 2
+            self.x_max_3D = 12.5
+            self.y_min_3D = -2.5
+            self.y_max_3D = 2.5
+
+            # self.x_min_3D = 2
+            # self.x_max_3D = 5
+            # self.y_min_3D = -.75
+            # self.y_max_3D = .75
+
+            # self.x_min_3D = 1
+            # self.x_max_3D = 18
+            # self.y_min_3D = -3
+            # self.y_max_3D = 3
 
             # self.x_min_3D = 5.5
             # self.x_max_3D = 12.5
@@ -331,8 +343,8 @@ class Complex_Plotting :
         ax = fig.add_subplot(111, projection='3d')
 
         # Set initial plot angles
-        # ax.view_init(elev=30, azim=-70)
-        ax.view_init(elev=210, azim=-70)
+        ax.view_init(elev=30, azim=70)
+        # ax.view_init(elev=210, azim=-70)
 
         # ax.view_init(elev=30, azim=-110)
         # ax.view_init(elev=210, azim=-45)

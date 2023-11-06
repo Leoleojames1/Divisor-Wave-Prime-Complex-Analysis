@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.29)  4 NOV 2023 21:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.29)  5 NOV 2023 00:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1724,53 +1724,53 @@ l.490 ... with extending Viete's Products of sin &
 ! Double superscript.
 <argument> ...1}{\Gamma \left (z\right )} &= ze^z^
                                                   \gamma \prod _{n=2}^z\left...
-l.540 \end{align*}
+l.541 \end{align*}
                   
 ? 
 ! Missing { inserted.
 <to be read again> 
                    \left 
-l.540 \end{align*}
+l.541 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.540 \end{align*}
+l.541 \end{align*}
                   
 ? 
 ! Double superscript.
 <argument> ...1}{\Gamma \left (z\right )} &= ze^z^
                                                   \gamma \prod _{n=2}^z\left...
-l.540 \end{align*}
+l.541 \end{align*}
                   
 ? 
 ! Missing { inserted.
 <to be read again> 
                    \left 
-l.540 \end{align*}
+l.541 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.540 \end{align*}
+l.541 \end{align*}
                   
 ? 
 ! Double superscript.
 <argument> ... \frac {\pi }{z} \left (\left [ze^z^
                                                   \gamma \prod _{n=2}^z \lef...
-l.552 \end{align*}
+l.553 \end{align*}
                   
 ? 
 ! Double superscript.
 <argument> ... \frac {\pi }{z} \left (\left [ze^z^
                                                   \gamma \prod _{n=2}^z \lef...
-l.552 \end{align*}
+l.553 \end{align*}
                   
 ? 
 [23]
-Overfull \hbox (92.06665pt too wide) in paragraph at lines 557--557
+Overfull \hbox (92.06665pt too wide) in paragraph at lines 558--558
 \OT1/cmtt/m/n/10 courses / 18 -[] 104 -[] seminar -[] in -[] analysis -[] appli
 cations -[] to -[] number -[] theory -[] fall -[] 2006 / 58778de0faae6448c3b0bf
 b1a1ec4f7a _
@@ -1794,7 +1794,7 @@ Here is how much of TeX's memory you used:
  32358 multiletter control sequences out of 15000+600000
  563959 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,17n,81p,735b,1269s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 66i,17n,81p,735b,1271s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
 bx12.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmcsc10.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/fonts/type1/public
@@ -1817,7 +1817,7 @@ type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ADA/AppData/Local/Programs/
 MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 Output written on Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.
-pdf (24 pages, 9875788 bytes).
+pdf (24 pages, 9876023 bytes).
 PDF statistics:
  207 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
