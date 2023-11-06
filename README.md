@@ -33,6 +33,8 @@ src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_norma
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
 
+The Infinite product plotted through the paper known as b(z) acts as an indicator for prime and composite numbers. ultimately we can describe a complex product waveform which contasins the attributes of the factorization for any composite number utilizing multivariable factorization.
+
 ### Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n) in the 3-D Complex Plane:
 
 <img
