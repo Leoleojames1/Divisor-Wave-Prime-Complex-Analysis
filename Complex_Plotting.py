@@ -99,21 +99,26 @@ class Complex_Plotting :
             # self.resolution_3D = 0.0249
 
             #TODO better slow
-            self.resolution_3D = 0.0199
+            # self.resolution_3D = 0.0199
 
             #TODO very slow !!!!!!!!!!!!!
             # self.resolution_3D = 0.0149
 
             # self.resolution_3D = 0.0099
 
-            # self.resolution_3D = 0.0060
+            self.resolution_3D = 0.0060
             # self.resolution_3D = 0.0010
             # self.resolution_3D = 0.0001
 
-            self.x_min_3D = 2
-            self.x_max_3D = 12.5
-            self.y_min_3D = -2.5
-            self.y_max_3D = 2.5
+            # self.x_min_3D = 2
+            # self.x_max_3D = 12.5
+            # self.y_min_3D = -2.5
+            # self.y_max_3D = 2.5
+
+            self.x_min_3D = 1
+            self.x_max_3D = 8
+            self.y_min_3D = -1
+            self.y_max_3D = 1
 
             # self.x_min_3D = 2
             # self.x_max_3D = 5

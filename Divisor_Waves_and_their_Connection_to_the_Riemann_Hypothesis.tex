@@ -95,7 +95,7 @@ We define the function $a(z)$ as follows:
 \begin{align*}
 	a(z) = |\prod_{k=2}^x \alpha\frac{x}{k}\sin\left(\frac{\pi z}{k}\right)|
 \end{align*}
-	
+
 The Function a(z) is the infinite product of $sin(\pi*z/k)$ where $2 <= k <= x$. This function, is part of a family of functions, that provide a map of the prime, and composite numbers. The front term $\alpha\frac{x}{k}$ is used for scaling purposes, as this function is highly explosive in the y-direction as you move down the x-axis. The alpha is just a coefficient that has a slider ranging from $0<\alpha<2$ and is used to stretch the function as needed. \\
 \newline
 The absolute value operator in front ensures that this function stays above the x-axis. This has the same effect as $y=abs[sin(x)]$. On the inside of the sine function, we still have the $\pi$ coefficient but have now replaced the whole number associated with the $f_k(z)$ function with k so that we can test through an infinite number of whole numbers.
@@ -161,44 +161,9 @@ As you can see from the complex plots, A(z) is a function with zeros at all real
 \end{align*}
 \hspace{8mm}\caption{Figure 11: 2D Graph of $A(x+iy)$ showcasing the normalized zeros of the real numbers in the complex plane} \\
 
-\newpage
-\subsection*{IV. Initial Description of Function b(z)}
-The function $b(z)$ is defined as the infinite product of the infinite product representation of $\sin(\pi*z/n)$:
-\begin{align*}
-	b(z) = |\prod_{k=2}^x \left[\frac{\beta x}{k}\left({\pi z}\prod_{n=2}^x\left(1 - \frac{z^2}{n^2k^2}\right)\right)\right]|
-\end{align*}
-\begin{align*}
-\includegraphics[scale=0.45]{graphs/2D_Real_Graphs/prime_indicator_og_redone}
-\end{align*}
-\hspace{8mm}\caption{Figure 12: 2D Graph of $b(x)$ showcasing the zeros of the composite numbers} \\
-
-The Function b(x) is the infinite product of the modified product representation for sin, this essentially combines all of these modified sin waves into one resultant wave. Looking at the graph, you can see that at each prime number there is a curve, and at each composite number there is a cusp. \\
-\newline
-COMPOSITE - At each composite number there are many waves all being combined at one point. For composite numbers there are Divisor Waves that have x-intercepts, and in the range of primes contain no Divisor Waves going to zero, so the boundary from composite to prime causes them to trend towards zero. It is because of this that a cusp is created. Highly Composite numbers in this context actually have less of a cusp due to having more factors. See 12 for an example of highly composite. \\
-\newline
-PRIME - Prime numbers do not approach zero at all in this case. For a prime number, there are also many waves combining at one point, but only $b_p(x)$ has an x-intercept, and since we modified the index to be n=2 we reject the zeros with a factor of 1. This means that they never reach zero in the domain of a prime number, and this creates the non-zero curve.
-\begin{align*}
-\includegraphics[scale=0.45]{graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_normalized_goodm_prism_1}
-\end{align*}
-\hspace{8mm}\caption{Figure 13: 2D Graph of $b(x+iy)$ showcasing the zeros of the composite numbers} \\
-
-We can see the zeros of $b(x + iy)$ as the blue troughs in the hills. These are the composite numbers. For each composite number there is a factor causing the product to go to zero. For all whole number values of x where x is prime, the function does not go to zero. We can observe this phenomenon at 11, and 13 on the graph as these are prime numbers. \\
-\begin{align*}
-\includegraphics[scale=0.28]{graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_normalized_goodm_prism_8}
-\end{align*}
-\hspace{8mm}\caption{Figure 14: 3D Graph of $b(x+iy)$ showcasing the zeros of the composite numbers} \\
-
-The above graph is the 3D plot for $b(x+iy)$ where the 3rd dimension is height. This graph shows the complexity of the primes as it is solely dependant on the distribution of composite numbers. \\
-
-\begin{align*}
-\includegraphics[scale=0.28]{graphs/2D_Complex_Graphs/Infinite_Product_of_infinite_product_representation_of_sin/Complex_product_17_n_2-28__imaginary_scalar_logarithm}
-\end{align*}
-\hspace{8mm}\caption{Figure 15: 2D Fractal Colorization complex plot of $b(x+iy)$ showcasing the zeros of the composite numbers by Multipling $b(x+iy) * iy$} \\
-
-The above fractal is the graph of b(x+iy) * iy this multiplies the function by the imaginary component, and utilized a different colorization algorithm which allows the values to stretch away from the $x-axis$ providing a beautiful fractal for the prime and composite numbers. The spikes are locations with many factors, the factors cause the function to go to infinity in the complex dimension. The prime numbers can be seen as curves between the cusps. These curves are the result of having less component waves that go to zero. \\
 
 \newpage
-\subsection*{V. Derivation of a(z) and b(z) from the Weierstrass product formula for sin}
+\subsection*{IV. Derivation of a(z) and b(z) from the Weierstrass product formula for sin}
 Derivation of a(z) and b(z) by substituting the infinite product representation of $sin(\pi*z/n)$ into the infinite product of $\sin(\pi*z/n)$: \\
 
 We use the Weierstrass Product Formula for sin to form the relationship where k is a constant, this differs from the original Weierstrass product formula which does not contain this constant: \\
@@ -260,6 +225,42 @@ f(3) = \\
 \times \left[ \left( 1 - \frac{9}{(36)}\right) \left( 1 - \frac{9}{(81)}\right)  \right] \\
 = \pi*3\left\left[ \left(\frac{7}{(16)}\right) \left(\frac{27}{(36)}\right)  \right] \times \left[ \left(\frac{27}{(36)}\right) \left(\frac{72}{(81)}\right)  \right] \\
 \end{align*}
+
+\newpage
+\subsection*{V. Initial Description of Function b(z)}
+The function $b(z)$ is defined as the infinite product of the infinite product representation of $\sin(\pi*z/n)$:
+\begin{align*}
+	b(z) = |\prod_{k=2}^x \left[\frac{\beta x}{k}\left({\pi z}\prod_{n=2}^x\left(1 - \frac{z^2}{n^2k^2}\right)\right)\right]|
+\end{align*}
+\begin{align*}
+\includegraphics[scale=0.45]{graphs/2D_Real_Graphs/prime_indicator_og_redone}
+\end{align*}
+\hspace{8mm}\caption{Figure 12: 2D Graph of $b(x)$ showcasing the zeros of the composite numbers} \\
+
+The Function b(x) is the infinite product of the modified product representation for sin, this essentially combines all of these modified sin waves into one resultant wave. Looking at the graph, you can see that at each prime number there is a curve, and at each composite number there is a cusp. \\
+\newline
+COMPOSITE - At each composite number there are many waves all being combined at one point. For composite numbers there are Divisor Waves that have x-intercepts, and in the range of primes contain no Divisor Waves going to zero, so the boundary from composite to prime causes them to trend towards zero. It is because of this that a cusp is created. Highly Composite numbers in this context actually have less of a cusp due to having more factors. See 12 for an example of highly composite. \\
+\newline
+PRIME - Prime numbers do not approach zero at all in this case. For a prime number, there are also many waves combining at one point, but only $b_p(x)$ has an x-intercept, and since we modified the index to be n=2 we reject the zeros with a factor of 1. This means that they never reach zero in the domain of a prime number, and this creates the non-zero curve.
+\begin{align*}
+\includegraphics[scale=0.45]{graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_normalized_goodm_prism_1}
+\end{align*}
+\hspace{8mm}\caption{Figure 13: 2D Graph of $b(x+iy)$ showcasing the zeros of the composite numbers} \\
+
+We can see the zeros of $b(x + iy)$ as the blue troughs in the hills. These are the composite numbers. For each composite number there is a factor causing the product to go to zero. For all whole number values of x where x is prime, the function does not go to zero. We can observe this phenomenon at 11, and 13 on the graph as these are prime numbers. \\
+\begin{align*}
+\includegraphics[scale=0.28]{graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_normalized_goodm_prism_8}
+\end{align*}
+\hspace{8mm}\caption{Figure 14: 3D Graph of $b(x+iy)$ showcasing the zeros of the composite numbers} \\
+
+The above graph is the 3D plot for $b(x+iy)$ where the 3rd dimension is height. This graph shows the complexity of the primes as it is solely dependant on the distribution of composite numbers. \\
+
+\begin{align*}
+\includegraphics[scale=0.28]{graphs/2D_Complex_Graphs/Infinite_Product_of_infinite_product_representation_of_sin/Complex_product_17_n_2-28__imaginary_scalar_logarithm}
+\end{align*}
+\hspace{8mm}\caption{Figure 15: 2D Fractal Colorization complex plot of $b(x+iy)$ showcasing the zeros of the composite numbers by Multipling $b(x+iy) * iy$} \\
+
+The above fractal is the graph of b(x+iy) * iy this multiplies the function by the imaginary component, and utilized a different colorization algorithm which allows the values to stretch away from the $x-axis$ providing a beautiful fractal for the prime and composite numbers. The spikes are locations with many factors, the factors cause the function to go to infinity in the complex dimension. The prime numbers can be seen as curves between the cusps. These curves are the result of having less component waves that go to zero. \\
 
 \newpage
 \subsection*{VI. Initial Description of Function B(z)}
@@ -360,7 +361,7 @@ Figure 24: 2D Plot of E(z) overlaping with B(z) to showcase the peaks at all who
 This function's waveform has peaks at each whole number value and bumpy patches between. These sections show nicely the divisions that are taking place across the number line that section these areas into finitely many sections which increase as x goes to infinity. This equation will be combined with b(z) later to create a waveform which is an indicator for prime and composite numbers while also dividing the space between whole numbers into finitely many sections as x goes to infinity. \\
 
 \begin{align*}
-\includegraphics[scale=0.55]{graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_1}
+\includegraphics[scale=0.55]{graphs/3D_Complex_Graphs/riesz_tan/HD_Riesz_tan_2_12_n5}
 \end{align*}
 Figure 25: 3D Plot of E(z) in the complex plane to showcase the growing complexity and chaotic structure of E(z) as x increases.
 
@@ -372,7 +373,7 @@ This is the normalized complex plot for Riesz' infinite product of tangent. The 
 Figure 26: 2D Plot of E(z) in the complex plane to showcase the many zeros of E(z) each defined in their own regions with growing compplexity as x increases.
 
 \begin{align*}
-\includegraphics[scale=0.55]{graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_3}
+\includegraphics[scale=0.55]{graphs/3D_Complex_Graphs/riesz_tan/HD_Riesz_tan_2_12_n6}
 \end{align*}
 Figure 27: 3D plot Of E(z) in the complex plane to showcase another angle of E(z) from a closer view.
 
@@ -415,17 +416,12 @@ We define the Normalized h(z), function $H(z)$ as follows:
 \includegraphics[scale=0.30]{graphs/2D_Real_Graphs/1+tan_prod_xprimefunc}
 \end{align*}
 
-When n=3, we have: \\
+The function b(z) allows us to compress l(z) down to the x axis using b(z). The zeros of b(z) are the composite numbers and the non-zero values of b(z) for whole number values of z are prime. this waveform can be combined with the normalized Riesz products to create a new complex wave that is capable of evaluating both the whole numbers and the rational fractions defined by the Riesz products.
 
 \begin{align*}
-(pi*x) * (1 - x^2 / (2^2 * 3^2)) * (1 - x^2 / (3^2 * 3^2)) * ... * (1 - x^2 / (3^2 * x^2))
+\includegraphics[scale=0.55]{graphs/3D_Complex_Graphs/Riesztan_PrimeFunc/HD_2_12_riesz_tanreversedivisionprimeindc_4}
 \end{align*}
-
-And so on, up to $n=x$. The idea is that for each value of n, the product of terms from $k=2$ to x generates a factor that cancels out certain terms in the final product. Then, the $\pi*x$ term is a scaling factor that multiplies everything. The second product involves the terms $(1 + tan(pixn))$ for each value of n from 2 to x. These terms don't interact with the other product, but they add up multiplicatively. \\
-
-So, the overall effect of f(x) is a combination of these two factors, which involve trigonometric functions and inverse square terms. The exact behavior of the function for different values of x will depend on the interplay of these factors, but it is clear that the product formula involves some intricate and interesting mathematics. \\
-
-The function b(z) allows us to compress l(z) down to the x axis using b(z). The zeros of b(z) are the composite numbers and the non-zero values of b(z) for whole number values of z are prime. this waveform can be combined with the normalized Riesz products to create a new complex wave that is capable of evaluating both the whole numbers and the rational fractions defined by the Riesz products.
+Figure 33: 3D plot Of I(z) in the complex plane to showcase the zeros of the combined function.
 
 \newpage
 \subsection*{XIII. The Symmetry of Nested Roots: Deriving the First Fundamental Theorem of Analysis through Isomorphisms}
@@ -460,7 +456,7 @@ Which leads to the original infinite product series definition and its equivalen
 k(z) = \prod_{n=1}^{\infty} \left[z^{2^{-n}}\right] = z^{(\sidesum{n=1}{\infty}[2^{-n}])}
 \end{align*}
 
-From this, the underlying foundation starts to fizzle through, presenting the 4 laws of the First Fundamental theory of Analysis.
+From this, the underlying foundation starts to fizzle through, presenting the 4 laws of the First Fundamental theorem of Analysis.
 
 \newpage
 The First fundamental theorem of Analysis, which was just derived through the exploration of the Nested Roots family, is an extension of the fundamental theorem of calculus. These laws underpin the entirety of mathematics, and in many cases the 3 identities beyond the first are rarely taught or learned even by math professionals.
@@ -509,7 +505,7 @@ From the previous chapter XIII we can utilize the relationship:
 \begin{align*}
 \sum_{n=1}^{\infty} 2^{2^{-n}} = \sqrt{2 + \sqrt{2 + \sqrt{\ldots}}}
 \end{align*}
-and ultimately we can form the relationship:
+and ultimately from Viete's infinite series we can form the relationship:
 \begin{align*}
 \prod_{k=1}^{\infty} (\frac{\sum_{n=1}^{k} (2^{2^{-n}})}{2}) = \frac{2}{\pi}
 \end{align*}
