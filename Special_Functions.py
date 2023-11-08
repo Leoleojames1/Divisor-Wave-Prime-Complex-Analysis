@@ -739,6 +739,40 @@ class Special_Functions :
         return num_exp
 
     # -----------------------------------------------------------------------------------------------------------------
+    def Prime_Indicator_Self_sieve_base(self, z):
+        """ A method to multiply two infinite products.
+        Args:
+            z: Complex z which isn't converted to z_real & z_imag in this method
+            beta: magnification value as the lead coefficient
+            m: exponential magnification coefficient
+        """
+
+        z_real = np.real(z)
+        z_imag = np.imag(z)
+        m = 0.26
+        q = 0.08
+
+        # calculate infinite product
+        num = abs(np.prod(
+            [1 + np.tan(math.pi * (z_real + 1j * z_imag) * n)
+                for n in range(2, int(z_real) + 1)])) ** (-m)
+
+        FUNC_B = abs(np.prod(
+            [(1 * z_real / n) * ((z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
+                [1 - ( (z_real + 1j * z_imag) ** 2) / (n ** 2 * k ** 2)
+                 for k in range(2, int(z_real) + 1)])) for n in range(2, int(z_real) + 1)])) ** (-q)
+
+        norm = num / scipy.special.gamma(num)
+        FUNC_B_norm = FUNC_B / scipy.special.gamma(FUNC_B)
+
+        # num_exp = FUNC_B_norm ** norm
+        # num_exp = norm ** FUNC_B_norm
+        # num_exp = norm/FUNC_B_norm
+        num_exp = np.cos(FUNC_B_norm/norm)
+
+        return num_exp
+
+    # -----------------------------------------------------------------------------------------------------------------
     def Log_power_base_Viete_Product_for_Sin(self, z):
         """ A method to multiply two infinite products.
         Args:

@@ -76,8 +76,8 @@ class Complex_Plotting :
             # self.resolution_2D = 500
             self.x_min_2D = 2
             self.x_max_2D = 12.5
-            self.y_min_2D = -2.5
-            self.y_max_2D = 2.5
+            self.y_min_2D = -0.5
+            self.y_max_2D = 0.5
 
         # if user selected 2D plot, graph the plot with the given values
         if plot_type == "3D":
@@ -107,7 +107,7 @@ class Complex_Plotting :
             # self.resolution_3D = 0.0099
 
             self.resolution_3D = 0.0060
-            # self.resolution_3D = 0.0010
+            self.resolution_3D = 0.0010
             # self.resolution_3D = 0.0001
 
             # self.x_min_3D = 2
@@ -115,10 +115,20 @@ class Complex_Plotting :
             # self.y_min_3D = -2.5
             # self.y_max_3D = 2.5
 
+            # self.x_min_3D = 1
+            # self.x_max_3D = 8
+            # self.y_min_3D = -1
+            # self.y_max_3D = 1
+
             self.x_min_3D = 1
-            self.x_max_3D = 8
+            self.x_max_3D = 12
             self.y_min_3D = -1
             self.y_max_3D = 1
+
+            # self.x_min_3D = 1
+            # self.x_max_3D = 7
+            # self.y_min_3D = -1
+            # self.y_max_3D = 1
 
             # self.x_min_3D = 2
             # self.x_max_3D = 5
@@ -241,8 +251,6 @@ class Complex_Plotting :
         # changed dtype to float
         Z = np.zeros_like(X, dtype=np.float64)
 
-
-
         # calculate special functions object f(z)
         lamda_function_array = special_functions_object.lamda_function_library(Normalize_type)
 
@@ -274,7 +282,12 @@ class Complex_Plotting :
         elif color_map_2D == "8":
             colors = self.colorization("magma", Z)
 
-        fig, ax1 = plt.subplots(figsize=(8, 8))
+        # #Set Square Canvas
+        # fig, ax1 = plt.subplots(figsize=(8, 8))
+
+        #Set Rectangular Canvas
+        # fig, ax1 = plt.subplots(figsize=(12, 8))
+        fig, ax1 = plt.subplots(figsize=(16,9))
 
         # TODO IMPLEMENT 2nd Subplot where 2D fractal is on 1 side, and 3D Fractal is on the other, have this be
         #  optional through user input
