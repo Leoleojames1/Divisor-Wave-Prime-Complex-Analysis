@@ -773,6 +773,53 @@ class Special_Functions :
         return num_exp
 
     # -----------------------------------------------------------------------------------------------------------------
+    def Nested_roots_product_for_2(self, z):
+        """ A method to multiply two infinite products.
+        Args:
+            z: Complex z which isn't converted to z_real & z_imag in this method
+            beta: magnification value as the lead coefficient
+            m: exponential magnification coefficient
+        """
+
+        z_real = np.real(z)
+        z_imag = np.imag(z)
+        # m = 0.26
+        # q = 0.08
+        m = -1
+
+        # #TODO Sqrt Sum
+        # sum = abs(np.prod(
+        #     [ (z_real + 1j * z_imag) ** 2 ** (-n)
+        #         for n in range(2, int(z_real) + 1)])) ** (-m)
+        # #TODO Sqrt Prod
+        # prod = abs(np.sum(
+        #     [ (z_real + 1j * z_imag) ** 2 ** (-n)
+        #         for n in range(2, int(z_real) + 1)])) ** (-m)
+
+        # #TODO Viete's paradox nest roots sum product representation
+        # paradox = abs(np.prod(
+        #     [np.sum([( k ** (z_real + 1j * z_imag) ** (-n)) / 2
+        #              for k in range(2, int(z_real) + 1)]) for n in range(2, int(z_real) + 1)]))
+
+        #TODO Sqrt Prod
+        prod = abs(np.sum(
+            [ (z_real + 1j * z_imag) ** 2 ** (-n)
+                for n in range(2, int(z_real) + 1)])) ** (-m)
+        paradox = abs(np.prod(
+            [np.prod([(z_real + 1j * z_imag) ** k ** (-n)
+                     for k in range(2, int(z_real) + 1)]) for n in range(2, int(z_real) + 1)]))
+
+        # norm = num / scipy.special.gamma(num)
+        # FUNC_B_norm = FUNC_B / scipy.special.gamma(FUNC_B)
+
+        # num_exp = FUNC_B_norm ** norm
+        # num_exp = norm ** FUNC_B_norm
+        # num_exp = norm/FUNC_B_norm
+        # num_exp = np.cos(FUNC_B_norm/norm)
+
+        return paradox
+
+    # -----------------------------------------------------------------------------------------------------------------
     def Log_power_base_Viete_Product_for_Sin(self, z):
         """ A method to multiply two infinite products.
         Args:
@@ -1150,6 +1197,7 @@ class Special_Functions :
             '33': lambda z: self.zeros_of_zeta(z),
             '34': lambda z: self.Prime_Binary_Output_Waveform_Product(z),
             '35': lambda z: self.Riesz_Product_for_Tan_and_Prime_indicator_combination(z),
+            '36': lambda z: self.Nested_roots_product_for_2(z),
         }
 
         Catalog = {
@@ -1200,6 +1248,7 @@ class Special_Functions :
             '33': 'zeros_of_zeta(z)',
             '34': 'Prime_Binary_Output_Waveform_Product(z)',
             '35': 'Riesz_Product_for_Tan_and_Prime_indicator_combination(z)',
+            '36': 'Nested_roots_product_for_2(z)',
         }
 
         print("Please Select a Function to plot:")
