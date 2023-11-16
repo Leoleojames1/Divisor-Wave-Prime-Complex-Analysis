@@ -131,7 +131,7 @@ Also if you want read my original paper I wrote in 2020 which initially started 
 
 https://docs.google.com/document/d/1EqDpk-XiKePku2qzsUmaPO4Ejpdq4HKg/edit
 
-and want to see my previous work on tetrahedral famalies from 2017 you can find that here:
+and want to see my previous work on tetrahedral families from 2017 you can find that here:
 
 https://oeis.org/A287324
 
