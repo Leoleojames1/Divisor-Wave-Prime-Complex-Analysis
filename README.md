@@ -107,6 +107,8 @@ https://math.stackexchange.com/questions/186292/derivatives-of-the-riemann-zeta-
 
 https://www.youtube.com/watch?v=BuKgxeer9j8
 
+https://www2.karlin.mff.cuni.cz/~slavik/product/product_integration.pdf
+
 # About Me
 My name is Leo Borcherding, I am a Software Developer with experience working on programs for encryption of firmware devices. I have a background in electrical
 engineering and my passion is mathematics as well as art. I am developing this software so that we can further our understanding of mathematics, physics, 
