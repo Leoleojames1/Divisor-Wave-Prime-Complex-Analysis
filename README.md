@@ -116,10 +116,10 @@ and the universe. Please contact me at borchborchmail@gmail.com if you have ques
 
 https://docs.google.com/forms/d/e/1FAIpQLSedobin-e8XqIv2AgMWhIrcNq-Pm7fsD63rhjuEiksWMAe9Og/viewform?usp=sf_link
 
-Here is an example of the current capabilities of GPT3.5:
+Here is an example of the current capabilities of Bing chat with GPT4:
 
 <img
-  src="gpt35_logs/Conversations/compositenumbers_latex_1.png"
+  src="gpt35_logs/Conversations/nested_roots.png"
   alt="Alt text"
   title="Latex Prompt Engineering"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
@@ -127,7 +127,7 @@ Here is an example of the current capabilities of GPT3.5:
 Ultimately knowledge should be free however it takes a lot of time and work to develop the mathematics, proofs and software required, I would really appreciate 
 it, if you feel inclined to donate to help me keep developing this software and writing this paper. You can find the donation link in the file called bitcoin_donation_wallet.txt
 
-Also if you want read my original paper I wrote in 2021 which initially started my journey on the Riemann Hypothesis here:
+Also if you want read my original paper I wrote in 2020 which initially started my journey on the Riemann Hypothesis here:
 
 https://docs.google.com/document/d/1EqDpk-XiKePku2qzsUmaPO4Ejpdq4HKg/edit
 
