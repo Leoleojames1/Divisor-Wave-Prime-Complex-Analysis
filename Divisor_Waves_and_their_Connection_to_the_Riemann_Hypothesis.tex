@@ -181,7 +181,7 @@ This proof shows the relationship between a(z) and b(z), and allows us to apprec
 Now, we can expand the product out to infinity, using the expression we derived earlier:
 
 \begin{align*}
-f(x) &= \prod_{k=2}^{x} \left|\frac{\pi x}{k} \prod_{n=2}^{\infty} \left( 1 - \frac{x^2}{n^2 k^2} \right) \right| \\
+b(x) &= \prod_{k=2}^{x} \left|\frac{\pi x}{k} \prod_{n=2}^{\infty} \left( 1 - \frac{x^2}{n^2 k^2} \right) \right| \\
 &= \prod_{k=2}^{x} \left|\frac{\pi x}{k} \prod_{n=2}^{\infty} \left( 1 - \frac{x^2}{n^2 k^2} \right) \right| \\
 &= \prod_{k=2}^{x} \left|\frac{\pi x}{k} \left[ \left( 1 - \frac{x^2}{(2^2)(k^2)}\right) \left( 1 - \frac{x^2}{(3^2)(k^2)}\right) \left( 1 - \frac{x^2}{(4^2)(k^2)}\right) \cdots \right]\right| \\
 \end{align*}
@@ -319,15 +319,17 @@ Figure 21: 3D Plot of C(z) in the complex plane to showcase the growing complexi
 
 This is the normalized complex plot for Riesz' infinite product of sine. The plot is fascinating as it displays poles around specific values of x, similar to Riesz cosine product, and tangent product. These poles have growing complexity in their designated regions.
 
-\begin{align*}
-\includegraphics[scale=0.45]{graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_7_12_n7}
-\end{align*}
-Figure 22: 3D Plot of C(z) in the complex plane on the interval 1 $<$ x $<$ 17
-
-\begin{align*}
-\includegraphics[scale=0.45]{graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_7_12_n6}
-\end{align*}
-Figure 23: 3D Plot of C(z) in the complex plane on the interval 7 $<$ x $<$ 12
+\begin{figure}[ht]
+\begin{minipage}[b]{0.45\textwidth}
+\includegraphics[scale=0.35]{graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_7_12_n7}
+\caption{3D Plot of C(z) in the complex plane on the interval 1 $<$ x $<$ 17}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.45\textwidth}
+\includegraphics[scale=0.35]{graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_7_12_n6}
+\caption{3D Plot of C(z) in the complex plane on the interval 7 $<$ x $<$ 12}
+\end{minipage}
+\end{figure}
 
 \begin{align*}
 \includegraphics[scale=0.30]{graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_2_12_n11}
@@ -362,12 +364,12 @@ This is the normalized complex plot for Riesz' infinite product of cosine. The p
 \begin{align*}
 \includegraphics[scale=0.3]{graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n8}
 \end{align*}
-Figure 23: 3D Complex Riesz product for cos on the interval 2 $<$ x $<$ 12
+Figure 24: 3D Complex Riesz product for cos on the interval 2 $<$ x $<$ 12
 
 \begin{align*}
 \includegraphics[scale=0.45]{graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n3}
 \end{align*}
-Figure 24: 3D Complex Riesz product for cos on the interval 5 $<$ x $<$ 8
+Figure 25: 3D Complex Riesz product for cos on the interval 5 $<$ x $<$ 8
 
 \newpage
 \subsection*{IX. Initial Description of Function E(z)}
@@ -380,26 +382,26 @@ We define the Normalized e(z), function $E(z)$ as follows:
 \begin{align*}
 \includegraphics[scale=0.30]{graphs/2D_Real_Graphs/prod_1+tan}
 \end{align*}
-Figure 24: 2D Plot of E(z) overlaping with B(z) to showcase the peaks at all whole numbers for E(z).
+Figure 26: 2D Plot of E(z) overlaping with B(z) to showcase the peaks at all whole numbers for E(z).
 
 This function's waveform has peaks at each whole number value and bumpy patches between. These sections show nicely the divisions that are taking place across the number line that section these areas into finitely many sections which increase as x goes to infinity. This equation will be combined with b(z) later to create a waveform which is an indicator for prime and composite numbers while also dividing the space between whole numbers into finitely many sections as x goes to infinity. \\
 
 \begin{align*}
 \includegraphics[scale=0.55]{graphs/3D_Complex_Graphs/riesz_tan/HD_Riesz_tan_2_12_n5}
 \end{align*}
-Figure 25: 3D Plot of E(z) in the complex plane to showcase the growing complexity and chaotic structure of E(z) as x increases.
+Figure 27: 3D Plot of E(z) in the complex plane to showcase the growing complexity and chaotic structure of E(z) as x increases.
 
 This is the normalized complex plot for Riesz' infinite product of tangent. The plot is fascinating as it displays poles around specific values of x, similar to Riesz sine product, and cos product.
 
 \begin{align*}
 \includegraphics[scale=0.28]{graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_2}
 \end{align*}
-Figure 26: 2D Plot of E(z) in the complex plane to showcase the many zeros of E(z) each defined in their own regions with growing compplexity as x increases.
+Figure 28: 2D Plot of E(z) in the complex plane to showcase the many zeros of E(z) each defined in their own regions with growing compplexity as x increases.
 
 \begin{align*}
 \includegraphics[scale=0.55]{graphs/3D_Complex_Graphs/riesz_tan/HD_Riesz_tan_2_12_n6}
 \end{align*}
-Figure 27: 3D plot Of E(z) in the complex plane to showcase another angle of E(z) from a closer view.
+Figure 29: 3D plot Of E(z) in the complex plane to showcase another angle of E(z) from a closer view.
 
 \newpage
 \subsection*{XII. Initial Description of Function H(z)}
@@ -417,7 +419,7 @@ The function b(z) allows us to compress l(z) down to the x axis using b(z). The 
 \begin{align*}
 \includegraphics[scale=0.55]{graphs/3D_Complex_Graphs/Riesztan_PrimeFunc/HD_2_12_riesz_tanreversedivisionprimeindc_4}
 \end{align*}
-Figure 33: 3D plot Of I(z) in the complex plane to showcase the zeros of the combined function.
+Figure 30: 3D plot Of I(z) in the complex plane to showcase the zeros of the combined function.
 
 \newpage
 \subsection*{XIII. The Symmetry of Nested Roots: Deriving the First Fundamental Theorem of Analysis through Isomorphisms}
@@ -452,16 +454,17 @@ Which leads to the original infinite product series definition and its equivalen
 k(z) = \prod_{n=1}^{\infty} \left[z^{2^{-n}}\right] = z^{(\sidesum{n=1}{\infty}[2^{-n}])}
 \end{align*}
 
-\begin{align*}
+\begin{figure}[ht]
+\begin{minipage}[b]{0.45\textwidth}
 \includegraphics[scale=0.30]{graphs/3D_Complex_Graphs/NestedRoots/Roots_sum}
-\end{align*}
-Figure 35: 3D Complex plot of Nested Roots Sum
-
-\begin{align*}
+\caption{3D Complex plot of Nested Roots Sum}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.45\textwidth}
 \includegraphics[scale=0.30]{graphs/3D_Complex_Graphs/NestedRoots/Roots_prod}
-\end{align*}
-Figure 36: 3D Complex plot of Nested Roots Product
-
+\caption{3D Complex plot of Nested Roots Product}
+\end{minipage}
+\end{figure}
 From this, the underlying foundation starts to fizzle through, presenting the 4 laws of the First Fundamental theorem of Analysis.
 
 \newpage
@@ -516,17 +519,19 @@ and ultimately from Viete's infinite series we can form the relationship:
 \prod_{k=1}^{\infty} (\frac{\sum_{n=1}^{k} (2^{2^{-n}})}{2}) = \frac{2}{\pi}
 \end{align*}
 
-\begin{align*}
+\begin{figure}[ht]
+\begin{minipage}[b]{0.45\textwidth}
 \includegraphics[scale=0.30]{graphs/3D_Complex_Graphs/Viete_cos/Viete_cos_norm_1}
-\end{align*}
-Figure 29: 3D Complex Plot for Viete's product of cos
-
-\begin{align*}
+\caption{3D Complex Plot for Viete's product of cos}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.45\textwidth}
 \includegraphics[scale=0.30]{graphs/3D_Complex_Graphs/Viete_cos/Viete_cos_norm_3}
-\end{align*}
-Figure 30: 3D Complex Plot for Viete's product of cos with alternate colorization
+\caption{3D Complex Plot for Viete's product of cos with alternate colorization}
+\end{minipage}
+\end{figure}
 
-This Plot showcases the zeros of vietes product as they are spaced in the discrete space of the complex plane.
+This Plot showcases the zeros of Viete's product as they are spaced in the discrete space of the complex plane.
 
 \newpage
 \subsection*{XV. Gamma and Sin Product Identities}
@@ -565,6 +570,38 @@ sin(\pi z) &= \frac{1}{\Gamma\left(z\right)} * \frac{1}{\Gamma\left(- z\right)} 
 \begin{align*}
 sin(\pi z) &= \frac{\pi}{z} \left(\left[ze^z^\gamma \prod_{n=2}^z \left[\left(1 + \frac{z}{n}\right)e^\frac{-z}{n}\right]\right]\right) * \frac{\pi}{-z} \left(\left[ze^\frac{-z\gamma}{1} \prod_{n=2}^z \left[\left(1 + \frac{-z}{n}\right)e^\frac{z}{n}\right]\right]\right)
 \end{align*}
+
+\newpage
+\subsection*{XVI. Binary Output Prime Indicator Function H(z)}
+The following section demonstrates the combination of many techniques outlined throughout the research of divisor wave analysis, and ultimately will create and develop new methods for prime sieving as well as complex discrete & continuous product functions.
+
+\begin{align*}
+H(z) = \left(\frac{|\prod_{n=2}^x \alpha\frac{x}{n}\sin\left(\frac{\pi z}{n}\right)|^{m}}{|\prod_{n=2}^x \alpha\frac{x}{n}\sin\left(\frac{\pi z}{n}\right)|^{m}!}\right)^{\left(\frac{|\prod_{n=2}^x\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|^{m}}{|\prod_{n=2}^x\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|^{m}!}\right)}
+\end{align*}
+
+\begin{align*}
+\includegraphics[scale=0.30]{graphs/2D_Real_New/Prime_Indicator_H_normalized_labeled}
+\end{align*}
+\hspace{8mm}\caption{Figure 35: 2D Graph of $J(x)$ & $H(x)$ showcasing the normalized real zeros of the functions.} \\
+
+\newpage
+\subsection*{XVII. Base 10 Value Output Prime Indicator Function J(z)}
+
+\begin{align*}
+J(z) = z * \left(\frac{|\prod_{n=2}^x \alpha\frac{z}{n}\sin\left(\frac{\pi z}{n}\right)|^{m}}{|\prod_{n=2}^x \alpha\frac{z}{n}\sin\left(\frac{\pi z}{n}\right)|^{m}!}\right)^{\left(\left(\frac{|\prod_{n=2}^x \alpha\frac{z}{n}\sin\left(\frac{\pi z}{n}\right)|^{m}}{|\prod_{n=2}^x \alpha\frac{z}{n}\sin\left(\frac{\pi z}{n}\right)|^{m}!}\right)^{\left(\frac{|\prod_{n=2}^x\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|^{m}}{|\prod_{n=2}^x\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|^{m}!}\right)}\right)}
+\end{align*}
+
+\begin{align*}
+\includegraphics[scale=0.30]{graphs/2D_Real_New/Prime_Indicator_J_normalized}
+\end{align*}
+\hspace{8mm}\caption{Figure 35: 2D Graph of $J(x)$ & $H(x)$ showcasing the normalized real zeros of the functions.} \\
+
+\newpage
+\subsection*{XVIII. Euler Product Prime Value Substitution through J(z) as a formulation of \zeta(z)}
+
+\begin{multline*}
+\zeta(s) = \prod_{n=2}^x \frac{1}{1 - \left(\left(\frac{|\prod_{n=2}^x \alpha\frac{x}{n}\sin\left(\frac{\pi z}{n}\right)|^{-m}}{|\prod_{n=2}^x \alpha\frac{x}{n}\sin\left(\frac{\pi z}{n}\right)|^{-m}!}\right)^{\left(\left(\frac{|\prod_{n=2}^x \alpha\frac{x}{n}\sin\left(\frac{\pi z}{n}\right)|^{-m}}{|\prod_{n=2}^x \alpha\frac{x}{n}\sin\left(\frac{\pi z}{n}\right)|^{-m}!}\right)^{\left(\frac{|\prod_{n=2}^x\left[\frac{\beta z}{n}\left(\pi z\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|^{-m}}{|\prod_{n=2}^x\left[\frac{\beta z}{n}\left(\pi z\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|^{-m}!}\right)}\right)^{-s}}
+\end{multline*}
 
 \newpage
 \nocite{*}
