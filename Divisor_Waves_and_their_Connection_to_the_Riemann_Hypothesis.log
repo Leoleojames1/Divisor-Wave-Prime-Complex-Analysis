@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.29)  4 DEC 2023 17:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.29)  4 DEC 2023 19:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1883,13 +1883,13 @@ File: graphs/2D_Real_New/Prime_Indicator_J_normalized.png Graphic file (type pn
 g)
 <use graphs/2D_Real_New/Prime_Indicator_J_normalized.png>
 Package pdftex.def Info: graphs/2D_Real_New/Prime_Indicator_J_normalized.png  u
-sed on input line 597.
+sed on input line 598.
 (pdftex.def)             Requested size: 386.87332pt x 113.82613pt.
 File: graphs/2D_Real_New/Prime_Indicator_J_normalized.png Graphic file (type pn
 g)
 <use graphs/2D_Real_New/Prime_Indicator_J_normalized.png>
 Package pdftex.def Info: graphs/2D_Real_New/Prime_Indicator_J_normalized.png  u
-sed on input line 597.
+sed on input line 598.
 (pdftex.def)             Requested size: 386.87332pt x 113.82613pt.
 
 
@@ -1899,12 +1899,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.598 \hspace{8mm}\caption
+l.599 \hspace{8mm}\caption
                           {Figure 35: 2D Graph of $J(x)$ and $H(x)$ showcasi...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 597--599
+Underfull \hbox (badness 10000) in paragraph at lines 598--600
 
  []
 
@@ -1912,13 +1912,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 597--599
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.601 ...hrough J(z) as a formulation of \zeta(z)}
+l.602 ...hrough J(z) as a formulation of \zeta(z)}
                                                   
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.601 ...hrough J(z) as a formulation of \zeta(z)}
+l.602 ...hrough J(z) as a formulation of \zeta(z)}
                                                   
 ? 
 Runaway argument?
@@ -1926,42 +1926,42 @@ Runaway argument?
 ! Paragraph ended before \multline* was complete.
 <to be read again> 
                    \par 
-l.606 
+l.607 
       
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.606 
+l.607 
       
 ? 
 ! Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.606 
+l.607 
       
 ? 
 ! Display math should end with $$.
 <to be read again> 
                    \tex_par:D 
-l.606 
+l.607 
       
 ? 
 [26]
-Overfull \hbox (92.06665pt too wide) in paragraph at lines 610--610
+Overfull \hbox (92.06665pt too wide) in paragraph at lines 611--611
 \OT1/cmtt/m/n/10 courses / 18 -[] 104 -[] seminar -[] in -[] analysis -[] appli
 cations -[] to -[] number -[] theory -[] fall -[] 2006 / 58778de0faae6448c3b0bf
 b1a1ec4f7a _
  []
 
 
-! LaTeX Error: \begin{multline*} on input line 603 ended by \end{document}.
+! LaTeX Error: \begin{multline*} on input line 604 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.610 \end{document}
+l.611 \end{document}
                     
 ? 
 [27] (Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.aux)
@@ -1977,7 +1977,7 @@ ml'.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 603 (\begingroup)
+### semi simple group (level 1) entered at line 604 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
  11027 strings out of 475248
