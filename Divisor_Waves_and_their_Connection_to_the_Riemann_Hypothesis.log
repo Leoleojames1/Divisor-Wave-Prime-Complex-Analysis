@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.29)  6 DEC 2023 21:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.29)  7 DEC 2023 01:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1935,20 +1935,18 @@ l.606 ...hrough J(z) as a formulation of \zeta(z)}
 l.606 ...hrough J(z) as a formulation of \zeta(z)}
                                                   
 ? 
-! Double superscript.
-<argument> ... \left (\frac {\pi z}{k}\right )|}}^
-                                                  {|\prod _{k=2}^x \left [\l...
-l.610 \end{align*}
-                  
+! Misplaced alignment tab character &.
+l.612 ... composite numbers, such that (1-prime) &
+                                                   (1-0) are the only terms ...
+
 ? 
-! Double superscript.
-<argument> ... \left (\frac {\pi z}{k}\right )|}}^
-                                                  {|\prod _{k=2}^x \left [\l...
-l.610 \end{align*}
-                  
-? 
+
+Overfull \hbox (39.00287pt too wide) detected at line 616
+[]
+ []
+
 [26]
-Overfull \hbox (92.06665pt too wide) in paragraph at lines 616--616
+Overfull \hbox (92.06665pt too wide) in paragraph at lines 621--621
 \OT1/cmtt/m/n/10 courses / 18 -[] 104 -[] seminar -[] in -[] analysis -[] appli
 cations -[] to -[] number -[] theory -[] fall -[] 2006 / 58778de0faae6448c3b0bf
 b1a1ec4f7a _
@@ -1995,7 +1993,7 @@ type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ADA/AppData/Local/Programs/
 MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 Output written on Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.
-pdf (27 pages, 14652589 bytes).
+pdf (27 pages, 14653499 bytes).
 PDF statistics:
  241 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
