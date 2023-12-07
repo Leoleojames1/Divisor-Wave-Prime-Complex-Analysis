@@ -584,7 +584,7 @@ H(z) = \left(\frac{|\prod_{n=2}^x \alpha\frac{x}{n}\sin\left(\frac{\pi z}{n}\rig
 \end{align*}
 \hspace{8mm}\caption{Figure 35: 2D Graph of $J(x)$ and $H(x)$ showcasing the normalized real zeros of the functions.} \\
 
-The function H(z) combines the previous sieve functions A(z) and B(z) through exponentiation to create a new function. This function H(z) has infinitely many zeros, these zeros correspond with the prime numbers, and for composite numbers H(z) goes to 1. This is a result of B(z) being equal to 0 for composite numbers, and nonzero for prime numbers. Thus A(z) having a zero at all whole numbers each being raised to the power of $B(z) where A(Z)^0 = 1 and A(z)^(Non-Zero) = 0$, results in the Binary Output Prime Indicator Function (BOPIF) defined as H(z)
+The function H(z) combines the previous sieve functions A(z) and B(z) through exponentiation to create a new function. This function H(z) has infinitely many zeros, these zeros correspond with the prime numbers, and for composite numbers H(z) goes to 1. This is a result of B(z) being equal to 0 for composite numbers, and nonzero for prime numbers. Thus A(z) having a zero at all whole numbers each being raised to the power of B(z) where $A(Z)^0 = 1$ and $A(z)^(Non-Zero) = 0$, results in the Binary Output Prime Indicator Function (BOPIF) defined as H(z).
 
 \newpage
 \subsection*{XVII. Base 10 Value Output Prime Indicator Function J(z)}
@@ -600,15 +600,16 @@ J(z) = z * \left(\frac{|\prod_{n=2}^x \alpha\frac{z}{n}\sin\left(\frac{\pi z}{n}
 \hspace{8mm}\caption{Figure 35: 2D Graph of $J(x)$ and $H(x)$ showcasing the normalized real zeros of the functions.} \\
 
 It can be seen from the plot of J(z) that the function has values of 0 for all composite numbers, and the value of x for all prime numbers, meaning x will always be prime.
-this function is exponentiated one layer deeper than H(z). When we think of H(z), it is b(z) the set of infinite zeros at composite numbers and non zeros for prime numbers, then being raised to the power of a(z), we have all $0^0=1$ and $0^\left(nonzero\right)$ $=0$, this forced all prime numbers to 0 and all composite numbers to 1. Now A(z) being the set of infinite zeros at all real numbers is the modulation of H(z) to become J(z), J(z) is then $a(z)^0 = 1$  where all prime $z = 0$ and for all composite $z = 1$, then $a(z)^1=0$, this is then multiplied by z and so J(z) is equal to z for all primes, and J(z) is equal to 0 for all composite, the continuous regions between display the discrete product, and how it affects the continuous sin function.
+this function is put through exponentiation one layer deeper than H(z). When we think of H(z), it is b(z) the set of infinite zeros at composite numbers and non zeros for prime numbers, then being raised to the power of a(z), we have all $0^0=1$ and $0^\left(nonzero\right)$ $=0$, this forced all prime numbers to 0 and all composite numbers to 1. Now A(z) being the set of infinite zeros at all real numbers is the modulation of H(z) to become J(z), J(z) is then $a(z)^0 = 1$  where all prime $z = 0$ and for all composite $z = 1$, then $a(z)^1=0$, this is then multiplied by z and so J(z) is equal to z for all primes, and J(z) is equal to 0 for all composite, the continuous regions between display the discrete product, and how it affects the continuous sin function.
 
 \newpage
 \subsection*{XVIII. Euler Product Prime Value Substitution through J(z) as a formulation of \zeta(z)}
 
-\begin{multline*}
-\zeta(s) = \prod_{n=2}^x \frac{1}{1 - \left(\left(\frac{|\prod_{n=2}^x \sin\left(\frac{\pi z}{n}\right)|{|\prod_{n=2}^x \sin\left(\frac{\pi z}{n}\right)|!}\right)^{\left(\left(\frac{|\prod_{n=2}^x \sin\left(\frac{\pi z}{n}\right)|}{|\prod_{n=2}^x \sin\left(\frac{\pi z}{n}\right)|!}\right)^{\left(\frac{|\prod_{n=2}^x\left[\left(\pi z\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|}{|\prod_{n=2}^x\left[\left(\pi z\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|!}\right)}\right)^{-s}}
-\end{multline*}
+\begin{align*}
+\zeta(s) = \prod_{n=2}^x \frac{1}{1 - \left( z^{{|\prod_{k=2}^x \sin\left(\frac{\pi z}{k}\right)|}^{|\prod_{k=2}^x \sin\left(\frac{\pi z}{k}\right)|}} \right)^{-s}}
+\end{align*}
 
+Through substitution of the primes in the euler product by utilizing the prime indicator function L(z), we can create an alternate product for zeta. This product when e
 \newpage
 \nocite{*}
 \printbibliography
