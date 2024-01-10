@@ -15,6 +15,10 @@ Clay Maths Institute's Millenium Prize Problems:
 
 https://en.wikipedia.org/wiki/Millennium_Prize_Problems
 
+Musical Representation for the Sieve of Eratosthenes:
+
+https://www.youtube.com/watch?v=Ofg8fG-1iJA
+
 # Special-Functions
 A program for plotting complex functions. This tool provides the plotting functions for 2D and 3D graphics for infinite series such as the Riemann zeta function, 
 the infinite product of the product representation for sin(pi*z/n) as well as any other function that can be formulated in the complex plane. The Infinite product plotted throughout the paper known as b(z) acts as an indicator for prime and composite numbers. ultimately we can describe a complex product waveform which contains the attributes of the factorization for any composite number utilizing multivariable factorization.
