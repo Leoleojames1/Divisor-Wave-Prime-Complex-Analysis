@@ -25,6 +25,8 @@ https://www.youtube.com/watch?v=cjKtzzACyhI
 
 https://www.youtube.com/watch?v=bo798KEKoDI
 
+https://www.youtube.com/watch?v=fpqGRVtBER4
+
 # Special-Functions
 A program for plotting complex functions. This tool provides the plotting functions for 2D and 3D graphics for infinite series such as the Riemann zeta function, 
 the infinite product of the product representation for sin(pi*z/n) as well as any other function that can be formulated in the complex plane. The Infinite product plotted throughout the paper known as b(z) acts as an indicator for prime and composite numbers. ultimately we can describe a complex product waveform which contains the attributes of the factorization for any composite number utilizing multivariable factorization.
