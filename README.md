@@ -11,9 +11,25 @@ Riemann Hypothesis:
 
 https://mathworld.wolfram.com/RiemannZetaFunction.html
 
+https://mathworld.wolfram.com/RiemannZetaFunctionZeros.html
+
 Clay Maths Institute's Millenium Prize Problems:
 
 https://en.wikipedia.org/wiki/Millennium_Prize_Problems
+
+Musical Representation for the Sieve of Eratosthenes:
+
+https://www.youtube.com/watch?v=Ofg8fG-1iJA
+
+https://www.youtube.com/watch?v=zhNnmtnV2cU
+
+https://www.youtube.com/watch?v=cjKtzzACyhI
+
+https://www.youtube.com/watch?v=bo798KEKoDI
+
+https://www.youtube.com/watch?v=fpqGRVtBER4
+
+https://www.youtube.com/watch?v=8x374slJGuo&t=61s
 
 # Special-Functions
 A program for plotting complex functions. This tool provides the plotting functions for 2D and 3D graphics for infinite series such as the Riemann zeta function, 
@@ -108,6 +124,8 @@ https://math.stackexchange.com/questions/186292/derivatives-of-the-riemann-zeta-
 https://www.youtube.com/watch?v=BuKgxeer9j8
 
 https://www2.karlin.mff.cuni.cz/~slavik/product/product_integration.pdf
+
+https://mathstats.uncg.edu/number-theory/wp-content/uploads/sites/6/2018/01/zvengrowski-converge-eulerprod.pdf
 
 # About Me
 My name is Leo Borcherding, I am a Software Developer with experience working on programs for encryption of firmware devices. I have a background in electrical
