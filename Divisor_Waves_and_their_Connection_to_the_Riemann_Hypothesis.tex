@@ -31,7 +31,7 @@
 
 \begin{document}
 
-\title{Complex Zeros of Discrete Products for Sinusoidal Divisor Waves on the Critical Strip of the Zeta Function}
+\title{Divisor Wave Product Analysis of Prime and Composite Numbers}
 \author{Leo J. Borcherding}
 \date{\today}
 \maketitle
@@ -603,18 +603,46 @@ It can be seen from the plot of J(z) that the function has values of 0 for all c
 this function is put through exponentiation one layer deeper than H(z). When we think of H(z), it is b(z) the set of infinite zeros at composite numbers and non zeros for prime numbers, then being raised to the power of a(z), we have all $0^0=1$ and $0^\left(nonzero\right)$ $=0$, this forced all prime numbers to 0 and all composite numbers to 1. Now A(z) being the set of infinite zeros at all real numbers is the modulation of H(z) to become J(z), J(z) is then $a(z)^0 = 1$  where all prime $z = 0$ and for all composite $z = 1$, then $a(z)^1=0$, this is then multiplied by z and so J(z) is equal to z for all primes, and J(z) is equal to 0 for all composite, the continuous regions between display the discrete product, and how it affects the continuous sin function.
 
 \newpage
-\subsection*{XVIII. Euler Product Prime Value Substitution through J(z) as a formulation of \zeta(z)}
+\subsection*{XVIII. Multi-variable Combinatoric Alternating Sequence L(z) for Prime Numbers}
 
 \begin{align*}
-\zeta(s) = \prod_{n=2}^x \left(1 - \left(z * \left( \left|\prod_{k=2}^x \sin\left(\frac{\pi z}{k}\right)\right| \right)^{ \left( \left|\prod_{k=2}^x \sin\left(\frac{\pi z}{k}\right)\right| \right)^{ \left|\prod_{n=2}^x\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]\right| } } \right)^{-s} \right)^{-1}
+\includegraphics[scale=0.35]{graphs/L1_BIG}
+\end{align*}
+
+\newpage
+\subsection*{XVIV. Euler Product Prime Value Substitution of J(z)*L(z) as a formulation of \zeta(z)}
+
+\begin{align*}
+\includegraphics[scale=0.30]{graphs/C1_BIG}
 \end{align*}
 
 Through substitution of the primes in the euler product by utilizing the prime indicator function L(z), we can create an alternate product for zeta. This product when expanded will be the infinite polynomial of the form Poch-Hammer form $\prod_{k=2}^x[1-P]^{-1}$ Where P is the set of z at prime numbers, and 0 at composite numbers, such that (1-prime) & (1-0) are the only terms in the product. This can be expanded such that:
 
 \begin{align*}
-\zeta(s) = (1 - 2^{-s})*(1 - 3^{-s})*(1 - 0^{-s})*(1 - 5^{-s})*(1 - 0^{-s})*(1 - 7^{-s})*(1 - 0^{-s})*(1 - 0^{-s})*(1 - 0^{-s})*(1 - 11^{-s}) \ldots
+C(s) = (\frac{1}{1 - 2^{s}})(\frac{1}{1 + 3^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 - 5^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 + 7^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 + 11^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 - 13^{-s}}) \ldots
 \end{align*}
 
+each composite number reduces to $(1/1+0^-s)$ and we know that $0^a = 0$ where any a will suffice, thus we can say each composite number reduces to 1. Now we can show the series expansion as:
+
+\begin{align*}
+C(s) = (\frac{1}{1 - 2^{s}})(\frac{1}{1 + 3^{-s}})(\frac{1}{1 - 5^{-s}})(\frac{1}{1 + 7^{-s}})(\frac{1}{1 + 11^{-s}})(\frac{1}{1 - 13^{-s}})(\frac{1}{1 - 17^{-s}})(\frac{1}{1 + 19^{-s}})(\frac{1}{1 + 23^{-s}}) \ldots
+\end{align*}
+
+now, C(s) will be subtracted from the Euler Product Representation of the Dirichlet Eta Function, ("Convergence of Dirichlet Series and Euler Products", Peter Zvengrowski):
+
+\begin{align*}
+\eta(s) = (\frac{1}{1 - 2^{s}})(\frac{1}{1 + 3^{-s}})(\frac{1}{1 - 5^{-s}})(\frac{1}{1 + 7^{-s}})(\frac{1}{1 - 11^{-s}})(\frac{1}{1 + 13^{-s}})(\frac{1}{1 - 17^{-s}})(\frac{1}{1 + 19^{-s}})(\frac{1}{1 - 23^{-s}}) \ldots
+\end{align*}
+
+therefore,
+
+\begin{align*}
+\eta(s) - C(s) =((\frac{1}{1 + 11^{-s}})(\frac{1}{1 - 13^{-s}})(\frac{1}{1 - 23^{-s}}) \ldots)((\frac{1}{1 - 11^{-s}})(\frac{1}{1 + 13^{-s}})(\frac{1}{1 + 23^{-s}}) \ldots)
+\end{align*}
+
+Ultimately, this new formulation of zeta will approximate the original functions roots, however the continuous regions between whole numbers created by the sin products can vary from function to function, this means several forms of zeta can exist with the same poles however the regions between poles will differ.
+
+The Function J(z) outlines the linear relationship of the zeros and the non-zeros, the function is defined such that these zeros all lie on the line $y = x$, as a result, the zeros of the zeta functions must all lie on the critical strip. After transformation as an input to an output, these values hold the relationship $y=x$ and upon translation $z = 1/2 + iy$ contains all non-trivial zeros of zeta.
 \newpage
 \nocite{*}
 \printbibliography
