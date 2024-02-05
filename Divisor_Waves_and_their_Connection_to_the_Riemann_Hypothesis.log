@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.29)  3 FEB 2024 23:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.29)  5 FEB 2024 03:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1883,13 +1883,13 @@ File: graphs/2D_Real_New/Prime_Indicator_J_normalized.png Graphic file (type pn
 g)
 <use graphs/2D_Real_New/Prime_Indicator_J_normalized.png>
 Package pdftex.def Info: graphs/2D_Real_New/Prime_Indicator_J_normalized.png  u
-sed on input line 599.
+sed on input line 622.
 (pdftex.def)             Requested size: 386.87332pt x 113.82613pt.
 File: graphs/2D_Real_New/Prime_Indicator_J_normalized.png Graphic file (type pn
 g)
 <use graphs/2D_Real_New/Prime_Indicator_J_normalized.png>
 Package pdftex.def Info: graphs/2D_Real_New/Prime_Indicator_J_normalized.png  u
-sed on input line 599.
+sed on input line 622.
 (pdftex.def)             Requested size: 386.87332pt x 113.82613pt.
 
 
@@ -1899,79 +1899,92 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.600 \hspace{8mm}\caption
+l.623 \hspace{8mm}\caption
                           {Figure 35: 2D Graph of $J(x)$ and $H(x)$ showcasi...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 599--601
+Underfull \hbox (badness 10000) in paragraph at lines 622--624
 
  []
 
 ! Missing { inserted.
 <to be read again> 
                    \left 
-l.603 ...of a(z), we have all $0^0=1$ and $0^\left
+l.626 ...of a(z), we have all $0^0=1$ and $0^\left
                                                   (nonzero\right)$ $=0$, thi...
 
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.603 ... all $0^0=1$ and $0^\left(nonzero\right)$
+l.626 ... all $0^0=1$ and $0^\left(nonzero\right)$
                                                    $=0$, this forced all pri...
 
 ? 
-[25 <./graphs/2D_Real_New/Prime_Indicator_J_normalized.png>]
-<graphs/L1_BIG.png, id=154, 556.32843pt x 176.15813pt>
-File: graphs/L1_BIG.png Graphic file (type png)
-<use graphs/L1_BIG.png>
-Package pdftex.def Info: graphs/L1_BIG.png  used on input line 610.
-(pdftex.def)             Requested size: 194.71786pt x 61.65625pt.
-File: graphs/L1_BIG.png Graphic file (type png)
-<use graphs/L1_BIG.png>
-Package pdftex.def Info: graphs/L1_BIG.png  used on input line 610.
-(pdftex.def)             Requested size: 194.71786pt x 61.65625pt.
- [26 <./graphs/L1_BIG.png>]
+<graphs/2D_Real_New/Composite_Indicator_H_normalized.png, id=149, 1352.05125pt 
+x 533.74406pt>
+File: graphs/2D_Real_New/Composite_Indicator_H_normalized.png Graphic file (typ
+e png)
+<use graphs/2D_Real_New/Composite_Indicator_H_normalized.png>
+Package pdftex.def Info: graphs/2D_Real_New/Composite_Indicator_H_normalized.pn
+g  used on input line 634.
+(pdftex.def)             Requested size: 405.6185pt x 160.12445pt.
+File: graphs/2D_Real_New/Composite_Indicator_H_normalized.png Graphic file (typ
+e png)
+<use graphs/2D_Real_New/Composite_Indicator_H_normalized.png>
+Package pdftex.def Info: graphs/2D_Real_New/Composite_Indicator_H_normalized.pn
+g  used on input line 634.
+(pdftex.def)             Requested size: 405.6185pt x 160.12445pt.
+[25 <./graphs/2D_Real_New/Prime_Indicator_J_normalized.png> <./graphs/2D_Real_N
+ew/Composite_Indicator_H_normalized.png>]
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.638 ...lternation for P(z), L(z), M(z), N(z), $&
+                                                  $ O(z) resemble the leadin...
+
+? 
+[26] [27]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.613 ...f J(z)*L(z) as a formulation of \zeta(z)}
+l.733 ...f J(z)*L(z) as a formulation of \zeta(z)}
                                                   
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.613 ...f J(z)*L(z) as a formulation of \zeta(z)}
+l.733 ...f J(z)*L(z) as a formulation of \zeta(z)}
                                                   
 ? 
-<graphs/C1_BIG.png, id=159, 1397.22pt x 425.33907pt>
+<graphs/C1_BIG.png, id=162, 1397.22pt x 425.33907pt>
 File: graphs/C1_BIG.png Graphic file (type png)
 <use graphs/C1_BIG.png>
-Package pdftex.def Info: graphs/C1_BIG.png  used on input line 617.
+Package pdftex.def Info: graphs/C1_BIG.png  used on input line 737.
 (pdftex.def)             Requested size: 419.16924pt x 127.60269pt.
 File: graphs/C1_BIG.png Graphic file (type png)
 <use graphs/C1_BIG.png>
-Package pdftex.def Info: graphs/C1_BIG.png  used on input line 617.
+Package pdftex.def Info: graphs/C1_BIG.png  used on input line 737.
 (pdftex.def)             Requested size: 419.16924pt x 127.60269pt.
 ! Misplaced alignment tab character &.
-l.619 ... composite numbers, such that (1-prime) &
+l.739 ... composite numbers, such that (1-prime) &
                                                    (1-0) are the only terms ...
 
 ? 
 
-Overfull \hbox (65.35188pt too wide) detected at line 623
+Overfull \hbox (65.35188pt too wide) detected at line 743
 []
  []
 
-[27 <./graphs/C1_BIG.png>]
-Overfull \hbox (92.06665pt too wide) in paragraph at lines 649--649
+[28 <./graphs/C1_BIG.png>]
+Overfull \hbox (92.06665pt too wide) in paragraph at lines 769--769
 \OT1/cmtt/m/n/10 courses / 18 -[] 104 -[] seminar -[] in -[] analysis -[] appli
 cations -[] to -[] number -[] theory -[] fall -[] 2006 / 58778de0faae6448c3b0bf
 b1a1ec4f7a _
  []
 
-[28] (Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.aux)
+[29] (Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -1984,7 +1997,7 @@ ml'.
  ) 
 Here is how much of TeX's memory you used:
  11049 strings out of 475248
- 230538 string characters out of 5758756
+ 230956 string characters out of 5758756
  1938785 words of memory out of 5000000
  32494 multiletter control sequences out of 15000+600000
  563959 words of font info for 57 fonts, out of 8000000 for 9000
@@ -2012,9 +2025,9 @@ type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ADA/AppData/Local/Programs/
 MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 Output written on Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.
-pdf (28 pages, 14728148 bytes).
+pdf (29 pages, 14812487 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
+ 251 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  211 words of extra memory for PDF output out of 10000 (max. 10000000)
 

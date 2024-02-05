@@ -584,7 +584,30 @@ H(z) = \left(\frac{|\prod_{n=2}^x \alpha\frac{x}{n}\sin\left(\frac{\pi z}{n}\rig
 \end{align*}
 \hspace{8mm}\caption{Figure 35: 2D Graph of $J(x)$ and $H(x)$ showcasing the normalized real zeros of the functions.} \\
 
-The function H(z) combines the previous sieve functions A(z) and B(z) through exponentiation to create a new function. This function H(z) has infinitely many zeros, these zeros correspond with the prime numbers, and for composite numbers H(z) goes to 1. This is a result of B(z) being equal to 0 for composite numbers, and nonzero for prime numbers. Thus A(z) having a zero at all whole numbers each being raised to the power of B(z) where $A(Z)^0 = 1$ and $A(z)^(Non-Zero) = 0$, results in the Binary Output Prime Indicator Function (BOPIF) defined as H(z).
+The function H(z) combines the previous sieve functions A(z) and B(z) through exponentiation to create a new function. This function H(z) has infinitely many zeros, these zeros correspond with the prime numbers, and for composite numbers H(z) goes to 1. This is a result of B(z) being equal to 0 for composite numbers, and nonzero for prime numbers. Thus A(z) having a zero at all whole numbers each being raised to the power of B(z) where $A(Z)^0 = 1$ and $A(z)^{(Non-Zero)} = 0$, results in the Binary Output Prime Indicator Function (BOPIF) defined as H(z).
+
+\begin{align*}
+H(2) = (0)^{(nonzero)}
+\end{align*}
+\begin{align*}
+H(3) = ((0)(0))^{(nonzero)}
+\end{align*}
+\begin{align*}
+H(4) = ((0)(0)(0))^{(0)}
+\end{align*}
+\begin{align*}
+H(5) = ((0)(0)(0)(0))^{(nonzero)}
+\end{align*}
+\begin{align*}
+H(6) = ((0)(0)(0)(0)(0))^{(0)}
+\end{align*}
+\begin{align*}
+\ldots
+\end{align*}
+\begin{align*}
+H(x) = ((0)(0)(0)(0)(0)\ldots)^{(B(x))}
+\end{align*}
+where B(x) is 0 when composite, and nonzero when prime. Ultimately the series plot for H(z) reflects the relationship that $0^{nonzero} = 0$ and that $0^{0} = 1$, which is the key to outputting the primes from H(z) in binary.
 
 \newpage
 \subsection*{XVII. Base 10 Value Output Prime Indicator Function J(z)}
@@ -600,13 +623,110 @@ J(z) = z * \left(\frac{|\prod_{n=2}^x \alpha\frac{z}{n}\sin\left(\frac{\pi z}{n}
 \hspace{8mm}\caption{Figure 35: 2D Graph of $J(x)$ and $H(x)$ showcasing the normalized real zeros of the functions.} \\
 
 It can be seen from the plot of J(z) that the function has values of 0 for all composite numbers, and the value of x for all prime numbers, meaning x will always be prime.
-this function is put through exponentiation one layer deeper than H(z). When we think of H(z), it is b(z) the set of infinite zeros at composite numbers and non zeros for prime numbers, then being raised to the power of a(z), we have all $0^0=1$ and $0^\left(nonzero\right)$ $=0$, this forced all prime numbers to 0 and all composite numbers to 1. Now A(z) being the set of infinite zeros at all real numbers is the modulation of H(z) to become J(z), J(z) is then $a(z)^0 = 1$  where all prime $z = 0$ and for all composite $z = 1$, then $a(z)^1=0$, this is then multiplied by z and so J(z) is equal to z for all primes, and J(z) is equal to 0 for all composite, the continuous regions between display the discrete product, and how it affects the continuous sin function.
+this function is put through exponentiation one layer deeper than H(z). When we think of H(z), it is b(z) the set of infinite zeros at composite numbers and non zeros for prime numbers, then being raised to the power of a(z), we have all $0^0=1$ and $0^\left(nonzero\right)$ $=0$, this forced all prime numbers to 0 and all composite numbers to 1. Now A(z) being the set of infinite zeros at all real numbers is the modulation of H(z) to become J(z), J(z) is then $a(z)^0 = 1$  where all prime $z = 0$ and for all composite $z = 1$, then $a(z)^1=0$, this is then multiplied by z and so J(z) is equal to z for all primes, and J(z) is equal to 0 for all composite, the continuous regions between display the discrete product, and how it affects the continuous sin function. Now Taking a look at the Composite Number Indicating function $J_{2}(z)$ we can see:
+
+\begin{align*}
+J_{2}(z) = x * \left(\frac{|\prod_{n=2}^x \alpha\frac{x}{n}\sin\left(\frac{\pi z}{n}\right)|^{m}}{|\prod_{n=2}^x \alpha\frac{x}{n}\sin\left(\frac{\pi z}{n}\right)|^{m}!}\right)^{\left(\frac{|\prod_{n=2}^x\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|^{m}}{|\prod_{n=2}^x\left[\frac{\beta z}{n}\left({\pi z}\prod_{k=2}^z\left(1 - \frac{z^2}{k^2n^2}\right)\right)\right]|^{m}!}\right)}
+\end{align*}
+
+\begin{align*}
+\includegraphics[scale=0.30]{graphs/2D_Real_New/Composite_Indicator_H_normalized}
+\end{align*}
 
 \newpage
 \subsection*{XVIII. Multi-variable Combinatoric Alternating Sequence L(z) for Prime Numbers}
+Laying a structural base to motivate the final chapter, we investigate alternating discrete series defined such that the rhythm of the alternation for P(z), L(z), M(z), N(z), $&$ O(z) resemble the leading sign terms for the dirichlet eta function represented as an euler product $\eta(s)$.
 
+
+We start with the base unit, function P(z), this function is a prime example of the alternating variable-discrete series for a product of (-1),
 \begin{align*}
-\includegraphics[scale=0.35]{graphs/L1_BIG}
+	P(z) = {\prod_{n=2}^z \left( (-1)^n \right)}
+\end{align*}
+
+which can be expanded as,
+\begin{align*}
+	P(z) = (-1)^{2}(-1)^{3}\ldots(-1)^{x}
+\end{align*}
+
+as x goes to infinity the series reduces to the simple pattern,
+\begin{align*}
+	P(z) = (+1)(-1)(-1)(+1)(+1)(-1)(-1)(+1)(+1)\ldots
+\end{align*}
+
+Next, investigating a higher dimentional reprensation akin to an integral, the function L(z) follows,
+\begin{align*}
+	L(z) = {\prod_{n=2}^z \left( (-1)^n [ \prod_{k=2}^x (-1)^k ] \right)}
+\end{align*}
+
+which can be expanded as,
+\begin{align*}
+	L(z) = {\prod_{n=2}^z (-1)^{k}*((-1)^{2}(-1)^{3}\ldots(-1)^{x}) }
+\end{align*}
+
+once again to produce,
+\begin{align*}
+	L(z) = ((-1)^{2}(-1)^{3}\ldots(-1)^{x})*((-1)^{2}(-1)^{3}\ldots(-1)^{x})*((-1)^{2}(-1)^{3}\ldots(-1)^{x})
+\end{align*}
+
+we will now evaluate the terms in the region $2 < x < 5$ values
+\begin{align*}
+	L(2) = (-1)^{2}*(-1)^{2}*(-1)^{2} = (+1)(+1)(+1) = (+1)
+\end{align*}
+\begin{align*}
+	L(3) = ((-1)^{2}(-1)^{3})*((-1)^{2}(-1)^{3})*((-1)^{2}(-1)^{3})* = ((+1)(-1))((+1)(-1))((+1)(-1)) = (-1)
+\end{align*}
+\begin{align*}
+	L(4) = ((-1)^{2}(-1)^{3}(-1)^{4})*((-1)^{2}(-1)^{3}(-1)^{4})*((-1)^{2}(-1)^{3}(-1)^{4})
+\end{align*}
+\begin{align*}
+	= ((+1)(-1)(+1))((+1)(-1)(+1))((+1)(-1)(+1)) = (-1)
+\end{align*}
+\begin{align*}
+	L(5) = ((-1)^{2}(-1)^{3}(-1)^{4}(-1)^{5})*((-1)^{2}(-1)^{3}(-1)^{4}(-1)^{5})*((-1)^{2}(-1)^{3}(-1)^{4}(-1)^{5})
+\end{align*}
+\begin{align*}
+	= ((+1)(-1)(+1)(-1))((+1)(-1)(+1)(-1))((+1)(-1)(+1)(-1)) = (+1)
+\end{align*}
+
+\newpage
+Now comparing L(z) to the function M(z), which has slight alteration in order of operation resulting in a different series,
+\begin{align*}
+	M(z) = \prod_{n=2}^z \left( \prod_{k=2}^z \left( (-1)^n (-1)^k \right) \right)
+\end{align*}
+
+and upon first expansion providing,
+\begin{align*}
+	M(z) = \prod_{n=2}^z \left( (1)^{n} * ((-1)^{2}*(-1)^{3}\ldots(-1)^{x}) \right)
+\end{align*}
+
+then expanding again,
+\begin{align*}
+	M(z) = [(-1)^{2} * ((-1)^{2}(-1)^{3}\ldots(-1)^{x}) * (-1)^{3} * ((-1)^{2}(-1)^{3}\ldots(-1)^{x})] \ldots (-1)^{x} * ((-1)^{2}(-1)^{3}\ldots(-1)^{x})
+\end{align*}
+
+as x tends to infinity the function M(z) reduces to a series alternating between negative 1 and positive 1 alternating after each pair,
+\begin{align*}
+	M(z) =  (+1)(+1)(-1)(-1)(+1)(+1)(-1)(-1)(+1)(+1)\ldots
+\end{align*}
+
+Now, the function N(z) utilized exponentiation instead of multiplication, we also use a base of $(-2)$, as a base of $(-1)$ would result in an uninteresting series.
+\begin{align*}
+	N(z) = {{\prod_{n=2}^z \left( (-2)^n \right)}}^{{\prod_{k=2}^z \left( (-1)^k \right)}}
+\end{align*}
+
+which can be expanded as,
+\begin{align*}
+	N(z) = ((-2)^{2}(-2)^{3}\ldots(-2)^{x})^{((-1)^{2}(-1)^{3}\ldots(-1)^{x})}
+\end{align*}
+
+and finally a variation of N(z), denoted as O(z), to show what happens when we make the base of the exponent series $(-2)$
+\begin{align*}
+	O(z) = {{\prod_{n=2}^z \left( (-2)^n \right)}}^{{\prod_{k=2}^z \left( (-2)^k \right)}}
+\end{align*}
+
+expanded as,
+\begin{align*}
+	O(z) = ((-2)^{2}(-2)^{3}\ldots(-2)^{x})^{((-2)^{2}(-2)^{3}\ldots(-2)^{x})}
 \end{align*}
 
 \newpage
