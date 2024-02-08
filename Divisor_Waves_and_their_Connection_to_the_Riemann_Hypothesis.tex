@@ -607,7 +607,10 @@ H(6) = ((0)(0)(0)(0)(0))^{(0)}
 \begin{align*}
 H(x) = ((0)(0)(0)(0)(0)\ldots)^{(B(x))}
 \end{align*}
-where B(x) is 0 when composite, and nonzero when prime. Ultimately the series plot for H(z) reflects the relationship that $0^{nonzero} = 0$ and that $0^{0} = 1$, which is the key to outputting the primes from H(z) in binary.
+where B(x) is 0 when composite, and nonzero when prime. Ultimately the series plot for H(z) reflects the relationship that $0^{nonzero} = 0$ and that $0^{0} = 1$, which is the key to outputting the primes from H(z) in binary. Ultimately giving us the series,
+\begin{align*}
+H(x) = (0)(0)(1)(0)(1)(0)(1)(1)(1)(0)(1)(0)\ldots
+\end{align*}
 
 \newpage
 \subsection*{XVII. Base 10 Value Output Prime Indicator Function J(z)}
@@ -639,7 +642,7 @@ Laying a structural base to motivate the final chapter, we investigate alternati
 
 We start with the base unit, function L(z), this function is a prime example of the alternating variable-discrete series for a product of (-1),
 \begin{align*}
-	L(z) = {\prod_{n=2}^z \left( (-1)^n \right)}
+	L(z) = {\prod_{n=2}^x \left( (-1)^n \right)}
 \end{align*}
 
 which can be expanded as,
@@ -654,12 +657,12 @@ as x goes to infinity the series reduces to the simple pattern,
 
 Next, investigating a higher dimentional reprensation akin to an integral, the function L(z) follows,
 \begin{align*}
-	M(z) = {\prod_{n=2}^z \left( (-1)^n [ \prod_{k=2}^x (-1)^k ] \right)}
+	M(z) = {\prod_{n=2}^x \left( (-1)^n [ \prod_{k=2}^x (-1)^k ] \right)}
 \end{align*}
 
 which can be expanded as,
 \begin{align*}
-	M(z) = {\prod_{n=2}^z (-1)^{k}*((-1)^{2}(-1)^{3}\ldots(-1)^{x}) }
+	M(z) = {\prod_{n=2}^x (-1)^{k}*((-1)^{2}(-1)^{3}\ldots(-1)^{x}) }
 \end{align*}
 
 once again to produce,
@@ -690,12 +693,12 @@ we will now evaluate the terms in the region $2 < x < 5$ values
 \newpage
 Now comparing M(z) to the function N(z), which has slight alteration in order of operation resulting in a different series,
 \begin{align*}
-	N(z) = \prod_{n=2}^z \left( \prod_{k=2}^z \left( (-1)^n (-1)^k \right) \right)
+	N(z) = \prod_{n=2}^x \left( \prod_{k=2}^x \left( (-1)^n (-1)^k \right) \right)
 \end{align*}
 
 and upon first expansion providing,
 \begin{align*}
-	N(z) = \prod_{n=2}^z \left( (1)^{n} * ((-1)^{2}*(-1)^{3}\ldots(-1)^{x}) \right)
+	N(z) = \prod_{n=2}^x \left( (1)^{n} * ((-1)^{2}*(-1)^{3}\ldots(-1)^{x}) \right)
 \end{align*}
 
 then expanding again,
@@ -710,7 +713,7 @@ as x tends to infinity the function N(z) reduces to a series alternating between
 
 Now, the function N(z) utilized exponentiation instead of multiplication, we also use a base of $(-2)$, as a base of $(-1)$ would result in an uninteresting series.
 \begin{align*}
-	O(z) = {{\prod_{n=2}^z \left( (-2)^n \right)}}^{{\prod_{k=2}^z \left( (-1)^k \right)}}
+	O(z) = {{\prod_{n=2}^x \left( (-2)^n \right)}}^{{\prod_{k=2}^x \left( (-1)^k \right)}}
 \end{align*}
 
 which can be expanded as,
@@ -720,7 +723,7 @@ which can be expanded as,
 
 and next a variation of N(z), denoted as O(z), to show what happens when we make the base of the exponent series $(-2)$
 \begin{align*}
-	P(z) = {{\prod_{n=2}^z \left( (-2)^n \right)}}^{{\prod_{k=2}^z \left( (-2)^k \right)}}
+	P(z) = {{\prod_{n=2}^x \left( (-2)^n \right)}}^{{\prod_{k=2}^x \left( (-2)^k \right)}}
 \end{align*}
 
 expanded as,
@@ -728,36 +731,53 @@ expanded as,
 	P(z) = ((-2)^{2}(-2)^{3}\ldots(-2)^{x})^{((-2)^{2}(-2)^{3}\ldots(-2)^{x})}
 \end{align*}
 
-The next step is articulating the powers of 2 such that the outcome
-We follow the rule the $(2)^{0}=(1)$ & $(2)^{1}=(2)$,
+\newpage
+The next step is articulating the powers of 2 such that the outcome commands the rule the $(2)^{0}=(1)$ $&$ $(2)^{1}=(2)$ such that it becomes the alternator for the lower power series of $(-1)$, this will also command the rule that $(-1)^{2}=(1)$ $&$ $(-1)^{1}=(-1)$, combining these two formulates the combined ruled that for $2^{a}$, when a is prime, the alternator triggers the lower level $(-1)$ from the upper product, causing the function to alternate every other prime number.
 
 \begin{align*}
-\includegraphics[scale=0.30]{graphs/Q1_BIG}
+Q_1(z) = \left( \prod_{n=2}^x \left( (-1)^{\prod_{k=2}^x \left( (-2)^{J_1(z)} \right)} \right) \right)
 \end{align*}
+
+expanded as,
+\begin{align*}
+	Q_1(z) = (-1)^{2^{J(z)}}
+\end{align*}
+
+where J(z) is the BOPIF (BINARY OUTPUT INDICATOR FUNCTION), leveraging its occilation between 1 and 0 at prime and composite numbers, and ultimatley executing the rule, $(2)^{0}=(1)$ $&$ $(2)^{1}=(2)$, this can be see in the following
+
+\begin{align*}
+	Q_1(z) = (-1)^{2^{(0)(0)(1)(0)(1)(0)(1)(1)(1)(0)(1)(0)\ldots}}
+\end{align*}
+
+which reduces to
+
+\begin{align*}
+	Q_1(z) = (-1)(+1)(+1)(-1)(+1)(+1)(+1)(+1)(+1)(-1)(+1)(+1)
+\end{align*}
+
+and alternates from $(-1)$ to $(+1)$ each prime number.
 
 \newpage
-\subsection*{XVIV. Euler Product Prime Value Substitution of J(z)*L(z) as a formulation of \zeta(z)}
-
+\subsection*{XVIV. Divisor Wave Holomorphic reprensation of the Euler Product representation of the dirichlet \eta(z)}
+Continuing where we left off, the formulae $J(z)$, and $M(z)$ will be combined to showcase an error approximation between $J_1(z)$ and the dirichlet $\eta(s)$ function. Then in the next example, we will utilize $Q_1(z)$ to create a Holomorphic representation of $\eta(s)$ called $S_1(z)$
 \begin{align*}
-\includegraphics[scale=0.30]{graphs/R1_actual_BIG}
+\includegraphics[scale=0.26]{graphs/R1_actual_BIG}
 \end{align*}
 
-Through substitution of the primes in the euler product by utilizing the prime indicator function L(z), we can create an alternate product for zeta. This product when expanded will be the infinite polynomial of the form Poch-Hammer form $\prod_{k=2}^x[1-P]^{-1}$ Where P is the set of z at prime numbers, and 0 at composite numbers, such that (1-prime) & (1-0) are the only terms in the product. This can be expanded such that:
-
 \begin{align*}
-C(s) = (\frac{1}{1 - 2^{s}})(\frac{1}{1 + 3^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 - 5^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 + 7^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 + 11^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 - 13^{-s}}) \ldots
+R_1(s) = (\frac{1}{1 - 2^{s}})(\frac{1}{1 + 3^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 - 5^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 + 7^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 + 11^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 - 13^{-s}}) \ldots
 \end{align*}
 
 each composite number reduces to $(1/1+0^-s)$ and we know that $0^a = 0$ where any a will suffice, thus we can say each composite number reduces to 1. Now we can show the series expansion as:
 
 \begin{align*}
-C(s) = (\frac{1}{1 - 2^{s}})(\frac{1}{1 + 3^{-s}})(\frac{1}{1 - 5^{-s}})(\frac{1}{1 + 7^{-s}})(\frac{1}{1 + 11^{-s}})(\frac{1}{1 - 13^{-s}})(\frac{1}{1 - 17^{-s}})(\frac{1}{1 + 19^{-s}})(\frac{1}{1 + 23^{-s}}) \ldots
+R_1(s) = (\frac{1}{1 - 2^{s}})(\frac{1}{1 + 3^{-s}})(\frac{1}{1 - 5^{-s}})(\frac{1}{1 + 7^{-s}})(\frac{1}{1 + 11^{-s}})(\frac{1}{1 - 13^{-s}})(\frac{1}{1 - 17^{-s}})(\frac{1}{1 + 19^{-s}})(\frac{1}{1 + 23^{-s}}) \ldots
 \end{align*}
 
-now, C(s) will be subtracted from the Euler Product Representation of the Dirichlet Eta Function, ("Convergence of Dirichlet Series and Euler Products", Peter Zvengrowski), where Peter Zvengrowski defines the Euler Product for the Dirichlet Eta Function as,
+now, $R_1(s)$ will be subtracted from the Euler Product Representation of the Dirichlet Eta Function, ("Convergence of Dirichlet Series and Euler Products", Peter Zvengrowski), where Peter Zvengrowski defines the Euler Product for the Dirichlet Eta Function as,
 
 \begin{align*}
-	\eta(s) = {\prod_{p} \left( \frac{1}{1+(-1)^{s}p^{s} \right)}
+\eta(s) = \prod_{\text{primes}} \left( \frac{1}{1+(-1)^{s}p^{s}} \right)
 \end{align*}
 
 \begin{align*}
@@ -767,7 +787,7 @@ now, C(s) will be subtracted from the Euler Product Representation of the Dirich
 therefore,
 
 \begin{align*}
-\eta(s) - C(s) =((\frac{1}{1 + 11^{-s}})(\frac{1}{1 - 13^{-s}})(\frac{1}{1 - 23^{-s}}) \ldots)((\frac{1}{1 - 11^{-s}})(\frac{1}{1 + 13^{-s}})(\frac{1}{1 + 23^{-s}}) \ldots)
+\eta(s) - R_1(z) =((\frac{1}{1 + 11^{-s}})(\frac{1}{1 - 13^{-s}})(\frac{1}{1 - 23^{-s}}) \ldots)((\frac{1}{1 - 11^{-s}})(\frac{1}{1 + 13^{-s}})(\frac{1}{1 + 23^{-s}}) \ldots)
 \end{align*}
 
 Ultimately, this new formulation of zeta will approximate the original functions roots, however the continuous regions between whole numbers created by the sin products can vary from function to function, this means several forms of zeta can exist with the same poles however the regions between poles will differ. We will now formulate a closer representation of zeta. Through the function $S_1(z)$ we can replace the alternator for $R_1(z)$ with our much more comprehensive alternator $Q_1(z)$ as follows.
@@ -776,8 +796,38 @@ Ultimately, this new formulation of zeta will approximate the original functions
 The Function $S_1(z)$ utilizes the alternator $Q_1(z)$ as well as $J(z)$ which constrain the linear relationship of the prime indicating function, to the alternation rate of $\eta(s)$. $S_1(z)$ ultimately connects the zeros and the non-zeros of the primes to the dirichlet eta function, the function J(z) is defined such that these zeros all lie on the line $y = x$, as a result, the zeros of the zeta functions must all lie on the critical strip. After transformation as an input to an output, these values hold the relationship $y=x$ and upon translation $z = 1/2 + iy$ contains all non-trivial zeros of zeta. From the expansion we can see that the alternation rate of $S_1(z)$ resembles that of \eta(s),
 
 \begin{align*}
-\includegraphics[scale=0.30]{graphs/S1_actual_BIG}
+\includegraphics[scale=0.26]{graphs/S1_actual_BIG}
 \end{align*}
+
+expanding $S_1(z)$ like $R_1(z)$, we see a similar reduction however this time the alternator function $Q_1(z)$ follows the prime and composite numbers, as outlined by the expansion of $Q_1(z)$ in the previous Chapter.
+
+\begin{align*}
+S_1(s) = (\frac{1}{1 - 2^{s}})(\frac{1}{1 + 3^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 - 5^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 + 7^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 - 11^{-s}})(\frac{1}{1 + 0^{-s}})(\frac{1}{1 + 13^{-s}}) \ldots
+\end{align*}
+
+each composite number reduces to $(1/1+0^-s)$ and we know that $0^a = 0$ where any a will suffice, thus we can say each composite number reduces to 1. Now we can show the series expansion as:
+
+\begin{align*}
+S_1(s) = (\frac{1}{1 - 2^{s}})(\frac{1}{1 + 3^{-s}})(\frac{1}{1 - 5^{-s}})(\frac{1}{1 + 7^{-s}})(\frac{1}{1 - 11^{-s}})(\frac{1}{1 + 13^{-s}})(\frac{1}{1 - 17^{-s}})(\frac{1}{1 + 19^{-s}})(\frac{1}{1 - 23^{-s}}) \ldots
+\end{align*}
+
+now, $S_1(s)$ will be subtracted from the Euler Product Representation of the Dirichlet Eta Function, ("Convergence of Dirichlet Series and Euler Products", Peter Zvengrowski), where Peter Zvengrowski defines the Euler Product for the Dirichlet Eta Function as:
+
+\begin{align*}
+\eta(s) = \prod_{\text{primes}} \left( \frac{1}{1+(-1)^{s}p^{s}} \right)
+\end{align*}
+
+\begin{align*}
+\eta(s) = (\frac{1}{1 - 2^{s}})(\frac{1}{1 + 3^{-s}})(\frac{1}{1 - 5^{-s}})(\frac{1}{1 + 7^{-s}})(\frac{1}{1 - 11^{-s}})(\frac{1}{1 + 13^{-s}})(\frac{1}{1 - 17^{-s}})(\frac{1}{1 + 19^{-s}})(\frac{1}{1 - 23^{-s}}) \ldots
+\end{align*}
+
+therefore,
+
+\begin{align*}
+\eta(s) - S_1(s) = 0
+\end{align*}
+
+if $S_1(s)$ is Holomorphic with \eta(s).
 
 \newpage
 \nocite{*}
