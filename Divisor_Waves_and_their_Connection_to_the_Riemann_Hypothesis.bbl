@@ -170,6 +170,37 @@
       \verb https://www.parabola.unsw.edu.au/files/articles/2020-2029/volume-57-2021/issue-2/vol57_no2_3.pdf
       \endverb
     \endentry
+    \entry{DirichletEtaFunctionEulerProductZvengrowski}{article}{}
+      \name{author}{1}{}{%
+        {{hash=55c0a070f4e4b9efd7c4efe19020d41b}{%
+           family={Zvengrowski},
+           familyi={Z\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{55c0a070f4e4b9efd7c4efe19020d41b}
+      \strng{fullhash}{55c0a070f4e4b9efd7c4efe19020d41b}
+      \strng{bibnamehash}{55c0a070f4e4b9efd7c4efe19020d41b}
+      \strng{authorbibnamehash}{55c0a070f4e4b9efd7c4efe19020d41b}
+      \strng{authornamehash}{55c0a070f4e4b9efd7c4efe19020d41b}
+      \strng{authorfullhash}{55c0a070f4e4b9efd7c4efe19020d41b}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{University of North Carolina at Greensboro}
+      \field{title}{(Convergence of Dirichlet Series and Euler Products.}
+      \field{year}{2015}
+      \true{nocite}
+      \field{pages}{8\bibrangedash 9}
+      \range{pages}{2}
+      \verb{urlraw}
+      \verb https://www.claymath.org/wp-content/uploads/2023/04/Wilkins-transcription.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.claymath.org/wp-content/uploads/2023/04/Wilkins-transcription.pdf
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
