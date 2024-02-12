@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.29)  12 FEB 2024 16:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2023.10.29)  12 FEB 2024 16:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -874,7 +874,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--180
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
@@ -885,7 +885,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.197 \begin{flushleft*}
+l.198 \begin{flushleft*}
                         
 ? 
 
@@ -895,208 +895,208 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.199 \end{flushleft*}
+l.200 \end{flushleft*}
                       
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--200
+Underfull \hbox (badness 10000) in paragraph at lines 199--201
 
  []
 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.209 \end{align*}
+l.210 \end{align*}
                   
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
@@ -1107,7 +1107,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.213 \begin{flushleft*}
+l.214 \begin{flushleft*}
                         
 ? 
 
@@ -1117,108 +1117,108 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.215 \end{flushleft*}
+l.216 \end{flushleft*}
                       
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--216
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
 
  []
 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.226 \end{align*}
+l.227 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.226 \end{align*}
+l.227 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.226 \end{align*}
+l.227 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.226 \end{align*}
+l.227 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.226 \end{align*}
+l.227 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.226 \end{align*}
+l.227 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.226 \end{align*}
+l.227 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.226 \end{align*}
+l.227 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.226 \end{align*}
+l.227 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.226 \end{align*}
+l.227 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.226 \end{align*}
+l.227 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.226 \end{align*}
+l.227 \end{align*}
                   
 ? 
 ! Missing delimiter (. inserted).
 <to be read again> 
                    \left 
-l.226 \end{align*}
+l.227 \end{align*}
                   
 ? 
 ! Extra }, or forgotten \right.
 <template> }
             $}\ifmeasuring@ \savefieldlength@ \fi \set@field \endtemplate 
-l.226 \end{align*}
+l.227 \end{align*}
                   
 ? 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.226 \end{align*}
+l.227 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.226 \end{align*}
+l.227 \end{align*}
                   
 ? 
 [8]
@@ -1228,13 +1228,13 @@ File: graphs/2D_Real_Graphs/prime_indicator_og_redone.png Graphic file (type pn
 g)
 <use graphs/2D_Real_Graphs/prime_indicator_og_redone.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/prime_indicator_og_redone.png  u
-sed on input line 236.
+sed on input line 237.
 (pdftex.def)             Requested size: 488.15675pt x 59.96095pt.
 File: graphs/2D_Real_Graphs/prime_indicator_og_redone.png Graphic file (type pn
 g)
 <use graphs/2D_Real_Graphs/prime_indicator_og_redone.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/prime_indicator_og_redone.png  u
-sed on input line 236.
+sed on input line 237.
 (pdftex.def)             Requested size: 488.15675pt x 59.96095pt.
 
 
@@ -1244,22 +1244,22 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.237 \hspace{8mm}\caption
+l.238 \hspace{8mm}\caption
                           {Figure 12: 2D Graph of $b(x)$ showcasing the zero...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--238
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--244
+Underfull \hbox (badness 10000) in paragraph at lines 240--245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--244
+Underfull \hbox (badness 10000) in paragraph at lines 240--245
 
  []
 
@@ -1270,14 +1270,14 @@ malized_goodm_prism_1.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_norm
 alized_goodm_prism_1.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
-tion_of_sin/non_normalized_goodm_prism_1.png  used on input line 246.
+tion_of_sin/non_normalized_goodm_prism_1.png  used on input line 247.
 (pdftex.def)             Requested size: 343.84393pt x 203.59625pt.
 File: graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_nor
 malized_goodm_prism_1.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_norm
 alized_goodm_prism_1.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
-tion_of_sin/non_normalized_goodm_prism_1.png  used on input line 246.
+tion_of_sin/non_normalized_goodm_prism_1.png  used on input line 247.
 (pdftex.def)             Requested size: 343.84393pt x 203.59625pt.
 
 ! LaTeX Error: \caption outside float.
@@ -1286,17 +1286,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.247 \hspace{8mm}\caption
+l.248 \hspace{8mm}\caption
                           {Figure 13: 2D Graph of $b(x+iy)$ showcasing the z...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--248
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
@@ -1307,14 +1307,14 @@ malized_goodm_prism_8.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_norm
 alized_goodm_prism_8.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
-tion_of_sin/non_normalized_goodm_prism_8.png  used on input line 252.
+tion_of_sin/non_normalized_goodm_prism_8.png  used on input line 253.
 (pdftex.def)             Requested size: 393.95915pt x 203.83012pt.
 File: graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_nor
 malized_goodm_prism_8.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_norm
 alized_goodm_prism_8.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
-tion_of_sin/non_normalized_goodm_prism_8.png  used on input line 252.
+tion_of_sin/non_normalized_goodm_prism_8.png  used on input line 253.
 (pdftex.def)             Requested size: 393.95915pt x 203.83012pt.
 [9 <./graphs/2D_Real_Graphs/prime_indicator_og_redone.png> <./graphs/3D_Complex
 _Graphs/product_of_product_representation_of_sin/non_normalized_goodm_prism_1.p
@@ -1326,17 +1326,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.253 \hspace{8mm}\caption
+l.254 \hspace{8mm}\caption
                           {Figure 14: 3D Graph of $b(x+iy)$ showcasing the z...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--254
+Underfull \hbox (badness 10000) in paragraph at lines 253--255
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--256
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
 
@@ -1350,7 +1350,7 @@ le (type png)
 on_of_sin/Complex_product_17_n_2-28__imaginary_scalar_logarithm.png>
 Package pdftex.def Info: graphs/2D_Complex_Graphs/Infinite_Product_of_infinite_
 product_representation_of_sin/Complex_product_17_n_2-28__imaginary_scalar_logar
-ithm.png  used on input line 259.
+ithm.png  used on input line 260.
 (pdftex.def)             Requested size: 379.20413pt x 201.72226pt.
 File: graphs/2D_Complex_Graphs/Infinite_Product_of_infinite_product_representat
 ion_of_sin/Complex_product_17_n_2-28__imaginary_scalar_logarithm.png Graphic fi
@@ -1359,7 +1359,7 @@ le (type png)
 on_of_sin/Complex_product_17_n_2-28__imaginary_scalar_logarithm.png>
 Package pdftex.def Info: graphs/2D_Complex_Graphs/Infinite_Product_of_infinite_
 product_representation_of_sin/Complex_product_17_n_2-28__imaginary_scalar_logar
-ithm.png  used on input line 259.
+ithm.png  used on input line 260.
 (pdftex.def)             Requested size: 379.20413pt x 201.72226pt.
 
 ! LaTeX Error: \caption outside float.
@@ -1368,17 +1368,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.260 \hspace{8mm}\caption
+l.261 \hspace{8mm}\caption
                           {Figure 15: 2D Fractal Colorization complex plot o...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--261
+Underfull \hbox (badness 10000) in paragraph at lines 260--262
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
@@ -1391,12 +1391,12 @@ pt>
 File: graphs/2D_Real_Graphs/prime_indicator_norm.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/prime_indicator_norm.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/prime_indicator_norm.png  used o
-n input line 274.
+n input line 275.
 (pdftex.def)             Requested size: 472.43457pt x 67.18951pt.
 File: graphs/2D_Real_Graphs/prime_indicator_norm.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/prime_indicator_norm.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/prime_indicator_norm.png  used o
-n input line 274.
+n input line 275.
 (pdftex.def)             Requested size: 472.43457pt x 67.18951pt.
 
 
@@ -1406,22 +1406,22 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.275 \hspace{8mm}\caption
+l.276 \hspace{8mm}\caption
                           {Figure 16: 2D Graph of $B(x)$ showcasing the zero...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--276
+Underfull \hbox (badness 10000) in paragraph at lines 275--277
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
  []
 
@@ -1434,7 +1434,7 @@ xPlot_prodprodforsin_4_Prism_Colorization_New.png Graphic file (type png)
 Plot_prodprodforsin_4_Prism_Colorization_New.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
 tion_of_sin//ComplexPlot_prodprodforsin_4_Prism_Colorization_New.png  used on i
-nput line 283.
+nput line 284.
 (pdftex.def)             Requested size: 389.32187pt x 202.56541pt.
 File: graphs/3D_Complex_Graphs/product_of_product_representation_of_sin//Comple
 xPlot_prodprodforsin_4_Prism_Colorization_New.png Graphic file (type png)
@@ -1442,7 +1442,7 @@ xPlot_prodprodforsin_4_Prism_Colorization_New.png Graphic file (type png)
 Plot_prodprodforsin_4_Prism_Colorization_New.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
 tion_of_sin//ComplexPlot_prodprodforsin_4_Prism_Colorization_New.png  used on i
-nput line 283.
+nput line 284.
 (pdftex.def)             Requested size: 389.32187pt x 202.56541pt.
 
 ! LaTeX Error: \caption outside float.
@@ -1451,12 +1451,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.284 \hspace{8mm}\caption
+l.285 \hspace{8mm}\caption
                           {Figure 17: 2D Graph of $B(x+iy)$ showcasing the z...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--285
+Underfull \hbox (badness 10000) in paragraph at lines 284--286
 
  []
 
@@ -1467,14 +1467,14 @@ Plot_prodprodforsin_8.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/ComplexP
 lot_prodprodforsin_8.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
-tion_of_sin/ComplexPlot_prodprodforsin_8.png  used on input line 290.
+tion_of_sin/ComplexPlot_prodprodforsin_8.png  used on input line 291.
 (pdftex.def)             Requested size: 356.03938pt x 263.89597pt.
 File: graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/Complex
 Plot_prodprodforsin_8.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/ComplexP
 lot_prodprodforsin_8.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
-tion_of_sin/ComplexPlot_prodprodforsin_8.png  used on input line 290.
+tion_of_sin/ComplexPlot_prodprodforsin_8.png  used on input line 291.
 (pdftex.def)             Requested size: 356.03938pt x 263.89597pt.
 [11 <./graphs/2D_Real_Graphs/prime_indicator_norm.png> <./graphs/3D_Complex_Gra
 phs/product_of_product_representation_of_sin//ComplexPlot_prodprodforsin_4_Pris
@@ -1486,12 +1486,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.291 \hspace{8mm}\caption
+l.292 \hspace{8mm}\caption
                           {Figure 18: 3D Graph of $B(x+iy)$ showcasing the z...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--292
+Underfull \hbox (badness 10000) in paragraph at lines 291--293
 
  []
 
@@ -1502,7 +1502,7 @@ Plot_norm_prodprodforsin_prism_3.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/ComplexP
 lot_norm_prodprodforsin_prism_3.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
-tion_of_sin/ComplexPlot_norm_prodprodforsin_prism_3.png  used on input line 295
+tion_of_sin/ComplexPlot_norm_prodprodforsin_prism_3.png  used on input line 296
 .
 (pdftex.def)             Requested size: 420.40425pt x 290.99698pt.
 File: graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/Complex
@@ -1510,7 +1510,7 @@ Plot_norm_prodprodforsin_prism_3.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/ComplexP
 lot_norm_prodprodforsin_prism_3.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/product_of_product_representa
-tion_of_sin/ComplexPlot_norm_prodprodforsin_prism_3.png  used on input line 295
+tion_of_sin/ComplexPlot_norm_prodprodforsin_prism_3.png  used on input line 296
 .
 (pdftex.def)             Requested size: 420.40425pt x 290.99698pt.
 
@@ -1520,12 +1520,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.296 \hspace{8mm}\caption
+l.297 \hspace{8mm}\caption
                           {Figure 19: 3D Graph of $B(x+iy)$ showcasing the z...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--297
+Underfull \hbox (badness 10000) in paragraph at lines 296--298
 
  []
 
@@ -1536,12 +1536,12 @@ esentation_of_sin/ComplexPlot_norm_prodprodforsin_prism_3.png>]
 File: graphs/2D_Real_Graphs/1+sin_prod.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/1+sin_prod.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/1+sin_prod.png  used on input li
-ne 308.
+ne 309.
 (pdftex.def)             Requested size: 429.33229pt x 72.94809pt.
 File: graphs/2D_Real_Graphs/1+sin_prod.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/1+sin_prod.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/1+sin_prod.png  used on input li
-ne 308.
+ne 309.
 (pdftex.def)             Requested size: 429.33229pt x 72.94809pt.
 <graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_1_12_n5.png, id=76, 691.08188p
 t x 432.11438pt>
@@ -1549,13 +1549,13 @@ File: graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_1_12_n5.png Graphic file
 (type png)
 <use graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_1_12_n5.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_1_12_n
-5.png  used on input line 316.
+5.png  used on input line 317.
 (pdftex.def)             Requested size: 310.98396pt x 194.44966pt.
 File: graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_1_12_n5.png Graphic file 
 (type png)
 <use graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_1_12_n5.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_1_12_n
-5.png  used on input line 316.
+5.png  used on input line 317.
 (pdftex.def)             Requested size: 310.98396pt x 194.44966pt.
 <graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_7_12_n7.png, id=77, 681.29532p
 t x 437.38406pt>
@@ -1563,10 +1563,10 @@ File: graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_7_12_n7.png Graphic file
 (type png)
 <use graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_7_12_n7.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_7_12_n
-7.png  used on input line 323.
+7.png  used on input line 324.
 (pdftex.def)             Requested size: 238.45692pt x 153.0867pt.
 
-Overfull \hbox (13.24066pt too wide) in paragraph at lines 323--324
+Overfull \hbox (13.24066pt too wide) in paragraph at lines 324--325
 [][] 
  []
 
@@ -1576,15 +1576,15 @@ File: graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_7_12_n6.png Graphic file
 (type png)
 <use graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_7_12_n6.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_7_12_n
-6.png  used on input line 328.
+6.png  used on input line 329.
 (pdftex.def)             Requested size: 240.56483pt x 149.92485pt.
 
-Overfull \hbox (15.34857pt too wide) in paragraph at lines 328--329
+Overfull \hbox (15.34857pt too wide) in paragraph at lines 329--330
 [][] 
  []
 
 ! Misplaced alignment tab character &.
-l.333 From plot $22 &
+l.334 From plot $22 &
                       23$ an interesting boundary is given for $7 < x < 12$,...
 
 ? 
@@ -1594,19 +1594,19 @@ File: graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_2_12_n11.png Graphic file
  (type png)
 <use graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_2_12_n11.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_2_12_n
-11.png  used on input line 337.
+11.png  used on input line 338.
 (pdftex.def)             Requested size: 361.35278pt x 203.26094pt.
 File: graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_2_12_n11.png Graphic file
  (type png)
 <use graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_2_12_n11.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_2_12_n
-11.png  used on input line 337.
+11.png  used on input line 338.
 (pdftex.def)             Requested size: 361.35278pt x 203.26094pt.
 [13 <./graphs/2D_Real_Graphs/1+sin_prod.png> <./graphs/3D_Complex_Graphs/riesz_
 sin/HD_Riesz_sin_1_12_n5.png>] [14 <./graphs/3D_Complex_Graphs/riesz_sin/HD_Rie
 sz_sin_7_12_n7.png> <./graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_7_12_n6.
 png> <./graphs/3D_Complex_Graphs/riesz_sin/HD_Riesz_sin_2_12_n11.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
 
  []
 
@@ -1614,12 +1614,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 351--352
 File: graphs/2D_Real_Graphs/1+cos_prod.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/1+cos_prod.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/1+cos_prod.png  used on input li
-ne 355.
+ne 356.
 (pdftex.def)             Requested size: 426.17044pt x 65.26933pt.
 File: graphs/2D_Real_Graphs/1+cos_prod.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/1+cos_prod.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/1+cos_prod.png  used on input li
-ne 355.
+ne 356.
 (pdftex.def)             Requested size: 426.17044pt x 65.26933pt.
 <graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n5.png, id=92, 698.61pt x
  432.86719pt>
@@ -1627,13 +1627,13 @@ File: graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n5.png Graphic file
 (type png)
 <use graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n5.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n
-5.png  used on input line 362.
+5.png  used on input line 363.
 (pdftex.def)             Requested size: 314.3716pt x 194.78842pt.
 File: graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n5.png Graphic file 
 (type png)
 <use graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n5.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n
-5.png  used on input line 362.
+5.png  used on input line 363.
 (pdftex.def)             Requested size: 314.3716pt x 194.78842pt.
 <graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n8.png, id=93, 1204.5pt x
  677.53125pt>
@@ -1641,13 +1641,13 @@ File: graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n8.png Graphic file
 (type png)
 <use graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n8.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n
-8.png  used on input line 369.
+8.png  used on input line 370.
 (pdftex.def)             Requested size: 361.35278pt x 203.26094pt.
 File: graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n8.png Graphic file 
 (type png)
 <use graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n8.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n
-8.png  used on input line 369.
+8.png  used on input line 370.
 (pdftex.def)             Requested size: 361.35278pt x 203.26094pt.
 [15 <./graphs/2D_Real_Graphs/1+cos_prod.png> <./graphs/3D_Complex_Graphs/riesz_
 cos/HD_Riesz_cos_2_12_n5.png>]
@@ -1657,13 +1657,13 @@ File: graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n3.png Graphic file
 (type png)
 <use graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n3.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n
-3.png  used on input line 374.
+3.png  used on input line 375.
 (pdftex.def)             Requested size: 312.67776pt x 199.5311pt.
 File: graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n3.png Graphic file 
 (type png)
 <use graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n3.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n
-3.png  used on input line 374.
+3.png  used on input line 375.
 (pdftex.def)             Requested size: 312.67776pt x 199.5311pt.
  [16 <./graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n8.png> <./graphs/
 3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n3.png>]
@@ -1671,15 +1671,15 @@ Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_cos/HD_Riesz_cos_2_12_n
 File: graphs/2D_Real_Graphs/prod_1+tan.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/prod_1+tan.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/prod_1+tan.png  used on input li
-ne 389.
+ne 390.
 (pdftex.def)             Requested size: 427.52551pt x 79.72345pt.
 File: graphs/2D_Real_Graphs/prod_1+tan.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/prod_1+tan.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/prod_1+tan.png  used on input li
-ne 389.
+ne 390.
 (pdftex.def)             Requested size: 427.52551pt x 79.72345pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--393
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
 
  []
 
@@ -1689,13 +1689,13 @@ File: graphs/3D_Complex_Graphs/riesz_tan/HD_Riesz_tan_2_12_n5.png Graphic file
 (type png)
 <use graphs/3D_Complex_Graphs/riesz_tan/HD_Riesz_tan_2_12_n5.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_tan/HD_Riesz_tan_2_12_n
-5.png  used on input line 396.
+5.png  used on input line 397.
 (pdftex.def)             Requested size: 396.24408pt x 238.49173pt.
 File: graphs/3D_Complex_Graphs/riesz_tan/HD_Riesz_tan_2_12_n5.png Graphic file 
 (type png)
 <use graphs/3D_Complex_Graphs/riesz_tan/HD_Riesz_tan_2_12_n5.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_tan/HD_Riesz_tan_2_12_n
-5.png  used on input line 396.
+5.png  used on input line 397.
 (pdftex.def)             Requested size: 396.24408pt x 238.49173pt.
 [17 <./graphs/2D_Real_Graphs/prod_1+tan.png> <./graphs/3D_Complex_Graphs/riesz_
 tan/HD_Riesz_tan_2_12_n5.png>]
@@ -1705,13 +1705,13 @@ File: graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_2.png Graphic file (type
  png)
 <use graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_2.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_2.png
-  used on input line 405.
+  used on input line 406.
 (pdftex.def)             Requested size: 317.02527pt x 165.0055pt.
 File: graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_2.png Graphic file (type
  png)
 <use graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_2.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_2.png
-  used on input line 405.
+  used on input line 406.
 (pdftex.def)             Requested size: 317.02527pt x 165.0055pt.
 <graphs/3D_Complex_Graphs/riesz_tan/HD_Riesz_tan_2_12_n6.png, id=111, 678.28406
 pt x 441.14813pt>
@@ -1719,13 +1719,13 @@ File: graphs/3D_Complex_Graphs/riesz_tan/HD_Riesz_tan_2_12_n6.png Graphic file
 (type png)
 <use graphs/3D_Complex_Graphs/riesz_tan/HD_Riesz_tan_2_12_n6.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_tan/HD_Riesz_tan_2_12_n
-6.png  used on input line 410.
+6.png  used on input line 411.
 (pdftex.def)             Requested size: 298.4459pt x 194.10577pt.
 File: graphs/3D_Complex_Graphs/riesz_tan/HD_Riesz_tan_2_12_n6.png Graphic file 
 (type png)
 <use graphs/3D_Complex_Graphs/riesz_tan/HD_Riesz_tan_2_12_n6.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/riesz_tan/HD_Riesz_tan_2_12_n
-6.png  used on input line 410.
+6.png  used on input line 411.
 (pdftex.def)             Requested size: 298.4459pt x 194.10577pt.
  [18 <./graphs/3D_Complex_Graphs/riesz_tan/Ries_tan_norm_2.png> <./graphs/3D_Co
 mplex_Graphs/riesz_tan/HD_Riesz_tan_2_12_n6.png>]
@@ -1734,15 +1734,15 @@ mplex_Graphs/riesz_tan/HD_Riesz_tan_2_12_n6.png>]
 File: graphs/2D_Real_Graphs/1+tan_prod_xprimefunc.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/1+tan_prod_xprimefunc.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/1+tan_prod_xprimefunc.png  used 
-on input line 423.
+on input line 424.
 (pdftex.def)             Requested size: 428.8806pt x 63.91426pt.
 File: graphs/2D_Real_Graphs/1+tan_prod_xprimefunc.png Graphic file (type png)
 <use graphs/2D_Real_Graphs/1+tan_prod_xprimefunc.png>
 Package pdftex.def Info: graphs/2D_Real_Graphs/1+tan_prod_xprimefunc.png  used 
-on input line 423.
+on input line 424.
 (pdftex.def)             Requested size: 428.8806pt x 63.91426pt.
 ! Misplaced alignment tab character &.
-l.424 ...he to showcase the combination of $E(z) &
+l.425 ...he to showcase the combination of $E(z) &
                                                    B(z)$
 ? 
 <graphs/3D_Complex_Graphs/Riesztan_PrimeFunc/HD_2_12_riesz_tanreversedivisionpr
@@ -1752,14 +1752,14 @@ ionprimeindc_4.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/Riesztan_PrimeFunc/HD_2_12_riesz_tanreversedivisi
 onprimeindc_4.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/Riesztan_PrimeFunc/HD_2_12_ri
-esz_tanreversedivisionprimeindc_4.png  used on input line 430.
+esz_tanreversedivisionprimeindc_4.png  used on input line 431.
 (pdftex.def)             Requested size: 384.65073pt x 244.2884pt.
 File: graphs/3D_Complex_Graphs/Riesztan_PrimeFunc/HD_2_12_riesz_tanreversedivis
 ionprimeindc_4.png Graphic file (type png)
 <use graphs/3D_Complex_Graphs/Riesztan_PrimeFunc/HD_2_12_riesz_tanreversedivisi
 onprimeindc_4.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/Riesztan_PrimeFunc/HD_2_12_ri
-esz_tanreversedivisionprimeindc_4.png  used on input line 430.
+esz_tanreversedivisionprimeindc_4.png  used on input line 431.
 (pdftex.def)             Requested size: 384.65073pt x 244.2884pt.
 [19 <./graphs/2D_Real_Graphs/1+tan_prod_xprimefunc.png> <./graphs/3D_Complex_Gr
 aphs/Riesztan_PrimeFunc/HD_2_12_riesz_tanreversedivisionprimeindc_4.png>]
@@ -1769,7 +1769,7 @@ File: graphs/3D_Complex_Graphs/NestedRoots/Roots_sum.png Graphic file (type png
 )
 <use graphs/3D_Complex_Graphs/NestedRoots/Roots_sum.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/NestedRoots/Roots_sum.png  us
-ed on input line 470.
+ed on input line 471.
 (pdftex.def)             Requested size: 215.00491pt x 145.89618pt.
 <graphs/3D_Complex_Graphs/NestedRoots/Roots_prod.png, id=124, 711.4078pt x 473.
 51906pt>
@@ -1777,7 +1777,7 @@ File: graphs/3D_Complex_Graphs/NestedRoots/Roots_prod.png Graphic file (type pn
 g)
 <use graphs/3D_Complex_Graphs/NestedRoots/Roots_prod.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/NestedRoots/Roots_prod.png  u
-sed on input line 475.
+sed on input line 476.
 (pdftex.def)             Requested size: 213.42398pt x 142.05681pt.
 
 [20 <./graphs/3D_Complex_Graphs/NestedRoots/Roots_sum.png> <./graphs/3D_Complex
@@ -1788,7 +1788,7 @@ File: graphs/3D_Complex_Graphs/Viete_cos/Viete_cos_norm_1.png Graphic file (typ
 e png)
 <use graphs/3D_Complex_Graphs/Viete_cos/Viete_cos_norm_1.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/Viete_cos/Viete_cos_norm_1.pn
-g  used on input line 534.
+g  used on input line 535.
 (pdftex.def)             Requested size: 203.0351pt x 139.79836pt.
 <graphs/3D_Complex_Graphs/Viete_cos/Viete_cos_norm_3.png, id=137, 762.59906pt x
  441.90094pt>
@@ -1796,10 +1796,10 @@ File: graphs/3D_Complex_Graphs/Viete_cos/Viete_cos_norm_3.png Graphic file (typ
 e png)
 <use graphs/3D_Complex_Graphs/Viete_cos/Viete_cos_norm_3.png>
 Package pdftex.def Info: graphs/3D_Complex_Graphs/Viete_cos/Viete_cos_norm_3.pn
-g  used on input line 539.
+g  used on input line 540.
 (pdftex.def)             Requested size: 228.78148pt x 132.5713pt.
 
-Overfull \hbox (3.56522pt too wide) in paragraph at lines 539--540
+Overfull \hbox (3.56522pt too wide) in paragraph at lines 540--541
 [][] 
  []
 
@@ -1808,49 +1808,49 @@ mplex_Graphs/Viete_cos/Viete_cos_norm_3.png>]
 ! Double superscript.
 <argument> ...1}{\Gamma \left (z\right )} &= ze^z^
                                                   \gamma \prod _{n=2}^z\left...
-l.570 \end{align*}
+l.571 \end{align*}
                   
 ? 
 ! Missing { inserted.
 <to be read again> 
                    \left 
-l.570 \end{align*}
+l.571 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.570 \end{align*}
+l.571 \end{align*}
                   
 ? 
 ! Double superscript.
 <argument> ...1}{\Gamma \left (z\right )} &= ze^z^
                                                   \gamma \prod _{n=2}^z\left...
-l.570 \end{align*}
+l.571 \end{align*}
                   
 ? 
 ! Missing { inserted.
 <to be read again> 
                    \left 
-l.570 \end{align*}
+l.571 \end{align*}
                   
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.570 \end{align*}
+l.571 \end{align*}
                   
 ? 
 ! Double superscript.
 <argument> ... \frac {\pi }{z} \left (\left [ze^z^
                                                   \gamma \prod _{n=2}^z \lef...
-l.582 \end{align*}
+l.583 \end{align*}
                   
 ? 
 ! Double superscript.
 <argument> ... \frac {\pi }{z} \left (\left [ze^z^
                                                   \gamma \prod _{n=2}^z \lef...
-l.582 \end{align*}
+l.583 \end{align*}
                   
 ? 
 [23]
@@ -1860,13 +1860,13 @@ File: graphs/2D_Real_New/Prime_Indicator_H_normalized_labeled.png Graphic file
 (type png)
 <use graphs/2D_Real_New/Prime_Indicator_H_normalized_labeled.png>
 Package pdftex.def Info: graphs/2D_Real_New/Prime_Indicator_H_normalized_labele
-d.png  used on input line 594.
+d.png  used on input line 595.
 (pdftex.def)             Requested size: 411.26465pt x 94.17755pt.
 File: graphs/2D_Real_New/Prime_Indicator_H_normalized_labeled.png Graphic file 
 (type png)
 <use graphs/2D_Real_New/Prime_Indicator_H_normalized_labeled.png>
 Package pdftex.def Info: graphs/2D_Real_New/Prime_Indicator_H_normalized_labele
-d.png  used on input line 594.
+d.png  used on input line 595.
 (pdftex.def)             Requested size: 411.26465pt x 94.17755pt.
 
 
@@ -1876,12 +1876,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.595 \hspace{8mm}\caption
+l.596 \hspace{8mm}\caption
                           {Figure 39: 2D Graph of $J(x)$ and $H(x)$ showcasi...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 594--596
+Underfull \hbox (badness 10000) in paragraph at lines 595--597
 
  []
 
@@ -1892,13 +1892,13 @@ File: graphs/2D_Real_New/Prime_Indicator_J_normalized.png Graphic file (type pn
 g)
 <use graphs/2D_Real_New/Prime_Indicator_J_normalized.png>
 Package pdftex.def Info: graphs/2D_Real_New/Prime_Indicator_J_normalized.png  u
-sed on input line 635.
+sed on input line 636.
 (pdftex.def)             Requested size: 386.87332pt x 113.82613pt.
 File: graphs/2D_Real_New/Prime_Indicator_J_normalized.png Graphic file (type pn
 g)
 <use graphs/2D_Real_New/Prime_Indicator_J_normalized.png>
 Package pdftex.def Info: graphs/2D_Real_New/Prime_Indicator_J_normalized.png  u
-sed on input line 635.
+sed on input line 636.
 (pdftex.def)             Requested size: 386.87332pt x 113.82613pt.
 
 
@@ -1908,26 +1908,26 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.636 \hspace{8mm}\caption
+l.637 \hspace{8mm}\caption
                           {Figure 40: 2D Graph of $J_1(x)$ showcasing the no...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 635--637
+Underfull \hbox (badness 10000) in paragraph at lines 636--638
 
  []
 
 ! Missing { inserted.
 <to be read again> 
                    \left 
-l.639 ...of a(z), we have all $0^0=1$ and $0^\left
+l.640 ...of a(z), we have all $0^0=1$ and $0^\left
                                                   (nonzero\right)$ $=0$, thi...
 
 ? 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.639 ... all $0^0=1$ and $0^\left(nonzero\right)$
+l.640 ... all $0^0=1$ and $0^\left(nonzero\right)$
                                                    $=0$, this forced all pri...
 
 ? 
@@ -1937,13 +1937,13 @@ File: graphs/2D_Real_New/Composite_Indicator_H_normalized.png Graphic file (typ
 e png)
 <use graphs/2D_Real_New/Composite_Indicator_H_normalized.png>
 Package pdftex.def Info: graphs/2D_Real_New/Composite_Indicator_H_normalized.pn
-g  used on input line 647.
+g  used on input line 648.
 (pdftex.def)             Requested size: 405.6185pt x 160.12445pt.
 File: graphs/2D_Real_New/Composite_Indicator_H_normalized.png Graphic file (typ
 e png)
 <use graphs/2D_Real_New/Composite_Indicator_H_normalized.png>
 Package pdftex.def Info: graphs/2D_Real_New/Composite_Indicator_H_normalized.pn
-g  used on input line 647.
+g  used on input line 648.
 (pdftex.def)             Requested size: 405.6185pt x 160.12445pt.
 
 ! LaTeX Error: \caption outside float.
@@ -1952,12 +1952,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.648 \hspace{8mm}\caption
+l.649 \hspace{8mm}\caption
                           {Figure 41: 2D Graph of $J_2(x)$ showcasing the no...
 
 ? 
 
-Underfull \hbox (badness 10000) in paragraph at lines 647--649
+Underfull \hbox (badness 10000) in paragraph at lines 648--650
 
  []
 
@@ -1966,25 +1966,25 @@ ew/Composite_Indicator_H_normalized.png>]
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.652 ...tion for L(z), M(z), N(z), O(z), P(z), $&
+l.653 ...tion for L(z), M(z), N(z), O(z), P(z), $&
                                                   $ Q(z) resemble the leadin...
 
 ? 
 [26] [27]
 ! Misplaced alignment tab character &.
-l.746 ...come commands the rule the $(2)^{0}=(1) &
+l.747 ...come commands the rule the $(2)^{0}=(1) &
                                                    (2)^{1}=(2)$ such that it...
 
 ? 
 ! Misplaced alignment tab character &.
 <recently read> &
                  
-l.746 ...o command the rule that $(-1)^{2}=(1)$ $&
+l.747 ...o command the rule that $(-1)^{2}=(1)$ $&
                                                   $ $(-1)^{1}=(-1)$, combini...
 
 ? 
 ! Misplaced alignment tab character &.
-l.757 ...mately executing the rule, $(2)^{0}=(1) &
+l.758 ...mately executing the rule, $(2)^{0}=(1) &
                                                    (2)^{1}=(2)$, this can be...
 
 ? 
@@ -1992,26 +1992,26 @@ l.757 ...mately executing the rule, $(2)^{0}=(1) &
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.772 ... representation of the dirichlet \eta(z)}
+l.773 ... representation of the dirichlet \eta(z)}
                                                   
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.772 ... representation of the dirichlet \eta(z)}
+l.773 ... representation of the dirichlet \eta(z)}
                                                   
 ? 
 <graphs/R1_actual_BIG.png, id=166, 1808.25563pt x 514.17094pt>
 File: graphs/R1_actual_BIG.png Graphic file (type png)
 <use graphs/R1_actual_BIG.png>
-Package pdftex.def Info: graphs/R1_actual_BIG.png  used on input line 776.
+Package pdftex.def Info: graphs/R1_actual_BIG.png  used on input line 777.
 (pdftex.def)             Requested size: 470.13538pt x 133.68129pt.
 File: graphs/R1_actual_BIG.png Graphic file (type png)
 <use graphs/R1_actual_BIG.png>
-Package pdftex.def Info: graphs/R1_actual_BIG.png  used on input line 776.
+Package pdftex.def Info: graphs/R1_actual_BIG.png  used on input line 777.
 (pdftex.def)             Requested size: 470.13538pt x 133.68129pt.
 
-Overfull \hbox (69.56842pt too wide) detected at line 780
+Overfull \hbox (69.56842pt too wide) detected at line 781
 []
  []
 
@@ -2019,43 +2019,43 @@ Overfull \hbox (69.56842pt too wide) detected at line 780
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.807 ...n rate of $S_1(z)$ resembles that of \eta
+l.808 ...n rate of $S_1(z)$ resembles that of \eta
                                                   (s),
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.808 
+l.809 
       
 ? 
 <graphs/S1_actual_BIG.png, id=171, 1877.51437pt x 517.18219pt>
 File: graphs/S1_actual_BIG.png Graphic file (type png)
 <use graphs/S1_actual_BIG.png>
-Package pdftex.def Info: graphs/S1_actual_BIG.png  used on input line 811.
+Package pdftex.def Info: graphs/S1_actual_BIG.png  used on input line 812.
 (pdftex.def)             Requested size: 488.14223pt x 134.46419pt.
 File: graphs/S1_actual_BIG.png Graphic file (type png)
 <use graphs/S1_actual_BIG.png>
-Package pdftex.def Info: graphs/S1_actual_BIG.png  used on input line 811.
+Package pdftex.def Info: graphs/S1_actual_BIG.png  used on input line 812.
 (pdftex.def)             Requested size: 488.14223pt x 134.46419pt.
 
-Overfull \hbox (68.10747pt too wide) detected at line 817
+Overfull \hbox (68.10747pt too wide) detected at line 818
 []
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.841 if $S_1(s)$ is Holomorphic with \eta
+l.842 if $S_1(s)$ is Holomorphic with \eta
                                           (s).
 ? 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.842 
+l.843 
       
 ? 
 [30 <./graphs/S1_actual_BIG.png>]
-Overfull \hbox (92.06665pt too wide) in paragraph at lines 846--846
+Overfull \hbox (92.06665pt too wide) in paragraph at lines 847--847
 \OT1/cmtt/m/n/10 courses / 18 -[] 104 -[] seminar -[] in -[] analysis -[] appli
 cations -[] to -[] number -[] theory -[] fall -[] 2006 / 58778de0faae6448c3b0bf
 b1a1ec4f7a _
@@ -2102,7 +2102,7 @@ type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/ADA/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ADA/AppData/Local/Programs/
 MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 Output written on Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.
-pdf (31 pages, 14866116 bytes).
+pdf (31 pages, 14866303 bytes).
 PDF statistics:
  261 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

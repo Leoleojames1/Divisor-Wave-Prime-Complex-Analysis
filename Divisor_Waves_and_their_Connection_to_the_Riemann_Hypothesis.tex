@@ -185,10 +185,11 @@ b(x) &= \prod_{k=2}^{x} \left|\frac{\pi x}{k} \prod_{n=2}^{x} \left( 1 - \frac{x
 &= \prod_{k=2}^{x} \left|\frac{\pi x}{k} \left[ \left( 1 - \frac{x^2}{(2^2)(k^2)}\right) \left( 1 - \frac{x^2}{(3^2)(k^2)}\right) \left( 1 - \frac{x^2}{(4^2)(k^2)}\right) \cdots \right]\right| \\
 \end{align*}
 \begin{align*}
-&= \frac{\pi*x}{n}\left[ \left( 1 - \frac{x^2}{(2^2)(2^2)}\right) \left( 1 - \frac{x^2}{(2^2)(3^2)}\right) \left( 1 - \frac{x^2}{(2^2)(4^2)}\right) \cdots \right] \\
-&\qquad \times \left[ \left( 1 - \frac{x^2}{(3^2)(2^2)}\right) \left( 1 - \frac{x^2}{(3^2)(3^2)}\right) \left( 1 - \frac{x^2}{(3^2)(4^2)}\right) \cdots \right] \\
-&\qquad \times \left[ \left( 1 - \frac{x^2}{(4^2)(2^2)}\right) \left( 1 - \frac{x^2}{(4^2)(3^2)}\right) \left( 1 - \frac{x^2}{(4^2)(4^2)}\right) \cdots \right] \\
+&= \frac{\pi*x}{n}\left[ \left( 1 - \frac{x^2}{(2^2)(2^2)}\right) \left( 1 - \frac{x^2}{(2^2)(3^2)}\right) \left( 1 - \frac{x^2}{(2^2)(4^2)}\right) \cdots \left( 1 - \frac{x^2}{(2^2)(x^2)}\right)\right] \\
+&\qquad \times \left[ \left( 1 - \frac{x^2}{(3^2)(2^2)}\right) \left( 1 - \frac{x^2}{(3^2)(3^2)}\right) \left( 1 - \frac{x^2}{(3^2)(4^2)}\right) \cdots \left( 1 - \frac{x^2}{(3^2)(x^2)}\right)\right] \\
+&\qquad \times \left[ \left( 1 - \frac{x^2}{(4^2)(2^2)}\right) \left( 1 - \frac{x^2}{(4^2)(3^2)}\right) \left( 1 - \frac{x^2}{(4^2)(4^2)}\right) \cdots \left( 1 - \frac{x^2}{(4^2)(x^2)}\right)\right] \\
 &\qquad \times \cdots \\
+&\qquad \times \left[ \left( 1 - \frac{x^2}{(x^2)(2^2)}\right) \left( 1 - \frac{x^2}{(x^2)(3^2)}\right) \left( 1 - \frac{x^2}{(x^2)(4^2)}\right) \cdots \left( 1 - \frac{x^2}{(x^2)(x^2)}\right)\right] \\
 \end{align*}
 
 \newpage
