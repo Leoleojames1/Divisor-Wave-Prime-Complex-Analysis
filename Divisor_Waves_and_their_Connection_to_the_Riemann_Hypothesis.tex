@@ -161,7 +161,6 @@ As you can see from the complex plots, A(z) is a function with zeros at all real
 \end{align*}
 \hspace{8mm}\caption{Figure 11: 2D Graph of $A(x+iy)$ showcasing the normalized zeros of the real numbers in the complex plane} \\
 
-
 \newpage
 \subsection*{IV. Derivation of a(z) and b(z) from the Weierstrass product formula for sin}
 Derivation of a(z) and b(z) by substituting the infinite product representation of $sin(\pi*z/n)$ into the infinite product of $\sin(\pi*z/n)$: \\
@@ -176,7 +175,13 @@ Taking the product of both sides provides function a(z) as well as the functiona
 	\prod_{k=2}^x\sin\left(\frac{\pi z}{k}\right) = \prod_{k=2}^x \pi z\prod_{n=2}^x \left(1-\frac{z^2}{n^2k^2}\right) \\
 \end{align*}
 
-This proof shows the relationship between a(z) and b(z), and allows us to appreciate some of the beautiful relationships between these functions. The function b(z) is an equivalent form of a(z) however it has extra parameters that we can use to our advantage. \\
+and for use later we will optimize the upper index values for n and k to reduce the number of product expansions in the calculation as:
+
+\begin{align*}
+	b(z) = \prod_{k=2}^{\sqrt{x}} \pi z\prod_{n=2}^{\frac{x}{2}} \left(1-\frac{z^2}{n^2k^2}\right) \\
+\end{align*}
+
+where k now goes to $\sqrt{x}$ and n goes to $\frac{x}{2}$. This is the minimum value which still allows the sieve to catch all factors of z in b(z). This proof shows the relationship between a(z) and b(z), and allows us to appreciate some of the beautiful relationships between these functions. The function b(z) is an equivalent form of a(z) however it has extra parameters that we can use to our advantage. \\
 
 Now, we can expand the product out to infinity, using the expression we derived earlier:
 
@@ -557,7 +562,7 @@ then by taking the product of both sides forming the relationship:
 \begin{align*}
 \prod_{n=2}^z\left[sin(\frac{\pi * z}{n})\right] &= \prod_{n=2}^z\left[\frac{\pi}{\Gamma\left(\frac{z}{n}\right) * \Gamma\left(1 - \frac{z}{n}\right)}\right] \\
 \end{align*}
-now taking a look at the original euler infinite product representation of sin,
+now taking a look at the original Weierstrass infinite product representation of sin,
 \begin{align*}
 sin(\pi z) &= z\pi * \prod_{k=2}^z\left[1 - \frac{z^2}{k^2}\right] \\
 \end{align*}
@@ -771,9 +776,10 @@ and alternates from $(-1)$ to $(+1)$ each prime number.
 
 \newpage
 \subsection*{XVIV. Divisor Wave Holomorphic representation of the Euler Product representation of the dirichlet \eta(z)}
-Continuing where we left off, the formulae $J(z)$, and $M(z)$ will be combined to showcase an error approximation between $J_1(z)$ and the dirichlet $\eta(s)$ function. Then in the next example, we will utilize $Q_1(z)$ to create a Holomorphic representation of $\eta(s)$ called $S_1(z)$
+Continuing where we left off, the formulae $J_1(z)$, and $M(z)$ will be combined to showcase an error approximation between $J_1(z)$ and the dirichlet $\eta(s)$ function. Then in the next example, we will utilize $Q_1(z)$ to create a Holomorphic representation of $\eta(s)$ called $S_1(z)$
+
 \begin{align*}
-\includegraphics[scale=0.26]{graphs/R1_actual_BIG}
+R_1(z) = \prod_{n=2}^x \left( \frac{1}{1 + M_1(z) * J_1(z)} \right)
 \end{align*}
 
 \begin{align*}
@@ -808,7 +814,7 @@ Ultimately, this new formulation of zeta will approximate the original functions
 The Function $S_1(z)$ utilizes the alternator $Q_1(z)$ as well as $J(z)$ which constrain the linear relationship of the prime indicating function, to the alternation rate of $\eta(s)$. $S_1(z)$ ultimately connects the zeros and the non-zeros of the primes to the dirichlet eta function, the function J(z) is defined such that these zeros all lie on the line $y = x$, as a result, the zeros of the zeta functions must all lie on the critical strip. After transformation as an input to an output, these values hold the relationship $y=x$ and upon translation $z = 1/2 + iy$ contains all non-trivial zeros of zeta. From the expansion we can see that the alternation rate of $S_1(z)$ resembles that of \eta(s),
 
 \begin{align*}
-\includegraphics[scale=0.26]{graphs/S1_actual_BIG}
+S_1(z) = \prod_{n=2}^x \left( \frac{1}{1 + Q_1(z) * J_1(z)} \right)
 \end{align*}
 
 expanding $S_1(z)$ like $R_1(z)$, we see a similar reduction however this time the alternator function $Q_1(z)$ follows the prime and composite numbers, as outlined by the expansion of $Q_1(z)$ in the previous Chapter.
