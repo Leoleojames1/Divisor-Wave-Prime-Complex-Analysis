@@ -54,21 +54,25 @@ class Special_Functions :
         z_real = np.real(z)
         z_imag = np.imag(z)
         # initialize scaling coefficients
-        # self.m = 0.138
 
         if Normalize_type == 'Y':
-            self.m = 0.001
-            self.beta = 1
+            # self.m = 0.0125
+            # self.beta = 0.0125
+            # self.m = 0.005125
+            # self.beta = 0.006125
+            self.m = 0.0465
+            self.beta = 0.178
         else:
-            self.m = 0.001
-            self.beta = 1
-
-        # check for imaginary magnification
+            # self.m = 0.0125
+            # self.m = 0.005125
+            # self.beta = 0.006125
+            self.m = 0.0465
+            self.beta = 0.178
 
         # calculate infinite product
         result = abs(np.prod(
             [self.beta * ((z_real) / k) * np.sin(math.pi * (z_real + 1j * z_imag) / k)
-                for k in range(2, int(z_real) + 1)])) ** (self.m)
+                for k in range(2, int(z_real) + 1)])) ** (-self.m)
 
         if Normalize_type == 'Y':
             result = result / scipy.special.gamma(result)
@@ -101,22 +105,79 @@ class Special_Functions :
         power_integer = 2
 
         if Normalize_type == 'Y':
-            self.m = 0.001
-            self.beta = 0.07
+            # self.m = 0.0125
+            # self.m = 0.37
+            # # m = 0.07
+            # # m = 0.37
+            # self.beta = 0.078
+            self.m = 0.0125
+            self.beta = 0.078
         else:
-            self.m = 0.001
-            self.beta = 0.07
+            # self.m = 0.001
+            # # self.m = 0.007
+            # self.m = 0.0125
+            # # self.m = 0.37
+            # self.beta = 0.078
+            self.m = 0.0125
+            self.beta = 0.078
 
         # calculate the double infinite product via the double for loop
         result = abs(np.prod(
             [self.beta * ( z_real / n) * (((z_real + 1j * z_imag) * math.pi) * np.prod(
                 [1 - ( (z_real + 1j * z_imag) ** 2) / (n ** 2 * k ** 2)
-                 for k in range(2, int(z_real) + 1)])) for n in range(2, int(z_real) + 1)])) ** (self.m)
+                 for k in range(2, int(z_real) + 1)])) for n in range(2, int(z_real) + 1)])) ** (-self.m)
+
+        # # print function values for bug testing
+        # if (z_real % 1 == 0) and (z_imag % 1 == 0):
+        #     print(z, ": ", result)
+
+        if Normalize_type == 'Y':
+            result = result / scipy.special.gamma(result)
+        else:
+            result = result
+
+        return result
+
+    # -----------------------------------------------------------------------------------------------------------------
+    def product_of_product_representation_for_sin_COMPLEX_VARIANT(self, z, Normalize_type):
+        """
+        Computes the product of the product representation for sin(pi*z/n).
+        f(x) = ∏_(n=2)^x (pi*x) ∏_(n=2)^x (1-(x^2)/(i^2)(n^2))
+        Args:
+            z (complex): A complex number to evaluate.
+        Returns:
+            (float): The product of the product representation for sin(pi*z/n).
+        """
+
+        #pprint.pprint(z)
+
+        #TODO no magnification for bug testing
+        z_real = np.real(z)
+        z_imag = np.imag(z)
+
+        # pprint.pprint(z_real)
+        # pprint.pprint(z_imag)
+
+        #27 is a fun exponent to try
+        power_integer = 2
+
+        if Normalize_type == 'Y':
+            self.m = 0.0125
+            self.beta = 0.054
+        else:
+            self.m = 0.0125
+            self.beta = 0.054
+
+        # calculate the double infinite product via the double for loop
+        result = abs(np.prod(
+            [self.beta * ( (1j * z_imag) / n) * (((z_real + 1j * z_imag) * math.pi) * np.prod(
+                [1 - ( (1j * z_imag) ** 2) / (n ** 2 * k ** 2)
+                 for k in range(2, int((1j * z_imag)) + 1)])) for n in range(2, ((1j * z_imag)) + 1)])) ** (-self.m)
 
         prime_sieve = abs(np.prod(
-            [self.beta * (z_real / n) * ((z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
-                [1 - ( (z_real + 1j * z_imag) ** power_integer) / (n ** power_integer * k ** power_integer)
-                 for k in range(1, int(z_real) + 1)])) for n in range(1, int(z_real) + 1)])) ** (-self.m)
+            [self.beta * ((1j * z_imag) / n) * ((z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
+                [1 - ( (1j * z_imag) ** 2) / (n ** 2 * k ** 2)
+                 for k in range(2, int((1j * z_imag)) + 1)])) for n in range(2, ((1j * z_imag)) + 1)])) ** (-self.m)
 
         # # print function values for bug testing
         # if (z_real % 1 == 0) and (z_imag % 1 == 0):
@@ -132,7 +193,7 @@ class Special_Functions :
         return result
 
     # -----------------------------------------------------------------------------------------------------------------
-    def natural_logarithm_of_product_of_product_representation_for_sin(self, z):
+    def natural_logarithm_of_product_of_product_representation_for_sin(self, z, Normalize_type):
         """
         Computes the natural logarithm of the normalized infinite product of product representation of sin(z).
         f(x) = ln ( ∏_(n=2)^x (pi*x) ∏_(n=2)^x (1-(x^2)/(i^2)(n^2)) )
@@ -165,7 +226,7 @@ class Special_Functions :
         return log_result
 
     # -----------------------------------------------------------------------------------------------------------------
-    def gamma_of_product_of_product_representation_for_sin(self, z):
+    def gamma_of_product_of_product_representation_for_sin(self, z, Normalize_type):
         """
         Args:
         Returns:
@@ -208,7 +269,7 @@ class Special_Functions :
         return result
 
     # -----------------------------------------------------------------------------------------------------------------
-    def gamma_form_product_of_product_representation_for_sin(self, z):
+    def gamma_form_product_of_product_representation_for_sin(self, z, Normalize_type):
         """
         Computes the product of the product representation for sin(z).
          z / [Γ(z) * Γ(1-z)] * e^(-γz^2) * ∏_(n=2)^(∞) e^(z^2 / n^2)
@@ -230,7 +291,7 @@ class Special_Functions :
         return result
 
     # -----------------------------------------------------------------------------------------------------------------
-    def infinite_product_representation_of_the_zeta_function(self, z):
+    def infinite_product_representation_of_the_zeta_function(self, z, Normalize_type):
         """
         Computes the product of the product representation for sin(z).
         Args:
@@ -250,7 +311,7 @@ class Special_Functions :
         return result
 
     # -----------------------------------------------------------------------------------------------------------------
-    def product_of_infinite_product_representation_of_the_zeta_function(self, z):
+    def product_of_infinite_product_representation_of_the_zeta_function(self, z, Normalize_type):
         """
         Computes the product of the product representation for sin(z).
         Args:
@@ -303,7 +364,7 @@ class Special_Functions :
         return normalized_fraction
 
     # -----------------------------------------------------------------------------------------------------------------
-    def product_combination(self, z):
+    def product_combination(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -377,7 +438,7 @@ class Special_Functions :
         return pow_fun
 
     # -----------------------------------------------------------------------------------------------------------------
-    def product_of_sin_plus_normalized_product_of_sin(self, z):
+    def product_of_sin_plus_normalized_product_of_sin(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -417,7 +478,7 @@ class Special_Functions :
         return combination
 
     # -----------------------------------------------------------------------------------------------------------------
-    def cos_of_product_of_sin(self, z):
+    def cos_of_product_of_sin(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -427,6 +488,17 @@ class Special_Functions :
 
         z_real = np.real(z)
         z_imag = np.imag(z)
+
+        if Normalize_type == 'Y':
+            # self.m = 1
+            # self.beta = 1
+            self.m = 0.0125
+            self.beta = 0.054
+        else:
+            # self.m = 1
+            # self.beta = 1
+            self.m = 0.0125
+            self.beta = 0.054
 
         # normalized double infinite product for loop
         result = np.cos(abs(np.prod([self.beta * (z_real / n) * np.sin(math.pi * (z_real + 1j * z_imag) / n)
@@ -435,7 +507,7 @@ class Special_Functions :
         return result
 
     # -----------------------------------------------------------------------------------------------------------------
-    def sin_of_product_of_sin(self, z):
+    def sin_of_product_of_sin(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -445,6 +517,17 @@ class Special_Functions :
 
         z_real = np.real(z)
         z_imag = np.imag(z)
+
+        if Normalize_type == 'Y':
+            # self.m = 1
+            # self.beta = 1
+            self.m = 0.0125
+            self.beta = 0.054
+        else:
+            # self.m = 1
+            # self.beta = 1
+            self.m = 0.0125
+            self.beta = 0.054
 
         # normalized double infinite product for loop
         result = np.sin(abs(np.prod([self.beta * (z_real / n) * np.sin(math.pi * (z_real + 1j * z_imag) / n)
@@ -453,7 +536,7 @@ class Special_Functions :
         return result
 
     # -----------------------------------------------------------------------------------------------------------------
-    def cos_of_product_of_product_representation_of_sin(self, z):
+    def cos_of_product_of_product_representation_of_sin(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -463,17 +546,28 @@ class Special_Functions :
 
         z_real = np.real(z)
         z_imag = np.imag(z)
+
+        if Normalize_type == 'Y':
+            # self.m = 1
+            # self.beta = 1
+            self.m = 0.0125
+            self.beta = 0.054
+        else:
+            # self.m = 1
+            # self.beta = 1
+            self.m = 0.0125
+            self.beta = 0.054
 
         # normalized double infinite product for loop
         result = np.cos(abs(np.prod([self.beta * (z_real / n) * (
                 (z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
             [1 - ((z_real + 1j * z_imag) ** 2) / (n ** 2 * k ** 2) for k in range(2, int(z_real) + 1)])) for n in
-                                 range(2, int(z_real) + 1)])))
+                                 range(2, int(z_real) + 1)]))) ** (-self.m)
 
         return result
 
     # -----------------------------------------------------------------------------------------------------------------
-    def sin_of_product_of_product_representation_of_sin(self, z):
+    def sin_of_product_of_product_representation_of_sin(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -483,17 +577,28 @@ class Special_Functions :
 
         z_real = np.real(z)
         z_imag = np.imag(z)
+
+        if Normalize_type == 'Y':
+            # self.m = 1
+            # self.beta = 1
+            self.m = 0.0125
+            self.beta = 0.054
+        else:
+            # self.m = 1
+            # self.beta = 1
+            self.m = 0.0125
+            self.beta = 0.054
 
         # normalized double infinite product for loop
         result = np.sin(abs(np.prod([self.beta * (z_real / n) * (
                 (z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
             [1 - ((z_real + 1j * z_imag) ** 2) / (n ** 2 * k ** 2) for k in range(2, int(z_real) + 1)])) for n in
-                                 range(2, int(z_real) + 1)])))
+                                 range(2, int(z_real) + 1)]))) ** (-self.m)
 
         return result
 
     # -----------------------------------------------------------------------------------------------------------------
-    def Riesz_Product_for_Cos(self, z):
+    def Riesz_Product_for_Cos(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -503,19 +608,25 @@ class Special_Functions :
 
         z_real = np.real(z)
         z_imag = np.imag(z)
-        m = 0.08
+
+        if Normalize_type == 'Y':
+            m = 0.08
+            self.beta = 1
+        else:
+            m = 0.08
+            self.beta = 1
 
         # calculate infinite product
         num = abs(np.prod(
             [(1 + np.cos(math.pi * (z_real + 1j * z_imag) * n))
-                for n in range(2, int(z_real) + 1)])) ** (-m)
+                for n in range(2, int(z_real) + 1)])) ** (-self.m)
 
         norm = num / scipy.special.gamma(num)
 
         return norm
 
     # -----------------------------------------------------------------------------------------------------------------
-    def Riesz_Product_for_Sin(self, z):
+    def Riesz_Product_for_Sin(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -527,17 +638,28 @@ class Special_Functions :
         z_imag = np.imag(z)
         m = 0.08
 
+        if Normalize_type == 'Y':
+            # self.m = 1
+            # self.beta = 1
+            self.m = 0.0125
+            self.beta = 0.054
+        else:
+            # self.m = 1
+            # self.beta = 1
+            self.m = 0.0125
+            self.beta = 0.054
+
         # calculate infinite product
         num = abs(np.prod(
             [1 + np.sin(math.pi * (z_real + 1j * z_imag) * n)
-                for n in range(2, int(z_real) + 1)])) ** (-m)
+                for n in range(2, int(z_real) + 1)])) ** (-self.m)
 
         norm = num / scipy.special.gamma(num)
 
         return norm
 
     # -----------------------------------------------------------------------------------------------------------------
-    def Riesz_Product_for_Tan(self, z):
+    def Riesz_Product_for_Tan(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -547,20 +669,31 @@ class Special_Functions :
 
         z_real = np.real(z)
         z_imag = np.imag(z)
-        m = 0.26
+        # m = 0.26
         # m = 0.08
+
+        if Normalize_type == 'Y':
+            # self.m = 1
+            # self.beta = 1
+            self.m = 0.0125
+            self.beta = 0.054
+        else:
+            # self.m = 1
+            # self.beta = 1
+            self.m = 0.0125
+            self.beta = 0.054
 
         # calculate infinite product
         num = abs(np.prod(
             [1 + np.tan(math.pi * (z_real + 1j * z_imag) * n)
-                for n in range(2, int(z_real) + 1)])) ** (-m)
+                for n in range(2, int(z_real) + 1)])) ** (-self.m)
 
         norm = num / scipy.special.gamma(num)
 
         return norm
 
     # -----------------------------------------------------------------------------------------------------------------
-    def Viete_Product_for_Cos(self, z):
+    def Viete_Product_for_Cos(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -570,8 +703,13 @@ class Special_Functions :
 
         z_real = np.real(z)
         z_imag = np.imag(z)
-        # m = 0.37
-        m = 0.07
+
+        if Normalize_type == 'Y':
+            self.m = 0.37
+            self.beta = 1
+        else:
+            self.m = 0.07
+            self.beta = 1
 
         #TODO different values for the base of the denominator try 2, 3, 4, 1/2, phi, pi, e, euler-mascheroni
         # scipy.constants.golden
@@ -579,7 +717,7 @@ class Special_Functions :
         # calculate infinite product
         num = abs(np.prod(
             [np.cos(math.pi * (z_real + 1j * z_imag) / (2 ** (n)))
-                for n in range(2, int(z_real) + 1)])) ** (-m)
+                for n in range(2, int(z_real) + 1)])) ** (-self.m)
 
         #This doesnt really need to start at 2, it could start at 1
         norm = num / scipy.special.gamma(num)
@@ -590,7 +728,7 @@ class Special_Functions :
         return norm
 
     # -----------------------------------------------------------------------------------------------------------------
-    def Viete_Product_for_Sin(self, z):
+    def Viete_Product_for_Sin(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -600,8 +738,13 @@ class Special_Functions :
 
         z_real = np.real(z)
         z_imag = np.imag(z)
-        # m = 0.37
-        m = 0.07
+
+        if Normalize_type == 'Y':
+            self.m = 0.37
+            self.beta = 1
+        else:
+            self.m = 0.07
+            self.beta = 1
 
         # check for imaginary magnification
         # if self.im_mag is True:
@@ -615,11 +758,11 @@ class Special_Functions :
         # calculate infinite product
         num = abs(np.prod(
             [np.sin(math.pi * (z_real + 1j * z_imag) / (2 ** (n)))
-                for n in range(2, int(z_real) + 1)])) ** (-m)
+                for n in range(2, int(z_real) + 1)])) ** (-self.m)
 
         den = abs(np.prod(
             [np.sin(math.pi * (z_real + 1j * z_imag) / (2 ** (n)))
-                for n in range(2, int(z_real) + 1)])) ** (-m)
+                for n in range(2, int(z_real) + 1)])) ** (-self.m)
 
         norm = num / scipy.special.gamma(den)
 
@@ -629,7 +772,7 @@ class Special_Functions :
         return norm
 
     # -----------------------------------------------------------------------------------------------------------------
-    def Viete_Product_for_Tan(self, z):
+    def Viete_Product_for_Tan(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -639,8 +782,13 @@ class Special_Functions :
 
         z_real = np.real(z)
         z_imag = np.imag(z)
-        # m = 0.37
-        m = 0.07
+
+        if Normalize_type == 'Y':
+            self.m = 0.37
+            self.beta = 0.07
+        else:
+            self.m = 0.07
+            self.beta = 0.07
 
         # # check for imaginary magnification
         # if self.im_mag is True:
@@ -654,11 +802,11 @@ class Special_Functions :
         # calculate infinite product
         num = abs(np.prod(
             [np.tan(math.pi * (z_real + 1j * z_imag) / (2 ** (n)))
-                for n in range(2, int(z_real) + 1)])) ** (-m)
+                for n in range(2, int(z_real) + 1)])) ** (-self.m)
 
         den = abs(np.prod(
             [np.tan(math.pi * (z_real + 1j * z_imag) / (2 ** (n)))
-                for n in range(2, int(z_real) + 1)])) ** (-m)
+                for n in range(2, int(z_real) + 1)])) ** (-self.m)
 
         norm = num / scipy.special.gamma(den)
 
@@ -668,7 +816,7 @@ class Special_Functions :
         return num
 
     # -----------------------------------------------------------------------------------------------------------------
-    def Half_Base_Viete_Product_for_Sin(self, z):
+    def Half_Base_Viete_Product_for_Sin(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -678,6 +826,13 @@ class Special_Functions :
 
         z_real = np.real(z)
         z_imag = np.imag(z)
+
+        if Normalize_type == 'Y':
+            self.m = 0.37
+            self.beta = 0.07
+        else:
+            self.m = 0.07
+            self.beta = 0.07
 
         # # check for imaginary magnification
         # if self.im_mag is True:
@@ -705,7 +860,7 @@ class Special_Functions :
         return norm
 
     # -----------------------------------------------------------------------------------------------------------------
-    def Riesz_Product_for_Tan_and_Prime_indicator_combination(self, z):
+    def Riesz_Product_for_Tan_and_Prime_indicator_combination(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -718,10 +873,17 @@ class Special_Functions :
         m = 0.26
         q = 0.08
 
+        if Normalize_type == 'Y':
+            self.m = 0.001
+            self.beta = 0.07
+        else:
+            self.m = 0.001
+            self.beta = 0.07
+
         # calculate infinite product
         num = abs(np.prod(
             [1 + np.tan(math.pi * (z_real + 1j * z_imag) * n)
-                for n in range(2, int(z_real) + 1)])) ** (-m)
+                for n in range(2, int(z_real) + 1)])) ** (-self.m)
 
         FUNC_B = abs(np.prod(
             [(1 * z_real / n) * ((z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
@@ -739,7 +901,7 @@ class Special_Functions :
         return num_exp
 
     # -----------------------------------------------------------------------------------------------------------------
-    def Prime_Indicator_Self_sieve_base(self, z):
+    def Prime_Indicator_Self_sieve_base(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -752,10 +914,17 @@ class Special_Functions :
         m = 0.26
         q = 0.08
 
+        if Normalize_type == 'Y':
+            self.m = 0.001
+            self.beta = 0.07
+        else:
+            self.m = 0.001
+            self.beta = 0.07
+
         # calculate infinite product
         num = abs(np.prod(
             [1 + np.tan(math.pi * (z_real + 1j * z_imag) * n)
-                for n in range(2, int(z_real) + 1)])) ** (-m)
+                for n in range(2, int(z_real) + 1)])) ** (-self.m)
 
         FUNC_B = abs(np.prod(
             [(1 * z_real / n) * ((z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
@@ -773,7 +942,7 @@ class Special_Functions :
         return num_exp
 
     # -----------------------------------------------------------------------------------------------------------------
-    def Nested_roots_product_for_2(self, z):
+    def Nested_roots_product_for_2(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -786,6 +955,13 @@ class Special_Functions :
         # m = 0.26
         # q = 0.08
         m = -1
+
+        if Normalize_type == 'Y':
+            self.m = 0.001
+            self.beta = 0.07
+        else:
+            self.m = 0.001
+            self.beta = 0.07
 
         # #TODO Sqrt Sum
         # sum = abs(np.prod(
@@ -804,7 +980,7 @@ class Special_Functions :
         #TODO Sqrt Prod
         prod = abs(np.sum(
             [ (z_real + 1j * z_imag) ** 2 ** (-n)
-                for n in range(2, int(z_real) + 1)])) ** (-m)
+                for n in range(2, int(z_real) + 1)])) ** (-self.m)
         paradox = abs(np.prod(
             [np.prod([(z_real + 1j * z_imag) ** k ** (-n)
                      for k in range(2, int(z_real) + 1)]) for n in range(2, int(z_real) + 1)]))
@@ -820,7 +996,7 @@ class Special_Functions :
         return paradox
 
     # -----------------------------------------------------------------------------------------------------------------
-    def Log_power_base_Viete_Product_for_Sin(self, z):
+    def Log_power_base_Viete_Product_for_Sin(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -830,6 +1006,13 @@ class Special_Functions :
 
         z_real = np.real(z)
         z_imag = np.imag(z)
+
+        if Normalize_type == 'Y':
+            self.m = 0.001
+            self.beta = 0.07
+        else:
+            self.m = 0.001
+            self.beta = 0.07
 
         # check for imaginary magnification
         if self.im_mag is True:
@@ -858,7 +1041,7 @@ class Special_Functions :
 
     # -----------------------------------------------------------------------------------------------------------------------
     # Normalized Product of Sin(x) via Sin(x) product Representation, normalized through fraction on gamma function.
-    def prime_sieve_0_bz_power(self, z):
+    def prime_sieve_0_bz_power(self, z, Normalize_type):
         """
         f(x) = ∏_(n=2)^x beta*pi*n*(∏_(k=2)^x(1-x^2/(k^2*n^2))) / (∏_(n=2)^x(pi*n*(∏_(k=2)^x(1-x^2/(k^2*n^2)))) !
         """
@@ -866,6 +1049,13 @@ class Special_Functions :
         z_imag = np.imag(z)
         self.m = 0.15
         self.beta = 1.13
+
+        if Normalize_type == 'Y':
+            self.m = 0.001
+            self.beta = 0.07
+        else:
+            self.m = 0.001
+            self.beta = 0.07
 
         # check for imaginary magnification
         if self.im_mag is True:
@@ -896,7 +1086,7 @@ class Special_Functions :
         return normalized_fraction
 
     # -----------------------------------------------------------------------------------------------------------------
-    def Custom_Function(self, z):
+    def Custom_Function(self, z, Normalize_type):
         """
         Computes the product of the product representation for sin(z).
         Args:
@@ -907,6 +1097,14 @@ class Special_Functions :
         """
         z_real = np.real(z)
         z_imag = np.imag(z)
+
+        if Normalize_type == 'Y':
+            self.m = 0.001
+            self.beta = 0.07
+        else:
+            self.m = 0.001
+            self.beta = 0.07
+
         result = abs(np.prod(
             [((1j * z_imag * z_real) / n) * ((z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
                 [1 - ((z_real + 1j * z_imag)**(2)) / (n ** (2) * k ** (2))
@@ -916,7 +1114,7 @@ class Special_Functions :
         return result
 
     # -----------------------------------------------------------------------------------------------------------------
-    def Custom_Riesz_Product_for_Tan(self, z):
+    def Custom_Riesz_Product_for_Tan(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -926,6 +1124,13 @@ class Special_Functions :
 
         z_real = np.real(z)
         z_imag = np.imag(z)
+
+        if Normalize_type == 'Y':
+            self.m = 0.001
+            self.beta = 0.07
+        else:
+            self.m = 0.001
+            self.beta = 0.07
 
         # check for imaginary magnification
         if self.im_mag is True:
@@ -947,7 +1152,7 @@ class Special_Functions :
         return norm
 
     # -----------------------------------------------------------------------------------------------------------------
-    def Custom_Viete_Product_for_Cos(self, z):
+    def Custom_Viete_Product_for_Cos(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -957,6 +1162,13 @@ class Special_Functions :
 
         z_real = np.real(z)
         z_imag = np.imag(z)
+
+        if Normalize_type == 'Y':
+            self.m = 0.001
+            self.beta = 0.07
+        else:
+            self.m = 0.001
+            self.beta = 0.07
 
         # check for imaginary magnification
         if self.im_mag is True:
@@ -985,7 +1197,7 @@ class Special_Functions :
 
     # -----------------------------------------------------------------------------------------------------------------------
     # Product of Sin(x) via Sin(x) product Representation.
-    def zeros_of_zeta(self, z):
+    def zeros_of_zeta(self, z, Normalize_type):
         """
         Computes the infinite product of sin(pi*z/n)
         f(x) = ∏_(n=2)^x { abs ( sin(pi*x/n) ) ] ) }
@@ -1005,6 +1217,13 @@ class Special_Functions :
         self.beta = 1
         # self.beta = 4.577
         # self.beta = 14.577
+
+        if Normalize_type == 'Y':
+            self.m = 0.001
+            self.beta = 0.07
+        else:
+            self.m = 0.001
+            self.beta = 0.07
 
         # check for imaginary magnification
         if self.im_mag is True:
@@ -1038,7 +1257,7 @@ class Special_Functions :
         return result
 
     # -----------------------------------------------------------------------------------------------------------------
-    def Dedekind_Eta_Custom(self, z):
+    def Dedekind_Eta_Custom(self, z, Normalize_type):
         """ A method to multiply two infinite products.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -1048,6 +1267,13 @@ class Special_Functions :
 
         z_real = np.real(z)
         z_imag = np.imag(z)
+
+        if Normalize_type == 'Y':
+            self.m = 0.001
+            self.beta = 0.07
+        else:
+            self.m = 0.001
+            self.beta = 0.07
 
         # check for imaginary magnification
         if self.im_mag is True:
@@ -1072,6 +1298,47 @@ class Special_Functions :
         normalized_fraction = (numerator ** (-self.m) / scipy.special.gamma(denominator ** (-self.m)))
 
         return normalized_fraction
+
+    # -----------------------------------------------------------------------------------------------------------------
+    def Prime_Binary_Output_Waveform_Product(self, z, Normalize_type):
+        """ A method to combine two infinite products to produce a prime binary output.
+        Args:
+            z: Complex z which isn't converted to z_real & z_imag in this method
+            beta: magnification value as the lead coefficient
+            m: exponential magnification coefficient
+        """
+
+        z_real = np.real(z)
+        z_imag = np.imag(z)
+        m = 0.366
+        # q = 0.001
+
+        if Normalize_type == 'Y':
+            self.m = 0.001
+            self.beta = 0.07
+        else:
+            self.m = 0.001
+            self.beta = 0.07
+
+        # calculate infinite product
+        single_Prod = abs(np.prod([ np.sin(math.pi * (z_real + 1j * z_imag)/n ) for n in range(2, int(z_real) + 1)]))
+
+        # double_Prod = abs(np.prod([ np.prod([1 - ((z_real + 1j * z_imag)**2)/(k**2 * n**2)]) for k in range(2, int(z_real) + 1) for n in range(2, int(z_real) + 1)]))
+
+        # binary_prime = abs(np.prod(
+        #     [ np.sin(math.pi * (z_real + 1j * z_imag)/n )
+        #       for n in range(2, int(z_real) + 1)])) ** (abs(np.prod([ np.prod([1 - ((z_real + 1j * z_imag)**2)/(k**2 * n**2)])
+        #                                                     for k in range(2, int(z_real) + 1)
+        #                                                         for n in range(2, int(z_real) + 1)]))) ** (-m)
+        #
+        # binary_prime_norm = binary_prime / scipy.special.gamma(binary_prime)
+
+        double_Prod = abs(np.prod([ np.prod([1 - ((z_real + 1j * z_imag)**2)/(k**2 * n**2)]) for k in range(2, int(z_real) + 1) for n in range(2, int(z_real) + 1)]))
+
+        binary_p = np.prod([(1)/(((1 - j * (0 ** 0 ** double_Prod)) for j in range(2, int(z_real) + 1))**(z_real + 1j * z_imag))])
+        # binary_p = np.prod([(1)/(((1 - j * (single_Prod ** single_Prod ** double_Prod)) for j in range(2, int(z_real) + 1))**(z_real + 1j * z_imag))])
+
+        return binary_p
 
     # -----------------------------------------------------------------------------------------------------------------
     def product_factory(self, product_string_arg):
@@ -1102,40 +1369,6 @@ class Special_Functions :
         return product_function_from_string
 
     # -----------------------------------------------------------------------------------------------------------------
-    def Prime_Binary_Output_Waveform_Product(self, z):
-        """ A method to combine two infinite products to produce a prime binary output.
-        Args:
-            z: Complex z which isn't converted to z_real & z_imag in this method
-            beta: magnification value as the lead coefficient
-            m: exponential magnification coefficient
-        """
-
-        z_real = np.real(z)
-        z_imag = np.imag(z)
-        m = 0.366
-        # q = 0.001
-
-        # calculate infinite product
-        single_Prod = abs(np.prod([ np.sin(math.pi * (z_real + 1j * z_imag)/n ) for n in range(2, int(z_real) + 1)]))
-
-        # double_Prod = abs(np.prod([ np.prod([1 - ((z_real + 1j * z_imag)**2)/(k**2 * n**2)]) for k in range(2, int(z_real) + 1) for n in range(2, int(z_real) + 1)]))
-
-        # binary_prime = abs(np.prod(
-        #     [ np.sin(math.pi * (z_real + 1j * z_imag)/n )
-        #       for n in range(2, int(z_real) + 1)])) ** (abs(np.prod([ np.prod([1 - ((z_real + 1j * z_imag)**2)/(k**2 * n**2)])
-        #                                                     for k in range(2, int(z_real) + 1)
-        #                                                         for n in range(2, int(z_real) + 1)]))) ** (-m)
-        #
-        # binary_prime_norm = binary_prime / scipy.special.gamma(binary_prime)
-
-        double_Prod = abs(np.prod([ np.prod([1 - ((z_real + 1j * z_imag)**2)/(k**2 * n**2)]) for k in range(2, int(z_real) + 1) for n in range(2, int(z_real) + 1)]))
-
-        binary_p = np.prod([(1)/(((1 - j * (0 ** 0 ** double_Prod)) for j in range(2, int(z_real) + 1))**(z_real + 1j * z_imag))])
-        # binary_p = np.prod([(1)/(((1 - j * (single_Prod ** single_Prod ** double_Prod)) for j in range(2, int(z_real) + 1))**(z_real + 1j * z_imag))])
-
-        return binary_p
-
-    # -----------------------------------------------------------------------------------------------------------------
     def lamda_function_library(self, Normalize_type):
         """
         Args:
@@ -1155,22 +1388,22 @@ class Special_Functions :
             '1': lambda z: self.product_of_sin(z, Normalize_type),
             '2': lambda z: self.product_of_product_representation_for_sin(z, Normalize_type),
 
-            '3': lambda z: self.Riesz_Product_for_Cos(z),
-            '4': lambda z: self.Riesz_Product_for_Sin(z),
-            '5': lambda z: self.Riesz_Product_for_Tan(z),
+            '3': lambda z: self.Riesz_Product_for_Cos(z, Normalize_type),
+            '4': lambda z: self.Riesz_Product_for_Sin(z, Normalize_type),
+            '5': lambda z: self.Riesz_Product_for_Tan(z, Normalize_type),
 
-            '6': lambda z: self.Viete_Product_for_Cos(z),
-            '7': lambda z: self.Viete_Product_for_Sin(z),
-            '8': lambda z: self.Viete_Product_for_Tan(z),
+            '6': lambda z: self.Viete_Product_for_Cos(z, Normalize_type),
+            '7': lambda z: self.Viete_Product_for_Sin(z, Normalize_type),
+            '8': lambda z: self.Viete_Product_for_Tan(z, Normalize_type),
 
-            '9': lambda z: self.natural_logarithm_of_product_of_product_representation_for_sin(z),
-            '10': lambda z: self.gamma_of_product_of_product_representation_for_sin(z),
-            '11': lambda z: self.factored_form_for_product_of_product_representation_for_sin(z),
-            '12': lambda z: self.gamma_form_product_of_product_representation_for_sin(z),
+            '9': lambda z: self.natural_logarithm_of_product_of_product_representation_for_sin(z, Normalize_type),
+            '10': lambda z: self.gamma_of_product_of_product_representation_for_sin(z, Normalize_type),
+            '11': lambda z: self.factored_form_for_product_of_product_representation_for_sin(z, Normalize_type),
+            '12': lambda z: self.gamma_form_product_of_product_representation_for_sin(z, Normalize_type),
 
             # Todo Zeta Functions and L functions Section
-            '13': lambda z: self.infinite_product_representation_of_the_zeta_function(z),
-            '14': lambda z: self.product_of_infinite_product_representation_of_the_zeta_function(z),
+            '13': lambda z: self.infinite_product_representation_of_the_zeta_function(z, Normalize_type),
+            '14': lambda z: self.product_of_infinite_product_representation_of_the_zeta_function(z, Normalize_type),
 
             # Todo Basic library of functions
             '15': lambda z: abs(mpmath.loggamma(z)),
@@ -1179,31 +1412,34 @@ class Special_Functions :
             '18': lambda z: mpmath.gamma(z),
 
             # Todo User Function Utilities
-            '19': lambda z: self.Custom_Function(z),
-            '20': lambda z: self.product_factory("∏_(n=2)^z [pi*z ∏_(k=2)^z (1 - z^2 / (k^2 * n^2))]"),
-            '21': lambda z: self.product_combination(z),
-            '22': lambda z: self.product_of_sin_plus_normalized_product_of_sin(z),
-            '23': lambda z: self.cos_of_product_of_sin(z),
-            '24': lambda z: self.sin_of_product_of_sin(z),
-            '25': lambda z: self.cos_of_product_of_product_representation_of_sin(z),
-            '26': lambda z: self.sin_of_product_of_product_representation_of_sin(z),
+            '19': lambda z: self.Custom_Function(z, Normalize_type),
+            '20': lambda z: self.product_factory("∏_(n=2)^z [pi*z ∏_(k=2)^z (1 - z^2 / (k^2 * n^2))]", Normalize_type, ),
+            '21': lambda z: self.product_combination(z, Normalize_type),
+            '22': lambda z: self.product_of_sin_plus_normalized_product_of_sin(z, Normalize_type),
 
-            '27': lambda z: self.Custom_Riesz_Product_for_Tan(z),
-            '28': lambda z: self.Dedekind_Eta_Custom(z),
-            '29': lambda z: self.Custom_Viete_Product_for_Cos(z),
-            '30': lambda z: self.Half_Base_Viete_Product_for_Sin(z),
-            '31': lambda z: self.Log_power_base_Viete_Product_for_Sin(z),
-            '32': lambda z: self.prime_sieve_0_bz_power(z),
-            '33': lambda z: self.zeros_of_zeta(z),
-            '34': lambda z: self.Prime_Binary_Output_Waveform_Product(z),
-            '35': lambda z: self.Riesz_Product_for_Tan_and_Prime_indicator_combination(z),
-            '36': lambda z: self.Nested_roots_product_for_2(z),
+            '23': lambda z: self.cos_of_product_of_sin(z, Normalize_type),
+            '24': lambda z: self.sin_of_product_of_sin(z, Normalize_type),
+            '25': lambda z: self.cos_of_product_of_product_representation_of_sin(z, Normalize_type),
+            '26': lambda z: self.sin_of_product_of_product_representation_of_sin(z, Normalize_type),
+
+            '27': lambda z: self.Custom_Riesz_Product_for_Tan(z, Normalize_type),
+            '28': lambda z: self.Dedekind_Eta_Custom(z, Normalize_type),
+            '29': lambda z: self.Custom_Viete_Product_for_Cos(z, Normalize_type),
+            '30': lambda z: self.Half_Base_Viete_Product_for_Sin(z, Normalize_type),
+            '31': lambda z: self.Log_power_base_Viete_Product_for_Sin(z, Normalize_type),
+
+            '32': lambda z: self.prime_sieve_0_bz_power(z, Normalize_type),
+            '33': lambda z: self.zeros_of_zeta(z, Normalize_type),
+            '34': lambda z: self.Prime_Binary_Output_Waveform_Product(z, Normalize_type),
+            '35': lambda z: self.Riesz_Product_for_Tan_and_Prime_indicator_combination(z, Normalize_type),
+            '36': lambda z: self.Nested_roots_product_for_2(z, Normalize_type),
+            '37': lambda z: self.product_of_product_representation_for_sin_COMPLEX_VARIANT(z, Normalize_type),
         }
 
         Catalog = {
             # Todo Special Infinite Products section
-            '1': 'product_of_sin(z, Normalize_type)',
-            '2': 'product_of_product_representation_for_sin(z, Normalize_type)',
+            '1': 'product_of_sin(z)',
+            '2': 'product_of_product_representation_for_sin(z)',
 
             '3': 'Riesz_Product_for_Cos(z)',
             '4': 'Riesz_Product_for_Sin(z)',
@@ -1249,13 +1485,19 @@ class Special_Functions :
             '34': 'Prime_Binary_Output_Waveform_Product(z)',
             '35': 'Riesz_Product_for_Tan_and_Prime_indicator_combination(z)',
             '36': 'Nested_roots_product_for_2(z)',
+            '37': 'product_of_product_representation_for_sin_COMPLEX_VARIANT(z)',
         }
 
         print("Please Select a Function to plot:")
         # Print the menu to the command prompt
-        for key in Catalog:
-            print(f'{key}: {Catalog[key]}')
+        for key, value in Catalog.items():
+            print(f'{key}: {value}')
 
-        user_input = input('Enter your choice: ')
+        while True:
+            user_input = input('Enter your choice: ')
+            if user_input in operations:
+                return operations[user_input]
+            else:
+                print("Invalid choice. Please try again.")
 
         return operations[f'{user_input}']

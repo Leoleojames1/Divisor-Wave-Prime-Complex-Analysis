@@ -73,11 +73,26 @@ class Complex_Plotting :
             # Default Values, Copy these if you are going to change them
             self.resolution_2D = 750
             # self.resolution_2D = 750
-            # self.resolution_2D = 500
-            self.x_min_2D = 2
-            self.x_max_2D = 12.5
-            self.y_min_2D = -0.5
-            self.y_max_2D = 0.5
+            # # self.resolution_2D = 500
+            # self.x_min_2D = 1.5
+            # self.x_max_2D = 14.5
+            # self.y_min_2D = -0.5
+            # self.y_max_2D = 0.5
+
+            # self.x_min_2D = 1.5
+            # self.x_max_2D = 5.5
+            # self.y_min_2D = -0.5
+            # self.y_max_2D = 0.5
+
+            # self.x_min_2D = 1.5
+            # self.x_max_2D = 18.5
+            # self.y_min_2D = -6.5
+            # self.y_max_2D = 6.5
+
+            self.x_min_2D = 1.5
+            self.x_max_2D = 28.5
+            self.y_min_2D = -9.5
+            self.y_max_2D = 9.5
 
         # if user selected 2D plot, graph the plot with the given values
         if plot_type == "3D":
@@ -96,19 +111,25 @@ class Complex_Plotting :
             # self.resolution_3D = 0.0349
 
             #TODO medium HD !?!?!?!?!?!?!
-            self.resolution_3D = 0.0249
+            # self.resolution_3D = 0.0249
 
             #TODO better slow
-            # self.resolution_3D = 0.0199
+            self.resolution_3D = 0.0199
 
             #TODO very slow !!!!!!!!!!!!!
             # self.resolution_3D = 0.0149
 
+            ##TODO ULTRA HD (1 min)
             # self.resolution_3D = 0.0099
 
+            #TODO ULTRA HD + (2 min)
             # self.resolution_3D = 0.0060
+
             # self.resolution_3D = 0.0010
+
             # self.resolution_3D = 0.0001
+
+            #TODO RANGE FOR X & Y VALUES
 
             # self.x_min_3D = 2
             # self.x_max_3D = 12.5
@@ -120,10 +141,10 @@ class Complex_Plotting :
             # self.y_min_3D = -1
             # self.y_max_3D = 1
 
-            self.x_min_3D = 1
-            self.x_max_3D = 12
-            self.y_min_3D = -3
-            self.y_max_3D = 3
+            # self.x_min_3D = 1
+            # self.x_max_3D = 12
+            # self.y_min_3D = -3
+            # self.y_max_3D = 3
 
             # self.x_min_3D = 1
             # self.x_max_3D = 7
@@ -135,10 +156,15 @@ class Complex_Plotting :
             # self.y_min_3D = -.75
             # self.y_max_3D = .75
 
-            # self.x_min_3D = 1
-            # self.x_max_3D = 18
+            # self.x_min_3D = 0.5
+            # self.x_max_3D = 6.5
             # self.y_min_3D = -3
             # self.y_max_3D = 3
+
+            self.x_min_3D = 1.5
+            self.x_max_3D = 18.5
+            self.y_min_3D = -6.5
+            self.y_max_3D = 6.5
 
             # self.x_min_3D = 5.5
             # self.x_max_3D = 12.5
@@ -361,7 +387,8 @@ class Complex_Plotting :
         ax = fig.add_subplot(111, projection='3d')
 
         # Set initial plot angles
-        ax.view_init(elev=30, azim=70)
+        # ax.view_init(elev=30, azim=70)
+        ax.view_init(elev=30, azim=-70)
         # ax.view_init(elev=210, azim=-70)
 
         # ax.view_init(elev=30, azim=-110)
@@ -423,8 +450,12 @@ if __name__ == "__main__":
     """
 
     # get user input for plot type
-    print("Enter 2D for 2D plot, 3D for 3D plot, or PyQt for PyQt plot: ")
-    plot_type = input()
+    plot_type = input("Enter 2D for 2D plot, 3D for 3D plot, or PyQt for PyQt plot: ")
+
+    # Check if the input is valid
+    while plot_type not in ["2D", "3D", "PyQt"]:
+        print("Invalid input. Please enter either '2D', '3D', or 'PyQt'.")
+        plot_type = input("Enter 2D for 2D plot, 3D for 3D plot, or PyQt for PyQt plot: ")
 
     # instantiate the objects
     special_functions_object = Special_Functions(plot_type)
@@ -491,26 +522,3 @@ if __name__ == "__main__":
     # if plot_type == "3D":
     #     complex_plotting_object.create_plot_3D_GPU(color_map_3D)
 
-    # ------------------------------------------------------------------------------------------------------------
-    # C++ Plotting Menu
-    if plot_type == "C++":
-
-        # Set the path to the bindings.cpp file and the directory to place the compiled shared library
-        cpp_file = "cplusplus_extensions/bindings.cpp"
-        output_dir = "gitprime/cplusplus_extensions"
-
-        # Compile the C++ code
-        cmd = f"g++ -O3 -Wall -shared -std=c++11 -undefined dynamic_lookup `python3 -m pybind11 --includes` {cpp_file} -o {output_dir}/graphics.so"
-        subprocess.run(cmd, shell=True, check=True)
-
-        graphics.create_plot_2D()
-        #TODO implement plotting from https://github.com/alordash/newton-fractal
-
-    # # serve the plot in a local host
-    # PORT = 8000
-    #
-    # Handler = http.server.SimpleHTTPRequestHandler
-    # httpd = socketserver.TCPServer(("", PORT), Handler)
-    #
-    # print(f"Serving at http://localhost:{PORT}")
-    # httpd.serve_forever()
