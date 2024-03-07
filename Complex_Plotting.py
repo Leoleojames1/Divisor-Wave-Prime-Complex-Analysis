@@ -71,9 +71,9 @@ class Complex_Plotting :
             # self.y_max_2D = 3
 
             # Default Values, Copy these if you are going to change them
-            self.resolution_2D = 750
             # self.resolution_2D = 750
-            # # self.resolution_2D = 500
+            self.resolution_2D = 750
+            # self.resolution_2D = 500
             # self.x_min_2D = 1.5
             # self.x_max_2D = 14.5
             # self.y_min_2D = -0.5
@@ -89,10 +89,31 @@ class Complex_Plotting :
             # self.y_min_2D = -6.5
             # self.y_max_2D = 6.5
 
-            self.x_min_2D = 1.5
-            self.x_max_2D = 28.5
-            self.y_min_2D = -9.5
-            self.y_max_2D = 9.5
+
+            # self.x_min_2D = 1.5
+            # self.x_max_2D = 28.5
+            # self.y_min_2D = -9.5
+            # self.y_max_2D = 9.5
+
+            # self.x_min_2D = 2
+            # self.x_max_2D = 7
+            # self.y_min_2D = -2
+            # self.y_max_2D = 2
+
+            # self.x_min_2D = 7
+            # self.x_max_2D = 13
+            # self.y_min_2D = -2
+            # self.y_max_2D = 2
+
+            self.x_min_2D = 2
+            self.x_max_2D = 18
+            self.y_min_2D = -4
+            self.y_max_2D = 4
+
+            # self.x_min_2D = 1.5
+            # self.x_max_2D = 10.5
+            # self.y_min_2D = -5.5
+            # self.y_max_2D = 5.5
 
         # if user selected 2D plot, graph the plot with the given values
         if plot_type == "3D":
@@ -114,10 +135,10 @@ class Complex_Plotting :
             # self.resolution_3D = 0.0249
 
             #TODO better slow
-            self.resolution_3D = 0.0199
+            # self.resolution_3D = 0.0199
 
             #TODO very slow !!!!!!!!!!!!!
-            # self.resolution_3D = 0.0149
+            self.resolution_3D = 0.0149
 
             ##TODO ULTRA HD (1 min)
             # self.resolution_3D = 0.0099
@@ -161,10 +182,30 @@ class Complex_Plotting :
             # self.y_min_3D = -3
             # self.y_max_3D = 3
 
+            # self.x_min_3D = 1.5
+            # self.x_max_3D = 18.5
+            # self.y_min_3D = -6.5
+            # self.y_max_3D = 6.5
+
+            # self.x_min_3D = 6.5
+            # self.x_max_3D = 14.5
+            # self.y_min_3D = -2.5
+            # self.y_max_3D = 2.5
+
+            # self.x_min_3D = 1.5
+            # self.x_max_3D = 14.5
+            # self.y_min_3D = -4.5
+            # self.y_max_3D = 4.5
+
             self.x_min_3D = 1.5
             self.x_max_3D = 18.5
-            self.y_min_3D = -6.5
-            self.y_max_3D = 6.5
+            self.y_min_3D = -4.5
+            self.y_max_3D = 4.5
+
+            # self.x_min_3D = 11
+            # self.x_max_3D = 13
+            # self.y_min_3D = -0.5
+            # self.y_max_3D = 0.5
 
             # self.x_min_3D = 5.5
             # self.x_max_3D = 12.5
@@ -292,22 +333,21 @@ class Complex_Plotting :
         # colors[:, :, 2] = np.sin(2 * np.pi * np.real(Z) / 10.0)
 
         if color_map_2D == "1":
-            colors = self.colorization("custom_colors1", Z)
-        elif color_map_2D == "2":
-            colors = self.colorization("custom_colors2", Z)
-        elif color_map_2D == "3":
-            colors = self.colorization("custom_colors3", Z)
-        elif color_map_2D == "4":
             colors = self.colorization("prism", Z)
-        elif color_map_2D == "5":
+        elif color_map_2D == "2":
             colors = self.colorization("jet", Z)
-        elif color_map_2D == "6":
+        elif color_map_2D == "3":
             colors = self.colorization("plasma", Z)
-        elif color_map_2D == "7":
+        elif color_map_2D == "4":
             colors = self.colorization("viridis", Z)
-        elif color_map_2D == "8":
+        elif color_map_2D == "5":
             colors = self.colorization("magma", Z)
-
+        elif color_map_2D == "6":
+            colors = self.colorization("custom_colors2", Z)
+        elif color_map_2D == "7":
+            colors = self.colorization("custom_colors3", Z)
+        elif color_map_2D == "8":
+            colors = self.colorization("custom_colors1", Z)
         # #Set Square Canvas
         # fig, ax1 = plt.subplots(figsize=(8, 8))
 
@@ -466,14 +506,14 @@ if __name__ == "__main__":
     if plot_type == "2D":
         color_map_dict = \
             {
-             "1": "custom_colors1",
-             "2": "custom_colors2_exp",
-             "3": "custom_colors3_exp",
-             "4": "prism",
-             "5": "jet",
-             "6": "plasma",
-             "7": "viridis",
-             "8": "magma",
+             "1": "prism",
+             "2": "jet",
+             "3": "plasma",
+             "4": "viridis",
+             "5": "magma",
+             "6": "custom_colors1",
+             "7": "custom_colors2_exp",
+             "8": "custom_colors3_exp",
             }
         print("Here are the color map functions, please enter the number on the left")
         print("to choose that color for the render.")
