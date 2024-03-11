@@ -106,9 +106,14 @@ class Complex_Plotting :
             # self.y_max_2D = 2
 
             self.x_min_2D = 2
-            self.x_max_2D = 18
-            self.y_min_2D = -4
-            self.y_max_2D = 4
+            self.x_max_2D = 28
+            self.y_min_2D = -5
+            self.y_max_2D = 5
+
+            # self.x_min_2D = 0
+            # self.x_max_2D = 13
+            # self.y_min_2D = -32
+            # self.y_max_2D = 32
 
             # self.x_min_2D = 1.5
             # self.x_max_2D = 10.5
@@ -135,10 +140,10 @@ class Complex_Plotting :
             # self.resolution_3D = 0.0249
 
             #TODO better slow
-            # self.resolution_3D = 0.0199
+            self.resolution_3D = 0.0199
 
             #TODO very slow !!!!!!!!!!!!!
-            self.resolution_3D = 0.0149
+            # self.resolution_3D = 0.0149
 
             ##TODO ULTRA HD (1 min)
             # self.resolution_3D = 0.0099
@@ -281,7 +286,7 @@ class Complex_Plotting :
             cmap = plt.get_cmap('viridis')
         elif color_selection == "magma":
             # Base viridis color map
-            cmap = plt.get_cmap('magma')
+            cmap = plt.get_cmap('twilight_shifted')
         else:
             # apply color selection to the grid map
             cmap = ListedColormap(color_selection)
@@ -458,7 +463,7 @@ class Complex_Plotting :
         if color_map_3D == "4":
             ax.plot_surface(X, Y, W, rstride=1, cstride=1, cmap=cm.viridis)
         if color_map_3D == "5":
-            ax.plot_surface(X, Y, W, rstride=1, cstride=1, cmap=cm.magma)
+            ax.plot_surface(X, Y, W, rstride=1, cstride=1, cmap=cm.twilight_shifted)
 
 
         # ax.plot_surface(X, Y, W, rstride=1, cstride=1, cmap=cm.prism)

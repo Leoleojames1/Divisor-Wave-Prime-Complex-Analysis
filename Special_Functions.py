@@ -127,7 +127,7 @@ class Special_Functions :
         # calculate the double infinite product via the double for loop
         result = abs(np.prod(
             [self.beta * ( z_real / n) * (((z_real + 1j * z_imag) * math.pi) * np.prod(
-                [1 - ( (z_real + 1j * z_imag) ** 2 ) / (n ** 2) * (k ** 2)
+                [1 - ( (z_real + 1j * z_imag) ** 2 ) / ((n ** 2) * (k ** 2))
                  for k in range(2, int(z_real) + 1)])) for n in range(2, int(z_real) + 1)])) ** (-self.m)
 
         # # print function values for bug testing
@@ -141,62 +141,10 @@ class Special_Functions :
 
         return result
 
-    # -----------------------------------------------------------------------------------------------------------------
-    def product_of_product_representation_for_sin_COMPLEX_VARIANT(self, z, Normalize_type):
-        """
-        Computes the product of the product representation for sin(pi*z/n).
-        f(x) = ∏_(n=2)^x (pi*x) ∏_(n=2)^x (1-(x^2)/(i^2)(n^2))
-        Args:
-            z (complex): A complex number to evaluate.
-        Returns:
-            (float): The product of the product representation for sin(pi*z/n).
-        """
 
-        #pprint.pprint(z)
-
-        #TODO no magnification for bug testing
-        z_real = np.real(z)
-        z_imag = np.imag(z)
-
-        # pprint.pprint(z_real)
-        # pprint.pprint(z_imag)
-
-        #27 is a fun exponent to try
-        power_integer = 2
-
-        if Normalize_type == 'Y':
-            self.m = 0.0125
-            self.beta = 0.054
-        else:
-            self.m = 0.0125
-            self.beta = 0.054
-
-        # calculate the double infinite product via the double for loop
-        result = abs(np.prod(
-            [self.beta * ( (1j * z_imag) / n) * (((z_real + 1j * z_imag) * math.pi) * np.prod(
-                [1 - ( (1j * z_imag) ** 2) / (n ** 2 * k ** 2)
-                 for k in range(2, int((1j * z_imag)) + 1)])) for n in range(2, ((1j * z_imag)) + 1)])) ** (-self.m)
-
-        prime_sieve = abs(np.prod(
-            [self.beta * ((1j * z_imag) / n) * ((z_real * math.pi + 1j * z_imag * math.pi) * np.prod(
-                [1 - ( (1j * z_imag) ** 2) / (n ** 2 * k ** 2)
-                 for k in range(2, int((1j * z_imag)) + 1)])) for n in range(2, ((1j * z_imag)) + 1)])) ** (-self.m)
-
-        # # print function values for bug testing
-        # if (z_real % 1 == 0) and (z_imag % 1 == 0):
-        #     print(z, ": ", result)
-
-        result = prime_sieve ** result
-
-        if Normalize_type == 'Y':
-            result = result / scipy.special.gamma(result)
-        else:
-            result = result
-
-        return result
 
     # -----------------------------------------------------------------------------------------------------------------
-    def complex_playground_magnification_currated_functions(self, z, Normalize_type):
+    def complex_playground_magnification_currated_functions_DEMO(self, z, Normalize_type):
         """ A playground for fine-tuning the complex magnification for each product series.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -206,6 +154,21 @@ class Special_Functions :
         z_real = np.real(z)
         z_imag = np.imag(z)
 
+        # # check for imaginary magnification
+        # if im_mag is True:
+        #     imaginary_magnification = z_imag
+        # else:
+        #     imaginary_magnification = 1
+
+        #TODO === PRODUCT OF PRODUCT REPRESENTATION OF SIN ===
+        # if Normalize_type == 'Y':
+        #     self.m = 0.36
+        #     self.beta = 0.1468
+        # else:
+        #     self.m = 0.0125
+        #     self.beta = 0.078
+
+        #TODO === RIESZ PRODUCT OF COS ===
         if Normalize_type == 'Y':
             self.m = 0.0125
             self.beta = 0.054
@@ -213,26 +176,36 @@ class Special_Functions :
             self.m = 0.0125
             self.beta = 0.054
 
-        # # check for imaginary magnification
-        # if im_mag is True:
-        #     imaginary_magnification = z_imag
-        # else:
-        #     imaginary_magnification = 1
-
         #TODO === Product OF SIN ===
-        result = abs(np.prod(
-            [self.beta * ((z_real) / k) * np.sin(math.pi * (z_real + 1j * z_imag) / k)
-                for k in range(2, int(z_real) + 1)])) ** (-self.m)
+        # result = abs(np.prod(
+        #     [self.beta * ((z_real) / k) * np.sin(math.pi * (z_real + 1j * z_imag) / k)
+        #         for k in range(2, int(z_real) + 1)])) ** (-self.m)
 
         #TODO === PRODUCT OF PRODUCT REPRESENTATION OF SIN ===
-        result = abs(np.prod(
-            [self.beta * ( z_real / n) * (((z_real + 1j * z_imag) * math.pi) * np.prod(
-                [1 - ( (z_real + 1j * z_imag) ** 2 ) / (n ** 2) * (k ** 2)
-                 for k in range(2, int(z_real) + 1)])) for n in range(2, int(z_real) + 1)])) ** (-self.m)
+        # result = abs(np.prod(
+        #     [self.beta * ( z_real / n) * (((z_real + 1j * z_imag) * math.pi) * np.prod(
+        #         [ 1 - pow((( (z_real + 1j * z_imag) ** 2 ) / ( (n ** 2) * (k ** 2) )), (z_real + 1j * z_imag))
+        #          for k in range(2, int(z_real) + 1)])) for n in range(2, int(z_real) + 1)])) ** (-self.m)
+
+        #TODO === PRODUCT OF PRODUCT REPRESENTATION OF SIN 2 ===
+        # result = abs(np.prod(
+        #     [self.beta * ( z_real / n) * (((z_real + 1j * z_imag) * math.pi) * np.prod(
+        #         [ 1 - ( (z_real + 1j * z_imag) ** 2 ) / ( (n ** 2) * (k ** 2) )
+        #          for k in range(2, int(z_real) + 1)])) for n in range(2, int(z_real) + 1)])) ** (-self.m)
 
         #TODO === RIESZ PRODUCT OF COS ===
+        # result = abs(np.prod(
+        #     [pow((1j * z_imag + np.cos(math.pi * (z_real + 1j * z_imag) * n)), 1j * z_imag)
+        #         for n in range(2, int(z_real) + 1)])) ** (-self.m)
+
+        #TODO === RIESZ PRODUCT OF COS 2 ===
+        # result = abs(np.prod(
+        #     [pow(((z_real + 1j * z_imag) + (z_real + 1j * z_imag) * np.cos(math.pi * (z_real + 1j * z_imag) * n)), (z_real + 1j * z_imag))
+        #         for n in range(2, int(z_real) + 1)])) ** (-self.m)
+
+        #TODO === RIESZ PRODUCT OF COS 3 ===
         result = abs(np.prod(
-            [pow((1j * z_imag + np.cos(math.pi * (z_real + 1j * z_imag) * n)), 1j * z_imag)
+            [pow((1j * z_imag + (1j * z_imag) * np.sin(math.pi * (z_real + 1j * z_imag) * n)), 1j * z_imag)
                 for n in range(2, int(z_real) + 1)])) ** (-self.m)
 
         if Normalize_type == 'Y':
@@ -516,9 +489,6 @@ class Special_Functions :
         result = abs(np.prod(
             [np.cos(math.pi * (z_real + 1j * z_imag) / (2 ** (n)))
                 for n in range(2, int(z_real) + 1)])) ** (-self.m)
-
-        #This doesnt really need to start at 2, it could start at 1
-        norm = num / scipy.special.gamma(num)
 
         #TODO add conditional statement for normalization of the function,
         # if user norm yes then return norm else return num
@@ -1079,7 +1049,7 @@ class Special_Functions :
         return result
 
     # -----------------------------------------------------------------------------------------------------------------
-    def BOPIF_Alternation_Series(self, z, Normalize_type):
+    def BOPIF_Q_Alternation_Series(self, z, Normalize_type):
         """ A method to combine two infinite products to produce a prime binary output.
         Args:
             z: Complex z which isn't converted to z_real & z_imag in this method
@@ -1103,13 +1073,32 @@ class Special_Functions :
             self.alpha = 0.74
             self.beta = 0.025
 
-        # calculate infinite product
-        result \
+        # calculate the product of sin
+        single_prod = abs(np.prod(
+            [self.alpha * ((z_real) / k) * np.sin(math.pi * (z_real + 1j * z_imag) / k)
+                for k in range(2, int(z_real) + 1)])) ** (-self.c)
+
+        # calculate the product of the product representation of sin
+        double_prod = abs(np.prod(
+            [self.beta * ( z_real / n) * (((z_real + 1j * z_imag) * math.pi) * np.prod(
+                [1 - ( (z_real + 1j * z_imag) ** 2) / (n ** 2 * k ** 2)
+                 for k in range(2, int(z_real) + 1)])) for n in range(2, int(z_real) + 1)])) ** (-self.m)
+
+        # calculate the alternation series Q with H
+        alternation \
             = abs(np.prod(
             [ pow((-1), abs(np.prod(
-                [pow((-2), self.Prime_Output_Indicator_J(z, Normalize_type))
+                [pow((-2), self.Binary_Output_Prime_Indicator_Function_H(z, Normalize_type))
                     for s in range(2, int(z_real) + 1)])) ** (-self.c) )
                         for q in range(2, int(z_real) + 1)])) ** (-self.m)
+
+        if Normalize_type == 'Y':
+            norm1 = single_prod / scipy.special.gamma(single_prod)
+            norm2 = double_prod / scipy.special.gamma(double_prod)
+            norm_alternation = alternation / scipy.special.gamma(alternation)
+            result = pow(norm1, norm2)
+        else:
+            result = pow(single_prod, double_prod)
 
         return result
 
@@ -1139,7 +1128,7 @@ class Special_Functions :
             self.beta = 0.025
 
         eta_prod = abs(np.prod(
-            [ (1 / ( 1 + self.BOPIF_Alternation_Series(z, Normalize_type) * self.Prime_Output_Indicator_J(z, Normalize_type) ) )
+            [ (1 / ( 1 + self.BOPIF_Q_Alternation_Series(z, Normalize_type) * self.Prime_Output_Indicator_J(z, Normalize_type) ) )
              for k in range(2, int(z_real) + 1)])) ** (-self.c)
 
         return eta_prod
@@ -1194,43 +1183,44 @@ class Special_Functions :
             '1': lambda z: self.product_of_sin(z, Normalize_type),
             '2': lambda z: self.product_of_product_representation_for_sin(z, Normalize_type),
             '3': lambda z: self.product_of_product_representation_for_sin_COMPLEX_VARIANT(z, Normalize_type),
+            '4': lambda z: self.complex_playground_magnification_currated_functions_DEMO(z, Normalize_type),
 
-            '4': lambda z: self.Riesz_Product_for_Cos(z, Normalize_type),
-            '5': lambda z: self.Riesz_Product_for_Sin(z, Normalize_type),
-            '6': lambda z: self.Riesz_Product_for_Tan(z, Normalize_type),
+            '5': lambda z: self.Riesz_Product_for_Cos(z, Normalize_type),
+            '6': lambda z: self.Riesz_Product_for_Sin(z, Normalize_type),
+            '7': lambda z: self.Riesz_Product_for_Tan(z, Normalize_type),
 
-            '7': lambda z: self.Viete_Product_for_Cos(z, Normalize_type),
-            '8': lambda z: self.Viete_Product_for_Sin(z, Normalize_type),
-            '9': lambda z: self.Viete_Product_for_Tan(z, Normalize_type),
+            '8': lambda z: self.Viete_Product_for_Cos(z, Normalize_type),
+            '9': lambda z: self.Viete_Product_for_Sin(z, Normalize_type),
+            '10': lambda z: self.Viete_Product_for_Tan(z, Normalize_type),
 
-            '10': lambda z: self.cos_of_product_of_sin(z, Normalize_type),
-            '11': lambda z: self.sin_of_product_of_sin(z, Normalize_type),
-            '12': lambda z: self.cos_of_product_of_product_representation_of_sin(z, Normalize_type),
-            '13': lambda z: self.sin_of_product_of_product_representation_of_sin(z, Normalize_type),
+            '11': lambda z: self.cos_of_product_of_sin(z, Normalize_type),
+            '12': lambda z: self.sin_of_product_of_sin(z, Normalize_type),
+            '13': lambda z: self.cos_of_product_of_product_representation_of_sin(z, Normalize_type),
+            '14': lambda z: self.sin_of_product_of_product_representation_of_sin(z, Normalize_type),
 
-            '14': lambda z: self.Binary_Output_Prime_Indicator_Function_H(z, Normalize_type),
-            '15': lambda z: self.Prime_Output_Indicator_J(z, Normalize_type),
-            '16': lambda z: self.BOPIF_Alternation_Series(z, Normalize_type),
-            '17': lambda z: self.Dirichlet_Eta_Derived_From_BOPIF(z, Normalize_type),
+            '15': lambda z: self.Binary_Output_Prime_Indicator_Function_H(z, Normalize_type),
+            '16': lambda z: self.Prime_Output_Indicator_J(z, Normalize_type),
+            '17': lambda z: self.BOPIF_Q_Alternation_Series(z, Normalize_type),
+            '18': lambda z: self.Dirichlet_Eta_Derived_From_BOPIF(z, Normalize_type),
 
-            '18': lambda z: abs(mpmath.loggamma(z)),
-            '19': lambda z: 1 / (1 + z ^ 2),
-            '20': lambda z: abs(z ** z),
-            '21': lambda z: mpmath.gamma(z),
+            '19': lambda z: abs(mpmath.loggamma(z)),
+            '20': lambda z: 1 / (1 + z ^ 2),
+            '21': lambda z: abs(z ** z),
+            '22': lambda z: mpmath.gamma(z),
 
             # Todo User Function Utilities
-            '22': lambda z: self.natural_logarithm_of_product_of_product_representation_for_sin(z, Normalize_type),
-            '23': lambda z: self.gamma_of_product_of_product_representation_for_sin(z, Normalize_type),
-            '24': lambda z: self.gamma_form_product_of_product_representation_for_sin(z, Normalize_type),
+            '23': lambda z: self.natural_logarithm_of_product_of_product_representation_for_sin(z, Normalize_type),
+            '24': lambda z: self.gamma_of_product_of_product_representation_for_sin(z, Normalize_type),
+            '25': lambda z: self.gamma_form_product_of_product_representation_for_sin(z, Normalize_type),
 
-            '25': lambda z: self.Custom_Riesz_Product_for_Tan(z, Normalize_type),
-            '26': lambda z: self.Custom_Viete_Product_for_Cos(z, Normalize_type),
-            '27': lambda z: self.Half_Base_Viete_Product_for_Sin(z, Normalize_type),
-            '28': lambda z: self.Log_power_base_Viete_Product_for_Sin(z, Normalize_type),
-            '29': lambda z: self.Riesz_Product_for_Tan_and_Prime_indicator_combination(z, Normalize_type),
+            '26': lambda z: self.Custom_Riesz_Product_for_Tan(z, Normalize_type),
+            '27': lambda z: self.Custom_Viete_Product_for_Cos(z, Normalize_type),
+            '28': lambda z: self.Half_Base_Viete_Product_for_Sin(z, Normalize_type),
+            '29': lambda z: self.Log_power_base_Viete_Product_for_Sin(z, Normalize_type),
+            '30': lambda z: self.Riesz_Product_for_Tan_and_Prime_indicator_combination(z, Normalize_type),
 
-            '30': lambda z: self.Nested_roots_product_for_2(z, Normalize_type),
-            '31': lambda z: self.product_factory("∏_(n=2)^z [pi*z ∏_(k=2)^z (1 - z^2 / (k^2 * n^2))]", Normalize_type, )
+            '31': lambda z: self.Nested_roots_product_for_2(z, Normalize_type),
+            '32': lambda z: self.product_factory("∏_(n=2)^z [pi*z ∏_(k=2)^z (1 - z^2 / (k^2 * n^2))]", Normalize_type, )
         }
 
         Catalog = {
@@ -1239,43 +1229,44 @@ class Special_Functions :
             '1': 'product_of_sin(z, Normalize_type)',
             '2': 'product_of_product_representation_for_sin(z, Normalize_type)',
             '3': 'product_of_product_representation_for_sin_COMPLEX_VARIANT(z, Normalize_type)',
+            '4': 'complex_playground_magnification_currated_functions_DEMO(z, Normalize_type)',
 
-            '4': 'Riesz_Product_for_Cos(z, Normalize_type)',
-            '5': 'Riesz_Product_for_Sin(z, Normalize_type)',
-            '6': 'Riesz_Product_for_Tan(z, Normalize_type)',
+            '5': 'Riesz_Product_for_Cos(z, Normalize_type)',
+            '6': 'Riesz_Product_for_Sin(z, Normalize_type)',
+            '7': 'Riesz_Product_for_Tan(z, Normalize_type)',
 
-            '7': 'Viete_Product_for_Cos(z, Normalize_type)',
-            '8': 'Viete_Product_for_Sin(z, Normalize_type)',
-            '9': 'Viete_Product_for_Tan(z, Normalize_type)',
+            '8': 'Viete_Product_for_Cos(z, Normalize_type)',
+            '9': 'Viete_Product_for_Sin(z, Normalize_type)',
+            '10': 'Viete_Product_for_Tan(z, Normalize_type)',
 
-            '10': 'cos_of_product_of_sin(z, Normalize_type)',
-            '11': 'sin_of_product_of_sin(z, Normalize_type)',
-            '12': 'cos_of_product_of_product_representation_of_sin(z, Normalize_type)',
-            '13': 'sin_of_product_of_product_representation_of_sin(z, Normalize_type)',
+            '11': 'cos_of_product_of_sin(z, Normalize_type)',
+            '12': 'sin_of_product_of_sin(z, Normalize_type)',
+            '13': 'cos_of_product_of_product_representation_of_sin(z, Normalize_type)',
+            '14': 'sin_of_product_of_product_representation_of_sin(z, Normalize_type)',
 
-            '14': 'Binary_Output_Prime_Indicator_Function_H(z, Normalize_type)',
-            '15': 'Prime_Output_Indicator_J(z, Normalize_type)',
-            '16': 'BOPIF_Alternation_Series(z, Normalize_type)',
-            '17': 'Dirichlet_Eta_Derived_From_BOPIF(z, Normalize_type)',
+            '15': 'Binary_Output_Prime_Indicator_Function_H(z, Normalize_type)',
+            '16': 'Prime_Output_Indicator_J(z, Normalize_type)',
+            '17': 'BOPIF_Q_Alternation_Series(z, Normalize_type)',
+            '18': 'Dirichlet_Eta_Derived_From_BOPIF(z, Normalize_type)',
 
-            '18': 'BASIC: abs(mpmath.loggamma(z))',
-            '19': 'BASIC: 1 / (1 + z ^ 2)',
-            '20': 'BASIC: abs(z ** z)',
-            '21': 'BASIC: mpmath.gamma(z)',
+            '19': 'BASIC: abs(mpmath.loggamma(z))',
+            '20': 'BASIC: 1 / (1 + z ^ 2)',
+            '21': 'BASIC: abs(z ** z)',
+            '22': 'BASIC: mpmath.gamma(z)',
 
             # Todo User Function Utilities
-            '22': 'natural_logarithm_of_product_of_product_representation_for_sin(z, Normalize_type)',
-            '23': 'gamma_of_product_of_product_representation_for_sin(z, Normalize_type)',
-            '24': 'gamma_form_product_of_product_representation_for_sin(z, Normalize_type)',
+            '23': 'natural_logarithm_of_product_of_product_representation_for_sin(z, Normalize_type)',
+            '24': 'gamma_of_product_of_product_representation_for_sin(z, Normalize_type)',
+            '25': 'gamma_form_product_of_product_representation_for_sin(z, Normalize_type)',
 
-            '25': 'Custom_Riesz_Product_for_Tan(z, Normalize_type)',
-            '26': 'Custom_Viete_Product_for_Cos(z, Normalize_type)',
-            '27': 'Half_Base_Viete_Product_for_Sin(z, Normalize_type)',
-            '28': 'Log_power_base_Viete_Product_for_Sin(z, Normalize_type)',
-            '29': 'Riesz_Product_for_Tan_and_Prime_indicator_combination(z, Normalize_type)',
+            '26': 'Custom_Riesz_Product_for_Tan(z, Normalize_type)',
+            '27': 'Custom_Viete_Product_for_Cos(z, Normalize_type)',
+            '28': 'Half_Base_Viete_Product_for_Sin(z, Normalize_type)',
+            '29': 'Log_power_base_Viete_Product_for_Sin(z, Normalize_type)',
+            '30': 'Riesz_Product_for_Tan_and_Prime_indicator_combination(z, Normalize_type)',
 
-            '30': 'Nested_roots_product_for_2(z, Normalize_type)',
-            '31': 'product_factory("∏_(n=2)^z [pi*z ∏_(k=2)^z (1 - z^2 / (k^2 * n^2))]", Normalize_type, )'
+            '31': 'Nested_roots_product_for_2(z, Normalize_type)',
+            '32': 'product_factory("∏_(n=2)^z [pi*z ∏_(k=2)^z (1 - z^2 / (k^2 * n^2))]", Normalize_type, )'
         }
 
         print("Please Select a Function to plot:")
