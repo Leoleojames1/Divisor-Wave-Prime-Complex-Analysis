@@ -13,6 +13,8 @@ https://mathworld.wolfram.com/RiemannZetaFunction.html
 
 https://mathworld.wolfram.com/RiemannZetaFunctionZeros.html
 
+https://en.wikipedia.org/wiki/Particular_values_of_the_Riemann_zeta_function
+
 Clay Maths Institute's Millenium Prize Problems:
 
 https://en.wikipedia.org/wiki/Millennium_Prize_Problems
@@ -23,20 +25,6 @@ https://www.youtube.com/watch?v=Ofg8fG-1iJA
 
 https://www.youtube.com/watch?v=zhNnmtnV2cU
 
-https://www.youtube.com/watch?v=cjKtzzACyhI
-
-https://www.youtube.com/watch?v=bo798KEKoDI
-
-https://www.youtube.com/watch?v=fpqGRVtBER4
-
-https://www.youtube.com/watch?v=8x374slJGuo&t=61s
-
-https://www.youtube.com/watch?v=jnxqHcObNK4
-
-https://www.youtube.com/watch?v=0kXGb0_-1iY
-
-https://unsolvedproblems.org/S132.pdf
-
 # Special-Functions
 A program for plotting complex functions. This tool provides the plotting functions for 2D and 3D graphics for infinite series such as the Riemann zeta function, 
 the infinite product of the product representation for sin(pi*z/n) as well as any other function that can be formulated in the complex plane. The Infinite product plotted throughout the paper known as b(z) acts as an indicator for prime and composite numbers. ultimately we can describe a complex product waveform which contains the attributes of the factorization for any composite number utilizing multivariable factorization.
@@ -44,13 +32,13 @@ the infinite product of the product representation for sin(pi*z/n) as well as an
 ### Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n) in the 3-D Complex Plane:
 
 <img
-src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/Poster_formula_leoborch_special_functions_2.png"
+src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/prism/Poster_formula_leoborch_special_functions_2.png"
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
   
 <img
-src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_normalized_goodm_prism_9.png"
+src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/prism/non_normalized_goodm_prism_9.png"
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
@@ -64,7 +52,7 @@ src="graphs/2D_Complex_Graphs/Infinite_Product_of_infinite_product_representatio
   style="display: inline-block; margin: 0 auto; max-width: 100px">
   
 <img
-src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_normalized_goodm_prism_8.png"
+src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/prism/non_normalized_goodm_prism_8.png"
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
@@ -72,13 +60,13 @@ src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_norma
 ### Plot Of the Normalized Infinite Product of the Product Representation for Sin(pi*x/n) in the 3-D Complex Plane:
 
 <img
-  src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/ComplexPlot_prodprodforsin_15.png"
+  src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/jet/ComplexPlot_prodprodforsin_15.png"
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
   
 <img
-  src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/ComplexPlot_norm_prodprodforsin_prism_3.png"
+  src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/prism/ComplexPlot_norm_prodprodforsin_prism_3.png"
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
@@ -86,7 +74,7 @@ src="graphs/3D_Complex_Graphs/product_of_product_representation_of_sin/non_norma
 ### Plot Of the Normalized Infinite Product of Sin(pi*x/n) in the 3-D Complex Plane:
 
 <img
-  src="graphs/3D_Complex_Graphs/product of sin/Complex_3D_normalized_product_of_sin_14_prism.png"
+  src="graphs/3D_Complex_Graphs/product of sin/Complex_3D_product_of_sin_11.png"
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
@@ -132,6 +120,20 @@ https://www.youtube.com/watch?v=BuKgxeer9j8
 https://www2.karlin.mff.cuni.cz/~slavik/product/product_integration.pdf
 
 https://mathstats.uncg.edu/number-theory/wp-content/uploads/sites/6/2018/01/zvengrowski-converge-eulerprod.pdf
+
+https://www.youtube.com/watch?v=cjKtzzACyhI
+
+https://www.youtube.com/watch?v=bo798KEKoDI
+
+https://www.youtube.com/watch?v=fpqGRVtBER4
+
+https://www.youtube.com/watch?v=8x374slJGuo&t=61s
+
+https://www.youtube.com/watch?v=jnxqHcObNK4
+
+https://www.youtube.com/watch?v=0kXGb0_-1iY
+
+https://unsolvedproblems.org/S132.pdf
 
 # About Me
 My name is Leo Borcherding, I am a Software Developer with experience working on programs for encryption of firmware devices. I have a background in electrical
