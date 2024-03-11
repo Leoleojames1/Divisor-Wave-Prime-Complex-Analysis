@@ -52,7 +52,7 @@ src="graphs/2D_Complex_Graphs/Infinite_Product_of_infinite_product_representatio
   style="display: inline-block; margin: 0 auto; max-width: 100px">
   
 <img
-src="graphs/3D_Complex_Graphs/SpineComparison/Rainbow//prism/riesz_cos_spine_prism_norm_imag_mag_3d_2.png"
+src="graphs/SpineComparison/Rainbow/riesz_cos_spine_prism_norm_imag_mag_3d_2.png"
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
@@ -74,13 +74,13 @@ src="graphs/3D_Complex_Graphs/SpineComparison/Rainbow//prism/riesz_cos_spine_pri
 ### Plot Of the Normalized Infinite Product of Sin(pi*x/n) in the 3-D Complex Plane:
 
 <img
-  src="graphs/3D_Complex_Graphs/SpineComparison/Rainbow/Viete_cos_norm_3d_2"
+  src="graphs/SpineComparison/Rainbow/Viete_cos_norm_3d_2"
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
 
 <img
-  src="graphs/3D_Complex_Graphs/SpineComparison/Rainbow/riesz_cos_spine_plasma_norm_imag_magpownmag_2d_2.png"
+  src="graphs/SpineComparison/Rainbow/riesz_cos_spine_plasma_norm_imag_magpownmag_2d_2.png"
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
