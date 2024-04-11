@@ -3,7 +3,7 @@ If you have not already, please download the PDF called:
 Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.pdf
 
 I have been working hard on these proofs for the past 4 years and now with the advent of ChatGPT which can be tasked with automating the convertion of data types, leveraging this I have had an explosive amount of research opportunities given the swiftness of implementation.
-The Special functions software is free and open source.
+The Divisor Wave Prime Complex Analysis Plotting software is free and open source, and encourages development by users. Given the environment users can create and research new formulas in the complex space of product series allowing anyone to find novel functions in an uncharted territory. 
 
 # Divisor-Wave-Prime-Complex-Analysis
 A program for plotting complex functions. This tool provides the plotting functions for 2D and 3D graphics for infinite series such as the Riemann zeta function, 
