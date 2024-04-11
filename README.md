@@ -11,7 +11,7 @@ The Divisor Wave Prime Complex Analysis Plotting software is free and open sourc
 
 # Divisor-Wave-Prime-Complex-Analysis
 A program for plotting complex functions. This tool provides the plotting functions for 2D and 3D graphics for infinite series such as the Riemann zeta function, 
-the infinite product of the product representation for sin(pi*z/n) as well as any other function that can be formulated in the complex plane. The Infinite product plotted throughout the paper known as b(z) acts as an indicator for prime and composite numbers. ultimately we can describe a complex product waveform which contains the attributes of the factorization for any composite number utilizing multivariable factorization.
+the infinite product of the product representation for sin(pi*z/n) as well as any other function that can be formulated in the complex plane. The Infinite product plotted throughout the paper known as b(z) acts as an indicator for prime and composite numbers. ultimately we can describe a complex product waveform which contains the attributes of the factorization for any composite number utilizing complex variable factorization.
 
 ### Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n) in the 3-D Complex Plane:
 
