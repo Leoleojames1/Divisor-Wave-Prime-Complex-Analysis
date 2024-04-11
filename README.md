@@ -4,26 +4,6 @@ Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.pdf
 
 I have been working hard on these proofs for the past 4 years and now with the advent of ChatGPT which can be tasked with automating the convertion of data types, leveraging this I have had an explosive amount of research opportunities given the swiftness of implementation.
 The Special functions software is free and open source.
-  
-If you want to learn more about the Riemann Hypothesis and the Millenium prize problems you can find them at the following sources:
-
-Riemann Hypothesis:
-
-https://mathworld.wolfram.com/RiemannZetaFunction.html
-
-https://mathworld.wolfram.com/RiemannZetaFunctionZeros.html
-
-https://en.wikipedia.org/wiki/Particular_values_of_the_Riemann_zeta_function
-
-Clay Maths Institute's Millenium Prize Problems:
-
-https://en.wikipedia.org/wiki/Millennium_Prize_Problems
-
-Musical Representation for the Sieve of Eratosthenes:
-
-https://www.youtube.com/watch?v=Ofg8fG-1iJA
-
-https://www.youtube.com/watch?v=zhNnmtnV2cU
 
 # Divisor-Wave-Prime-Complex-Analysis
 A program for plotting complex functions. This tool provides the plotting functions for 2D and 3D graphics for infinite series such as the Riemann zeta function, 
@@ -92,6 +72,26 @@ src="graphs/SpineComparison/Rainbow/riesz_cos_spine_prism_norm_imag_mag_3d_2.png
   alt="Alt text"
   title="Plot Of the Infinite Product of the Product Representation for Sin(pi*x/n)"
   style="display: inline-block; margin: 0 auto; max-width: 100px">
+
+If you want to learn more about the Riemann Hypothesis and the Millenium prize problems you can find them at the following sources:
+
+Riemann Hypothesis:
+
+https://mathworld.wolfram.com/RiemannZetaFunction.html
+
+https://mathworld.wolfram.com/RiemannZetaFunctionZeros.html
+
+https://en.wikipedia.org/wiki/Particular_values_of_the_Riemann_zeta_function
+
+Clay Maths Institute's Millenium Prize Problems:
+
+https://en.wikipedia.org/wiki/Millennium_Prize_Problems
+
+Musical Representation for the Sieve of Eratosthenes:
+
+https://www.youtube.com/watch?v=Ofg8fG-1iJA
+
+https://www.youtube.com/watch?v=zhNnmtnV2cU
 
 Also Here are some relevant sources for the project:
 
