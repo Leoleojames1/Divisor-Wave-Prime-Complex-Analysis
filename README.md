@@ -1,4 +1,5 @@
 # Getting Started
+## Getting Started
 The PDF version of the research paper is located in the repository under the folder PDF_Files Please either pulldown/download the entire repository for Divisor Wave Prime Complex Analysis or Navigate to the PDF file in the repository to read the novel research paper on infinite product series in the complex plane for discrete waveform products defining prime and composite numbers. These waveforms showcase and breakdown the structure of prime numbers and represent them in a new light, the Divisor Wave Prime Complex Analysis plotting software is an infinite domain which I have defined for researching these special functions. Ultimately this software contains infinitely many functions which I have not gotten the opportunity to explore, and because of this I invite you to join me in transversing the complex plane for discrete product series, and there relationship to primes, chaos, order, and mathematics:
 Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.pdf
 
