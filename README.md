@@ -1,6 +1,7 @@
 # [PDF LINK](https://github.com/Leoleojames1/Divisor-Wave-Prime-Complex-Analysis/blob/master/Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.pdf)
 
 # Getting Started
+Watch The video explanation for the paper, a new video for the software will be coming soon, but dont let this stop you from trying to run it :)
 [![Watch the video](https://img.youtube.com/vi/Tm72FCEZvto/0.jpg)](https://www.youtube.com/watch?v=Tm72FCEZvto&ab_channel=BORCH)
 
 ## What is Divisor Wave Prime Complex Analysis?
