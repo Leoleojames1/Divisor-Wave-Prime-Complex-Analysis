@@ -1,6 +1,8 @@
 # [PDF LINK](https://github.com/Leoleojames1/Divisor-Wave-Prime-Complex-Analysis/blob/master/Divisor_Waves_and_their_Connection_to_the_Riemann_Hypothesis.pdf)
 
-# Getting Started
+# Getting Started[
+Video Walk-Through](https://www.youtube.com/watch?v=Tm72FCEZvto&ab_channel=BORCH)
+
 ## What is Divisor Wave Prime Complex Analysis?
 These waveforms breakdown the structure of prime numbers and represent them in a new light, the Divisor Wave Prime Complex Analysis plotting software is an infinite domain which I have defined for researching these special functions. 
 Ultimately this software contains infinitely many functions which I have not gotten the opportunity to explore, and because of this I invite you to join me in transversing the complex plane for discrete product series, and there relationship to primes, chaos, order, and mathematics. 
